@@ -1,23 +1,23 @@
 [
  {
   "case": "All controls (vocabulary trigger + 6 foreign keys)",
-  "rows": 20000,
-  "milliseconds": 5336.763,
-  "microseconds_per_row": 266.8,
-  "rows_per_second": 3748
+  "rows": 100000,
+  "milliseconds": 29331.632,
+  "microseconds_per_row": 293.3,
+  "rows_per_second": 3409
  },
  {
   "case": "Foreign keys only (vocabulary trigger disabled for the measurement)",
-  "rows": 20000,
-  "milliseconds": 2460.789,
-  "microseconds_per_row": 123.0,
-  "rows_per_second": 8127
+  "rows": 100000,
+  "milliseconds": 14924.155,
+  "microseconds_per_row": 149.2,
+  "rows_per_second": 6701
  },
  {
   "case": "No triggers (measurement floor)",
-  "rows": 20000,
-  "milliseconds": 410.47,
-  "microseconds_per_row": 20.5,
-  "rows_per_second": 48725
+  "rows": 100000,
+  "milliseconds": 2221.265,
+  "microseconds_per_row": 22.2,
+  "rows_per_second": 45019
  }
 ]

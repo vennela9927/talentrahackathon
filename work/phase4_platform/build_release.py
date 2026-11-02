@@ -235,7 +235,7 @@ def step23(ev, data):
             n for k, n in planted.items() if k[3] == "STALE_VERSION"), "Quarantine STALE_VERSION"],
     ], "The Go deeper of step 25 (late and corrected records) needs these inputs", SRC25)
     size_gb = ev["summary"]["database_bytes"] / 1e9
-    secs = sum(r.get("seconds", 0) for r in ev["ingest"]["runs"] if r["file"].startswith("b001"))
+    secs = load_seconds(ev["ingest"]["runs"], "b001")
     y, b = PROFILES["year3"], PROFILES["bench"]
     f = y["applications"] / b["applications"]
     d.add("Three-year projection", ["Metric", "Bench measured", "Year-3 target", "Factor", "Projection", "Status"], [
@@ -555,6 +555,12 @@ DECISIONS_25 = [
 ]
 
 
+def load_seconds(runs, prefix=""):
+    """Wall-clock seconds: an applications part and its status-events part share one transaction."""
+    return sum(r.get("seconds") or 0 for r in runs
+               if r["file"].startswith(prefix) and "/status_events.p" not in r["file"])
+
+
 def status(ok):
     return "PASS" if ok else "FAIL"
 
@@ -814,7 +820,7 @@ def readme(ev, ratings):
     ver, prof, rel = ev["verify"], ev["profile"], ev["rel01"]
     loaded = {r["file"]: r for r in ev["ingest"]["runs"]}
     new = lambda prefix: sum(r.get("applied_new") or 0 for f, r in loaded.items() if prefix in f)
-    secs = sum(r.get("seconds") or 0 for r in ev["ingest"]["runs"])
+    secs = load_seconds(ev["ingest"]["runs"])
     return f"""# Talentra Phase 4: steps 23-25 (v8)
 
 Builds on `{BASELINE.name}` (steps 1-22, unchanged). This release adds Data Generation at Scale (23),
@@ -875,10 +881,11 @@ def main():
     import step25_verify
     ev["quarantine_rows"] = step25_verify.actual_quarantine(args.db)
     out = args.out
-    if out.exists():
-        shutil.rmtree(out)
+    if out.exists():                    # empty it in place: the folder itself may be open in Explorer
+        for child in out.iterdir():
+            shutil.rmtree(child) if child.is_dir() else child.unlink()
     for sub in ("steps", "artifact_contracts", "database", "contracts", "evidence", "tools", "loop_back"):
-        (out / sub).mkdir(parents=True)
+        (out / sub).mkdir(parents=True, exist_ok=True)
     exit_pass = {23: ev["profile"]["pass"], 24: all(s["second_run_rows_changed"] == 0 for s in ev["seeds"]),
                  25: ev["verify"]["pass"] and ev["ingest"]["rerun_state_unchanged"]}
     docs = [step23(ev, args.data), step24(ev), step25(ev)]

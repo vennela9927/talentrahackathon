@@ -1,0 +1,305 @@
+{
+ "profile": "bench",
+ "seed": 23,
+ "checks": [
+  {
+   "metric": "Organisations",
+   "target": 20000,
+   "tolerance": "eq",
+   "observed": 20000.0,
+   "pass": true,
+   "source": "Step 13 scale profile / docket ratio"
+  },
+  {
+   "metric": "Candidates",
+   "target": 1000000,
+   "tolerance": "eq",
+   "observed": 1000000.0,
+   "pass": true,
+   "source": "Step 13 02_Scale profiles"
+  },
+  {
+   "metric": "Jobs",
+   "target": 100000,
+   "tolerance": "eq",
+   "observed": 100000.0,
+   "pass": true,
+   "source": "Step 13 02_Scale profiles"
+  },
+  {
+   "metric": "Applications",
+   "target": 5000000,
+   "tolerance": "eq",
+   "observed": 5000000.0,
+   "pass": true,
+   "source": "Step 13 02_Scale profiles"
+  },
+  {
+   "metric": "Share of jobs posted by top 40% of organisations",
+   "target": 0.78,
+   "tolerance": 0.03,
+   "observed": 0.7881,
+   "pass": true,
+   "source": "Step 13 T174 R-18..20 (Pareto 80/20)"
+  },
+  {
+   "metric": "Jobs per organisation, median",
+   "target": 3,
+   "tolerance": 1,
+   "observed": 3.0,
+   "pass": true,
+   "source": "Step 13 T174 R-18..20"
+  },
+  {
+   "metric": "Jobs per organisation, p95",
+   "target": 18,
+   "tolerance": 4,
+   "observed": 16.0,
+   "pass": true,
+   "source": "Step 13 T174 R-18..20"
+  },
+  {
+   "metric": "Jobs per organisation, max",
+   "target": 250,
+   "tolerance": "max",
+   "observed": 232.0,
+   "pass": true,
+   "source": "Step 13 T174 R-18..20"
+  },
+  {
+   "metric": "Applications per job, p95 / median",
+   "target": 6.222222222222222,
+   "tolerance": 0.15,
+   "observed": 5.9286,
+   "pass": true,
+   "source": "Step 13 T174 R-23..26 shape (median 45, p95 280), scaled to the 5M/100k mean; see CHG-13-01"
+  },
+  {
+   "metric": "Applications per job, max",
+   "target": 2500,
+   "tolerance": "max",
+   "observed": 2500.0,
+   "pass": true,
+   "source": "Step 13 T174 R-23..26"
+  },
+  {
+   "metric": "Share of applications to top 10% of organisations",
+   "target": 0.6,
+   "tolerance": 0.05,
+   "observed": 0.6207,
+   "pass": true,
+   "source": "Step 13 03_Generation distributions: 10% organisations / 60% writes"
+  },
+  {
+   "metric": "Share of postings in the 8 Tier-1 cities",
+   "target": 0.68,
+   "tolerance": 0.02,
+   "observed": 0.6796,
+   "pass": true,
+   "source": "Step 13 T174 R-21..22"
+  },
+  {
+   "metric": "Null rate, candidate city",
+   "target": 0.1,
+   "tolerance": 0.02,
+   "observed": 0.0999,
+   "pass": true,
+   "source": "Step 13 03_Generation distributions: optional columns 10% null"
+  },
+  {
+   "metric": "Null rate, candidate headline",
+   "target": 0.1,
+   "tolerance": 0.02,
+   "observed": 0.1004,
+   "pass": true,
+   "source": "Step 13 03_Generation distributions: optional columns 10% null"
+  },
+  {
+   "metric": "Null rate, candidate birth date",
+   "target": 0.1,
+   "tolerance": 0.02,
+   "observed": 0.1004,
+   "pass": true,
+   "source": "Step 13 03_Generation distributions: optional columns 10% null"
+  },
+  {
+   "metric": "Null rate, job city",
+   "target": 0.1,
+   "tolerance": 0.02,
+   "observed": 0.0994,
+   "pass": true,
+   "source": "Step 13 03_Generation distributions: optional columns 10% null"
+  },
+  {
+   "metric": "Null rate, job salary",
+   "target": 0.1,
+   "tolerance": 0.02,
+   "observed": 0.1005,
+   "pass": true,
+   "source": "Step 13 03_Generation distributions: optional columns 10% null"
+  },
+  {
+   "metric": "Busiest day / median day (applications)",
+   "target": 2.5,
+   "tolerance": 0.1,
+   "observed": 2.4693,
+   "pass": true,
+   "source": "Step 13 03_Generation distributions: peak traffic 2.5x"
+  },
+  {
+   "metric": "Weekday (Mon-Fri) / weekend daily volume",
+   "target": 1.5,
+   "tolerance": 0.5,
+   "observed": 1.9599,
+   "pass": true,
+   "source": "Step 13 T176 seasonality (weekday peaks)"
+  },
+  {
+   "metric": "Funnel reach: shortlisted",
+   "target": 0.28,
+   "tolerance": 0.005,
+   "observed": 0.2798,
+   "pass": true,
+   "source": "Step 13 T174 R-27..28"
+  },
+  {
+   "metric": "Funnel reach: interviewed",
+   "target": 0.14,
+   "tolerance": 0.005,
+   "observed": 0.14,
+   "pass": true,
+   "source": "Step 13 T174 R-27..28"
+  },
+  {
+   "metric": "Funnel reach: offered",
+   "target": 0.05,
+   "tolerance": 0.005,
+   "observed": 0.05,
+   "pass": true,
+   "source": "Step 13 T174 R-27..28"
+  },
+  {
+   "metric": "Funnel reach: joined",
+   "target": 0.03,
+   "tolerance": 0.005,
+   "observed": 0.0301,
+   "pass": true,
+   "source": "Step 13 T174 R-27..28"
+  },
+  {
+   "metric": "Status events per application, min",
+   "target": 1,
+   "tolerance": "eq",
+   "observed": 1.0,
+   "pass": true,
+   "source": "Step 13 T174 R-27..28 (1/2/4/5)"
+  },
+  {
+   "metric": "Status events per application, median",
+   "target": 2,
+   "tolerance": "eq",
+   "observed": 2.0,
+   "pass": true,
+   "source": "Step 13 T174 R-27..28"
+  },
+  {
+   "metric": "Status events per application, p95",
+   "target": 4,
+   "tolerance": "eq",
+   "observed": 4.0,
+   "pass": true,
+   "source": "Step 13 T174 R-27..28"
+  },
+  {
+   "metric": "Status events per application, max",
+   "target": 5,
+   "tolerance": "eq",
+   "observed": 5.0,
+   "pass": true,
+   "source": "Step 13 T174 R-27..28"
+  },
+  {
+   "metric": "Duplicate candidate/job pairs",
+   "target": 0,
+   "tolerance": "eq",
+   "observed": 0.0,
+   "pass": true,
+   "source": "Step 21 uq_job_application_candidate_job"
+  },
+  {
+   "metric": "Language share en",
+   "target": 0.6,
+   "tolerance": 0.01,
+   "observed": 0.5998,
+   "pass": true,
+   "source": "Step 4 NFR-013; assumption"
+  },
+  {
+   "metric": "Language share hi",
+   "target": 0.25,
+   "tolerance": 0.01,
+   "observed": 0.2502,
+   "pass": true,
+   "source": "Step 4 NFR-013; assumption"
+  },
+  {
+   "metric": "Language share ta",
+   "target": 0.15,
+   "tolerance": 0.01,
+   "observed": 0.15,
+   "pass": true,
+   "source": "Step 4 NFR-013; assumption"
+  },
+  {
+   "metric": "Job family share IT_DEV",
+   "target": 0.25,
+   "tolerance": 0.01,
+   "observed": 0.2498,
+   "pass": true,
+   "source": "Step 22 15_Family funnel assumptions"
+  },
+  {
+   "metric": "Job family share IT_TEST",
+   "target": 0.15,
+   "tolerance": 0.01,
+   "observed": 0.1502,
+   "pass": true,
+   "source": "Step 22 15_Family funnel assumptions"
+  },
+  {
+   "metric": "Job family share NONIT_SALES",
+   "target": 0.15,
+   "tolerance": 0.01,
+   "observed": 0.1492,
+   "pass": true,
+   "source": "Step 22 15_Family funnel assumptions"
+  },
+  {
+   "metric": "Job family share NONIT_DELIVERY",
+   "target": 0.15,
+   "tolerance": 0.01,
+   "observed": 0.1508,
+   "pass": true,
+   "source": "Step 22 15_Family funnel assumptions"
+  },
+  {
+   "metric": "Job family share BLUE_WAREHOUSE",
+   "target": 0.15,
+   "tolerance": 0.01,
+   "observed": 0.1488,
+   "pass": true,
+   "source": "Step 22 15_Family funnel assumptions"
+  },
+  {
+   "metric": "Job family share BLUE_FIELD",
+   "target": 0.15,
+   "tolerance": 0.01,
+   "observed": 0.1512,
+   "pass": true,
+   "source": "Step 22 15_Family funnel assumptions"
+  }
+ ],
+ "passed": 37,
+ "total": 37,
+ "pass": true
+}

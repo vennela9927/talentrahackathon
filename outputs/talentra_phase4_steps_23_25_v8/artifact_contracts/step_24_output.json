@@ -1,0 +1,577 @@
+{
+ "title": "Step24 Output Document",
+ "type": "object",
+ "properties": {
+  "Seed sets": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "Set": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Environments": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Tables": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Rows": {
+      "type": [
+       "integer",
+       "string",
+       "null"
+      ]
+     },
+     "Source": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Re-runnable by": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     }
+    },
+    "required": [
+     "Set",
+     "Environments",
+     "Tables",
+     "Rows",
+     "Source",
+     "Re-runnable by"
+    ],
+    "additionalProperties": false
+   }
+  },
+  "Environment matrix": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "Environment": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Sets": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Purpose": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Master source": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Command": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     }
+    },
+    "required": [
+     "Environment",
+     "Sets",
+     "Purpose",
+     "Master source",
+     "Command"
+    ],
+    "additionalProperties": false
+   }
+  },
+  "Reference data": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "Table": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Rows": {
+      "type": [
+       "integer",
+       "string",
+       "null"
+      ]
+     },
+     "ID range": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Content": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Source": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     }
+    },
+    "required": [
+     "Table",
+     "Rows",
+     "ID range",
+     "Content",
+     "Source"
+    ],
+    "additionalProperties": false
+   }
+  },
+  "Integration registry": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "Source code": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Contract": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Schema SHA256": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Owner": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Endpoint": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Status": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     }
+    },
+    "required": [
+     "Source code",
+     "Contract",
+     "Schema SHA256",
+     "Owner",
+     "Endpoint",
+     "Status"
+    ],
+    "additionalProperties": false
+   }
+  },
+  "Re-run proof": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "Environment": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "First run rows changed": {
+      "type": [
+       "integer",
+       "string",
+       "null"
+      ]
+     },
+     "Second run rows changed": {
+      "type": [
+       "integer",
+       "string",
+       "null"
+      ]
+     },
+     "Same state after second run": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Same state on a fresh database": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Result": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     }
+    },
+    "required": [
+     "Environment",
+     "First run rows changed",
+     "Second run rows changed",
+     "Same state after second run",
+     "Same state on a fresh database",
+     "Result"
+    ],
+    "additionalProperties": false
+   }
+  },
+  "Golden dataset answers": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "Question": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Expected": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Observed": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Result": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "SQL": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     }
+    },
+    "required": [
+     "Question",
+     "Expected",
+     "Observed",
+     "Result",
+     "SQL"
+    ],
+    "additionalProperties": false
+   }
+  },
+  "Changes per table": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "Environment": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Table": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Inserted": {
+      "type": [
+       "integer",
+       "string",
+       "null"
+      ]
+     },
+     "Updated": {
+      "type": [
+       "integer",
+       "string",
+       "null"
+      ]
+     }
+    },
+    "required": [
+     "Environment",
+     "Table",
+     "Inserted",
+     "Updated"
+    ],
+    "additionalProperties": false
+   }
+  },
+  "Decision log": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "Decision ID": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Decision": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Reason": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Alternative": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Owner": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Status": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     }
+    },
+    "required": [
+     "Decision ID",
+     "Decision",
+     "Reason",
+     "Alternative",
+     "Owner",
+     "Status"
+    ],
+    "additionalProperties": false
+   }
+  },
+  "Human review prompts": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "Question ID": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Question": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Expected evidence anchor": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Human response": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Reviewer score 0 to 5": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Review status": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Proposed reviewer role": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     }
+    },
+    "required": [
+     "Question ID",
+     "Question",
+     "Expected evidence anchor",
+     "Human response",
+     "Reviewer score 0 to 5",
+     "Review status",
+     "Proposed reviewer role"
+    ],
+    "additionalProperties": false
+   }
+  },
+  "Acceptance cases": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "Case ID": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Case": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Expected result": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Proof layer": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Status": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Evidence": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     }
+    },
+    "required": [
+     "Case ID",
+     "Case",
+     "Expected result",
+     "Proof layer",
+     "Status",
+     "Evidence"
+    ],
+    "additionalProperties": false
+   }
+  }
+ },
+ "required": [
+  "Seed sets",
+  "Environment matrix",
+  "Reference data",
+  "Integration registry",
+  "Re-run proof",
+  "Golden dataset answers",
+  "Changes per table",
+  "Decision log",
+  "Human review prompts",
+  "Acceptance cases"
+ ],
+ "additionalProperties": false
+}

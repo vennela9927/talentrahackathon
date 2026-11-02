@@ -1,0 +1,101 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:talentra:legacy.candidate_account.v1",
+  "title": "legacy.candidate_account.v1",
+  "type": "object",
+  "properties": {
+    "event_id": {
+      "type": "string",
+      "maxLength": 255,
+      "description": "TRANSPORT_ONLY: Producer delivery id; inbox event key when quarantined"
+    },
+    "correlation_id": {
+      "type": "string",
+      "maxLength": 255,
+      "description": "TRANSPORT_ONLY: Trace key"
+    },
+    "schema_version": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "integration_contract.schema_version: Must equal 1 (UNSUPPORTED_VERSION)"
+    },
+    "occurred_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "created_at of a new row: UTC ISO-8601; not in the future"
+    },
+    "source_version": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "ingest.key_map.source_version: Monotonic per external_key; lower = STALE_VERSION"
+    },
+    "external_key": {
+      "type": "string",
+      "maxLength": 255,
+      "description": "ingest.key_map.external_key: Source business key; translated to a native id"
+    },
+    "email": {
+      "type": "string",
+      "maxLength": 255,
+      "description": "app_user.email: Lower-cased; valid address; unique across users"
+    },
+    "person_name": {
+      "type": "string",
+      "maxLength": 255,
+      "description": "app_user.person_name: As supplied; synthetic in test data"
+    },
+    "preferred_language": {
+      "type": "string",
+      "maxLength": 255,
+      "description": "app_user.preferred_language: en | hi | ta (NFR-013)"
+    },
+    "city_id": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0,
+      "description": "candidate_profile.city_id: Must exist in city"
+    },
+    "headline": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 255,
+      "description": "candidate_profile.headline: As supplied"
+    },
+    "birth_date": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date",
+      "description": "candidate_profile.birth_date: Valid date; at least 14 years before occurred_at (proposed rule ING-BR-01)"
+    },
+    "profile_status": {
+      "type": "string",
+      "maxLength": 255,
+      "description": "candidate_profile.status_reference_value_id: Code in candidate_profile status vocabulary; 'erased' is never accepted inbound"
+    },
+    "content_language": {
+      "type": "string",
+      "maxLength": 255,
+      "description": "candidate_profile.content_language: en | hi | ta"
+    }
+  },
+  "required": [
+    "event_id",
+    "correlation_id",
+    "schema_version",
+    "occurred_at",
+    "source_version",
+    "external_key",
+    "email",
+    "person_name",
+    "preferred_language",
+    "profile_status",
+    "content_language"
+  ],
+  "additionalProperties": false
+}

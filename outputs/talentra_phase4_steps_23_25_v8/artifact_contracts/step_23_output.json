@@ -1,0 +1,609 @@
+{
+ "title": "Step23 Output Document",
+ "type": "object",
+ "properties": {
+  "Generation profiles": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "Profile": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Organisations": {
+      "type": [
+       "integer",
+       "string",
+       "null"
+      ]
+     },
+     "Candidates": {
+      "type": [
+       "integer",
+       "string",
+       "null"
+      ]
+     },
+     "Jobs": {
+      "type": [
+       "integer",
+       "string",
+       "null"
+      ]
+     },
+     "Applications": {
+      "type": [
+       "integer",
+       "string",
+       "null"
+      ]
+     },
+     "Status": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Use": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     }
+    },
+    "required": [
+     "Profile",
+     "Organisations",
+     "Candidates",
+     "Jobs",
+     "Applications",
+     "Status",
+     "Use"
+    ],
+    "additionalProperties": false
+   }
+  },
+  "Generator parameters": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "Parameter": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Value": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Reason": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Source": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     }
+    },
+    "required": [
+     "Parameter",
+     "Value",
+     "Reason",
+     "Source"
+    ],
+    "additionalProperties": false
+   }
+  },
+  "Profile check": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "Check ID": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Metric": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Target": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Tolerance": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Observed": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Result": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Source": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     }
+    },
+    "required": [
+     "Check ID",
+     "Metric",
+     "Target",
+     "Tolerance",
+     "Observed",
+     "Result",
+     "Source"
+    ],
+    "additionalProperties": false
+   }
+  },
+  "Dataset files": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "File": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Contract": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Rows": {
+      "type": [
+       "integer",
+       "string",
+       "null"
+      ]
+     },
+     "Bytes": {
+      "type": [
+       "integer",
+       "string",
+       "null"
+      ]
+     },
+     "SHA256": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     }
+    },
+    "required": [
+     "File",
+     "Contract",
+     "Rows",
+     "Bytes",
+     "SHA256"
+    ],
+    "additionalProperties": false
+   }
+  },
+  "Planted defects": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "Batch": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "File": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Contract": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Reason code": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Field": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Count": {
+      "type": [
+       "integer",
+       "string",
+       "null"
+      ]
+     },
+     "Purpose": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     }
+    },
+    "required": [
+     "Batch",
+     "File",
+     "Contract",
+     "Reason code",
+     "Field",
+     "Count",
+     "Purpose"
+    ],
+    "additionalProperties": false
+   }
+  },
+  "Delta scenarios": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "Scenario": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Batch": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "File": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Rows": {
+      "type": [
+       "integer",
+       "string",
+       "null"
+      ]
+     },
+     "Expected treatment": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     }
+    },
+    "required": [
+     "Scenario",
+     "Batch",
+     "File",
+     "Rows",
+     "Expected treatment"
+    ],
+    "additionalProperties": false
+   }
+  },
+  "Three-year projection": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "Metric": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Bench measured": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Year-3 target": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Factor": {
+      "type": [
+       "number",
+       "string",
+       "null"
+      ]
+     },
+     "Projection": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Status": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     }
+    },
+    "required": [
+     "Metric",
+     "Bench measured",
+     "Year-3 target",
+     "Factor",
+     "Projection",
+     "Status"
+    ],
+    "additionalProperties": false
+   }
+  },
+  "Decision log": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "Decision ID": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Decision": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Reason": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Alternative": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Owner": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Status": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     }
+    },
+    "required": [
+     "Decision ID",
+     "Decision",
+     "Reason",
+     "Alternative",
+     "Owner",
+     "Status"
+    ],
+    "additionalProperties": false
+   }
+  },
+  "Human review prompts": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "Question ID": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Question": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Expected evidence anchor": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Human response": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Reviewer score 0 to 5": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Review status": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Proposed reviewer role": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     }
+    },
+    "required": [
+     "Question ID",
+     "Question",
+     "Expected evidence anchor",
+     "Human response",
+     "Reviewer score 0 to 5",
+     "Review status",
+     "Proposed reviewer role"
+    ],
+    "additionalProperties": false
+   }
+  },
+  "Acceptance cases": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "Case ID": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Case": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Expected result": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Proof layer": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Status": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Evidence": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     }
+    },
+    "required": [
+     "Case ID",
+     "Case",
+     "Expected result",
+     "Proof layer",
+     "Status",
+     "Evidence"
+    ],
+    "additionalProperties": false
+   }
+  }
+ },
+ "required": [
+  "Generation profiles",
+  "Generator parameters",
+  "Profile check",
+  "Dataset files",
+  "Planted defects",
+  "Delta scenarios",
+  "Three-year projection",
+  "Decision log",
+  "Human review prompts",
+  "Acceptance cases"
+ ],
+ "additionalProperties": false
+}

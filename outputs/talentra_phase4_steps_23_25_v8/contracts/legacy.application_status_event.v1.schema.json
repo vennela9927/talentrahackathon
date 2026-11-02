@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:talentra:legacy.application_status_event.v1",
+  "title": "legacy.application_status_event.v1",
+  "type": "object",
+  "properties": {
+    "event_id": {
+      "type": "string",
+      "maxLength": 255,
+      "description": "TRANSPORT_ONLY: Producer delivery id; inbox event key when quarantined"
+    },
+    "correlation_id": {
+      "type": "string",
+      "maxLength": 255,
+      "description": "TRANSPORT_ONLY: Trace key"
+    },
+    "schema_version": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "integration_contract.schema_version: Must equal 1 (UNSUPPORTED_VERSION)"
+    },
+    "occurred_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "created_at of a new row: UTC ISO-8601; not in the future"
+    },
+    "source_version": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "ingest.key_map.source_version: Monotonic per external_key; lower = STALE_VERSION"
+    },
+    "external_key": {
+      "type": "string",
+      "maxLength": 255,
+      "description": "ingest.key_map.external_key: Source business key; translated to a native id"
+    },
+    "application_key": {
+      "type": "string",
+      "maxLength": 255,
+      "description": "application_status_event.job_application_id: Translated via key_map"
+    },
+    "organisation_key": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "TENANT_GUARD: Must equal the application's job organisation"
+    },
+    "from_status": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "maxLength": 255,
+      "description": "application_status_event.from_reference_value_id: Must equal the application's status at that point (CHAIN_BREAK); null only for the first event"
+    },
+    "to_status": {
+      "type": "string",
+      "maxLength": 255,
+      "description": "application_status_event.to_reference_value_id: Edge must exist in transition_rule (ILLEGAL_TRANSITION) for the actor's role (ACTOR_NOT_PERMITTED)"
+    },
+    "actor_type": {
+      "type": "string",
+      "maxLength": 255,
+      "description": "transition_rule.actor_role_code: candidate | recruiter"
+    },
+    "actor_key": {
+      "type": "string",
+      "maxLength": 255,
+      "description": "application_status_event.actor_app_user_id: The application's own candidate, or the organisation's recruiter"
+    }
+  },
+  "required": [
+    "event_id",
+    "correlation_id",
+    "schema_version",
+    "occurred_at",
+    "source_version",
+    "external_key",
+    "application_key",
+    "organisation_key",
+    "to_status",
+    "actor_type",
+    "actor_key"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,205 @@
+{
+ "step": 23,
+ "profile": "demo",
+ "seed": 23,
+ "generated_at": "2026-11-02T09:03:31.772775+00:00",
+ "targets": {
+  "organisations": 50,
+  "candidates": 2000,
+  "jobs": 200,
+  "applications": 10000
+ },
+ "parameters": {
+  "org_sigma": 0.93,
+  "job_sigma": 0.92,
+  "org_traffic_alpha": 0.6,
+  "candidate_sigma": 0.8,
+  "max_apps_per_job": 2500,
+  "peak_day_factor": 2.5,
+  "null_rate": 0.1,
+  "window_start": "2025-11-01T00:00:00Z",
+  "window_days": 304,
+  "peak_days": [
+   "2026-01-15",
+   "2026-01-25",
+   "2026-01-28",
+   "2026-01-29"
+  ],
+  "paths": [
+   [
+    [
+     "applied"
+    ],
+    0.28
+   ],
+   [
+    [
+     "applied",
+     "rejected"
+    ],
+    0.4
+   ],
+   [
+    [
+     "applied",
+     "withdrawn"
+    ],
+    0.04
+   ],
+   [
+    [
+     "applied",
+     "shortlisted"
+    ],
+    0.02
+   ],
+   [
+    [
+     "applied",
+     "shortlisted",
+     "rejected"
+    ],
+    0.1
+   ],
+   [
+    [
+     "applied",
+     "shortlisted",
+     "withdrawn"
+    ],
+    0.02
+   ],
+   [
+    [
+     "applied",
+     "shortlisted",
+     "interviewed"
+    ],
+    0.01
+   ],
+   [
+    [
+     "applied",
+     "shortlisted",
+     "interviewed",
+     "rejected"
+    ],
+    0.07
+   ],
+   [
+    [
+     "applied",
+     "shortlisted",
+     "interviewed",
+     "withdrawn"
+    ],
+    0.01
+   ],
+   [
+    [
+     "applied",
+     "shortlisted",
+     "interviewed",
+     "offered"
+    ],
+    0.002
+   ],
+   [
+    [
+     "applied",
+     "shortlisted",
+     "interviewed",
+     "offered",
+     "rejected"
+    ],
+    0.003
+   ],
+   [
+    [
+     "applied",
+     "shortlisted",
+     "interviewed",
+     "offered",
+     "withdrawn"
+    ],
+    0.015
+   ],
+   [
+    [
+     "applied",
+     "shortlisted",
+     "interviewed",
+     "offered",
+     "joined"
+    ],
+    0.03
+   ]
+  ]
+ },
+ "deltas": {
+  "duplicate_candidate_resends": 10,
+  "key_reuse_candidates": 2,
+  "corrected_jobs": 5,
+  "late_in_order_events": 570,
+  "late_out_of_order_events": 1
+ },
+ "planted_defects": 146,
+ "timings_seconds": {
+  "structure": 0.0,
+  "candidates": 0.1,
+  "jobs": 0.0,
+  "applications_and_events": 1.1
+ },
+ "files": [
+  {
+   "path": "b001/applications.p01.csv.gz",
+   "bytes": 241401,
+   "sha256": "c7ad8306931f10e0070331f84c7507305dda4cc209fd32881876e37155388261"
+  },
+  {
+   "path": "b001/candidates.csv.gz",
+   "bytes": 69313,
+   "sha256": "e0deb9cc8b665dd4805d35781f43d223d423962fb953051314dc9dba7e413755"
+  },
+  {
+   "path": "b001/jobs.csv.gz",
+   "bytes": 6905,
+   "sha256": "0fa97446e82d9c6cb43944f68476a5e950e2ad50b114fa75609dfd65113a925c"
+  },
+  {
+   "path": "b001/status_events.p01.csv.gz",
+   "bytes": 435771,
+   "sha256": "f921e46161a1ff4ca805b34628566de5813d6016e6a197d5e5d4950afe24ad14"
+  },
+  {
+   "path": "b002/candidates.csv.gz",
+   "bytes": 1004,
+   "sha256": "ea5c7b91d012368dc5d87e3f6302124f92dfeab892846f283b66a851396f53cc"
+  },
+  {
+   "path": "b002/jobs.csv.gz",
+   "bytes": 611,
+   "sha256": "d16819b4334d6d1c4818c153f0c9baa19981fa2693464b8b47dcdfd93f9de7bd"
+  },
+  {
+   "path": "b002/status_events.csv.gz",
+   "bytes": 12451,
+   "sha256": "b946e453b6710adec9ab3ad329f5868511ec5382cd65baf60439d44735d157c5"
+  },
+  {
+   "path": "b003/jobs.csv.gz",
+   "bytes": 458,
+   "sha256": "0021f23fea86c0b5618fc064847e120db1cda659d5b6c518c4ba4bf0eb16f2fc"
+  },
+  {
+   "path": "expected_quarantine.csv",
+   "bytes": 14201,
+   "sha256": "9886d527aaab671b21bbeaa49245c97cade340b6b19dee5ce8cbc909276e4e5b"
+  },
+  {
+   "path": "master/organisations.csv.gz",
+   "bytes": 1306,
+   "sha256": "04cb454052cfeba165a4eb7f513375d794e46cd715096eb2602871b2c9489b3a"
+  }
+ ]
+}

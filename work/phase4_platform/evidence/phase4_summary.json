@@ -1,8 +1,8 @@
 {
- "profile": "demo",
- "started": "2026-11-02 13:25:54",
+ "profile": "bench",
+ "started": "2026-11-02 14:57:30",
  "rel01": {
-  "database": "talentra_demo_run",
+  "database": "talentra_bench",
   "scripts": [
    "001_baseline.sql",
    "003_seed.sql",
@@ -27,31 +27,85 @@
    "triggers": 95,
    "server": "PostgreSQL 18.6 on x86_64-windows, compiled by msvc-19.44.35229, 64-bit"
   },
-  "seconds": 7.3
+  "seconds": 8.1
  },
- "step23_pass": false,
+ "step23_pass": true,
  "step24_pass": true,
  "step25_pass": true,
- "database_bytes": 40203967,
+ "database_bytes": 8848438975,
  "relation_sizes": [
   {
    "relation": "ingest.key_map",
-   "table_bytes": 4595712,
-   "index_bytes": 3661824,
-   "rows": 33930
+   "table_bytes": 2272542720,
+   "index_bytes": 1837146112,
+   "rows": 16927839
   },
   {
    "relation": "talentra.application_status_event",
-   "table_bytes": 2400256,
-   "index_bytes": 2220032,
-   "rows": 21633
+   "table_bytes": 1178681344,
+   "index_bytes": 1041743872,
+   "rows": 10787900
   },
   {
    "relation": "talentra.job_application",
-   "table_bytes": 1277952,
-   "index_bytes": 1728512,
-   "rows": 10012
+   "table_bytes": 585572352,
+   "index_bytes": 767172608,
+   "rows": 4999985
+  },
+  {
+   "relation": "talentra.app_user",
+   "table_bytes": 157835264,
+   "index_bytes": 273973248,
+   "rows": 1020012
+  },
+  {
+   "relation": "talentra.candidate_profile",
+   "table_bytes": 156811264,
+   "index_bytes": 226861056,
+   "rows": 1000012
+  },
+  {
+   "relation": "talentra.user_role",
+   "table_bytes": 87883776,
+   "index_bytes": 170999808,
+   "rows": 1040012
+  },
+  {
+   "relation": "talentra.job_requirement",
+   "table_bytes": 27172864,
+   "index_bytes": 10182656,
+   "rows": 100012
+  },
+  {
+   "relation": "talentra.integration_inbox",
+   "table_bytes": 8765440,
+   "index_bytes": 6537216,
+   "rows": 29650
+  },
+  {
+   "relation": "talentra.integration_rejection",
+   "table_bytes": 3719168,
+   "index_bytes": 2359296,
+   "rows": 29650
+  },
+  {
+   "relation": "talentra.organisation",
+   "table_bytes": 2719744,
+   "index_bytes": 1449984,
+   "rows": 20003
+  },
+  {
+   "relation": "talentra.recruiter_membership",
+   "table_bytes": 2056192,
+   "index_bytes": 1400832,
+   "rows": 20004
+  },
+  {
+   "relation": "talentra.account",
+   "table_bytes": 2220032,
+   "index_bytes": 614400,
+   "rows": 20003
   }
  ],
- "finished": "2026-11-02 13:28:06"
+ "finished": "2026-11-02 17:35:25"
 }

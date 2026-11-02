@@ -1,0 +1,35 @@
+14:57:30 Step 25: ingestion
+{"file": "b001/candidates.csv.gz", "source_rows": 1009000, "quarantined": 9000, "seconds": 674.2}
+{"file": "b001/jobs.csv.gz", "source_rows": 101300, "quarantined": 1300, "seconds": 107.8}
+{"file": "b001/applications.p01.csv.gz", "source_rows": 1001808, "quarantined": 1808, "seconds": 1489.0}
+{"file": "b001/status_events.p01.csv.gz", "source_rows": 2157846, "quarantined": 0, "seconds": 1489.0}
+{"file": "b001/applications.p02.csv.gz", "source_rows": 1001846, "quarantined": 1846, "seconds": 1500.3}
+{"file": "b001/status_events.p02.csv.gz", "source_rows": 2157855, "quarantined": 0, "seconds": 1500.3}
+{"file": "b001/applications.p03.csv.gz", "source_rows": 1001803, "quarantined": 1803, "seconds": 1550.7}
+{"file": "b001/status_events.p03.csv.gz", "source_rows": 2157317, "quarantined": 0, "seconds": 1550.7}
+{"file": "b001/applications.p04.csv.gz", "source_rows": 1001811, "quarantined": 1811, "seconds": 1635.7}
+{"file": "b001/status_events.p04.csv.gz", "source_rows": 2154729, "quarantined": 0, "seconds": 1635.7}
+{"file": "b001/applications.p05.csv.gz", "source_rows": 1002732, "quarantined": 2732, "seconds": 1685.9}
+{"file": "b001/status_events.p05.csv.gz", "source_rows": 2167116, "quarantined": 9000, "seconds": 1685.9}
+17:26:24 Step 25 b001 done in 8934s
+{"file": "b002/candidates.csv.gz", "source_rows": 1200, "quarantined": 200, "seconds": 1.9}
+{"file": "b002/jobs.csv.gz", "source_rows": 500, "quarantined": 0, "seconds": 4.0}
+{"file": "b002/status_events.csv.gz", "source_rows": 2100, "quarantined": 100, "seconds": 34.4}
+17:27:05 Step 25 b002 done in 41s
+{"file": "b003/jobs.csv.gz", "source_rows": 50, "quarantined": 50, "seconds": 1.1}
+17:27:06 Step 25 b003 done in 1s
+{"file": "b001/candidates.csv.gz", "source_rows": null, "quarantined": null, "seconds": 0.4}
+{"file": "b001/jobs.csv.gz", "source_rows": null, "quarantined": null, "seconds": 0.3}
+{"file": "b001/applications.p01.csv.gz", "source_rows": null, "quarantined": null, "seconds": 0.3}
+{"file": "b001/status_events.p01.csv.gz", "source_rows": null, "quarantined": null, "seconds": 0.3}
+{"file": "b001/applications.p02.csv.gz", "source_rows": null, "quarantined": null, "seconds": 0.3}
+{"file": "b001/status_events.p02.csv.gz", "source_rows": null, "quarantined": null, "seconds": 0.3}
+{"file": "b001/applications.p03.csv.gz", "source_rows": null, "quarantined": null, "seconds": 0.3}
+{"file": "b001/status_events.p03.csv.gz", "source_rows": null, "quarantined": null, "seconds": 0.3}
+{"file": "b001/applications.p04.csv.gz", "source_rows": null, "quarantined": null, "seconds": 0.3}
+{"file": "b001/status_events.p04.csv.gz", "source_rows": null, "quarantined": null, "seconds": 0.3}
+{"file": "b001/applications.p05.csv.gz", "source_rows": null, "quarantined": null, "seconds": 0.3}
+{"file": "b001/status_events.p05.csv.gz", "source_rows": null, "quarantined": null, "seconds": 0.3}
+17:34:29 Step 25 re-run of b001: all skipped and state unchanged = True (369s)
+17:34:29 Step 25: verify
+17:35:25 DONE {'step23_pass': True, 'step24_pass': True, 'step25_pass': True, 'database_bytes': 8848438975}

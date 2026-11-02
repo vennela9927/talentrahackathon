@@ -1,0 +1,789 @@
+{
+ "title": "Step25 Output Document",
+ "type": "object",
+ "properties": {
+  "Pipeline stages": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "Stage": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "What happens": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Where": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Failure behaviour": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Evidence": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     }
+    },
+    "required": [
+     "Stage",
+     "What happens",
+     "Where",
+     "Failure behaviour",
+     "Evidence"
+    ],
+    "additionalProperties": false
+   }
+  },
+  "Validation rules": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "Rule ID": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Contract": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Order": {
+      "type": [
+       "integer",
+       "string",
+       "null"
+      ]
+     },
+     "Reason code": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Field": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Condition": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Source": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     }
+    },
+    "required": [
+     "Rule ID",
+     "Contract",
+     "Order",
+     "Reason code",
+     "Field",
+     "Condition",
+     "Source"
+    ],
+    "additionalProperties": false
+   }
+  },
+  "Contract mapping": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "Contract ID": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Contract": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Field": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Required": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Target or disposition": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Transform and validation": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Owner": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     }
+    },
+    "required": [
+     "Contract ID",
+     "Contract",
+     "Field",
+     "Required",
+     "Target or disposition",
+     "Transform and validation",
+     "Owner"
+    ],
+    "additionalProperties": false
+   }
+  },
+  "Batch reconciliation": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "Batch": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "File": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Status": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Source rows": {
+      "type": [
+       "integer",
+       "string",
+       "null"
+      ]
+     },
+     "New": {
+      "type": [
+       "integer",
+       "string",
+       "null"
+      ]
+     },
+     "Updated": {
+      "type": [
+       "integer",
+       "string",
+       "null"
+      ]
+     },
+     "Duplicate": {
+      "type": [
+       "integer",
+       "string",
+       "null"
+      ]
+     },
+     "Quarantined": {
+      "type": [
+       "integer",
+       "string",
+       "null"
+      ]
+     },
+     "Late in order": {
+      "type": [
+       "integer",
+       "string",
+       "null"
+      ]
+     },
+     "Recon applied": {
+      "type": [
+       "integer",
+       "string",
+       "null"
+      ]
+     },
+     "Recon rejected": {
+      "type": [
+       "integer",
+       "string",
+       "null"
+      ]
+     },
+     "Recon duplicate": {
+      "type": [
+       "integer",
+       "string",
+       "null"
+      ]
+     },
+     "Recon pending": {
+      "type": [
+       "integer",
+       "string",
+       "null"
+      ]
+     },
+     "Balanced": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Seconds": {
+      "type": [
+       "number",
+       "string",
+       "null"
+      ]
+     }
+    },
+    "required": [
+     "Batch",
+     "File",
+     "Status",
+     "Source rows",
+     "New",
+     "Updated",
+     "Duplicate",
+     "Quarantined",
+     "Late in order",
+     "Recon applied",
+     "Recon rejected",
+     "Recon duplicate",
+     "Recon pending",
+     "Balanced",
+     "Seconds"
+    ],
+    "additionalProperties": false
+   }
+  },
+  "Quarantine by reason": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "Contract": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Reason code": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Field": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Expected count": {
+      "type": [
+       "integer",
+       "string",
+       "null"
+      ]
+     },
+     "Actual count": {
+      "type": [
+       "integer",
+       "string",
+       "null"
+      ]
+     },
+     "Match": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     }
+    },
+    "required": [
+     "Contract",
+     "Reason code",
+     "Field",
+     "Expected count",
+     "Actual count",
+     "Match"
+    ],
+    "additionalProperties": false
+   }
+  },
+  "Integrity checks": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "Check": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Expected": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Observed": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Result": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     }
+    },
+    "required": [
+     "Check",
+     "Expected",
+     "Observed",
+     "Result"
+    ],
+    "additionalProperties": false
+   }
+  },
+  "Re-run proof": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "File": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Rerun status": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Evidence": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     }
+    },
+    "required": [
+     "File",
+     "Rerun status",
+     "Evidence"
+    ],
+    "additionalProperties": false
+   }
+  },
+  "Throughput": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "File": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Source rows": {
+      "type": [
+       "integer",
+       "string",
+       "null"
+      ]
+     },
+     "Seconds": {
+      "type": [
+       "number",
+       "string",
+       "null"
+      ]
+     },
+     "Rows per second": {
+      "type": [
+       "number",
+       "string",
+       "null"
+      ]
+     }
+    },
+    "required": [
+     "File",
+     "Source rows",
+     "Seconds",
+     "Rows per second"
+    ],
+    "additionalProperties": false
+   }
+  },
+  "Control cost": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "Measurement": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Rows": {
+      "type": [
+       "integer",
+       "string",
+       "null"
+      ]
+     },
+     "Microseconds per row": {
+      "type": [
+       "number",
+       "string",
+       "null"
+      ]
+     },
+     "Rows per second": {
+      "type": [
+       "number",
+       "string",
+       "null"
+      ]
+     }
+    },
+    "required": [
+     "Measurement",
+     "Rows",
+     "Microseconds per row",
+     "Rows per second"
+    ],
+    "additionalProperties": false
+   }
+  },
+  "Storage": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "Relation": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Rows": {
+      "type": [
+       "integer",
+       "string",
+       "null"
+      ]
+     },
+     "Table MB": {
+      "type": [
+       "number",
+       "string",
+       "null"
+      ]
+     },
+     "Index MB": {
+      "type": [
+       "number",
+       "string",
+       "null"
+      ]
+     }
+    },
+    "required": [
+     "Relation",
+     "Rows",
+     "Table MB",
+     "Index MB"
+    ],
+    "additionalProperties": false
+   }
+  },
+  "Decision log": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "Decision ID": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Decision": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Reason": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Alternative": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Owner": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Status": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     }
+    },
+    "required": [
+     "Decision ID",
+     "Decision",
+     "Reason",
+     "Alternative",
+     "Owner",
+     "Status"
+    ],
+    "additionalProperties": false
+   }
+  },
+  "Human review prompts": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "Question ID": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Question": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Expected evidence anchor": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Human response": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Reviewer score 0 to 5": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Review status": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Proposed reviewer role": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     }
+    },
+    "required": [
+     "Question ID",
+     "Question",
+     "Expected evidence anchor",
+     "Human response",
+     "Reviewer score 0 to 5",
+     "Review status",
+     "Proposed reviewer role"
+    ],
+    "additionalProperties": false
+   }
+  },
+  "Acceptance cases": {
+   "type": "array",
+   "items": {
+    "type": "object",
+    "properties": {
+     "Case ID": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Case": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Expected result": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Proof layer": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Status": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     },
+     "Evidence": {
+      "type": [
+       "string",
+       "string",
+       "null"
+      ]
+     }
+    },
+    "required": [
+     "Case ID",
+     "Case",
+     "Expected result",
+     "Proof layer",
+     "Status",
+     "Evidence"
+    ],
+    "additionalProperties": false
+   }
+  }
+ },
+ "required": [
+  "Pipeline stages",
+  "Validation rules",
+  "Contract mapping",
+  "Batch reconciliation",
+  "Quarantine by reason",
+  "Integrity checks",
+  "Re-run proof",
+  "Throughput",
+  "Control cost",
+  "Storage",
+  "Decision log",
+  "Human review prompts",
+  "Acceptance cases"
+ ],
+ "additionalProperties": false
+}
