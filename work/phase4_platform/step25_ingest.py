@@ -163,6 +163,9 @@ ON CONFLICT (entity, source_system, external_key) DO UPDATE
 def finish(var, contract, file_name, table, extra_counts="0"):
     """Quarantine, reconcile, check the target delta and record the batch file; prints one JSON line."""
     return f"""
+-- Only the rejected rows, analysed, so the inbox/rejection joins stay small hash joins
+CREATE TEMP TABLE {var}_q ON COMMIT DROP AS SELECT * FROM {var}_r WHERE outcome LIKE 'q:%';
+ANALYZE {var}_q;
 INSERT INTO talentra.integration_inbox (account_id, integration_contract_id, event_key, correlation_key, payload_sha256,
        payload_reference, source_version, occurred_at, received_at, status_reference_value_id, attempt_count,
        next_attempt_at, last_error_code, created_by, updated_by)
@@ -171,14 +174,13 @@ SELECT {PLATFORM_ACCOUNT}, {SOURCE_IDS[contract]}, 'bf' || :{var}_bf || ':L' || 
        left(:'{var}_label' || '/{file_name}#L' || line_no, 255), greatest(coalesce(sv, 0), 0),
        coalesce(ts, :'{var}_started'::timestamptz), clock_timestamp(), 186, 0, clock_timestamp(),
        split_part(outcome, ':', 2), {MIGRATION_USER}, {MIGRATION_USER}
-FROM {var}_r WHERE outcome LIKE 'q:%';
+FROM {var}_q;
 INSERT INTO talentra.integration_rejection (account_id, integration_inbox_id, reason_code, field_path, created_by, updated_by)
 SELECT i.account_id, i.id, split_part(r.outcome, ':', 2), left(split_part(r.outcome, ':', 3), 255),
        {MIGRATION_USER}, {MIGRATION_USER}
-FROM {var}_r r JOIN talentra.integration_inbox i
+FROM {var}_q r JOIN talentra.integration_inbox i
   ON i.account_id = {PLATFORM_ACCOUNT} AND i.integration_contract_id = {SOURCE_IDS[contract]}
- AND i.event_key = 'bf' || :{var}_bf || ':L' || r.line_no
-WHERE r.outcome LIKE 'q:%';
+ AND i.event_key = 'bf' || :{var}_bf || ':L' || r.line_no;
 SELECT count(*) AS {var}_src,
        count(*) FILTER (WHERE outcome = 'new') AS {var}_new,
        count(*) FILTER (WHERE outcome = 'update') AS {var}_upd,
