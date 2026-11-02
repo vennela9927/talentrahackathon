@@ -73,11 +73,17 @@ def main():
     a = argparse.ArgumentParser(description=__doc__.split("\n")[0])
     a.add_argument("--profile", default="bench")
     a.add_argument("--db", default="talentra_bench")
+    a.add_argument("--resume-step25", action="store_true",
+                   help="steps 23-24 already passed into --db: keep their evidence and run step 25 only")
     args = a.parse_args()
     EVIDENCE.mkdir(parents=True, exist_ok=True)
     data = DATA / f"{args.profile}_seed23"
     summary = {"profile": args.profile, "started": time.strftime("%Y-%m-%d %H:%M:%S")}
 
+    if args.resume_step25:
+        summary["rel01"] = read_json(EVIDENCE / "rel01_native_baseline.json")
+        prof, seeds = read_json(EVIDENCE / "step23_profile_check.json"), read_json(EVIDENCE / "step24_seed_runs.json")
+        return step25(args, data, summary, prof, seeds)
     log("REL-01: baseline on empty PostgreSQL 18")
     summary["rel01"] = rel01(args.db)
     write_json(EVIDENCE / "rel01_native_baseline.json", summary["rel01"])
@@ -127,7 +133,10 @@ def main():
                   "changes_first_run": first["changes"]})
     log("Step 24", args.profile, seeds[-1]["second_run_rows_changed"], seeds[-1]["same_state_after_second_run"])
     write_json(EVIDENCE / "step24_seed_runs.json", seeds)
+    step25(args, data, summary, prof, seeds)
 
+
+def step25(args, data, summary, prof, seeds):
     log("Step 25: ingestion")
     runs = []
     for batch in ("b001", "b002", "b003"):
