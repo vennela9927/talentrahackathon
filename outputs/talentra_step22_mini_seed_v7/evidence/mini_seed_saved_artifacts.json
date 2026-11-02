@@ -1,0 +1,44 @@
+[
+  {
+    "contract": "actor",
+    "records": 27,
+    "negative_checks": 3,
+    "result": "PASS",
+    "scope": "Complete declared subset: exact required keys, additional-properties refusal and scalar type unions"
+  },
+  {
+    "contract": "workflow_step",
+    "records": 168,
+    "negative_checks": 3,
+    "result": "PASS",
+    "scope": "Complete declared subset: exact required keys, additional-properties refusal and scalar type unions"
+  },
+  {
+    "file": "steps/22_Integration_and_Source_Mapping/a_Output_Schema_Definition.xlsx",
+    "preserved_cells": 19226,
+    "old_tabs": 4,
+    "new_tabs": 6,
+    "result": "PASS"
+  },
+  {
+    "file": "steps/22_Integration_and_Source_Mapping/b_Schema_Rating_Scorecard.xlsx",
+    "preserved_cells": 1549,
+    "old_tabs": 6,
+    "new_tabs": 7,
+    "result": "PASS"
+  },
+  {
+    "file": "steps/22_Integration_and_Source_Mapping/c_Output_Document.xlsx",
+    "preserved_cells": 10395,
+    "old_tabs": 28,
+    "new_tabs": 38,
+    "result": "PASS"
+  },
+  {
+    "file": "Talentra_Combined.xlsx",
+    "concatenated_records": 20234,
+    "archived_original_sha256_match": true,
+    "new_tabs": 13,
+    "result": "PASS"
+  }
+]

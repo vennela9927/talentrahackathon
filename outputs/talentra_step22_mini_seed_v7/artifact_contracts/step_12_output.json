@@ -1,0 +1,851 @@
+{
+  "title": "Step12 Output Document",
+  "type": "object",
+  "properties": {
+    "Classification": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Attribute ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Table": {
+            "type": [
+              "string"
+            ]
+          },
+          "Column": {
+            "type": [
+              "string"
+            ]
+          },
+          "Class": {
+            "type": [
+              "string"
+            ]
+          },
+          "Masking": {
+            "type": [
+              "string"
+            ]
+          },
+          "Encryption": {
+            "type": [
+              "string"
+            ]
+          },
+          "Retention": {
+            "type": [
+              "string"
+            ]
+          },
+          "Purpose and consent": {
+            "type": [
+              "string"
+            ]
+          },
+          "Erasure": {
+            "type": [
+              "string"
+            ]
+          },
+          "Audit": {
+            "type": [
+              "string"
+            ]
+          },
+          "Policy status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Attribute ID",
+          "Table",
+          "Column",
+          "Class",
+          "Masking",
+          "Encryption",
+          "Retention",
+          "Purpose and consent",
+          "Erasure",
+          "Audit",
+          "Policy status",
+          "Source"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Retention decisions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Decision ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Topic": {
+            "type": [
+              "string"
+            ]
+          },
+          "Decision": {
+            "type": [
+              "string"
+            ]
+          },
+          "Reason": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source": {
+            "type": [
+              "string"
+            ]
+          },
+          "Status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Decision ID",
+          "Topic",
+          "Decision",
+          "Reason",
+          "Source",
+          "Status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Threat controls": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Threat": {
+            "type": [
+              "string"
+            ]
+          },
+          "Affected workflow": {
+            "type": [
+              "string"
+            ]
+          },
+          "Control": {
+            "type": [
+              "string"
+            ]
+          },
+          "Negative evidence": {
+            "type": [
+              "string"
+            ]
+          },
+          "Remaining test": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Threat",
+          "Affected workflow",
+          "Control",
+          "Negative evidence",
+          "Remaining test",
+          "Source"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Platform privacy": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Table": {
+            "type": [
+              "string"
+            ]
+          },
+          "Sensitive or personal data": {
+            "type": [
+              "string"
+            ]
+          },
+          "Storage treatment": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proposed retention": {
+            "type": [
+              "string"
+            ]
+          },
+          "Erasure action": {
+            "type": [
+              "string"
+            ]
+          },
+          "Approval status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Table",
+          "Sensitive or personal data",
+          "Storage treatment",
+          "Proposed retention",
+          "Erasure action",
+          "Approval status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T011 2. Data classification summary": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Class": {
+            "type": [
+              "string"
+            ]
+          },
+          "Examples": {
+            "type": [
+              "string"
+            ]
+          },
+          "Handling": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Class",
+          "Examples",
+          "Handling",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T016 5. Retention and lifecycle": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Data": {
+            "type": [
+              "string"
+            ]
+          },
+          "Deleted how": {
+            "type": [
+              "string"
+            ]
+          },
+          "Rule": {
+            "type": [
+              "string"
+            ]
+          },
+          "Mechanism": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Data",
+          "Deleted how",
+          "Rule",
+          "Mechanism",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T168 2. Masking codes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Code": {
+            "type": [
+              "string"
+            ]
+          },
+          "Rule": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Code",
+          "Rule",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T169 3. Register of personal and sensitiv": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "#": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Table": {
+            "type": [
+              "string"
+            ]
+          },
+          "Column": {
+            "type": [
+              "string"
+            ]
+          },
+          "Class": {
+            "type": [
+              "string"
+            ]
+          },
+          "Masking": {
+            "type": [
+              "string"
+            ]
+          },
+          "Encryption / protection": {
+            "type": [
+              "string"
+            ]
+          },
+          "Retention": {
+            "type": [
+              "string"
+            ]
+          },
+          "On erasure": {
+            "type": [
+              "string"
+            ]
+          },
+          "Lawful basis": {
+            "type": [
+              "string"
+            ]
+          },
+          "Audit": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "#",
+          "Table",
+          "Column",
+          "Class",
+          "Masking",
+          "Encryption / protection",
+          "Retention",
+          "On erasure",
+          "Lawful basis",
+          "Audit",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T170 4. Reclassification found by the rev": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Table": {
+            "type": [
+              "string"
+            ]
+          },
+          "Column": {
+            "type": [
+              "string"
+            ]
+          },
+          "Tagged now": {
+            "type": [
+              "string"
+            ]
+          },
+          "Should be": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Table",
+          "Column",
+          "Tagged now",
+          "Should be",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T171 5. Entity summary": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Entity": {
+            "type": [
+              "string"
+            ]
+          },
+          "Table": {
+            "type": [
+              "string"
+            ]
+          },
+          "Highest class": {
+            "type": [
+              "string"
+            ]
+          },
+          "Personal columns": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Retention": {
+            "type": [
+              "string"
+            ]
+          },
+          "Deleted how": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Entity",
+          "Table",
+          "Highest class",
+          "Personal columns",
+          "Retention",
+          "Deleted how",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Cross-source comparison": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Comparison ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Step": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Decision or field": {
+            "type": [
+              "string"
+            ]
+          },
+          "A value": {
+            "type": [
+              "string"
+            ]
+          },
+          "B value": {
+            "type": [
+              "string"
+            ]
+          },
+          "Agreement": {
+            "type": [
+              "string"
+            ]
+          },
+          "B locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Hybrid conclusion": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Comparison ID",
+          "Step",
+          "Decision or field",
+          "A value",
+          "B value",
+          "Agreement",
+          "B locator",
+          "Hybrid conclusion"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Hybrid field privacy": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Attribute ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Table": {
+            "type": [
+              "string"
+            ]
+          },
+          "Column": {
+            "type": [
+              "string"
+            ]
+          },
+          "Hybrid class": {
+            "type": [
+              "string"
+            ]
+          },
+          "A physical class": {
+            "type": [
+              "string"
+            ]
+          },
+          "Owner": {
+            "type": [
+              "string"
+            ]
+          },
+          "Implementation status": {
+            "type": [
+              "string"
+            ]
+          },
+          "A provenance": {
+            "type": [
+              "string"
+            ]
+          },
+          "B provenance": {
+            "type": [
+              "string"
+            ]
+          },
+          "Retention": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Attribute ID",
+          "Table",
+          "Column",
+          "Hybrid class",
+          "A physical class",
+          "Owner",
+          "Implementation status",
+          "A provenance",
+          "B provenance",
+          "Retention"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Hybrid handoff": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Handoff ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Concern": {
+            "type": [
+              "string"
+            ]
+          },
+          "Inputs": {
+            "type": [
+              "string"
+            ]
+          },
+          "Next use": {
+            "type": [
+              "string"
+            ]
+          },
+          "Acceptance condition": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proposed owner": {
+            "type": [
+              "string"
+            ]
+          },
+          "Status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Reason": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Handoff ID",
+          "Concern",
+          "Inputs",
+          "Next use",
+          "Acceptance condition",
+          "Proposed owner",
+          "Status",
+          "Reason"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Human review prompts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Question ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Question": {
+            "type": [
+              "string"
+            ]
+          },
+          "Expected evidence anchor": {
+            "type": [
+              "string"
+            ]
+          },
+          "Human response": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "Reviewer score 0 to 5": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "Review status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proposed reviewer role": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Question ID",
+          "Question",
+          "Expected evidence anchor",
+          "Human response",
+          "Reviewer score 0 to 5",
+          "Review status",
+          "Proposed reviewer role"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Acceptance cases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Case ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Case": {
+            "type": [
+              "string"
+            ]
+          },
+          "Expected result": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proof layer": {
+            "type": [
+              "string"
+            ]
+          },
+          "Status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Owner": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Case ID",
+          "Case",
+          "Expected result",
+          "Proof layer",
+          "Status",
+          "Owner"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "Classification",
+    "Retention decisions",
+    "Threat controls",
+    "Platform privacy",
+    "B T011 2. Data classification summary",
+    "B T016 5. Retention and lifecycle",
+    "B T168 2. Masking codes",
+    "B T169 3. Register of personal and sensitiv",
+    "B T170 4. Reclassification found by the rev",
+    "B T171 5. Entity summary",
+    "Cross-source comparison",
+    "Hybrid field privacy",
+    "Hybrid handoff",
+    "Human review prompts",
+    "Acceptance cases"
+  ],
+  "additionalProperties": false
+}

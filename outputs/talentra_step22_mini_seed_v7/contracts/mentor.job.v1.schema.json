@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "mentor.job.v1",
+  "type": "object",
+  "properties": {
+    "job_requirement_id": {
+      "type": [
+        "integer"
+      ],
+      "description": "Synthetic canonical job_requirement_id; CSV \\N is parsed as JSON null only for nullable properties",
+      "minimum": 1
+    },
+    "organisation_id": {
+      "type": [
+        "integer"
+      ],
+      "description": "Synthetic canonical organisation_id; CSV \\N is parsed as JSON null only for nullable properties",
+      "minimum": 1
+    },
+    "job_family_code": {
+      "type": [
+        "string"
+      ],
+      "description": "Synthetic canonical job_family_code; CSV \\N is parsed as JSON null only for nullable properties",
+      "enum": [
+        "IT_DEV",
+        "IT_TEST",
+        "NONIT_SALES",
+        "NONIT_DELIVERY",
+        "BLUE_WAREHOUSE",
+        "BLUE_FIELD"
+      ]
+    },
+    "engagement_type": {
+      "type": [
+        "string"
+      ],
+      "description": "Synthetic canonical engagement_type; CSV \\N is parsed as JSON null only for nullable properties"
+    },
+    "published_at": {
+      "type": [
+        "string"
+      ],
+      "description": "Synthetic canonical published_at; CSV \\N is parsed as JSON null only for nullable properties",
+      "format": "date-time"
+    },
+    "positions": {
+      "type": [
+        "integer"
+      ],
+      "description": "Synthetic canonical positions; CSV \\N is parsed as JSON null only for nullable properties",
+      "minimum": 1
+    },
+    "positions_filled": {
+      "type": [
+        "integer"
+      ],
+      "description": "Synthetic canonical positions_filled; CSV \\N is parsed as JSON null only for nullable properties",
+      "minimum": 0
+    },
+    "is_synthetic": {
+      "type": [
+        "boolean"
+      ],
+      "description": "Synthetic canonical is_synthetic; CSV \\N is parsed as JSON null only for nullable properties",
+      "const": true
+    }
+  },
+  "required": [
+    "job_requirement_id",
+    "organisation_id",
+    "job_family_code",
+    "engagement_type",
+    "published_at",
+    "positions",
+    "positions_filled",
+    "is_synthetic"
+  ],
+  "additionalProperties": false
+}

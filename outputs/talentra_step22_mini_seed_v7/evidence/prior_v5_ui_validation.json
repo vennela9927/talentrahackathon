@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-28",
+  "scope": "Offline browser interface; not production runtime validation",
+  "overview": {"visible_steps": 22, "full_rating_display": 84.6, "documentary_rating_display": 99.2, "current_checks_display": 438},
+  "field_search": {"step": 7, "section": "Canonical hybrid attributes", "query": "credit_account", "matching_records": 9, "result": "PASS"},
+  "hierarchy": {"step": 19, "depth": 4, "query": "implementation status", "matching_nodes": 3, "contracts_visible": 3, "result": "PASS"},
+  "ratings": {"step": 20, "deliverable": "Output Document", "actual_full": 80.8, "documentary_display": 93, "conditional_target": 90.8, "dimensions_visible": 9, "target_is_separate_from_actual": true, "result": "PASS"},
+  "downloads": {"embedded_files": 134, "all_embedded_payloads_equal_saved_files": true, "combined_workbook_downloaded_in_browser": true, "download_sha256_equals_saved_workbook": true, "result": "PASS"},
+  "saved_workbooks": {"count": 67, "formula_errors": 0, "sheets_rendered": 559, "result": "PASS"},
+  "package": {"zip_integrity": "PASS", "broken_declared_output_artifact_links": 0},
+  "unverified": ["Human interview", "Native PostgreSQL execution", "Concurrent transactions", "Target volume and latency", "Production authorization", "Signed provider contracts", "Backup and recovery"]
+}

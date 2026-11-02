@@ -1,0 +1,431 @@
+{
+  "title": "Step3 Output Document",
+  "type": "object",
+  "properties": {
+    "Features": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Feature ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Domain": {
+            "type": [
+              "string"
+            ]
+          },
+          "Capability": {
+            "type": [
+              "string"
+            ]
+          },
+          "Actor": {
+            "type": [
+              "string"
+            ]
+          },
+          "Priority": {
+            "type": [
+              "string"
+            ]
+          },
+          "Requirement ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Goal ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Acceptance": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Feature ID",
+          "Domain",
+          "Capability",
+          "Actor",
+          "Priority",
+          "Requirement ID",
+          "Goal ID",
+          "Acceptance",
+          "Source"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Competitor matrix": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Competitor": {
+            "type": [
+              "string"
+            ]
+          },
+          "Data domain": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Talentra mapping": {
+            "type": [
+              "string"
+            ]
+          },
+          "Comparison": {
+            "type": [
+              "string"
+            ]
+          },
+          "As of": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Competitor",
+          "Data domain",
+          "Evidence status",
+          "Source ID",
+          "Talentra mapping",
+          "Comparison",
+          "As of"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Discovery decisions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Decision ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Topic": {
+            "type": [
+              "string"
+            ]
+          },
+          "Decision": {
+            "type": [
+              "string"
+            ]
+          },
+          "Reason": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source": {
+            "type": [
+              "string"
+            ]
+          },
+          "Status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Decision ID",
+          "Topic",
+          "Decision",
+          "Reason",
+          "Source",
+          "Status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Scale safety features": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Feature ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Capability": {
+            "type": [
+              "string"
+            ]
+          },
+          "Requirement": {
+            "type": [
+              "string"
+            ]
+          },
+          "Data support": {
+            "type": [
+              "string"
+            ]
+          },
+          "Acceptance": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Feature ID",
+          "Capability",
+          "Requirement",
+          "Data support",
+          "Acceptance"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Hybrid feature implications": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Feature ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Capability": {
+            "type": [
+              "string"
+            ]
+          },
+          "Hybrid fields": {
+            "type": [
+              "string"
+            ]
+          },
+          "Acceptance": {
+            "type": [
+              "string"
+            ]
+          },
+          "Owner": {
+            "type": [
+              "string"
+            ]
+          },
+          "Status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Feature ID",
+          "Capability",
+          "Hybrid fields",
+          "Acceptance",
+          "Owner",
+          "Status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Hybrid handoff": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Handoff ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Concern": {
+            "type": [
+              "string"
+            ]
+          },
+          "Inputs": {
+            "type": [
+              "string"
+            ]
+          },
+          "Next use": {
+            "type": [
+              "string"
+            ]
+          },
+          "Acceptance condition": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proposed owner": {
+            "type": [
+              "string"
+            ]
+          },
+          "Status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Reason": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Handoff ID",
+          "Concern",
+          "Inputs",
+          "Next use",
+          "Acceptance condition",
+          "Proposed owner",
+          "Status",
+          "Reason"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Human review prompts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Question ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Question": {
+            "type": [
+              "string"
+            ]
+          },
+          "Expected evidence anchor": {
+            "type": [
+              "string"
+            ]
+          },
+          "Human response": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "Reviewer score 0 to 5": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "Review status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proposed reviewer role": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Question ID",
+          "Question",
+          "Expected evidence anchor",
+          "Human response",
+          "Reviewer score 0 to 5",
+          "Review status",
+          "Proposed reviewer role"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Acceptance cases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Case ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Case": {
+            "type": [
+              "string"
+            ]
+          },
+          "Expected result": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proof layer": {
+            "type": [
+              "string"
+            ]
+          },
+          "Status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Owner": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Case ID",
+          "Case",
+          "Expected result",
+          "Proof layer",
+          "Status",
+          "Owner"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "Features",
+    "Competitor matrix",
+    "Discovery decisions",
+    "Scale safety features",
+    "Hybrid feature implications",
+    "Hybrid handoff",
+    "Human review prompts",
+    "Acceptance cases"
+  ],
+  "additionalProperties": false
+}

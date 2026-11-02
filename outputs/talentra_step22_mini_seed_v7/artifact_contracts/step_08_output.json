@@ -1,0 +1,1447 @@
+{
+  "title": "Step8 Output Document",
+  "type": "object",
+  "properties": {
+    "States": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Entity": {
+            "type": [
+              "string"
+            ]
+          },
+          "State": {
+            "type": [
+              "string"
+            ]
+          },
+          "State role": {
+            "type": [
+              "string"
+            ]
+          },
+          "Exit rule": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Entity",
+          "State",
+          "State role",
+          "Exit rule",
+          "Source"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Transitions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Transition ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Entity": {
+            "type": [
+              "string"
+            ]
+          },
+          "From state": {
+            "type": [
+              "string"
+            ]
+          },
+          "To state": {
+            "type": [
+              "string"
+            ]
+          },
+          "Actor": {
+            "type": [
+              "string"
+            ]
+          },
+          "Guard": {
+            "type": [
+              "string"
+            ]
+          },
+          "Postcondition": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Transition ID",
+          "Entity",
+          "From state",
+          "To state",
+          "Actor",
+          "Guard",
+          "Postcondition",
+          "Source"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Illegal transitions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Entity": {
+            "type": [
+              "string"
+            ]
+          },
+          "From state": {
+            "type": [
+              "string"
+            ]
+          },
+          "To state": {
+            "type": [
+              "string"
+            ]
+          },
+          "Expected": {
+            "type": [
+              "string"
+            ]
+          },
+          "Reason": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Entity",
+          "From state",
+          "To state",
+          "Expected",
+          "Reason"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Integration state machine": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "From": {
+            "type": [
+              "string"
+            ]
+          },
+          "To": {
+            "type": [
+              "string"
+            ]
+          },
+          "Guard": {
+            "type": [
+              "string"
+            ]
+          },
+          "Owner": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proof boundary": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "From",
+          "To",
+          "Guard",
+          "Owner",
+          "Proof boundary"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T089 Workbook introduction": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Pattern": {
+            "type": [
+              "string"
+            ]
+          },
+          "Entities": {
+            "type": [
+              "string"
+            ]
+          },
+          "Why": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Pattern",
+          "Entities",
+          "Why",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T090 Workbook introduction": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "#": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Entity": {
+            "type": [
+              "string"
+            ]
+          },
+          "States": {
+            "type": [
+              "integer",
+              "string"
+            ]
+          },
+          "Transitions": {
+            "type": [
+              "integer",
+              "string"
+            ]
+          },
+          "Final states": {
+            "type": [
+              "string"
+            ]
+          },
+          "Enforced today": {
+            "type": [
+              "string"
+            ]
+          },
+          "Findings": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "#",
+          "Entity",
+          "States",
+          "Transitions",
+          "Final states",
+          "Enforced today",
+          "Findings",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T091 Workbook introduction": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Assumption": {
+            "type": [
+              "string"
+            ]
+          },
+          "Where": {
+            "type": [
+              "string"
+            ]
+          },
+          "Question for the client": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "ID",
+          "Assumption",
+          "Where",
+          "Question for the client",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T092 1. ENT-26 Application — application.": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "From": {
+            "type": [
+              "string"
+            ]
+          },
+          "To": {
+            "type": [
+              "string"
+            ]
+          },
+          "Triggered by": {
+            "type": [
+              "string"
+            ]
+          },
+          "Guard": {
+            "type": [
+              "string"
+            ]
+          },
+          "Side effects": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "From",
+          "To",
+          "Triggered by",
+          "Guard",
+          "Side effects",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T093 1. ENT-26 Application — application.": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Test": {
+            "type": [
+              "string"
+            ]
+          },
+          "Attempt": {
+            "type": [
+              "string"
+            ]
+          },
+          "Expected": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Test",
+          "Attempt",
+          "Expected",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T094 2. ENT-22 Job requirement — job_requ": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "From": {
+            "type": [
+              "string"
+            ]
+          },
+          "To": {
+            "type": [
+              "string"
+            ]
+          },
+          "Triggered by": {
+            "type": [
+              "string"
+            ]
+          },
+          "Guard": {
+            "type": [
+              "string"
+            ]
+          },
+          "Side effects": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "From",
+          "To",
+          "Triggered by",
+          "Guard",
+          "Side effects",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T095 2. ENT-22 Job requirement — job_requ": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Test": {
+            "type": [
+              "string"
+            ]
+          },
+          "Attempt": {
+            "type": [
+              "string"
+            ]
+          },
+          "Expected": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Test",
+          "Attempt",
+          "Expected",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T096 3. ENT-10 Organisation verification ": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "From": {
+            "type": [
+              "string"
+            ]
+          },
+          "To": {
+            "type": [
+              "string"
+            ]
+          },
+          "Triggered by": {
+            "type": [
+              "string"
+            ]
+          },
+          "Guard": {
+            "type": [
+              "string"
+            ]
+          },
+          "Side effects": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "From",
+          "To",
+          "Triggered by",
+          "Guard",
+          "Side effects",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T097 3. ENT-10 Organisation verification ": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Test": {
+            "type": [
+              "string"
+            ]
+          },
+          "Attempt": {
+            "type": [
+              "string"
+            ]
+          },
+          "Expected": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Test",
+          "Attempt",
+          "Expected",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T098 4. ENT-12 Tax identifier verificatio": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Test": {
+            "type": [
+              "string"
+            ]
+          },
+          "Attempt": {
+            "type": [
+              "string"
+            ]
+          },
+          "Expected": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Test",
+          "Attempt",
+          "Expected",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T099 5. ENT-01 User account — app_user.ac": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "From": {
+            "type": [
+              "string"
+            ]
+          },
+          "To": {
+            "type": [
+              "string"
+            ]
+          },
+          "Triggered by": {
+            "type": [
+              "string"
+            ]
+          },
+          "Guard": {
+            "type": [
+              "string"
+            ]
+          },
+          "Side effects": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "From",
+          "To",
+          "Triggered by",
+          "Guard",
+          "Side effects",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T100 5. ENT-01 User account — app_user.ac": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Test": {
+            "type": [
+              "string"
+            ]
+          },
+          "Attempt": {
+            "type": [
+              "string"
+            ]
+          },
+          "Expected": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Test",
+          "Attempt",
+          "Expected",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T101 6. ENT-34 Payment order — payment_or": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "From": {
+            "type": [
+              "string"
+            ]
+          },
+          "To": {
+            "type": [
+              "string"
+            ]
+          },
+          "Triggered by": {
+            "type": [
+              "string"
+            ]
+          },
+          "Guard": {
+            "type": [
+              "string"
+            ]
+          },
+          "Side effects": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "From",
+          "To",
+          "Triggered by",
+          "Guard",
+          "Side effects",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T102 6. ENT-34 Payment order — payment_or": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Test": {
+            "type": [
+              "string"
+            ]
+          },
+          "Attempt": {
+            "type": [
+              "string"
+            ]
+          },
+          "Expected": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Test",
+          "Attempt",
+          "Expected",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T103 7. ENT-31 Subscription — derived fro": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "State": {
+            "type": [
+              "string"
+            ]
+          },
+          "Condition": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "State",
+          "Condition",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T104 7. ENT-31 Subscription — derived fro": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Test": {
+            "type": [
+              "string"
+            ]
+          },
+          "Attempt": {
+            "type": [
+              "string"
+            ]
+          },
+          "Expected": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Test",
+          "Attempt",
+          "Expected",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T105 8. ENT-09 Session — derived from end": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Test": {
+            "type": [
+              "string"
+            ]
+          },
+          "Attempt": {
+            "type": [
+              "string"
+            ]
+          },
+          "Expected": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Test",
+          "Attempt",
+          "Expected",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T106 9. ENT-08 Device — derived from revo": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Test": {
+            "type": [
+              "string"
+            ]
+          },
+          "Attempt": {
+            "type": [
+              "string"
+            ]
+          },
+          "Expected": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Test",
+          "Attempt",
+          "Expected",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T107 10. ENT-13 Membership and 11. ENT-20": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Entity": {
+            "type": [
+              "string"
+            ]
+          },
+          "States": {
+            "type": [
+              "string"
+            ]
+          },
+          "Transition": {
+            "type": [
+              "string"
+            ]
+          },
+          "Re-entry": {
+            "type": [
+              "string"
+            ]
+          },
+          "Enforced": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Entity",
+          "States",
+          "Transition",
+          "Re-entry",
+          "Enforced",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T108 10. ENT-13 Membership and 11. ENT-20": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Test": {
+            "type": [
+              "string"
+            ]
+          },
+          "Attempt": {
+            "type": [
+              "string"
+            ]
+          },
+          "Expected": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Test",
+          "Attempt",
+          "Expected",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T109 12. ENT-39 Notification — notificati": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Test": {
+            "type": [
+              "string"
+            ]
+          },
+          "Attempt": {
+            "type": [
+              "string"
+            ]
+          },
+          "Expected": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Test",
+          "Attempt",
+          "Expected",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T110 13. ENT-33 Ledger entry and 14. ENT-": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Entity": {
+            "type": [
+              "string"
+            ]
+          },
+          "Every state reachable": {
+            "type": [
+              "string"
+            ]
+          },
+          "Every non-final state has a way out": {
+            "type": [
+              "string"
+            ]
+          },
+          "Final states marked": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Entity",
+          "Every state reachable",
+          "Every non-final state has a way out",
+          "Final states marked",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Cross-source comparison": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Comparison ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Step": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Decision or field": {
+            "type": [
+              "string"
+            ]
+          },
+          "A value": {
+            "type": [
+              "string"
+            ]
+          },
+          "B value": {
+            "type": [
+              "string"
+            ]
+          },
+          "Agreement": {
+            "type": [
+              "string"
+            ]
+          },
+          "B locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Hybrid conclusion": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Comparison ID",
+          "Step",
+          "Decision or field",
+          "A value",
+          "B value",
+          "Agreement",
+          "B locator",
+          "Hybrid conclusion"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Hybrid handoff": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Handoff ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Concern": {
+            "type": [
+              "string"
+            ]
+          },
+          "Inputs": {
+            "type": [
+              "string"
+            ]
+          },
+          "Next use": {
+            "type": [
+              "string"
+            ]
+          },
+          "Acceptance condition": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proposed owner": {
+            "type": [
+              "string"
+            ]
+          },
+          "Status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Reason": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Handoff ID",
+          "Concern",
+          "Inputs",
+          "Next use",
+          "Acceptance condition",
+          "Proposed owner",
+          "Status",
+          "Reason"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Human review prompts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Question ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Question": {
+            "type": [
+              "string"
+            ]
+          },
+          "Expected evidence anchor": {
+            "type": [
+              "string"
+            ]
+          },
+          "Human response": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "Reviewer score 0 to 5": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "Review status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proposed reviewer role": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Question ID",
+          "Question",
+          "Expected evidence anchor",
+          "Human response",
+          "Reviewer score 0 to 5",
+          "Review status",
+          "Proposed reviewer role"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Acceptance cases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Case ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Case": {
+            "type": [
+              "string"
+            ]
+          },
+          "Expected result": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proof layer": {
+            "type": [
+              "string"
+            ]
+          },
+          "Status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Owner": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Case ID",
+          "Case",
+          "Expected result",
+          "Proof layer",
+          "Status",
+          "Owner"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "States",
+    "Transitions",
+    "Illegal transitions",
+    "Integration state machine",
+    "B T089 Workbook introduction",
+    "B T090 Workbook introduction",
+    "B T091 Workbook introduction",
+    "B T092 1. ENT-26 Application — application.",
+    "B T093 1. ENT-26 Application — application.",
+    "B T094 2. ENT-22 Job requirement — job_requ",
+    "B T095 2. ENT-22 Job requirement — job_requ",
+    "B T096 3. ENT-10 Organisation verification ",
+    "B T097 3. ENT-10 Organisation verification ",
+    "B T098 4. ENT-12 Tax identifier verificatio",
+    "B T099 5. ENT-01 User account — app_user.ac",
+    "B T100 5. ENT-01 User account — app_user.ac",
+    "B T101 6. ENT-34 Payment order — payment_or",
+    "B T102 6. ENT-34 Payment order — payment_or",
+    "B T103 7. ENT-31 Subscription — derived fro",
+    "B T104 7. ENT-31 Subscription — derived fro",
+    "B T105 8. ENT-09 Session — derived from end",
+    "B T106 9. ENT-08 Device — derived from revo",
+    "B T107 10. ENT-13 Membership and 11. ENT-20",
+    "B T108 10. ENT-13 Membership and 11. ENT-20",
+    "B T109 12. ENT-39 Notification — notificati",
+    "B T110 13. ENT-33 Ledger entry and 14. ENT-",
+    "Cross-source comparison",
+    "Hybrid handoff",
+    "Human review prompts",
+    "Acceptance cases"
+  ],
+  "additionalProperties": false
+}

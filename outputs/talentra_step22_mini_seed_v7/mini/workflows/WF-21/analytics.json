@@ -1,0 +1,22 @@
+{
+  "version": "mini",
+  "set_id": "mini-WF-21",
+  "workflow_id": "WF-21",
+  "workflow": "Interview and employer decision",
+  "group": "Hiring decisions",
+  "case_count": 6,
+  "accepted_examples": 1,
+  "refused_or_duplicate": 5,
+  "step_example_rows": 6,
+  "defined_steps": 6,
+  "covered_steps": 6,
+  "outcomes": {
+    "ACCEPTED_EXAMPLE": 1,
+    "CROSS_ACCOUNT": 1,
+    "MISSING_REQUIRED": 1,
+    "BLOCKED_SUBJECT": 1,
+    "DUPLICATE_NO_SECOND_EFFECT": 1,
+    "STALE_VERSION": 1
+  },
+  "scope": "Workflow envelope fixtures and examples. No endpoint, database transaction, or external provider was invoked."
+}

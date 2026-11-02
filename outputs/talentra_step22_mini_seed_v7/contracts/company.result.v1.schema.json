@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:talentra:company.result.v1",
+  "title": "company.result.v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "event_id",
+    "correlation_id",
+    "schema_version",
+    "occurred_at",
+    "source_version",
+    "organisation_id",
+    "provider_token",
+    "outcome_code",
+    "verified_at"
+  ],
+  "properties": {
+    "event_id": {
+      "type": "string",
+      "description": "Globally unique producer event key within contract",
+      "maxLength": 255
+    },
+    "correlation_id": {
+      "type": "string",
+      "description": "Safe trace correlation key",
+      "maxLength": 255
+    },
+    "schema_version": {
+      "type": "integer",
+      "description": "Positive exact supported contract version",
+      "minimum": 0
+    },
+    "occurred_at": {
+      "type": "string",
+      "description": "UTC ISO8601 source timestamp",
+      "maxLength": 255,
+      "format": "date-time"
+    },
+    "source_version": {
+      "type": "integer",
+      "description": "Monotonic aggregate version",
+      "minimum": 0
+    },
+    "organisation_id": {
+      "type": "integer",
+      "description": "Organisation correlation",
+      "minimum": 0
+    },
+    "provider_token": {
+      "type": "string",
+      "description": "Opaque verification reference",
+      "maxLength": 255
+    },
+    "outcome_code": {
+      "type": "string",
+      "description": "Outcome mapping",
+      "maxLength": 255
+    },
+    "verified_at": {
+      "type": "string",
+      "description": "UTC decision timestamp",
+      "maxLength": 255,
+      "format": "date-time"
+    }
+  }
+}

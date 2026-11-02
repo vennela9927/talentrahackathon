@@ -1,0 +1,2299 @@
+{
+  "title": "Step22 Output Document",
+  "type": "object",
+  "properties": {
+    "Integration catalogue": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Contract ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Contract key": {
+            "type": [
+              "string"
+            ]
+          },
+          "Boundary ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Direction": {
+            "type": [
+              "string"
+            ]
+          },
+          "Owner": {
+            "type": [
+              "string"
+            ]
+          },
+          "Status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Transport": {
+            "type": [
+              "string"
+            ]
+          },
+          "Payload limit": {
+            "type": [
+              "string"
+            ]
+          },
+          "Field count": {
+            "type": [
+              "integer"
+            ]
+          },
+          "JSON Schema file": {
+            "type": [
+              "string"
+            ]
+          },
+          "Schema SHA256": {
+            "type": [
+              "string"
+            ]
+          },
+          "Priority": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Contract ID",
+          "Contract key",
+          "Boundary ID",
+          "Direction",
+          "Owner",
+          "Status",
+          "Transport",
+          "Payload limit",
+          "Field count",
+          "JSON Schema file",
+          "Schema SHA256",
+          "Priority"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Source target mapping": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Mapping ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Contract ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Direction": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source path": {
+            "type": [
+              "string"
+            ]
+          },
+          "Target or disposition": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source type": {
+            "type": [
+              "string"
+            ]
+          },
+          "Required": {
+            "type": [
+              "string"
+            ]
+          },
+          "Transformation and validation": {
+            "type": [
+              "string"
+            ]
+          },
+          "Conflict ownership": {
+            "type": [
+              "string"
+            ]
+          },
+          "Owner": {
+            "type": [
+              "string"
+            ]
+          },
+          "Class": {
+            "type": [
+              "string"
+            ]
+          },
+          "Failure behaviour": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Mapping ID",
+          "Contract ID",
+          "Direction",
+          "Source path",
+          "Target or disposition",
+          "Source type",
+          "Required",
+          "Transformation and validation",
+          "Conflict ownership",
+          "Owner",
+          "Class",
+          "Failure behaviour",
+          "Source"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Failure policy": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Policy ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Failure": {
+            "type": [
+              "string"
+            ]
+          },
+          "Outcome": {
+            "type": [
+              "string"
+            ]
+          },
+          "Retry": {
+            "type": [
+              "string"
+            ]
+          },
+          "Owner": {
+            "type": [
+              "string"
+            ]
+          },
+          "Invariant": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Policy ID",
+          "Failure",
+          "Outcome",
+          "Retry",
+          "Owner",
+          "Invariant",
+          "Evidence"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Source ownership": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Boundary ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Boundary": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source of truth": {
+            "type": [
+              "string"
+            ]
+          },
+          "Stored versus referenced": {
+            "type": [
+              "string"
+            ]
+          },
+          "Failure behaviour": {
+            "type": [
+              "string"
+            ]
+          },
+          "Idempotency": {
+            "type": [
+              "string"
+            ]
+          },
+          "Audit": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Boundary ID",
+          "Boundary",
+          "Source of truth",
+          "Stored versus referenced",
+          "Failure behaviour",
+          "Idempotency",
+          "Audit",
+          "Source"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Compatibility and rollout": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Control": {
+            "type": [
+              "string"
+            ]
+          },
+          "Policy": {
+            "type": [
+              "string"
+            ]
+          },
+          "Owner": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proof": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Control",
+          "Policy",
+          "Owner",
+          "Proof"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Production release gates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Gate ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Concern": {
+            "type": [
+              "string"
+            ]
+          },
+          "Required evidence": {
+            "type": [
+              "string"
+            ]
+          },
+          "Owner": {
+            "type": [
+              "string"
+            ]
+          },
+          "Status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Reason": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Gate ID",
+          "Concern",
+          "Required evidence",
+          "Owner",
+          "Status",
+          "Reason"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T017 6. Integration boundaries (docket se": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Boundary": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source of truth": {
+            "type": [
+              "string"
+            ]
+          },
+          "Stored vs referenced": {
+            "type": [
+              "string"
+            ]
+          },
+          "When it is down": {
+            "type": [
+              "string"
+            ]
+          },
+          "Idempotency": {
+            "type": [
+              "string"
+            ]
+          },
+          "Audit": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Boundary",
+          "Source of truth",
+          "Stored vs referenced",
+          "When it is down",
+          "Idempotency",
+          "Audit",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Cross-source comparison": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Comparison ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Step": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Decision or field": {
+            "type": [
+              "string"
+            ]
+          },
+          "A value": {
+            "type": [
+              "string"
+            ]
+          },
+          "B value": {
+            "type": [
+              "string"
+            ]
+          },
+          "Agreement": {
+            "type": [
+              "string"
+            ]
+          },
+          "B locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Hybrid conclusion": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Comparison ID",
+          "Step",
+          "Decision or field",
+          "A value",
+          "B value",
+          "Agreement",
+          "B locator",
+          "Hybrid conclusion"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Hybrid handoff": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Handoff ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Concern": {
+            "type": [
+              "string"
+            ]
+          },
+          "Inputs": {
+            "type": [
+              "string"
+            ]
+          },
+          "Next use": {
+            "type": [
+              "string"
+            ]
+          },
+          "Acceptance condition": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proposed owner": {
+            "type": [
+              "string"
+            ]
+          },
+          "Status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Reason": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Handoff ID",
+          "Concern",
+          "Inputs",
+          "Next use",
+          "Acceptance condition",
+          "Proposed owner",
+          "Status",
+          "Reason"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Human review prompts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Question ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Question": {
+            "type": [
+              "string"
+            ]
+          },
+          "Expected evidence anchor": {
+            "type": [
+              "string"
+            ]
+          },
+          "Human response": {
+            "type": [
+              "null"
+            ]
+          },
+          "Reviewer score 0 to 5": {
+            "type": [
+              "null"
+            ]
+          },
+          "Review status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proposed reviewer role": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Question ID",
+          "Question",
+          "Expected evidence anchor",
+          "Human response",
+          "Reviewer score 0 to 5",
+          "Review status",
+          "Proposed reviewer role"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Acceptance cases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Case ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Case": {
+            "type": [
+              "string"
+            ]
+          },
+          "Expected result": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proof layer": {
+            "type": [
+              "string"
+            ]
+          },
+          "Status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Owner": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Case ID",
+          "Case",
+          "Expected result",
+          "Proof layer",
+          "Status",
+          "Owner"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Business definitions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Term": {
+            "type": [
+              "string"
+            ]
+          },
+          "Meaning": {
+            "type": [
+              "string"
+            ]
+          },
+          "Grain or rule": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Term",
+          "Meaning",
+          "Grain or rule",
+          "Source"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Job taxonomy": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Family code": {
+            "type": [
+              "string"
+            ]
+          },
+          "Collar": {
+            "type": [
+              "string"
+            ]
+          },
+          "Business branch": {
+            "type": [
+              "string"
+            ]
+          },
+          "Function": {
+            "type": [
+              "string"
+            ]
+          },
+          "Cohort share": {
+            "type": [
+              "number"
+            ]
+          },
+          "Allowed engagements": {
+            "type": [
+              "string"
+            ]
+          },
+          "Status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Family code",
+          "Collar",
+          "Business branch",
+          "Function",
+          "Cohort share",
+          "Allowed engagements",
+          "Status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Hiring funnel": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Stage": {
+            "type": [
+              "string"
+            ]
+          },
+          "Business meaning": {
+            "type": [
+              "string"
+            ]
+          },
+          "Generated count": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Denominator stage": {
+            "type": [
+              "string"
+            ]
+          },
+          "Denominator count": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Conversion rate": {
+            "type": [
+              "number"
+            ]
+          },
+          "Decision owner": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Stage",
+          "Business meaning",
+          "Generated count",
+          "Denominator stage",
+          "Denominator count",
+          "Conversion rate",
+          "Decision owner",
+          "Evidence"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Family funnel assumptions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Family": {
+            "type": [
+              "string"
+            ]
+          },
+          "Population share": {
+            "type": [
+              "number"
+            ]
+          },
+          "Screen pass rate": {
+            "type": [
+              "number"
+            ]
+          },
+          "Apply rate": {
+            "type": [
+              "number"
+            ]
+          },
+          "Shortlist rate": {
+            "type": [
+              "number"
+            ]
+          },
+          "Assessment completion": {
+            "type": [
+              "number"
+            ]
+          },
+          "Interview completion": {
+            "type": [
+              "number"
+            ]
+          },
+          "Selection rate": {
+            "type": [
+              "number"
+            ]
+          },
+          "Offer issue rate": {
+            "type": [
+              "number"
+            ]
+          },
+          "Offer acceptance": {
+            "type": [
+              "number"
+            ]
+          },
+          "Onboarding rate": {
+            "type": [
+              "number"
+            ]
+          },
+          "Basis": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Family",
+          "Population share",
+          "Screen pass rate",
+          "Apply rate",
+          "Shortlist rate",
+          "Assessment completion",
+          "Interview completion",
+          "Selection rate",
+          "Offer issue rate",
+          "Offer acceptance",
+          "Onboarding rate",
+          "Basis"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Family funnel counts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Family": {
+            "type": [
+              "string"
+            ]
+          },
+          "searched": {
+            "type": [
+              "integer"
+            ]
+          },
+          "screened": {
+            "type": [
+              "integer"
+            ]
+          },
+          "applied": {
+            "type": [
+              "integer"
+            ]
+          },
+          "shortlisted": {
+            "type": [
+              "integer"
+            ]
+          },
+          "assessed": {
+            "type": [
+              "integer"
+            ]
+          },
+          "interviewed": {
+            "type": [
+              "integer"
+            ]
+          },
+          "selected": {
+            "type": [
+              "integer"
+            ]
+          },
+          "rejected": {
+            "type": [
+              "integer"
+            ]
+          },
+          "offered": {
+            "type": [
+              "integer"
+            ]
+          },
+          "accepted": {
+            "type": [
+              "integer"
+            ]
+          },
+          "offer_declined": {
+            "type": [
+              "integer"
+            ]
+          },
+          "onboarded": {
+            "type": [
+              "integer"
+            ]
+          }
+        },
+        "required": [
+          "Family",
+          "searched",
+          "screened",
+          "applied",
+          "shortlisted",
+          "assessed",
+          "interviewed",
+          "selected",
+          "rejected",
+          "offered",
+          "accepted",
+          "offer_declined",
+          "onboarded"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Business KPI register": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "KPI ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "KPI": {
+            "type": [
+              "string"
+            ]
+          },
+          "Formula": {
+            "type": [
+              "string"
+            ]
+          },
+          "Numerator": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Denominator": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Synthetic value": {
+            "type": [
+              "number"
+            ]
+          },
+          "Unit": {
+            "type": [
+              "string"
+            ]
+          },
+          "Grain and cohort": {
+            "type": [
+              "string"
+            ]
+          },
+          "Dimensions": {
+            "type": [
+              "string"
+            ]
+          },
+          "Null and exclusion rule": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence file": {
+            "type": [
+              "string"
+            ]
+          },
+          "Owner": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "KPI ID",
+          "KPI",
+          "Formula",
+          "Numerator",
+          "Denominator",
+          "Synthetic value",
+          "Unit",
+          "Grain and cohort",
+          "Dimensions",
+          "Null and exclusion rule",
+          "Evidence file",
+          "Owner"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Actor workflows": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Workflow ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Actor": {
+            "type": [
+              "string"
+            ]
+          },
+          "Sequence": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Trigger or action": {
+            "type": [
+              "string"
+            ]
+          },
+          "Business workflow": {
+            "type": [
+              "string"
+            ]
+          },
+          "Associated data elements": {
+            "type": [
+              "string"
+            ]
+          },
+          "Guard and refusal rule": {
+            "type": [
+              "string"
+            ]
+          },
+          "Scenario ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Related KPIs": {
+            "type": [
+              "string"
+            ]
+          },
+          "Output and audit": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proof status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Workflow ID",
+          "Actor",
+          "Sequence",
+          "Trigger or action",
+          "Business workflow",
+          "Associated data elements",
+          "Guard and refusal rule",
+          "Scenario ID",
+          "Related KPIs",
+          "Output and audit",
+          "Proof status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Business scenario catalogue": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Scenario ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Scenario": {
+            "type": [
+              "string"
+            ]
+          },
+          "Business what": {
+            "type": [
+              "string"
+            ]
+          },
+          "Data grain": {
+            "type": [
+              "string"
+            ]
+          },
+          "Associated entities": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence and boundary": {
+            "type": [
+              "string"
+            ]
+          },
+          "Related KPI": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Scenario ID",
+          "Scenario",
+          "Business what",
+          "Data grain",
+          "Associated entities",
+          "Evidence and boundary",
+          "Related KPI"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Native schema gap register": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Gap ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Concern": {
+            "type": [
+              "string"
+            ]
+          },
+          "Existing support": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proposed addition or treatment": {
+            "type": [
+              "string"
+            ]
+          },
+          "Affected steps": {
+            "type": [
+              "string"
+            ]
+          },
+          "Status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Gap ID",
+          "Concern",
+          "Existing support",
+          "Proposed addition or treatment",
+          "Affected steps",
+          "Status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Mentor source field mapping": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Mapping ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Contract ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source file": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source field": {
+            "type": [
+              "string"
+            ]
+          },
+          "Canonical type": {
+            "type": [
+              "string"
+            ]
+          },
+          "Required non-null": {
+            "type": [
+              "boolean"
+            ]
+          },
+          "Target or disposition": {
+            "type": [
+              "string"
+            ]
+          },
+          "Target status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Owner": {
+            "type": [
+              "string"
+            ]
+          },
+          "Transform": {
+            "type": [
+              "string"
+            ]
+          },
+          "Replay and lateness rule": {
+            "type": [
+              "string"
+            ]
+          },
+          "Failure treatment": {
+            "type": [
+              "string"
+            ]
+          },
+          "Classification": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Mapping ID",
+          "Contract ID",
+          "Source file",
+          "Source field",
+          "Canonical type",
+          "Required non-null",
+          "Target or disposition",
+          "Target status",
+          "Owner",
+          "Transform",
+          "Replay and lateness rule",
+          "Failure treatment",
+          "Classification"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Dataset inventory": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Dataset": {
+            "type": [
+              "string"
+            ]
+          },
+          "File": {
+            "type": [
+              "string"
+            ]
+          },
+          "Rows": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Bytes": {
+            "type": [
+              "integer"
+            ]
+          },
+          "SHA256": {
+            "type": [
+              "string"
+            ]
+          },
+          "Grain": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence scope": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Dataset",
+          "File",
+          "Rows",
+          "Bytes",
+          "SHA256",
+          "Grain",
+          "Evidence scope"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Generated journey sample": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "journey_id": {
+            "type": [
+              "integer"
+            ]
+          },
+          "candidate_profile_id": {
+            "type": [
+              "integer"
+            ]
+          },
+          "job_requirement_id": {
+            "type": [
+              "integer"
+            ]
+          },
+          "organisation_id": {
+            "type": [
+              "integer"
+            ]
+          },
+          "application_id": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "job_family_code": {
+            "type": [
+              "string"
+            ]
+          },
+          "engagement_type": {
+            "type": [
+              "string"
+            ]
+          },
+          "source_channel": {
+            "type": [
+              "string"
+            ]
+          },
+          "cohort_code": {
+            "type": [
+              "string"
+            ]
+          },
+          "current_stage": {
+            "type": [
+              "string"
+            ]
+          },
+          "snapshot_at": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "journey_id",
+          "candidate_profile_id",
+          "job_requirement_id",
+          "organisation_id",
+          "application_id",
+          "job_family_code",
+          "engagement_type",
+          "source_channel",
+          "cohort_code",
+          "current_stage",
+          "snapshot_at"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Generated gig sample": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "gig_application_id": {
+            "type": [
+              "integer"
+            ]
+          },
+          "gig_request_id": {
+            "type": [
+              "integer"
+            ]
+          },
+          "gig_worker_profile_id": {
+            "type": [
+              "integer"
+            ]
+          },
+          "requester_organisation_id": {
+            "type": [
+              "integer"
+            ]
+          },
+          "job_family_code": {
+            "type": [
+              "string"
+            ]
+          },
+          "status_code": {
+            "type": [
+              "string"
+            ]
+          },
+          "start_at": {
+            "type": [
+              "string"
+            ]
+          },
+          "end_at": {
+            "type": [
+              "string"
+            ]
+          },
+          "assignment_id": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "handoff_key": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "provider_status": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "estimated_amount": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "total_amount": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "projected_amount": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "currency_code": {
+            "type": [
+              "string"
+            ]
+          },
+          "requester_rating": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "is_synthetic": {
+            "type": [
+              "boolean"
+            ]
+          }
+        },
+        "required": [
+          "gig_application_id",
+          "gig_request_id",
+          "gig_worker_profile_id",
+          "requester_organisation_id",
+          "job_family_code",
+          "status_code",
+          "start_at",
+          "end_at",
+          "assignment_id",
+          "handoff_key",
+          "provider_status",
+          "estimated_amount",
+          "total_amount",
+          "projected_amount",
+          "currency_code",
+          "requester_rating",
+          "is_synthetic"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Source failure scenarios": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Case": {
+            "type": [
+              "string"
+            ]
+          },
+          "Detection": {
+            "type": [
+              "string"
+            ]
+          },
+          "Treatment": {
+            "type": [
+              "string"
+            ]
+          },
+          "Owner": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Case",
+          "Detection",
+          "Treatment",
+          "Owner",
+          "Evidence"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Mentor negative test evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Test ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Case": {
+            "type": [
+              "string"
+            ]
+          },
+          "Expected": {
+            "type": [
+              "string"
+            ]
+          },
+          "Actual": {
+            "type": [
+              "string"
+            ]
+          },
+          "Result": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proof layer": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Test ID",
+          "Case",
+          "Expected",
+          "Actual",
+          "Result",
+          "Proof layer"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Two dataset versions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Version": {
+            "type": [
+              "string"
+            ]
+          },
+          "Purpose": {
+            "type": [
+              "string"
+            ]
+          },
+          "Hiring journeys": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Applications": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Gig applications": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Workflow sets": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Scope": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Version",
+          "Purpose",
+          "Hiring journeys",
+          "Applications",
+          "Gig applications",
+          "Workflow sets",
+          "Scope"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "27 actor contexts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Actor ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Actor": {
+            "type": [
+              "string"
+            ]
+          },
+          "Kind": {
+            "type": [
+              "string"
+            ]
+          },
+          "Parent context": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "Purpose": {
+            "type": [
+              "string"
+            ]
+          },
+          "Scope": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source": {
+            "type": [
+              "string"
+            ]
+          },
+          "Status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Actor ID",
+          "Actor",
+          "Kind",
+          "Parent context",
+          "Purpose",
+          "Scope",
+          "Source",
+          "Status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "27 smaller workflows": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Workflow ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Workflow": {
+            "type": [
+              "string"
+            ]
+          },
+          "Group": {
+            "type": [
+              "string"
+            ]
+          },
+          "Primary actor": {
+            "type": [
+              "string"
+            ]
+          },
+          "Trigger": {
+            "type": [
+              "string"
+            ]
+          },
+          "Business sequence": {
+            "type": [
+              "string"
+            ]
+          },
+          "Step count": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Participating actor IDs": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source": {
+            "type": [
+              "string"
+            ]
+          },
+          "Status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Workflow ID",
+          "Workflow",
+          "Group",
+          "Primary actor",
+          "Trigger",
+          "Business sequence",
+          "Step count",
+          "Participating actor IDs",
+          "Source",
+          "Status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "168 workflow operations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Step ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Workflow ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Sequence": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Actor ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Actor": {
+            "type": [
+              "string"
+            ]
+          },
+          "Action": {
+            "type": [
+              "string"
+            ]
+          },
+          "Associated data elements": {
+            "type": [
+              "string"
+            ]
+          },
+          "Target entity or context": {
+            "type": [
+              "string"
+            ]
+          },
+          "Rules": {
+            "type": [
+              "string"
+            ]
+          },
+          "Failure treatment": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source": {
+            "type": [
+              "string"
+            ]
+          },
+          "Status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Native proof": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Step ID",
+          "Workflow ID",
+          "Sequence",
+          "Actor ID",
+          "Actor",
+          "Action",
+          "Associated data elements",
+          "Target entity or context",
+          "Rules",
+          "Failure treatment",
+          "Source",
+          "Status",
+          "Native proof"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "25 scoped business rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Rule ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Rule": {
+            "type": [
+              "string"
+            ]
+          },
+          "Domain": {
+            "type": [
+              "string"
+            ]
+          },
+          "Predicate": {
+            "type": [
+              "string"
+            ]
+          },
+          "Enforcement status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Rule ID",
+          "Rule",
+          "Domain",
+          "Predicate",
+          "Enforcement status",
+          "Source"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Saved data files": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Version": {
+            "type": [
+              "string"
+            ]
+          },
+          "Dataset": {
+            "type": [
+              "string"
+            ]
+          },
+          "File": {
+            "type": [
+              "string"
+            ]
+          },
+          "Rows": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Bytes": {
+            "type": [
+              "integer"
+            ]
+          },
+          "SHA256": {
+            "type": [
+              "string"
+            ]
+          },
+          "Grain": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Version",
+          "Dataset",
+          "File",
+          "Rows",
+          "Bytes",
+          "SHA256",
+          "Grain"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Analytics for every workflow set": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Version": {
+            "type": [
+              "string"
+            ]
+          },
+          "Set ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Workflow ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Workflow": {
+            "type": [
+              "string"
+            ]
+          },
+          "Group": {
+            "type": [
+              "string"
+            ]
+          },
+          "Cases": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Accepted examples": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Refused or duplicate": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Step example rows": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Defined steps": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Covered steps": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Proof scope": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Version",
+          "Set ID",
+          "Workflow ID",
+          "Workflow",
+          "Group",
+          "Cases",
+          "Accepted examples",
+          "Refused or duplicate",
+          "Step example rows",
+          "Defined steps",
+          "Covered steps",
+          "Proof scope"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Saved-file business KPIs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Version": {
+            "type": [
+              "string"
+            ]
+          },
+          "Metric": {
+            "type": [
+              "string"
+            ]
+          },
+          "Numerator": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Denominator": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Value": {
+            "type": [
+              "number",
+              "integer"
+            ]
+          },
+          "Unit": {
+            "type": [
+              "string"
+            ]
+          },
+          "Grain": {
+            "type": [
+              "string"
+            ]
+          },
+          "Selection scope": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Version",
+          "Metric",
+          "Numerator",
+          "Denominator",
+          "Value",
+          "Unit",
+          "Grain",
+          "Selection scope"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "50 portable rule cases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Test ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Rule ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Case": {
+            "type": [
+              "string"
+            ]
+          },
+          "Expected": {
+            "type": [
+              "boolean"
+            ]
+          },
+          "Actual": {
+            "type": [
+              "boolean"
+            ]
+          },
+          "Result": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proof layer": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Test ID",
+          "Rule ID",
+          "Case",
+          "Expected",
+          "Actual",
+          "Result",
+          "Proof layer"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Current split validation": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Check": {
+            "type": [
+              "string"
+            ]
+          },
+          "Observed": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Result": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proof scope": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Check",
+          "Observed",
+          "Result",
+          "Proof scope"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "Integration catalogue",
+    "Source target mapping",
+    "Failure policy",
+    "Source ownership",
+    "Compatibility and rollout",
+    "Production release gates",
+    "B T017 6. Integration boundaries (docket se",
+    "Cross-source comparison",
+    "Hybrid handoff",
+    "Human review prompts",
+    "Acceptance cases",
+    "Business definitions",
+    "Job taxonomy",
+    "Hiring funnel",
+    "Family funnel assumptions",
+    "Family funnel counts",
+    "Business KPI register",
+    "Actor workflows",
+    "Business scenario catalogue",
+    "Native schema gap register",
+    "Mentor source field mapping",
+    "Dataset inventory",
+    "Generated journey sample",
+    "Generated gig sample",
+    "Source failure scenarios",
+    "Mentor negative test evidence",
+    "Two dataset versions",
+    "27 actor contexts",
+    "27 smaller workflows",
+    "168 workflow operations",
+    "25 scoped business rules",
+    "Saved data files",
+    "Analytics for every workflow set",
+    "Saved-file business KPIs",
+    "50 portable rule cases",
+    "Current split validation"
+  ],
+  "additionalProperties": false
+}

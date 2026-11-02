@@ -1,0 +1,693 @@
+{
+  "title": "Step15 Output Document",
+  "type": "object",
+  "properties": {
+    "Contract tests": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Test ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Rule ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Table": {
+            "type": [
+              "string"
+            ]
+          },
+          "Case": {
+            "type": [
+              "string"
+            ]
+          },
+          "Fixture": {
+            "type": [
+              "string"
+            ]
+          },
+          "Expected": {
+            "type": [
+              "string"
+            ]
+          },
+          "Actual": {
+            "type": [
+              "string"
+            ]
+          },
+          "Result": {
+            "type": [
+              "string"
+            ]
+          },
+          "Layer": {
+            "type": [
+              "string"
+            ]
+          },
+          "Requirement ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Run": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Test ID",
+          "Rule ID",
+          "Table",
+          "Case",
+          "Fixture",
+          "Expected",
+          "Actual",
+          "Result",
+          "Layer",
+          "Requirement ID",
+          "Run"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Database subset": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Test ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Rule ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Case": {
+            "type": [
+              "string"
+            ]
+          },
+          "SQL": {
+            "type": [
+              "string"
+            ]
+          },
+          "Expected": {
+            "type": [
+              "string"
+            ]
+          },
+          "Actual": {
+            "type": [
+              "string"
+            ]
+          },
+          "Result": {
+            "type": [
+              "string"
+            ]
+          },
+          "Detail": {
+            "type": [
+              "string"
+            ]
+          },
+          "Limitation": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Test ID",
+          "Rule ID",
+          "Case",
+          "SQL",
+          "Expected",
+          "Actual",
+          "Result",
+          "Detail",
+          "Limitation"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Test coverage": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Rule ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Positive tests": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Negative tests": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Coverage": {
+            "type": [
+              "string"
+            ]
+          },
+          "Runtime boundary": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Rule ID",
+          "Positive tests",
+          "Negative tests",
+          "Coverage",
+          "Runtime boundary"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Execution limits": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Gap ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Workflow": {
+            "type": [
+              "string"
+            ]
+          },
+          "Missing proof": {
+            "type": [
+              "string"
+            ]
+          },
+          "Reason": {
+            "type": [
+              "string"
+            ]
+          },
+          "Owner": {
+            "type": [
+              "string"
+            ]
+          },
+          "Next stage": {
+            "type": [
+              "string"
+            ]
+          },
+          "Status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Gap ID",
+          "Workflow",
+          "Missing proof",
+          "Reason",
+          "Owner",
+          "Next stage",
+          "Status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "V3 portable checks": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Test ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Category": {
+            "type": [
+              "string"
+            ]
+          },
+          "Expected": {
+            "type": [
+              "boolean",
+              "integer",
+              "string"
+            ]
+          },
+          "Actual": {
+            "type": [
+              "boolean",
+              "integer",
+              "string"
+            ]
+          },
+          "Result": {
+            "type": [
+              "string"
+            ]
+          },
+          "Limit": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Test ID",
+          "Category",
+          "Expected",
+          "Actual",
+          "Result",
+          "Limit"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T183 2. Structural and Catalogue Test Cas": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Test ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Rule ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Category": {
+            "type": [
+              "string"
+            ]
+          },
+          "Polarity": {
+            "type": [
+              "string"
+            ]
+          },
+          "Assertion Description": {
+            "type": [
+              "string"
+            ]
+          },
+          "Expected Result": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Test ID",
+          "Rule ID",
+          "Category",
+          "Polarity",
+          "Assertion Description",
+          "Expected Result",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T184 3. Constraint and Domain Positive/Ne": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Test ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Target / Rule": {
+            "type": [
+              "string"
+            ]
+          },
+          "Positive Assertion": {
+            "type": [
+              "string"
+            ]
+          },
+          "Negative Assertion (Rejected)": {
+            "type": [
+              "string"
+            ]
+          },
+          "Expected Error": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Test ID",
+          "Target / Rule",
+          "Positive Assertion",
+          "Negative Assertion (Rejected)",
+          "Expected Error",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T185 4. Seeded Data-Quality Invariants (R": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Invariant": {
+            "type": [
+              "string"
+            ]
+          },
+          "Quality Dimension": {
+            "type": [
+              "string"
+            ]
+          },
+          "Invariant Check Description": {
+            "type": [
+              "string"
+            ]
+          },
+          "Violations": {
+            "type": [
+              "string"
+            ]
+          },
+          "Conformance": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Invariant",
+          "Quality Dimension",
+          "Invariant Check Description",
+          "Violations",
+          "Conformance",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Cross-source comparison": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Comparison ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Step": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Decision or field": {
+            "type": [
+              "string"
+            ]
+          },
+          "A value": {
+            "type": [
+              "string"
+            ]
+          },
+          "B value": {
+            "type": [
+              "string"
+            ]
+          },
+          "Agreement": {
+            "type": [
+              "string"
+            ]
+          },
+          "B locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Hybrid conclusion": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Comparison ID",
+          "Step",
+          "Decision or field",
+          "A value",
+          "B value",
+          "Agreement",
+          "B locator",
+          "Hybrid conclusion"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Hybrid handoff": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Handoff ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Concern": {
+            "type": [
+              "string"
+            ]
+          },
+          "Inputs": {
+            "type": [
+              "string"
+            ]
+          },
+          "Next use": {
+            "type": [
+              "string"
+            ]
+          },
+          "Acceptance condition": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proposed owner": {
+            "type": [
+              "string"
+            ]
+          },
+          "Status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Reason": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Handoff ID",
+          "Concern",
+          "Inputs",
+          "Next use",
+          "Acceptance condition",
+          "Proposed owner",
+          "Status",
+          "Reason"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Human review prompts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Question ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Question": {
+            "type": [
+              "string"
+            ]
+          },
+          "Expected evidence anchor": {
+            "type": [
+              "string"
+            ]
+          },
+          "Human response": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "Reviewer score 0 to 5": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "Review status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proposed reviewer role": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Question ID",
+          "Question",
+          "Expected evidence anchor",
+          "Human response",
+          "Reviewer score 0 to 5",
+          "Review status",
+          "Proposed reviewer role"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Acceptance cases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Case ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Case": {
+            "type": [
+              "string"
+            ]
+          },
+          "Expected result": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proof layer": {
+            "type": [
+              "string"
+            ]
+          },
+          "Status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Owner": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Case ID",
+          "Case",
+          "Expected result",
+          "Proof layer",
+          "Status",
+          "Owner"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "Contract tests",
+    "Database subset",
+    "Test coverage",
+    "Execution limits",
+    "V3 portable checks",
+    "B T183 2. Structural and Catalogue Test Cas",
+    "B T184 3. Constraint and Domain Positive/Ne",
+    "B T185 4. Seeded Data-Quality Invariants (R",
+    "Cross-source comparison",
+    "Hybrid handoff",
+    "Human review prompts",
+    "Acceptance cases"
+  ],
+  "additionalProperties": false
+}

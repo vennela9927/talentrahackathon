@@ -1,0 +1,227 @@
+[
+  {
+    "file": "steps/19_Data_Dictionary_v2/a_Output_Schema_Definition.xlsx",
+    "sheet": "Definition",
+    "preview": "292_a_Output_Schema_Definition_Definition.png"
+  },
+  {
+    "file": "steps/19_Data_Dictionary_v2/a_Output_Schema_Definition.xlsx",
+    "sheet": "Hierarchy",
+    "preview": "293_a_Output_Schema_Definition_Hierarchy.png"
+  },
+  {
+    "file": "steps/19_Data_Dictionary_v2/a_Output_Schema_Definition.xlsx",
+    "sheet": "Decisions",
+    "preview": "294_a_Output_Schema_Definition_Decisions.png"
+  },
+  {
+    "file": "steps/19_Data_Dictionary_v2/b_Schema_Rating_Scorecard.xlsx",
+    "sheet": "Summary",
+    "preview": "295_b_Schema_Rating_Scorecard_Summary.png"
+  },
+  {
+    "file": "steps/19_Data_Dictionary_v2/b_Schema_Rating_Scorecard.xlsx",
+    "sheet": "Ratings",
+    "preview": "296_b_Schema_Rating_Scorecard_Ratings.png"
+  },
+  {
+    "file": "steps/19_Data_Dictionary_v2/b_Schema_Rating_Scorecard.xlsx",
+    "sheet": "Section Ratings",
+    "preview": "297_b_Schema_Rating_Scorecard_Section_Ratings.png"
+  },
+  {
+    "file": "steps/19_Data_Dictionary_v2/b_Schema_Rating_Scorecard.xlsx",
+    "sheet": "Scorecard schema",
+    "preview": "298_b_Schema_Rating_Scorecard_Scorecard_schema.png"
+  },
+  {
+    "file": "steps/19_Data_Dictionary_v2/b_Schema_Rating_Scorecard.xlsx",
+    "sheet": "Method",
+    "preview": "299_b_Schema_Rating_Scorecard_Method.png"
+  },
+  {
+    "file": "steps/19_Data_Dictionary_v2/c_Output_Document.xlsx",
+    "sheet": "Dictionary v3",
+    "preview": "300_c_Output_Document_Dictionary_v3.png"
+  },
+  {
+    "file": "steps/19_Data_Dictionary_v2/c_Output_Document.xlsx",
+    "sheet": "Drift evidence",
+    "preview": "301_c_Output_Document_Drift_evidence.png"
+  },
+  {
+    "file": "steps/19_Data_Dictionary_v2/c_Output_Document.xlsx",
+    "sheet": "Reference bindings",
+    "preview": "302_c_Output_Document_Reference_bindings.png"
+  },
+  {
+    "file": "steps/19_Data_Dictionary_v2/c_Output_Document.xlsx",
+    "sheet": "Privacy register v2",
+    "preview": "303_c_Output_Document_Privacy_register_v2.png"
+  },
+  {
+    "file": "steps/19_Data_Dictionary_v2/c_Output_Document.xlsx",
+    "sheet": "V3 drift evidence",
+    "preview": "304_c_Output_Document_V3_drift_evidence.png"
+  },
+  {
+    "file": "steps/21_Baseline_ER_and_Physical_Model/a_Output_Schema_Definition.xlsx",
+    "sheet": "Definition",
+    "preview": "305_a_Output_Schema_Definition_Definition.png"
+  },
+  {
+    "file": "steps/21_Baseline_ER_and_Physical_Model/a_Output_Schema_Definition.xlsx",
+    "sheet": "Hierarchy",
+    "preview": "306_a_Output_Schema_Definition_Hierarchy.png"
+  },
+  {
+    "file": "steps/21_Baseline_ER_and_Physical_Model/a_Output_Schema_Definition.xlsx",
+    "sheet": "Decisions",
+    "preview": "307_a_Output_Schema_Definition_Decisions.png"
+  },
+  {
+    "file": "steps/21_Baseline_ER_and_Physical_Model/b_Schema_Rating_Scorecard.xlsx",
+    "sheet": "Summary",
+    "preview": "308_b_Schema_Rating_Scorecard_Summary.png"
+  },
+  {
+    "file": "steps/21_Baseline_ER_and_Physical_Model/b_Schema_Rating_Scorecard.xlsx",
+    "sheet": "Ratings",
+    "preview": "309_b_Schema_Rating_Scorecard_Ratings.png"
+  },
+  {
+    "file": "steps/21_Baseline_ER_and_Physical_Model/b_Schema_Rating_Scorecard.xlsx",
+    "sheet": "Section Ratings",
+    "preview": "310_b_Schema_Rating_Scorecard_Section_Ratings.png"
+  },
+  {
+    "file": "steps/21_Baseline_ER_and_Physical_Model/b_Schema_Rating_Scorecard.xlsx",
+    "sheet": "Scorecard schema",
+    "preview": "311_b_Schema_Rating_Scorecard_Scorecard_schema.png"
+  },
+  {
+    "file": "steps/21_Baseline_ER_and_Physical_Model/b_Schema_Rating_Scorecard.xlsx",
+    "sheet": "Method",
+    "preview": "312_b_Schema_Rating_Scorecard_Method.png"
+  },
+  {
+    "file": "steps/21_Baseline_ER_and_Physical_Model/c_Output_Document.xlsx",
+    "sheet": "Physical columns",
+    "preview": "313_c_Output_Document_Physical_columns.png"
+  },
+  {
+    "file": "steps/21_Baseline_ER_and_Physical_Model/c_Output_Document.xlsx",
+    "sheet": "Foreign keys",
+    "preview": "314_c_Output_Document_Foreign_keys.png"
+  },
+  {
+    "file": "steps/21_Baseline_ER_and_Physical_Model/c_Output_Document.xlsx",
+    "sheet": "Indexes",
+    "preview": "315_c_Output_Document_Indexes.png"
+  },
+  {
+    "file": "steps/21_Baseline_ER_and_Physical_Model/c_Output_Document.xlsx",
+    "sheet": "Baseline files",
+    "preview": "316_c_Output_Document_Baseline_files.png"
+  },
+  {
+    "file": "steps/21_Baseline_ER_and_Physical_Model/c_Output_Document.xlsx",
+    "sheet": "Partition strategy",
+    "preview": "317_c_Output_Document_Partition_strategy.png"
+  },
+  {
+    "file": "steps/21_Baseline_ER_and_Physical_Model/c_Output_Document.xlsx",
+    "sheet": "Gate G3",
+    "preview": "318_c_Output_Document_Gate_G3.png"
+  },
+  {
+    "file": "steps/21_Baseline_ER_and_Physical_Model/c_Output_Document.xlsx",
+    "sheet": "Extension columns",
+    "preview": "319_c_Output_Document_Extension_columns.png"
+  },
+  {
+    "file": "steps/21_Baseline_ER_and_Physical_Model/c_Output_Document.xlsx",
+    "sheet": "Release gates",
+    "preview": "320_c_Output_Document_Release_gates.png"
+  },
+  {
+    "file": "steps/21_Baseline_ER_and_Physical_Model/c_Output_Document.xlsx",
+    "sheet": "V3 index candidates",
+    "preview": "321_c_Output_Document_V3_index_candidates.png"
+  },
+  {
+    "file": "Talentra_Combined.xlsx",
+    "sheet": "Combined Rating",
+    "preview": "322_Talentra_Combined_Combined_Rating.png"
+  },
+  {
+    "file": "Talentra_Combined.xlsx",
+    "sheet": "All Ratings",
+    "preview": "323_Talentra_Combined_All_Ratings.png"
+  },
+  {
+    "file": "Talentra_Combined.xlsx",
+    "sheet": "Deliverable Index",
+    "preview": "324_Talentra_Combined_Deliverable_Index.png"
+  },
+  {
+    "file": "Talentra_Combined.xlsx",
+    "sheet": "Phase Ratings",
+    "preview": "325_Talentra_Combined_Phase_Ratings.png"
+  },
+  {
+    "file": "Talentra_Combined.xlsx",
+    "sheet": "Capacity",
+    "preview": "326_Talentra_Combined_Capacity.png"
+  },
+  {
+    "file": "Talentra_Combined.xlsx",
+    "sheet": "Production Gates",
+    "preview": "327_Talentra_Combined_Production_Gates.png"
+  },
+  {
+    "file": "Talentra_Combined.xlsx",
+    "sheet": "All Schemas",
+    "preview": "328_Talentra_Combined_All_Schemas.png"
+  },
+  {
+    "file": "Talentra_Combined.xlsx",
+    "sheet": "Hierarchy",
+    "preview": "329_Talentra_Combined_Hierarchy.png"
+  },
+  {
+    "file": "Talentra_Combined.xlsx",
+    "sheet": "All Outputs",
+    "preview": "330_Talentra_Combined_All_Outputs.png"
+  },
+  {
+    "file": "Talentra_Combined.xlsx",
+    "sheet": "Field Mapping",
+    "preview": "331_Talentra_Combined_Field_Mapping.png"
+  },
+  {
+    "file": "Talentra_Combined.xlsx",
+    "sheet": "Section Ratings",
+    "preview": "332_Talentra_Combined_Section_Ratings.png"
+  },
+  {
+    "file": "Talentra_Combined.xlsx",
+    "sheet": "Evidence",
+    "preview": "333_Talentra_Combined_Evidence.png"
+  },
+  {
+    "file": "Talentra_Combined.xlsx",
+    "sheet": "Refinement Log",
+    "preview": "334_Talentra_Combined_Refinement_Log.png"
+  },
+  {
+    "file": "Talentra_Combined.xlsx",
+    "sheet": "Sources",
+    "preview": "335_Talentra_Combined_Sources.png"
+  },
+  {
+    "file": "Talentra_Combined.xlsx",
+    "sheet": "Method",
+    "preview": "336_Talentra_Combined_Method.png"
+  }
+]

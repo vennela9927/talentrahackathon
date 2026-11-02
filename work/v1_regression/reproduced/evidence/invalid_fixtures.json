@@ -1,0 +1,416 @@
+[
+  [
+    "BAD-001",
+    "BR-001",
+    "all",
+    "\"Candidate Profiles\"",
+    "Reject",
+    "All table and column names are defined singular snake_case",
+    "Isolated fixture; never mixed into valid sample"
+  ],
+  [
+    "BAD-002",
+    "BR-002",
+    "all",
+    "0",
+    "Reject",
+    "Every row has positive bigint surrogate id",
+    "Isolated fixture; never mixed into valid sample"
+  ],
+  [
+    "BAD-003",
+    "BR-003",
+    "all",
+    "[3, [1, 2]]",
+    "Reject",
+    "All referenced parent IDs must exist",
+    "Isolated fixture; never mixed into valid sample"
+  ],
+  [
+    "BAD-004",
+    "BR-004",
+    "all",
+    "null",
+    "Reject",
+    "Mandatory attributes reject null",
+    "Isolated fixture; never mixed into valid sample"
+  ],
+  [
+    "BAD-005",
+    "BR-005",
+    "all",
+    "[\"AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\", 150]",
+    "Reject",
+    "Bounded text respects domain length",
+    "Isolated fixture; never mixed into valid sample"
+  ],
+  [
+    "BAD-006",
+    "BR-006",
+    "app_user",
+    "\"A@EXAMPLE.INVALID\"",
+    "Reject",
+    "Login email is lowercase, shaped and at most 254 characters",
+    "Isolated fixture; never mixed into valid sample"
+  ],
+  [
+    "BAD-007",
+    "BR-007",
+    "candidate_contact",
+    "\"555-0001\"",
+    "Reject",
+    "Telephone has plus and 8-15 digits",
+    "Isolated fixture; never mixed into valid sample"
+  ],
+  [
+    "BAD-008",
+    "BR-008",
+    "candidate_experience, candidate_education",
+    "[\"2026-02-01\", \"2026-01-01\"]",
+    "Reject",
+    "End must be on or after start; NULL end allowed only for ongoing records",
+    "Isolated fixture; never mixed into valid sample"
+  ],
+  [
+    "BAD-009",
+    "BR-009",
+    "all money fields",
+    "[\"100.001\", \"INR\"]",
+    "Reject",
+    "Monetary values use fixed precision and a companion currency",
+    "Isolated fixture; never mixed into valid sample"
+  ],
+  [
+    "BAD-010",
+    "BR-010",
+    "job_requirement",
+    "[200, 100]",
+    "Reject",
+    "Disclosed minimum must not exceed maximum",
+    "Isolated fixture; never mixed into valid sample"
+  ],
+  [
+    "BAD-011",
+    "BR-011",
+    "job_requirement",
+    "0",
+    "Reject",
+    "A requirement offers at least one position",
+    "Isolated fixture; never mixed into valid sample"
+  ],
+  [
+    "BAD-012",
+    "BR-012",
+    "job_application",
+    "[[1, 1], [[1, 1]]]",
+    "Reject",
+    "Candidate and requirement pair is unique",
+    "Isolated fixture; never mixed into valid sample"
+  ],
+  [
+    "BAD-013",
+    "BR-013",
+    "job_requirement,recruiter_membership",
+    "[1, 2]",
+    "Reject",
+    "Recruiter acts only on own company requirements",
+    "Isolated fixture; never mixed into valid sample"
+  ],
+  [
+    "BAD-014",
+    "BR-014",
+    "app_user,candidate_profile",
+    "[\"recruiter\", 1, 2]",
+    "Reject",
+    "Recruiter cannot register candidate on behalf",
+    "Isolated fixture; never mixed into valid sample"
+  ],
+  [
+    "BAD-015",
+    "BR-015",
+    "blocking_entry",
+    "[true, true]",
+    "Reject",
+    "Blocked party never receives profile visibility",
+    "Isolated fixture; never mixed into valid sample"
+  ],
+  [
+    "BAD-016",
+    "BR-016",
+    "sourcing_request",
+    "[false, \"accepted\"]",
+    "Reject",
+    "Consultant requires open job plus accepted request",
+    "Isolated fixture; never mixed into valid sample"
+  ],
+  [
+    "BAD-017",
+    "BR-017",
+    "gig_application",
+    "\"requester_to_worker\"",
+    "Reject",
+    "Only worker applies to requester gig",
+    "Isolated fixture; never mixed into valid sample"
+  ],
+  [
+    "BAD-018",
+    "BR-018",
+    "gig_assignment",
+    "[[1, 3], [2, 4]]",
+    "Reject",
+    "Active worker assignments use nonoverlapping half-open windows",
+    "Isolated fixture; never mixed into valid sample"
+  ],
+  [
+    "BAD-019",
+    "BR-019",
+    "gig_rating",
+    "[\"accepted\", 1, 1]",
+    "Reject",
+    "Only requester rates completed assignment",
+    "Isolated fixture; never mixed into valid sample"
+  ],
+  [
+    "BAD-020",
+    "BR-020",
+    "licence",
+    "[3, 0]",
+    "Reject",
+    "Seat and device limits are positive integers",
+    "Isolated fixture; never mixed into valid sample"
+  ],
+  [
+    "BAD-021",
+    "BR-021",
+    "licence_seat",
+    "[3, 3]",
+    "Reject",
+    "Active allocated seat count remains below limit before insert",
+    "Isolated fixture; never mixed into valid sample"
+  ],
+  [
+    "BAD-022",
+    "BR-022",
+    "user_session",
+    "[2, 2]",
+    "Reject",
+    "Unexpired unrevoked session count stays below per-user limit",
+    "Isolated fixture; never mixed into valid sample"
+  ],
+  [
+    "BAD-023",
+    "BR-023",
+    "user_session,registered_device",
+    "[1, 2]",
+    "Reject",
+    "Session device belongs to session user",
+    "Isolated fixture; never mixed into valid sample"
+  ],
+  [
+    "BAD-024",
+    "BR-024",
+    "subscription_period",
+    "[[1, 3], [2, 4]]",
+    "Reject",
+    "Licence subscription periods cannot overlap",
+    "Isolated fixture; never mixed into valid sample"
+  ],
+  [
+    "BAD-025",
+    "BR-025",
+    "wallet_ledger_entry,audit_event,payment_event",
+    "\"update\"",
+    "Reject",
+    "Payment, ledger, audit and history records cannot mutate",
+    "Isolated fixture; never mixed into valid sample"
+  ],
+  [
+    "BAD-026",
+    "BR-026",
+    "integration_event,payment_event",
+    "[\"evt1\", [\"evt1\"]]",
+    "Reject",
+    "Provider/key duplicate does not produce another side effect",
+    "Isolated fixture; never mixed into valid sample"
+  ],
+  [
+    "BAD-027",
+    "BR-027",
+    "wallet_ledger_entry",
+    "[100, 101]",
+    "Reject",
+    "A debit cannot overdraw the same-currency wallet",
+    "Isolated fixture; never mixed into valid sample"
+  ],
+  [
+    "BAD-028",
+    "BR-028",
+    "refund",
+    "[100, 80, 21]",
+    "Reject",
+    "Cumulative successful refunds cannot exceed captured payment",
+    "Isolated fixture; never mixed into valid sample"
+  ],
+  [
+    "BAD-029",
+    "BR-029",
+    "invoice,invoice_line",
+    "[101, [60, 40]]",
+    "Reject",
+    "Invoice total equals sum of line amounts by currency",
+    "Isolated fixture; never mixed into valid sample"
+  ],
+  [
+    "BAD-030",
+    "BR-030",
+    "notification_delivery",
+    "[true, false]",
+    "Reject",
+    "Delivery allowed only with purpose consent and channel enabled",
+    "Isolated fixture; never mixed into valid sample"
+  ],
+  [
+    "BAD-031",
+    "BR-031",
+    "reference_value",
+    "[\"gig_status\", \"application_status\"]",
+    "Reject",
+    "Status/reference value must belong to expected domain",
+    "Isolated fixture; never mixed into valid sample"
+  ],
+  [
+    "BAD-032",
+    "BR-032",
+    "credential,verification_record,payment_event",
+    "{\"card_number\": \"4111111111111111\"}",
+    "Reject",
+    "Raw card, bank and national identifier data is not stored",
+    "Isolated fixture; never mixed into valid sample"
+  ],
+  [
+    "BAD-033",
+    "BR-033",
+    "profile_completion",
+    "101",
+    "Reject",
+    "Profile completion percentage is 0 through 100",
+    "Isolated fixture; never mixed into valid sample"
+  ],
+  [
+    "BAD-034",
+    "BR-034",
+    "blocking_entry",
+    "[1, 2]",
+    "Reject",
+    "Exactly one blocked user or organisation target is present",
+    "Isolated fixture; never mixed into valid sample"
+  ],
+  [
+    "BAD-035",
+    "BR-035",
+    "user_session",
+    "[2, 1, 3]",
+    "Reject",
+    "Start <= last activity < expiry; ended sessions are excluded",
+    "Isolated fixture; never mixed into valid sample"
+  ],
+  [
+    "BAD-036",
+    "BR-036",
+    "gig_earnings_snapshot",
+    "[\"\", \"2026-10-27\"]",
+    "Reject",
+    "Earnings carry source reference and refreshed timestamp",
+    "Isolated fixture; never mixed into valid sample"
+  ],
+  [
+    "BAD-037",
+    "BR-037",
+    "job_requirement",
+    "[\"closed\", \"draft\"]",
+    "Reject",
+    "Only listed transitions are allowed",
+    "Isolated fixture; never mixed into valid sample"
+  ],
+  [
+    "BAD-038",
+    "BR-038",
+    "job_application",
+    "[\"joined\", \"applied\"]",
+    "Reject",
+    "Only listed transitions are allowed",
+    "Isolated fixture; never mixed into valid sample"
+  ],
+  [
+    "BAD-039",
+    "BR-039",
+    "gig_application",
+    "[\"accepted\", \"applied\"]",
+    "Reject",
+    "Only listed transitions are allowed",
+    "Isolated fixture; never mixed into valid sample"
+  ],
+  [
+    "BAD-040",
+    "BR-040",
+    "gig_assignment",
+    "[\"cancelled\", \"pending_handoff\"]",
+    "Reject",
+    "Only listed transitions are allowed",
+    "Isolated fixture; never mixed into valid sample"
+  ],
+  [
+    "BAD-041",
+    "BR-041",
+    "subscription_period",
+    "[\"cancelled\", \"pending\"]",
+    "Reject",
+    "Only listed transitions are allowed",
+    "Isolated fixture; never mixed into valid sample"
+  ],
+  [
+    "BAD-042",
+    "BR-042",
+    "payment_order",
+    "[\"cancelled\", \"created\"]",
+    "Reject",
+    "Only listed transitions are allowed",
+    "Isolated fixture; never mixed into valid sample"
+  ],
+  [
+    "BAD-043",
+    "BR-043",
+    "sourcing_request",
+    "[\"closed\", \"requested\"]",
+    "Reject",
+    "Only listed transitions are allowed",
+    "Isolated fixture; never mixed into valid sample"
+  ],
+  [
+    "BAD-044",
+    "BR-044",
+    "support_ticket",
+    "[\"closed\", \"open\"]",
+    "Reject",
+    "Only listed transitions are allowed",
+    "Isolated fixture; never mixed into valid sample"
+  ],
+  [
+    "BAD-045",
+    "BR-045",
+    "candidate_profile",
+    "[\"erased\", \"draft\"]",
+    "Reject",
+    "Only listed transitions are allowed",
+    "Isolated fixture; never mixed into valid sample"
+  ],
+  [
+    "BAD-046",
+    "BR-046",
+    "user_session",
+    "[\"ended\", \"active\"]",
+    "Reject",
+    "Only listed transitions are allowed",
+    "Isolated fixture; never mixed into valid sample"
+  ]
+]

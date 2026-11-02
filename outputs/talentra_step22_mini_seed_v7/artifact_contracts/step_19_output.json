@@ -1,0 +1,671 @@
+{
+  "title": "Step19 Output Document",
+  "type": "object",
+  "properties": {
+    "Hybrid Dictionary": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Attribute ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Table": {
+            "type": [
+              "string"
+            ]
+          },
+          "Column": {
+            "type": [
+              "string"
+            ]
+          },
+          "Business name": {
+            "type": [
+              "string"
+            ]
+          },
+          "SQL type": {
+            "type": [
+              "string"
+            ]
+          },
+          "Nullable": {
+            "type": [
+              "boolean"
+            ]
+          },
+          "Null reason": {
+            "type": [
+              "string"
+            ]
+          },
+          "Definition": {
+            "type": [
+              "string"
+            ]
+          },
+          "Example": {
+            "type": [
+              "boolean",
+              "integer",
+              "string"
+            ]
+          },
+          "Hybrid class": {
+            "type": [
+              "string"
+            ]
+          },
+          "A physical class": {
+            "type": [
+              "string"
+            ]
+          },
+          "Owner": {
+            "type": [
+              "string"
+            ]
+          },
+          "Validation": {
+            "type": [
+              "string"
+            ]
+          },
+          "Rule IDs": {
+            "type": [
+              "string"
+            ]
+          },
+          "Implementation status": {
+            "type": [
+              "string"
+            ]
+          },
+          "A provenance": {
+            "type": [
+              "string"
+            ]
+          },
+          "B provenance": {
+            "type": [
+              "string"
+            ]
+          },
+          "Default": {
+            "type": [
+              "string"
+            ]
+          },
+          "Foreign key target": {
+            "type": [
+              "string"
+            ]
+          },
+          "Storage": {
+            "type": [
+              "string"
+            ]
+          },
+          "Retention": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Attribute ID",
+          "Table",
+          "Column",
+          "Business name",
+          "SQL type",
+          "Nullable",
+          "Null reason",
+          "Definition",
+          "Example",
+          "Hybrid class",
+          "A physical class",
+          "Owner",
+          "Validation",
+          "Rule IDs",
+          "Implementation status",
+          "A provenance",
+          "B provenance",
+          "Default",
+          "Foreign key target",
+          "Storage",
+          "Retention"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Drift evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Check ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Comparison": {
+            "type": [
+              "string"
+            ]
+          },
+          "Expected": {
+            "type": [
+              "integer",
+              "string"
+            ]
+          },
+          "Actual": {
+            "type": [
+              "integer",
+              "string"
+            ]
+          },
+          "Result": {
+            "type": [
+              "string"
+            ]
+          },
+          "Limit": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Check ID",
+          "Comparison",
+          "Expected",
+          "Actual",
+          "Result",
+          "Limit"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Reference bindings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Binding ID": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Table": {
+            "type": [
+              "string"
+            ]
+          },
+          "Column": {
+            "type": [
+              "string"
+            ]
+          },
+          "Domain ID": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Code count": {
+            "type": [
+              "integer"
+            ]
+          }
+        },
+        "required": [
+          "Binding ID",
+          "Table",
+          "Column",
+          "Domain ID",
+          "Code count"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Privacy register v2": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Attribute ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Table": {
+            "type": [
+              "string"
+            ]
+          },
+          "Column": {
+            "type": [
+              "string"
+            ]
+          },
+          "Class": {
+            "type": [
+              "string"
+            ]
+          },
+          "Masking design": {
+            "type": [
+              "string"
+            ]
+          },
+          "Encryption design": {
+            "type": [
+              "string"
+            ]
+          },
+          "Retention": {
+            "type": [
+              "string"
+            ]
+          },
+          "Purpose": {
+            "type": [
+              "string"
+            ]
+          },
+          "Erasure design": {
+            "type": [
+              "string"
+            ]
+          },
+          "Owner": {
+            "type": [
+              "string"
+            ]
+          },
+          "Policy status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Attribute ID",
+          "Table",
+          "Column",
+          "Class",
+          "Masking design",
+          "Encryption design",
+          "Retention",
+          "Purpose",
+          "Erasure design",
+          "Owner",
+          "Policy status",
+          "Source"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "V3 drift evidence": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Check": {
+            "type": [
+              "string"
+            ]
+          },
+          "Expected": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Actual": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Result": {
+            "type": [
+              "string"
+            ]
+          },
+          "Boundary": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Check",
+          "Expected",
+          "Actual",
+          "Result",
+          "Boundary"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Cross-source comparison": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Comparison ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Step": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Decision or field": {
+            "type": [
+              "string"
+            ]
+          },
+          "A value": {
+            "type": [
+              "string"
+            ]
+          },
+          "B value": {
+            "type": [
+              "string"
+            ]
+          },
+          "Agreement": {
+            "type": [
+              "string"
+            ]
+          },
+          "B locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Hybrid conclusion": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Comparison ID",
+          "Step",
+          "Decision or field",
+          "A value",
+          "B value",
+          "Agreement",
+          "B locator",
+          "Hybrid conclusion"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Hybrid synthetic examples": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Attribute ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Table": {
+            "type": [
+              "string"
+            ]
+          },
+          "Column": {
+            "type": [
+              "string"
+            ]
+          },
+          "SQL type": {
+            "type": [
+              "string"
+            ]
+          },
+          "Synthetic example": {
+            "type": [
+              "boolean",
+              "integer",
+              "string"
+            ]
+          },
+          "Nullable": {
+            "type": [
+              "boolean"
+            ]
+          },
+          "Proposed owner": {
+            "type": [
+              "string"
+            ]
+          },
+          "Validation": {
+            "type": [
+              "string"
+            ]
+          },
+          "Fixture scope": {
+            "type": [
+              "string"
+            ]
+          },
+          "Implementation status": {
+            "type": [
+              "string"
+            ]
+          },
+          "B source": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Attribute ID",
+          "Table",
+          "Column",
+          "SQL type",
+          "Synthetic example",
+          "Nullable",
+          "Proposed owner",
+          "Validation",
+          "Fixture scope",
+          "Implementation status",
+          "B source"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Hybrid handoff": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Handoff ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Concern": {
+            "type": [
+              "string"
+            ]
+          },
+          "Inputs": {
+            "type": [
+              "string"
+            ]
+          },
+          "Next use": {
+            "type": [
+              "string"
+            ]
+          },
+          "Acceptance condition": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proposed owner": {
+            "type": [
+              "string"
+            ]
+          },
+          "Status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Reason": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Handoff ID",
+          "Concern",
+          "Inputs",
+          "Next use",
+          "Acceptance condition",
+          "Proposed owner",
+          "Status",
+          "Reason"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Human review prompts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Question ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Question": {
+            "type": [
+              "string"
+            ]
+          },
+          "Expected evidence anchor": {
+            "type": [
+              "string"
+            ]
+          },
+          "Human response": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "Reviewer score 0 to 5": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "Review status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proposed reviewer role": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Question ID",
+          "Question",
+          "Expected evidence anchor",
+          "Human response",
+          "Reviewer score 0 to 5",
+          "Review status",
+          "Proposed reviewer role"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Acceptance cases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Case ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Case": {
+            "type": [
+              "string"
+            ]
+          },
+          "Expected result": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proof layer": {
+            "type": [
+              "string"
+            ]
+          },
+          "Status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Owner": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Case ID",
+          "Case",
+          "Expected result",
+          "Proof layer",
+          "Status",
+          "Owner"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "Hybrid Dictionary",
+    "Drift evidence",
+    "Reference bindings",
+    "Privacy register v2",
+    "V3 drift evidence",
+    "Cross-source comparison",
+    "Hybrid synthetic examples",
+    "Hybrid handoff",
+    "Human review prompts",
+    "Acceptance cases"
+  ],
+  "additionalProperties": false
+}

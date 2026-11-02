@@ -1,0 +1,9 @@
+{
+  "mini_journeys": 120,
+  "mini_selection": "2 per family/current-outcome combination",
+  "mini_gig_requests": 20,
+  "mini_workflow_cases_per_workflow": 6,
+  "seed_journeys": 1500000,
+  "seed_workflow_cases_per_workflow": 60,
+  "scale_boundary": "Larger fixture counts or saved rows do not establish production concurrency or database performance."
+}

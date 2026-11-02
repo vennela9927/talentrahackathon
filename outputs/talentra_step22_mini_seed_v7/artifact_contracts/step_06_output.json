@@ -1,0 +1,800 @@
+{
+  "title": "Step6 Output Document",
+  "type": "object",
+  "properties": {
+    "Entity catalogue": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Entity ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Table": {
+            "type": [
+              "string"
+            ]
+          },
+          "Module": {
+            "type": [
+              "string"
+            ]
+          },
+          "Definition": {
+            "type": [
+              "string"
+            ]
+          },
+          "Owner": {
+            "type": [
+              "string"
+            ]
+          },
+          "Deletion": {
+            "type": [
+              "string"
+            ]
+          },
+          "Retention": {
+            "type": [
+              "string"
+            ]
+          },
+          "Requirement ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Entity ID",
+          "Table",
+          "Module",
+          "Definition",
+          "Owner",
+          "Deletion",
+          "Retention",
+          "Requirement ID",
+          "Source"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Module coverage": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Module": {
+            "type": [
+              "string"
+            ]
+          },
+          "Owner": {
+            "type": [
+              "string"
+            ]
+          },
+          "Entity count": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Tier": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Module",
+          "Owner",
+          "Entity count",
+          "Tier",
+          "Source"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Design deviations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Deviation ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Topic": {
+            "type": [
+              "string"
+            ]
+          },
+          "Decision": {
+            "type": [
+              "string"
+            ]
+          },
+          "Reason": {
+            "type": [
+              "string"
+            ]
+          },
+          "Risk treatment": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Deviation ID",
+          "Topic",
+          "Decision",
+          "Reason",
+          "Risk treatment",
+          "Source"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Platform entities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Entity ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Table": {
+            "type": [
+              "string"
+            ]
+          },
+          "Definition": {
+            "type": [
+              "string"
+            ]
+          },
+          "Owner": {
+            "type": [
+              "string"
+            ]
+          },
+          "Retention": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Entity ID",
+          "Table",
+          "Definition",
+          "Owner",
+          "Retention",
+          "Source"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T010 1. Data entity inventory": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Subject area": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "Entity": {
+            "type": [
+              "string"
+            ]
+          },
+          "Holds": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "Owner (source of truth)": {
+            "type": [
+              "string"
+            ]
+          },
+          "Highest class": {
+            "type": [
+              "string"
+            ]
+          },
+          "Dev rows": {
+            "type": [
+              "integer",
+              "string"
+            ]
+          },
+          "Full-scale rows": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Subject area",
+          "Entity",
+          "Holds",
+          "Owner (source of truth)",
+          "Highest class",
+          "Dev rows",
+          "Full-scale rows",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T023 1. Catalogue": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Entity": {
+            "type": [
+              "string"
+            ]
+          },
+          "Definition": {
+            "type": [
+              "string"
+            ]
+          },
+          "Subject area": {
+            "type": [
+              "string"
+            ]
+          },
+          "Kind": {
+            "type": [
+              "string"
+            ]
+          },
+          "Owner (source of truth)": {
+            "type": [
+              "string"
+            ]
+          },
+          "Delete rule": {
+            "type": [
+              "string"
+            ]
+          },
+          "Table(s)": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "ID",
+          "Entity",
+          "Definition",
+          "Subject area",
+          "Kind",
+          "Owner (source of truth)",
+          "Delete rule",
+          "Table(s)",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T024 2. Hidden entities (the playbook's \"": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Entity": {
+            "type": [
+              "string"
+            ]
+          },
+          "Kind": {
+            "type": [
+              "string"
+            ]
+          },
+          "Why it must exist": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "ID",
+          "Entity",
+          "Kind",
+          "Why it must exist",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T025 3. Synonyms merged": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Entity kept": {
+            "type": [
+              "string"
+            ]
+          },
+          "Words found in the sources": {
+            "type": [
+              "string"
+            ]
+          },
+          "Decision": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Entity kept",
+          "Words found in the sources",
+          "Decision",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T026 4. Nouns that are attributes, not en": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Noun": {
+            "type": [
+              "string"
+            ]
+          },
+          "Became": {
+            "type": [
+              "string"
+            ]
+          },
+          "Reason": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Noun",
+          "Became",
+          "Reason",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T027 5. Deferred entities (designed at co": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Entity": {
+            "type": [
+              "string"
+            ]
+          },
+          "Area": {
+            "type": [
+              "string"
+            ]
+          },
+          "Definition": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "ID",
+          "Entity",
+          "Area",
+          "Definition",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Hybrid entity crosswalk": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "B table": {
+            "type": [
+              "string"
+            ]
+          },
+          "Canonical table": {
+            "type": [
+              "string"
+            ]
+          },
+          "Relationship": {
+            "type": [
+              "string"
+            ]
+          },
+          "Decision": {
+            "type": [
+              "string"
+            ]
+          },
+          "Provenance": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "B table",
+          "Canonical table",
+          "Relationship",
+          "Decision",
+          "Provenance"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Cross-source comparison": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Comparison ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Step": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Decision or field": {
+            "type": [
+              "string"
+            ]
+          },
+          "A value": {
+            "type": [
+              "string"
+            ]
+          },
+          "B value": {
+            "type": [
+              "string"
+            ]
+          },
+          "Agreement": {
+            "type": [
+              "string"
+            ]
+          },
+          "B locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Hybrid conclusion": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Comparison ID",
+          "Step",
+          "Decision or field",
+          "A value",
+          "B value",
+          "Agreement",
+          "B locator",
+          "Hybrid conclusion"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Hybrid handoff": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Handoff ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Concern": {
+            "type": [
+              "string"
+            ]
+          },
+          "Inputs": {
+            "type": [
+              "string"
+            ]
+          },
+          "Next use": {
+            "type": [
+              "string"
+            ]
+          },
+          "Acceptance condition": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proposed owner": {
+            "type": [
+              "string"
+            ]
+          },
+          "Status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Reason": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Handoff ID",
+          "Concern",
+          "Inputs",
+          "Next use",
+          "Acceptance condition",
+          "Proposed owner",
+          "Status",
+          "Reason"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Human review prompts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Question ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Question": {
+            "type": [
+              "string"
+            ]
+          },
+          "Expected evidence anchor": {
+            "type": [
+              "string"
+            ]
+          },
+          "Human response": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "Reviewer score 0 to 5": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "Review status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proposed reviewer role": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Question ID",
+          "Question",
+          "Expected evidence anchor",
+          "Human response",
+          "Reviewer score 0 to 5",
+          "Review status",
+          "Proposed reviewer role"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Acceptance cases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Case ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Case": {
+            "type": [
+              "string"
+            ]
+          },
+          "Expected result": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proof layer": {
+            "type": [
+              "string"
+            ]
+          },
+          "Status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Owner": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Case ID",
+          "Case",
+          "Expected result",
+          "Proof layer",
+          "Status",
+          "Owner"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "Entity catalogue",
+    "Module coverage",
+    "Design deviations",
+    "Platform entities",
+    "B T010 1. Data entity inventory",
+    "B T023 1. Catalogue",
+    "B T024 2. Hidden entities (the playbook's \"",
+    "B T025 3. Synonyms merged",
+    "B T026 4. Nouns that are attributes, not en",
+    "B T027 5. Deferred entities (designed at co",
+    "Hybrid entity crosswalk",
+    "Cross-source comparison",
+    "Hybrid handoff",
+    "Human review prompts",
+    "Acceptance cases"
+  ],
+  "additionalProperties": false
+}

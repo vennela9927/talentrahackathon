@@ -1,0 +1,111 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "mentor.event.v1",
+  "type": "object",
+  "properties": {
+    "event_id": {
+      "type": [
+        "integer"
+      ],
+      "description": "Synthetic canonical event_id; CSV \\N is parsed as JSON null only for nullable properties",
+      "minimum": 1
+    },
+    "journey_id": {
+      "type": [
+        "integer"
+      ],
+      "description": "Synthetic canonical journey_id; CSV \\N is parsed as JSON null only for nullable properties",
+      "minimum": 1
+    },
+    "candidate_profile_id": {
+      "type": [
+        "integer"
+      ],
+      "description": "Synthetic canonical candidate_profile_id; CSV \\N is parsed as JSON null only for nullable properties",
+      "minimum": 1
+    },
+    "job_requirement_id": {
+      "type": [
+        "integer"
+      ],
+      "description": "Synthetic canonical job_requirement_id; CSV \\N is parsed as JSON null only for nullable properties",
+      "minimum": 1
+    },
+    "organisation_id": {
+      "type": [
+        "integer"
+      ],
+      "description": "Synthetic canonical organisation_id; CSV \\N is parsed as JSON null only for nullable properties",
+      "minimum": 1
+    },
+    "application_id": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Synthetic canonical application_id; CSV \\N is parsed as JSON null only for nullable properties",
+      "minimum": 1
+    },
+    "stage_code": {
+      "type": [
+        "string"
+      ],
+      "description": "Synthetic canonical stage_code; CSV \\N is parsed as JSON null only for nullable properties",
+      "enum": [
+        "searched",
+        "screened",
+        "applied",
+        "shortlisted",
+        "assessed",
+        "interviewed",
+        "selected",
+        "rejected",
+        "offered",
+        "accepted",
+        "offer_declined",
+        "onboarded"
+      ]
+    },
+    "occurred_at": {
+      "type": [
+        "string"
+      ],
+      "description": "Synthetic canonical occurred_at; CSV \\N is parsed as JSON null only for nullable properties",
+      "format": "date-time"
+    },
+    "source_system": {
+      "type": [
+        "string"
+      ],
+      "description": "Synthetic canonical source_system; CSV \\N is parsed as JSON null only for nullable properties"
+    },
+    "source_version": {
+      "type": [
+        "integer"
+      ],
+      "description": "Synthetic canonical source_version; CSV \\N is parsed as JSON null only for nullable properties",
+      "minimum": 1
+    },
+    "reason_code": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Synthetic canonical reason_code; CSV \\N is parsed as JSON null only for nullable properties"
+    }
+  },
+  "required": [
+    "event_id",
+    "journey_id",
+    "candidate_profile_id",
+    "job_requirement_id",
+    "organisation_id",
+    "application_id",
+    "stage_code",
+    "occurred_at",
+    "source_system",
+    "source_version",
+    "reason_code"
+  ],
+  "additionalProperties": false
+}

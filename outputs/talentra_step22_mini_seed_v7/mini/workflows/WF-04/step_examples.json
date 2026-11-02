@@ -1,0 +1,35 @@
+[
+  {
+    "case_id": "mini-WF-04-0001",
+    "workflow_id": "WF-04",
+    "step_id": "WF-04.01",
+    "sequence": 1,
+    "actor_id": "ACT-06",
+    "organisation_id": 1,
+    "outcome": "EXAMPLE_EMITTED",
+    "example_ref": "WF-04.01",
+    "native_execution": false
+  },
+  {
+    "case_id": "mini-WF-04-0001",
+    "workflow_id": "WF-04",
+    "step_id": "WF-04.02",
+    "sequence": 2,
+    "actor_id": "ACT-06",
+    "organisation_id": 1,
+    "outcome": "EXAMPLE_EMITTED",
+    "example_ref": "WF-04.02",
+    "native_execution": false
+  },
+  {
+    "case_id": "mini-WF-04-0001",
+    "workflow_id": "WF-04",
+    "step_id": "WF-04.03",
+    "sequence": 3,
+    "actor_id": "ACT-06",
+    "organisation_id": 1,
+    "outcome": "EXAMPLE_EMITTED",
+    "example_ref": "WF-04.03",
+    "native_execution": false
+  }
+]

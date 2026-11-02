@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:talentra:geo.result.v1",
+  "title": "geo.result.v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "event_id",
+    "correlation_id",
+    "schema_version",
+    "occurred_at",
+    "source_version",
+    "city_id",
+    "latitude",
+    "longitude",
+    "coordinate_source"
+  ],
+  "properties": {
+    "event_id": {
+      "type": "string",
+      "description": "Globally unique producer event key within contract",
+      "maxLength": 255
+    },
+    "correlation_id": {
+      "type": "string",
+      "description": "Safe trace correlation key",
+      "maxLength": 255
+    },
+    "schema_version": {
+      "type": "integer",
+      "description": "Positive exact supported contract version",
+      "minimum": 0
+    },
+    "occurred_at": {
+      "type": "string",
+      "description": "UTC ISO8601 source timestamp",
+      "maxLength": 255,
+      "format": "date-time"
+    },
+    "source_version": {
+      "type": "integer",
+      "description": "Monotonic aggregate version",
+      "minimum": 0
+    },
+    "city_id": {
+      "type": "integer",
+      "description": "Resolved master city",
+      "minimum": 0
+    },
+    "latitude": {
+      "type": "string",
+      "description": "Decimal latitude within -90..90",
+      "maxLength": 255
+    },
+    "longitude": {
+      "type": "string",
+      "description": "Decimal longitude within -180..180",
+      "maxLength": 255
+    },
+    "coordinate_source": {
+      "type": "string",
+      "description": "Provider attribution and place reference",
+      "maxLength": 255
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "version": "seed",
+  "family": "BLUE_WAREHOUSE",
+  "journeys": 225000,
+  "gig_applications": 8335,
+  "hiring_stages": {
+    "journeys": 225000,
+    "searched": 225000,
+    "screened": 146250,
+    "applied": 102375,
+    "shortlisted": 61425,
+    "assessed": 33783,
+    "interviewed": 23648,
+    "rejected": 13007,
+    "selected": 10641,
+    "offered": 10428,
+    "accepted": 9385,
+    "onboarded": 8915,
+    "offer_declined": 1043
+  },
+  "basis": "Full saved v6 synthetic population. Scenario rates remain proposed workload assumptions.",
+  "files": [
+    "seed/sets/BLUE_WAREHOUSE/journey.csv.gz",
+    "seed/sets/BLUE_WAREHOUSE/gig.csv.gz"
+  ]
+}

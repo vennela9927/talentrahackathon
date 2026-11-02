@@ -1,0 +1,84 @@
+{
+  "title": "Step12 Output Schema Definition",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "Step": {
+        "type": [
+          "integer"
+        ]
+      },
+      "L1 Section": {
+        "type": [
+          "string"
+        ]
+      },
+      "L2 Parameter": {
+        "type": [
+          "string"
+        ]
+      },
+      "L3 facets": {
+        "type": [
+          "string"
+        ]
+      },
+      "L4 Data type": {
+        "type": [
+          "string"
+        ]
+      },
+      "Required": {
+        "type": [
+          "string"
+        ]
+      },
+      "Validation": {
+        "type": [
+          "string"
+        ]
+      },
+      "Definition": {
+        "type": [
+          "string"
+        ]
+      },
+      "Reason": {
+        "type": [
+          "string"
+        ]
+      },
+      "Priority": {
+        "type": [
+          "string"
+        ]
+      },
+      "Source": {
+        "type": [
+          "string"
+        ]
+      },
+      "Node ID": {
+        "type": [
+          "string"
+        ]
+      }
+    },
+    "required": [
+      "Step",
+      "L1 Section",
+      "L2 Parameter",
+      "L3 facets",
+      "L4 Data type",
+      "Required",
+      "Validation",
+      "Definition",
+      "Reason",
+      "Priority",
+      "Source",
+      "Node ID"
+    ],
+    "additionalProperties": false
+  }
+}

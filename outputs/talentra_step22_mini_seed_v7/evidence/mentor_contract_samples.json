@@ -1,0 +1,32 @@
+[
+  [
+    "journey",
+    300,
+    "PASS",
+    "Typed sample contract checks; full-file transition/count guards are separate"
+  ],
+  [
+    "event",
+    300,
+    "PASS",
+    "Typed sample contract checks; full-file transition/count guards are separate"
+  ],
+  [
+    "application",
+    300,
+    "PASS",
+    "Typed sample contract checks; full-file transition/count guards are separate"
+  ],
+  [
+    "job",
+    300,
+    "PASS",
+    "Typed sample contract checks; full-file transition/count guards are separate"
+  ],
+  [
+    "gig",
+    300,
+    "PASS",
+    "Typed sample contract checks; full-file transition/count guards are separate"
+  ]
+]

@@ -1,0 +1,80 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:talentra:legacy.candidate_education.v1",
+  "title": "legacy.candidate_education.v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "event_id",
+    "correlation_id",
+    "schema_version",
+    "occurred_at",
+    "source_version",
+    "external_key",
+    "candidate_profile_id",
+    "qualification_id",
+    "institution_name",
+    "start_date"
+  ],
+  "properties": {
+    "event_id": {
+      "type": "string",
+      "description": "Globally unique producer event key within contract",
+      "maxLength": 255
+    },
+    "correlation_id": {
+      "type": "string",
+      "description": "Safe trace correlation key",
+      "maxLength": 255
+    },
+    "schema_version": {
+      "type": "integer",
+      "description": "Positive exact supported contract version",
+      "minimum": 0
+    },
+    "occurred_at": {
+      "type": "string",
+      "description": "UTC ISO8601 source timestamp",
+      "maxLength": 255,
+      "format": "date-time"
+    },
+    "source_version": {
+      "type": "integer",
+      "description": "Monotonic aggregate version",
+      "minimum": 0
+    },
+    "external_key": {
+      "type": "string",
+      "description": "Stable opaque legacy entity key",
+      "maxLength": 255
+    },
+    "candidate_profile_id": {
+      "type": "integer",
+      "description": "64-bit surrogate identity; candidate profile id on candidate_education",
+      "minimum": 0
+    },
+    "qualification_id": {
+      "type": "integer",
+      "description": "64-bit surrogate identity; qualification id on candidate_education",
+      "minimum": 0
+    },
+    "institution_name": {
+      "type": "string",
+      "description": "Unicode name without word-order assumption; institution name on candidate_education",
+      "maxLength": 255
+    },
+    "start_date": {
+      "type": "string",
+      "description": "Calendar date; start date on candidate_education",
+      "maxLength": 255
+    },
+    "end_date": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Calendar date; end date on candidate_education",
+      "maxLength": 255
+    }
+  }
+}

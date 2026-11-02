@@ -1,0 +1,314 @@
+[
+  {
+    "version": "mini",
+    "family": "IT_DEV",
+    "journeys": 20,
+    "gig_applications": 15,
+    "hiring_stages": {
+      "journeys": 20,
+      "searched": 20,
+      "screened": 18,
+      "applied": 16,
+      "shortlisted": 14,
+      "assessed": 12,
+      "interviewed": 10,
+      "rejected": 2,
+      "selected": 8,
+      "offered": 6,
+      "accepted": 4,
+      "onboarded": 2,
+      "offer_declined": 2
+    },
+    "basis": "Coverage sample, deliberately balanced across family and current outcome. Rates are descriptive of this sample, not estimates of the seed.",
+    "files": [
+      "mini/sets/IT_DEV/journey.csv.gz",
+      "mini/sets/IT_DEV/gig.csv.gz"
+    ]
+  },
+  {
+    "version": "mini",
+    "family": "IT_TEST",
+    "journeys": 20,
+    "gig_applications": 20,
+    "hiring_stages": {
+      "journeys": 20,
+      "searched": 20,
+      "screened": 18,
+      "applied": 16,
+      "shortlisted": 14,
+      "assessed": 12,
+      "interviewed": 10,
+      "rejected": 2,
+      "selected": 8,
+      "offered": 6,
+      "accepted": 4,
+      "onboarded": 2,
+      "offer_declined": 2
+    },
+    "basis": "Coverage sample, deliberately balanced across family and current outcome. Rates are descriptive of this sample, not estimates of the seed.",
+    "files": [
+      "mini/sets/IT_TEST/journey.csv.gz",
+      "mini/sets/IT_TEST/gig.csv.gz"
+    ]
+  },
+  {
+    "version": "mini",
+    "family": "NONIT_SALES",
+    "journeys": 20,
+    "gig_applications": 20,
+    "hiring_stages": {
+      "journeys": 20,
+      "searched": 20,
+      "screened": 18,
+      "applied": 16,
+      "shortlisted": 14,
+      "assessed": 12,
+      "interviewed": 10,
+      "rejected": 2,
+      "selected": 8,
+      "offered": 6,
+      "accepted": 4,
+      "onboarded": 2,
+      "offer_declined": 2
+    },
+    "basis": "Coverage sample, deliberately balanced across family and current outcome. Rates are descriptive of this sample, not estimates of the seed.",
+    "files": [
+      "mini/sets/NONIT_SALES/journey.csv.gz",
+      "mini/sets/NONIT_SALES/gig.csv.gz"
+    ]
+  },
+  {
+    "version": "mini",
+    "family": "NONIT_DELIVERY",
+    "journeys": 20,
+    "gig_applications": 15,
+    "hiring_stages": {
+      "journeys": 20,
+      "searched": 20,
+      "screened": 18,
+      "applied": 16,
+      "shortlisted": 14,
+      "assessed": 12,
+      "interviewed": 10,
+      "selected": 8,
+      "offered": 6,
+      "accepted": 4,
+      "onboarded": 2,
+      "rejected": 2,
+      "offer_declined": 2
+    },
+    "basis": "Coverage sample, deliberately balanced across family and current outcome. Rates are descriptive of this sample, not estimates of the seed.",
+    "files": [
+      "mini/sets/NONIT_DELIVERY/journey.csv.gz",
+      "mini/sets/NONIT_DELIVERY/gig.csv.gz"
+    ]
+  },
+  {
+    "version": "mini",
+    "family": "BLUE_WAREHOUSE",
+    "journeys": 20,
+    "gig_applications": 15,
+    "hiring_stages": {
+      "journeys": 20,
+      "searched": 20,
+      "screened": 18,
+      "applied": 16,
+      "shortlisted": 14,
+      "assessed": 12,
+      "interviewed": 10,
+      "rejected": 2,
+      "selected": 8,
+      "offered": 6,
+      "accepted": 4,
+      "onboarded": 2,
+      "offer_declined": 2
+    },
+    "basis": "Coverage sample, deliberately balanced across family and current outcome. Rates are descriptive of this sample, not estimates of the seed.",
+    "files": [
+      "mini/sets/BLUE_WAREHOUSE/journey.csv.gz",
+      "mini/sets/BLUE_WAREHOUSE/gig.csv.gz"
+    ]
+  },
+  {
+    "version": "mini",
+    "family": "BLUE_FIELD",
+    "journeys": 20,
+    "gig_applications": 15,
+    "hiring_stages": {
+      "journeys": 20,
+      "searched": 20,
+      "screened": 18,
+      "applied": 16,
+      "shortlisted": 14,
+      "assessed": 12,
+      "interviewed": 10,
+      "rejected": 2,
+      "selected": 8,
+      "offered": 6,
+      "accepted": 4,
+      "onboarded": 2,
+      "offer_declined": 2
+    },
+    "basis": "Coverage sample, deliberately balanced across family and current outcome. Rates are descriptive of this sample, not estimates of the seed.",
+    "files": [
+      "mini/sets/BLUE_FIELD/journey.csv.gz",
+      "mini/sets/BLUE_FIELD/gig.csv.gz"
+    ]
+  },
+  {
+    "version": "seed",
+    "family": "IT_DEV",
+    "journeys": 375000,
+    "gig_applications": 8330,
+    "hiring_stages": {
+      "journeys": 375000,
+      "searched": 375000,
+      "screened": 281250,
+      "applied": 168750,
+      "shortlisted": 59062,
+      "assessed": 53155,
+      "interviewed": 34550,
+      "rejected": 27640,
+      "selected": 6910,
+      "offered": 6564,
+      "accepted": 5251,
+      "onboarded": 4725,
+      "offer_declined": 1313
+    },
+    "basis": "Full saved v6 synthetic population. Scenario rates remain proposed workload assumptions.",
+    "files": [
+      "seed/sets/IT_DEV/journey.csv.gz",
+      "seed/sets/IT_DEV/gig.csv.gz"
+    ]
+  },
+  {
+    "version": "seed",
+    "family": "IT_TEST",
+    "journeys": 225000,
+    "gig_applications": 8335,
+    "hiring_stages": {
+      "journeys": 225000,
+      "searched": 225000,
+      "screened": 180000,
+      "applied": 99000,
+      "shortlisted": 39600,
+      "assessed": 35640,
+      "interviewed": 21384,
+      "rejected": 16038,
+      "selected": 5346,
+      "offered": 5078,
+      "accepted": 4163,
+      "onboarded": 3829,
+      "offer_declined": 915
+    },
+    "basis": "Full saved v6 synthetic population. Scenario rates remain proposed workload assumptions.",
+    "files": [
+      "seed/sets/IT_TEST/journey.csv.gz",
+      "seed/sets/IT_TEST/gig.csv.gz"
+    ]
+  },
+  {
+    "version": "seed",
+    "family": "NONIT_SALES",
+    "journeys": 225000,
+    "gig_applications": 8335,
+    "hiring_stages": {
+      "journeys": 225000,
+      "searched": 225000,
+      "screened": 157500,
+      "applied": 102375,
+      "shortlisted": 46068,
+      "assessed": 32247,
+      "interviewed": 20960,
+      "rejected": 14672,
+      "selected": 6288,
+      "offered": 6036,
+      "accepted": 4708,
+      "onboarded": 4001,
+      "offer_declined": 1328
+    },
+    "basis": "Full saved v6 synthetic population. Scenario rates remain proposed workload assumptions.",
+    "files": [
+      "seed/sets/NONIT_SALES/journey.csv.gz",
+      "seed/sets/NONIT_SALES/gig.csv.gz"
+    ]
+  },
+  {
+    "version": "seed",
+    "family": "NONIT_DELIVERY",
+    "journeys": 225000,
+    "gig_applications": 8335,
+    "hiring_stages": {
+      "journeys": 225000,
+      "searched": 225000,
+      "screened": 135000,
+      "applied": 94500,
+      "shortlisted": 51975,
+      "assessed": 31185,
+      "interviewed": 21829,
+      "selected": 8731,
+      "offered": 8556,
+      "accepted": 7529,
+      "onboarded": 7152,
+      "rejected": 13098,
+      "offer_declined": 1027
+    },
+    "basis": "Full saved v6 synthetic population. Scenario rates remain proposed workload assumptions.",
+    "files": [
+      "seed/sets/NONIT_DELIVERY/journey.csv.gz",
+      "seed/sets/NONIT_DELIVERY/gig.csv.gz"
+    ]
+  },
+  {
+    "version": "seed",
+    "family": "BLUE_WAREHOUSE",
+    "journeys": 225000,
+    "gig_applications": 8335,
+    "hiring_stages": {
+      "journeys": 225000,
+      "searched": 225000,
+      "screened": 146250,
+      "applied": 102375,
+      "shortlisted": 61425,
+      "assessed": 33783,
+      "interviewed": 23648,
+      "rejected": 13007,
+      "selected": 10641,
+      "offered": 10428,
+      "accepted": 9385,
+      "onboarded": 8915,
+      "offer_declined": 1043
+    },
+    "basis": "Full saved v6 synthetic population. Scenario rates remain proposed workload assumptions.",
+    "files": [
+      "seed/sets/BLUE_WAREHOUSE/journey.csv.gz",
+      "seed/sets/BLUE_WAREHOUSE/gig.csv.gz"
+    ]
+  },
+  {
+    "version": "seed",
+    "family": "BLUE_FIELD",
+    "journeys": 225000,
+    "gig_applications": 8330,
+    "hiring_stages": {
+      "journeys": 225000,
+      "searched": 225000,
+      "screened": 157500,
+      "applied": 102375,
+      "shortlisted": 51187,
+      "assessed": 40949,
+      "interviewed": 28664,
+      "rejected": 18632,
+      "selected": 10032,
+      "offered": 9731,
+      "accepted": 8271,
+      "onboarded": 7692,
+      "offer_declined": 1460
+    },
+    "basis": "Full saved v6 synthetic population. Scenario rates remain proposed workload assumptions.",
+    "files": [
+      "seed/sets/BLUE_FIELD/journey.csv.gz",
+      "seed/sets/BLUE_FIELD/gig.csv.gz"
+    ]
+  }
+]

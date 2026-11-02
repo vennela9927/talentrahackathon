@@ -1,0 +1,202 @@
+[
+  {
+    "rule_id": "R01",
+    "rule": "Valid job family",
+    "domain": "Taxonomy",
+    "predicate": "family_code in versioned six-family catalogue",
+    "enforcement": "Proposed service/native rule; portable function checks only",
+    "source": "Existing project semantics or mentor-derived detailed rule"
+  },
+  {
+    "rule_id": "R02",
+    "rule": "Collar and branch consistency",
+    "domain": "Taxonomy",
+    "predicate": "family code resolves its declared collar, branch and function",
+    "enforcement": "Proposed service/native rule; portable function checks only",
+    "source": "Existing project semantics or mentor-derived detailed rule"
+  },
+  {
+    "rule_id": "R03",
+    "rule": "Engagement is a separate axis",
+    "domain": "Taxonomy",
+    "predicate": "permanent, contract, gig or apprentice",
+    "enforcement": "Proposed service/native rule; portable function checks only",
+    "source": "Existing project semantics or mentor-derived detailed rule"
+  },
+  {
+    "rule_id": "R04",
+    "rule": "Candidate owns registration and offer response",
+    "domain": "Identity",
+    "predicate": "principal equals subject and a recruiter does not impersonate",
+    "enforcement": "Proposed service/native rule; portable function checks only",
+    "source": "Existing project semantics or mentor-derived detailed rule"
+  },
+  {
+    "rule_id": "R05",
+    "rule": "Organisation scope",
+    "domain": "Access",
+    "predicate": "credential organisation equals target organisation",
+    "enforcement": "Proposed service/native rule; portable function checks only",
+    "source": "Existing project semantics or mentor-derived detailed rule"
+  },
+  {
+    "rule_id": "R06",
+    "rule": "Blocked visibility",
+    "domain": "Access",
+    "predicate": "blocked subject access is refused",
+    "enforcement": "Proposed service/native rule; portable function checks only",
+    "source": "Existing project semantics or mentor-derived detailed rule"
+  },
+  {
+    "rule_id": "R07",
+    "rule": "Screen before applying",
+    "domain": "Hiring",
+    "predicate": "application follows job-scoped eligible screening",
+    "enforcement": "Proposed service/native rule; portable function checks only",
+    "source": "Existing project semantics or mentor-derived detailed rule"
+  },
+  {
+    "rule_id": "R08",
+    "rule": "Interview before selection",
+    "domain": "Hiring",
+    "predicate": "selection follows completed interview",
+    "enforcement": "Proposed service/native rule; portable function checks only",
+    "source": "Existing project semantics or mentor-derived detailed rule"
+  },
+  {
+    "rule_id": "R09",
+    "rule": "Selection before offer",
+    "domain": "Hiring",
+    "predicate": "offer follows employer selection",
+    "enforcement": "Proposed service/native rule; portable function checks only",
+    "source": "Existing project semantics or mentor-derived detailed rule"
+  },
+  {
+    "rule_id": "R10",
+    "rule": "Offer before candidate acceptance",
+    "domain": "Hiring",
+    "predicate": "acceptance follows a valid issued offer",
+    "enforcement": "Proposed service/native rule; portable function checks only",
+    "source": "Existing project semantics or mentor-derived detailed rule"
+  },
+  {
+    "rule_id": "R11",
+    "rule": "Acceptance before joining",
+    "domain": "Hiring",
+    "predicate": "onboarding follows acceptance",
+    "enforcement": "Proposed service/native rule; portable function checks only",
+    "source": "Existing project semantics or mentor-derived detailed rule"
+  },
+  {
+    "rule_id": "R12",
+    "rule": "Idempotent business effect",
+    "domain": "Integration",
+    "predicate": "same key/hash returns prior result and changed hash conflicts",
+    "enforcement": "Proposed service/native rule; portable function checks only",
+    "source": "Existing project semantics or mentor-derived detailed rule"
+  },
+  {
+    "rule_id": "R13",
+    "rule": "Version and event ordering",
+    "domain": "Integration",
+    "predicate": "stale state update cannot regress current state",
+    "enforcement": "Proposed service/native rule; portable function checks only",
+    "source": "Existing project semantics or mentor-derived detailed rule"
+  },
+  {
+    "rule_id": "R14",
+    "rule": "Worker-to-requester gig application",
+    "domain": "Gig",
+    "predicate": "application direction is worker to requester",
+    "enforcement": "Proposed service/native rule; portable function checks only",
+    "source": "Existing project semantics or mentor-derived detailed rule"
+  },
+  {
+    "rule_id": "R15",
+    "rule": "Positive gig time window",
+    "domain": "Gig",
+    "predicate": "end time is later than start time",
+    "enforcement": "Proposed service/native rule; portable function checks only",
+    "source": "Existing project semantics or mentor-derived detailed rule"
+  },
+  {
+    "rule_id": "R16",
+    "rule": "Assignment after acceptance",
+    "domain": "Gig",
+    "predicate": "assignment exists only for an accepted application",
+    "enforcement": "Proposed service/native rule; portable function checks only",
+    "source": "Existing project semantics or mentor-derived detailed rule"
+  },
+  {
+    "rule_id": "R17",
+    "rule": "External completed earnings",
+    "domain": "Gig",
+    "predicate": "external completion with nonnegative exact decimal amount",
+    "enforcement": "Proposed service/native rule; portable function checks only",
+    "source": "Existing project semantics or mentor-derived detailed rule"
+  },
+  {
+    "rule_id": "R18",
+    "rule": "Completed own-assignment rating",
+    "domain": "Gig",
+    "predicate": "requester owns completed assignment and rating is 1 through 5",
+    "enforcement": "Proposed service/native rule; portable function checks only",
+    "source": "Existing project semantics or mentor-derived detailed rule"
+  },
+  {
+    "rule_id": "R19",
+    "rule": "Currency representation",
+    "domain": "Money",
+    "predicate": "three-letter uppercase currency code with decimal amount",
+    "enforcement": "Proposed service/native rule; portable function checks only",
+    "source": "Existing project semantics or mentor-derived detailed rule"
+  },
+  {
+    "rule_id": "R20",
+    "rule": "Consent before notification",
+    "domain": "Messaging",
+    "predicate": "consent active and delivery not expired",
+    "enforcement": "Proposed service/native rule; portable function checks only",
+    "source": "Existing project semantics or mentor-derived detailed rule"
+  },
+  {
+    "rule_id": "R21",
+    "rule": "Approved consultant sourcing",
+    "domain": "Sourcing",
+    "predicate": "job open to consultants and request accepted",
+    "enforcement": "Proposed service/native rule; portable function checks only",
+    "source": "Existing project semantics or mentor-derived detailed rule"
+  },
+  {
+    "rule_id": "R22",
+    "rule": "Vacancy capacity",
+    "domain": "Hiring",
+    "predicate": "zero <= filled positions <= positions",
+    "enforcement": "Proposed service/native rule; portable function checks only",
+    "source": "Existing project semantics or mentor-derived detailed rule"
+  },
+  {
+    "rule_id": "R23",
+    "rule": "Versioned set identity",
+    "domain": "Data",
+    "predicate": "version, workflow and unique case key required",
+    "enforcement": "Proposed service/native rule; portable function checks only",
+    "source": "Existing project semantics or mentor-derived detailed rule"
+  },
+  {
+    "rule_id": "R24",
+    "rule": "Coherent analytics denominator",
+    "domain": "Analytics",
+    "predicate": "zero denominator is not applicable and cohort/grain match",
+    "enforcement": "Proposed service/native rule; portable function checks only",
+    "source": "Existing project semantics or mentor-derived detailed rule"
+  },
+  {
+    "rule_id": "R25",
+    "rule": "Required source input",
+    "domain": "Contract",
+    "predicate": "required field present with a permitted non-null value",
+    "enforcement": "Proposed service/native rule; portable function checks only",
+    "source": "Existing project semantics or mentor-derived detailed rule"
+  }
+]

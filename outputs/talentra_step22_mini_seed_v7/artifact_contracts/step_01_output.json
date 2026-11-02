@@ -1,0 +1,648 @@
+{
+  "title": "Step1 Output Document",
+  "type": "object",
+  "properties": {
+    "Requirements": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Requirement ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Section": {
+            "type": [
+              "string"
+            ]
+          },
+          "Actor": {
+            "type": [
+              "string"
+            ]
+          },
+          "Statement": {
+            "type": [
+              "string"
+            ]
+          },
+          "Acceptance": {
+            "type": [
+              "string"
+            ]
+          },
+          "Module": {
+            "type": [
+              "string"
+            ]
+          },
+          "Priority": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source": {
+            "type": [
+              "string"
+            ]
+          },
+          "Basis": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Requirement ID",
+          "Section",
+          "Actor",
+          "Statement",
+          "Acceptance",
+          "Module",
+          "Priority",
+          "Source",
+          "Basis"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Scope": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Scope ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Disposition": {
+            "type": [
+              "string"
+            ]
+          },
+          "Topic": {
+            "type": [
+              "string"
+            ]
+          },
+          "Boundary": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Scope ID",
+          "Disposition",
+          "Topic",
+          "Boundary",
+          "Source"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Decisions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Decision ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Topic": {
+            "type": [
+              "string"
+            ]
+          },
+          "Decision": {
+            "type": [
+              "string"
+            ]
+          },
+          "Reason": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source": {
+            "type": [
+              "string"
+            ]
+          },
+          "Status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Decision ID",
+          "Topic",
+          "Decision",
+          "Reason",
+          "Source",
+          "Status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Questions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Question ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Owner": {
+            "type": [
+              "string"
+            ]
+          },
+          "Question": {
+            "type": [
+              "string"
+            ]
+          },
+          "Priority": {
+            "type": [
+              "string"
+            ]
+          },
+          "Working treatment": {
+            "type": [
+              "string"
+            ]
+          },
+          "Status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Question ID",
+          "Owner",
+          "Question",
+          "Priority",
+          "Working treatment",
+          "Status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Release obligations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Gate ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Concern": {
+            "type": [
+              "string"
+            ]
+          },
+          "Required evidence": {
+            "type": [
+              "string"
+            ]
+          },
+          "Owner": {
+            "type": [
+              "string"
+            ]
+          },
+          "Status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Reason": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Gate ID",
+          "Concern",
+          "Required evidence",
+          "Owner",
+          "Status",
+          "Reason"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T004 Workbook introduction": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "req_id": {
+            "type": [
+              "string"
+            ]
+          },
+          "Statement": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source": {
+            "type": [
+              "string"
+            ]
+          },
+          "Actor": {
+            "type": [
+              "string"
+            ]
+          },
+          "Priority": {
+            "type": [
+              "string"
+            ]
+          },
+          "Ambiguity note": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "Realised by": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "req_id",
+          "Statement",
+          "Source",
+          "Actor",
+          "Priority",
+          "Ambiguity note",
+          "Realised by",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T005 Open questions (ranked by design imp": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Question": {
+            "type": [
+              "string"
+            ]
+          },
+          "Design impact": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "ID",
+          "Question",
+          "Design impact",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Hybrid requirement crosswalk": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "B requirement ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "B statement": {
+            "type": [
+              "string"
+            ]
+          },
+          "Related A requirement": {
+            "type": [
+              "string"
+            ]
+          },
+          "A statement": {
+            "type": [
+              "string"
+            ]
+          },
+          "Lexical similarity": {
+            "type": [
+              "number"
+            ]
+          },
+          "Mapping confidence": {
+            "type": [
+              "string"
+            ]
+          },
+          "B source": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "B requirement ID",
+          "B statement",
+          "Related A requirement",
+          "A statement",
+          "Lexical similarity",
+          "Mapping confidence",
+          "B source"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Cross-source comparison": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Comparison ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Step": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Decision or field": {
+            "type": [
+              "string"
+            ]
+          },
+          "A value": {
+            "type": [
+              "string"
+            ]
+          },
+          "B value": {
+            "type": [
+              "string"
+            ]
+          },
+          "Agreement": {
+            "type": [
+              "string"
+            ]
+          },
+          "B locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Hybrid conclusion": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Comparison ID",
+          "Step",
+          "Decision or field",
+          "A value",
+          "B value",
+          "Agreement",
+          "B locator",
+          "Hybrid conclusion"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Hybrid handoff": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Handoff ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Concern": {
+            "type": [
+              "string"
+            ]
+          },
+          "Inputs": {
+            "type": [
+              "string"
+            ]
+          },
+          "Next use": {
+            "type": [
+              "string"
+            ]
+          },
+          "Acceptance condition": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proposed owner": {
+            "type": [
+              "string"
+            ]
+          },
+          "Status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Reason": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Handoff ID",
+          "Concern",
+          "Inputs",
+          "Next use",
+          "Acceptance condition",
+          "Proposed owner",
+          "Status",
+          "Reason"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Human review prompts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Question ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Question": {
+            "type": [
+              "string"
+            ]
+          },
+          "Expected evidence anchor": {
+            "type": [
+              "string"
+            ]
+          },
+          "Human response": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "Reviewer score 0 to 5": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "Review status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proposed reviewer role": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Question ID",
+          "Question",
+          "Expected evidence anchor",
+          "Human response",
+          "Reviewer score 0 to 5",
+          "Review status",
+          "Proposed reviewer role"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Acceptance cases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Case ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Case": {
+            "type": [
+              "string"
+            ]
+          },
+          "Expected result": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proof layer": {
+            "type": [
+              "string"
+            ]
+          },
+          "Status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Owner": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Case ID",
+          "Case",
+          "Expected result",
+          "Proof layer",
+          "Status",
+          "Owner"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "Requirements",
+    "Scope",
+    "Decisions",
+    "Questions",
+    "Release obligations",
+    "B T004 Workbook introduction",
+    "B T005 Open questions (ranked by design imp",
+    "Hybrid requirement crosswalk",
+    "Cross-source comparison",
+    "Hybrid handoff",
+    "Human review prompts",
+    "Acceptance cases"
+  ],
+  "additionalProperties": false
+}

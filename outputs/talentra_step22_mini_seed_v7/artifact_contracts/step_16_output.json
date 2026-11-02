@@ -1,0 +1,1164 @@
+{
+  "title": "Step16 Output Document",
+  "type": "object",
+  "properties": {
+    "Workflow coverage": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Operation ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Workflow ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Actor": {
+            "type": [
+              "string"
+            ]
+          },
+          "Operation": {
+            "type": [
+              "string"
+            ]
+          },
+          "Entity": {
+            "type": [
+              "string"
+            ]
+          },
+          "Data contract": {
+            "type": [
+              "string"
+            ]
+          },
+          "Retrieval": {
+            "type": [
+              "string"
+            ]
+          },
+          "Audit": {
+            "type": [
+              "string"
+            ]
+          },
+          "Coverage": {
+            "type": [
+              "string"
+            ]
+          },
+          "Owner": {
+            "type": [
+              "string"
+            ]
+          },
+          "Requirement IDs": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Operation ID",
+          "Workflow ID",
+          "Actor",
+          "Operation",
+          "Entity",
+          "Data contract",
+          "Retrieval",
+          "Audit",
+          "Coverage",
+          "Owner",
+          "Requirement IDs"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Gap register": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Gap ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Gap": {
+            "type": [
+              "string"
+            ]
+          },
+          "Treatment": {
+            "type": [
+              "string"
+            ]
+          },
+          "Owner": {
+            "type": [
+              "string"
+            ]
+          },
+          "Checkpoint": {
+            "type": [
+              "string"
+            ]
+          },
+          "Status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Gap ID",
+          "Gap",
+          "Treatment",
+          "Owner",
+          "Checkpoint",
+          "Status",
+          "Source"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Gate assessment": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Gate": {
+            "type": [
+              "string"
+            ]
+          },
+          "Scope": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence": {
+            "type": [
+              "string"
+            ]
+          },
+          "Decision": {
+            "type": [
+              "string"
+            ]
+          },
+          "Remaining requirement": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Gate",
+          "Scope",
+          "Evidence",
+          "Decision",
+          "Remaining requirement",
+          "Source"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Integration workflow coverage": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Operation ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Requirement": {
+            "type": [
+              "string"
+            ]
+          },
+          "Operation": {
+            "type": [
+              "string"
+            ]
+          },
+          "Read or write": {
+            "type": [
+              "string"
+            ]
+          },
+          "Audit": {
+            "type": [
+              "string"
+            ]
+          },
+          "Owner": {
+            "type": [
+              "string"
+            ]
+          },
+          "Status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Operation ID",
+          "Requirement",
+          "Operation",
+          "Read or write",
+          "Audit",
+          "Owner",
+          "Status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T028 ▶ WF-01 Candidate registration and p": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Step": {
+            "type": [
+              "number"
+            ]
+          },
+          "What happens": {
+            "type": [
+              "string"
+            ]
+          },
+          "Actor": {
+            "type": [
+              "string"
+            ]
+          },
+          "Entities touched": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Step",
+          "What happens",
+          "Actor",
+          "Entities touched",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T029 ▶ WF-02 Employer registration and ve": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Step": {
+            "type": [
+              "number"
+            ]
+          },
+          "What happens": {
+            "type": [
+              "string"
+            ]
+          },
+          "Actor": {
+            "type": [
+              "string"
+            ]
+          },
+          "Entities touched": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Step",
+          "What happens",
+          "Actor",
+          "Entities touched",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T030 ▶ WF-03 Job requirement posting": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Step": {
+            "type": [
+              "number"
+            ]
+          },
+          "What happens": {
+            "type": [
+              "string"
+            ]
+          },
+          "Actor": {
+            "type": [
+              "string"
+            ]
+          },
+          "Entities touched": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Step",
+          "What happens",
+          "Actor",
+          "Entities touched",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T031 ▶ WF-04 Job search and application": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Step": {
+            "type": [
+              "number"
+            ]
+          },
+          "What happens": {
+            "type": [
+              "string"
+            ]
+          },
+          "Actor": {
+            "type": [
+              "string"
+            ]
+          },
+          "Entities touched": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Step",
+          "What happens",
+          "Actor",
+          "Entities touched",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T032 ▶ WF-05 Application pipeline": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Step": {
+            "type": [
+              "number"
+            ]
+          },
+          "What happens": {
+            "type": [
+              "string"
+            ]
+          },
+          "Actor": {
+            "type": [
+              "string"
+            ]
+          },
+          "Entities touched": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Step",
+          "What happens",
+          "Actor",
+          "Entities touched",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T033 ▶ WF-06 Candidate sourcing and profi": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Step": {
+            "type": [
+              "number"
+            ]
+          },
+          "What happens": {
+            "type": [
+              "string"
+            ]
+          },
+          "Actor": {
+            "type": [
+              "string"
+            ]
+          },
+          "Entities touched": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Step",
+          "What happens",
+          "Actor",
+          "Entities touched",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T034 ▶ WF-07 Subscription, recharge and c": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Step": {
+            "type": [
+              "number"
+            ]
+          },
+          "What happens": {
+            "type": [
+              "string"
+            ]
+          },
+          "Actor": {
+            "type": [
+              "string"
+            ]
+          },
+          "Entities touched": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Step",
+          "What happens",
+          "Actor",
+          "Entities touched",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T035 ▶ WF-08 Login with device limit": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Step": {
+            "type": [
+              "number"
+            ]
+          },
+          "What happens": {
+            "type": [
+              "string"
+            ]
+          },
+          "Actor": {
+            "type": [
+              "string"
+            ]
+          },
+          "Entities touched": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Step",
+          "What happens",
+          "Actor",
+          "Entities touched",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T036 ▶ WF-09 Blocking": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Step": {
+            "type": [
+              "number"
+            ]
+          },
+          "What happens": {
+            "type": [
+              "string"
+            ]
+          },
+          "Actor": {
+            "type": [
+              "string"
+            ]
+          },
+          "Entities touched": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Step",
+          "What happens",
+          "Actor",
+          "Entities touched",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T037 ▶ WF-10 Notifications and job alerts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Step": {
+            "type": [
+              "number"
+            ]
+          },
+          "What happens": {
+            "type": [
+              "string"
+            ]
+          },
+          "Actor": {
+            "type": [
+              "string"
+            ]
+          },
+          "Entities touched": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Step",
+          "What happens",
+          "Actor",
+          "Entities touched",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T038 ▶ WF-14 Data erasure (DPDP Act 2023)": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Step": {
+            "type": [
+              "number"
+            ]
+          },
+          "What happens": {
+            "type": [
+              "string"
+            ]
+          },
+          "Actor": {
+            "type": [
+              "string"
+            ]
+          },
+          "Entities touched": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Step",
+          "What happens",
+          "Actor",
+          "Entities touched",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T039 ▶ PLATFORM Cross-cutting platform pr": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Step": {
+            "type": [
+              "string"
+            ]
+          },
+          "What happens": {
+            "type": [
+              "string"
+            ]
+          },
+          "Actor": {
+            "type": [
+              "string"
+            ]
+          },
+          "Entities touched": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Step",
+          "What happens",
+          "Actor",
+          "Entities touched",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T187 1. Workflow × Table Coverage Matrix": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Step ID": {
+            "type": [
+              "number",
+              "string"
+            ]
+          },
+          "Actor": {
+            "type": [
+              "string"
+            ]
+          },
+          "Operation Name": {
+            "type": [
+              "string"
+            ]
+          },
+          "Tables Stored (C/U/D)": {
+            "type": [
+              "string"
+            ]
+          },
+          "Tables Retrieved (R)": {
+            "type": [
+              "string"
+            ]
+          },
+          "Audited How": {
+            "type": [
+              "string"
+            ]
+          },
+          "Database Entry Point": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Step ID",
+          "Actor",
+          "Operation Name",
+          "Tables Stored (C/U/D)",
+          "Tables Retrieved (R)",
+          "Audited How",
+          "Database Entry Point",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T188 3. Gap List Discovered During Walkth": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Gap ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Workflow Step": {
+            "type": [
+              "string"
+            ]
+          },
+          "Severity": {
+            "type": [
+              "string"
+            ]
+          },
+          "Flaw Discovered in Walkthrough": {
+            "type": [
+              "string"
+            ]
+          },
+          "Step 17 / V013 Resolution": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Gap ID",
+          "Workflow Step",
+          "Severity",
+          "Flaw Discovered in Walkthrough",
+          "Step 17 / V013 Resolution",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Cross-source comparison": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Comparison ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Step": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Decision or field": {
+            "type": [
+              "string"
+            ]
+          },
+          "A value": {
+            "type": [
+              "string"
+            ]
+          },
+          "B value": {
+            "type": [
+              "string"
+            ]
+          },
+          "Agreement": {
+            "type": [
+              "string"
+            ]
+          },
+          "B locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Hybrid conclusion": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Comparison ID",
+          "Step",
+          "Decision or field",
+          "A value",
+          "B value",
+          "Agreement",
+          "B locator",
+          "Hybrid conclusion"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Hybrid handoff": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Handoff ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Concern": {
+            "type": [
+              "string"
+            ]
+          },
+          "Inputs": {
+            "type": [
+              "string"
+            ]
+          },
+          "Next use": {
+            "type": [
+              "string"
+            ]
+          },
+          "Acceptance condition": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proposed owner": {
+            "type": [
+              "string"
+            ]
+          },
+          "Status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Reason": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Handoff ID",
+          "Concern",
+          "Inputs",
+          "Next use",
+          "Acceptance condition",
+          "Proposed owner",
+          "Status",
+          "Reason"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Human review prompts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Question ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Question": {
+            "type": [
+              "string"
+            ]
+          },
+          "Expected evidence anchor": {
+            "type": [
+              "string"
+            ]
+          },
+          "Human response": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "Reviewer score 0 to 5": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "Review status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proposed reviewer role": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Question ID",
+          "Question",
+          "Expected evidence anchor",
+          "Human response",
+          "Reviewer score 0 to 5",
+          "Review status",
+          "Proposed reviewer role"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Acceptance cases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Case ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Case": {
+            "type": [
+              "string"
+            ]
+          },
+          "Expected result": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proof layer": {
+            "type": [
+              "string"
+            ]
+          },
+          "Status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Owner": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Case ID",
+          "Case",
+          "Expected result",
+          "Proof layer",
+          "Status",
+          "Owner"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "Workflow coverage",
+    "Gap register",
+    "Gate assessment",
+    "Integration workflow coverage",
+    "B T028 ▶ WF-01 Candidate registration and p",
+    "B T029 ▶ WF-02 Employer registration and ve",
+    "B T030 ▶ WF-03 Job requirement posting",
+    "B T031 ▶ WF-04 Job search and application",
+    "B T032 ▶ WF-05 Application pipeline",
+    "B T033 ▶ WF-06 Candidate sourcing and profi",
+    "B T034 ▶ WF-07 Subscription, recharge and c",
+    "B T035 ▶ WF-08 Login with device limit",
+    "B T036 ▶ WF-09 Blocking",
+    "B T037 ▶ WF-10 Notifications and job alerts",
+    "B T038 ▶ WF-14 Data erasure (DPDP Act 2023)",
+    "B T039 ▶ PLATFORM Cross-cutting platform pr",
+    "B T187 1. Workflow × Table Coverage Matrix",
+    "B T188 3. Gap List Discovered During Walkth",
+    "Cross-source comparison",
+    "Hybrid handoff",
+    "Human review prompts",
+    "Acceptance cases"
+  ],
+  "additionalProperties": false
+}

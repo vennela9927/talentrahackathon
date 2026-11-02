@@ -1,0 +1,26 @@
+{
+  "version": "seed",
+  "family": "IT_TEST",
+  "journeys": 225000,
+  "gig_applications": 8335,
+  "hiring_stages": {
+    "journeys": 225000,
+    "searched": 225000,
+    "screened": 180000,
+    "applied": 99000,
+    "shortlisted": 39600,
+    "assessed": 35640,
+    "interviewed": 21384,
+    "rejected": 16038,
+    "selected": 5346,
+    "offered": 5078,
+    "accepted": 4163,
+    "onboarded": 3829,
+    "offer_declined": 915
+  },
+  "basis": "Full saved v6 synthetic population. Scenario rates remain proposed workload assumptions.",
+  "files": [
+    "seed/sets/IT_TEST/journey.csv.gz",
+    "seed/sets/IT_TEST/gig.csv.gz"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "version": "mini",
+  "family": "BLUE_FIELD",
+  "journeys": 20,
+  "gig_applications": 15,
+  "hiring_stages": {
+    "journeys": 20,
+    "searched": 20,
+    "screened": 18,
+    "applied": 16,
+    "shortlisted": 14,
+    "assessed": 12,
+    "interviewed": 10,
+    "rejected": 2,
+    "selected": 8,
+    "offered": 6,
+    "accepted": 4,
+    "onboarded": 2,
+    "offer_declined": 2
+  },
+  "basis": "Coverage sample, deliberately balanced across family and current outcome. Rates are descriptive of this sample, not estimates of the seed.",
+  "files": [
+    "mini/sets/BLUE_FIELD/journey.csv.gz",
+    "mini/sets/BLUE_FIELD/gig.csv.gz"
+  ]
+}

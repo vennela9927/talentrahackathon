@@ -1,0 +1,461 @@
+[
+  {
+    "workflow_id": "WF-01",
+    "workflow": "Candidate onboarding",
+    "group": "Identity and profile",
+    "primary_actor": "Candidate",
+    "trigger": "Self-registration",
+    "business_sequence": "Candidate self-registers > normalize login > verify identity channel > capture consent > create own profile > audit",
+    "exceptions": "Reject recruiter-created identity; duplicate login",
+    "source": "Design derived from D1 pp.2-6",
+    "status": "Retained source design",
+    "data_scope": "Synthetic workflow envelopes plus linked hiring/gig records where applicable",
+    "step_count": 4,
+    "actor_ids": [
+      "ACT-05",
+      "ACT-23"
+    ]
+  },
+  {
+    "workflow_id": "WF-02",
+    "workflow": "Profile maintenance",
+    "group": "Identity and profile",
+    "primary_actor": "Candidate",
+    "trigger": "Profile save",
+    "business_sequence": "Authorize owner > edit repeating profile sections > validate domains > version resume > recalculate completion > append activity",
+    "exceptions": "Unknown salary stays typed NULL; erasure request",
+    "source": "Design derived from D1 pp.2-6",
+    "status": "Retained source design",
+    "data_scope": "Synthetic workflow envelopes plus linked hiring/gig records where applicable",
+    "step_count": 11,
+    "actor_ids": [
+      "ACT-05"
+    ]
+  },
+  {
+    "workflow_id": "WF-03",
+    "workflow": "Employer onboarding",
+    "group": "Organisation and access",
+    "primary_actor": "Employer",
+    "trigger": "Organisation submission",
+    "business_sequence": "Create account > register organisation > store tokenized identifiers > request verification > verify outcome > map recruiters",
+    "exceptions": "Verification unavailable: pending with retry",
+    "source": "Design derived from D1 pp.2-6",
+    "status": "Retained source design",
+    "data_scope": "Synthetic workflow envelopes plus linked hiring/gig records where applicable",
+    "step_count": 7,
+    "actor_ids": [
+      "ACT-06",
+      "ACT-24"
+    ]
+  },
+  {
+    "workflow_id": "WF-04",
+    "workflow": "Job publication",
+    "group": "Demand and eligibility",
+    "primary_actor": "Employer",
+    "trigger": "Publish request",
+    "business_sequence": "Employer drafts requirement > add skills/questions > validate salary and positions > verify organisation > publish",
+    "exceptions": "Unverified employer or invalid salary rejected",
+    "source": "Design derived from D1 pp.2-6",
+    "status": "Retained source design",
+    "data_scope": "Synthetic workflow envelopes plus linked hiring/gig records where applicable",
+    "step_count": 3,
+    "actor_ids": [
+      "ACT-06",
+      "ACT-24"
+    ]
+  },
+  {
+    "workflow_id": "WF-05",
+    "workflow": "Candidate application",
+    "group": "Demand and eligibility",
+    "primary_actor": "Candidate",
+    "trigger": "Apply to published job",
+    "business_sequence": "Search published jobs > inspect questions > select own resume > answer required questions > insert unique application > append applied event",
+    "exceptions": "Duplicate apply; closed job; unanswered required question",
+    "source": "Design derived from D1 pp.2-6",
+    "status": "Retained source design",
+    "data_scope": "Synthetic workflow envelopes plus linked hiring/gig records where applicable",
+    "step_count": 5,
+    "actor_ids": [
+      "ACT-05"
+    ]
+  },
+  {
+    "workflow_id": "WF-06",
+    "workflow": "Hiring pipeline",
+    "group": "Hiring decisions",
+    "primary_actor": "Recruiter",
+    "trigger": "Advance application",
+    "business_sequence": "Shortlist visible candidate > schedule interview > record interview > issue offer > record acceptance and joining > append every status event",
+    "exceptions": "Illegal transition; expired offer; withdrawn application",
+    "source": "Design derived from D1 pp.2-6",
+    "status": "Retained source design",
+    "data_scope": "Synthetic workflow envelopes plus linked hiring/gig records where applicable",
+    "step_count": 5,
+    "actor_ids": [
+      "ACT-07"
+    ]
+  },
+  {
+    "workflow_id": "WF-07",
+    "workflow": "Consultant sourcing",
+    "group": "Sourcing and messaging",
+    "primary_actor": "Consultant",
+    "trigger": "Request access to requirement",
+    "business_sequence": "Consultant requests access > employer accepts/declines > recheck consultant openness > submit candidate shortlist > close on job closure",
+    "exceptions": "Job closes to consultants before submission",
+    "source": "Design derived from D1 pp.2-6",
+    "status": "Retained source design",
+    "data_scope": "Synthetic workflow envelopes plus linked hiring/gig records where applicable",
+    "step_count": 4,
+    "actor_ids": [
+      "ACT-08"
+    ]
+  },
+  {
+    "workflow_id": "WF-08",
+    "workflow": "Bulk outreach",
+    "group": "Sourcing and messaging",
+    "primary_actor": "Recruiter",
+    "trigger": "Send batch",
+    "business_sequence": "Recruiter selects own-company job > filter blocked candidates > create batch > lock wallet > debit once > recheck consent/block > enqueue delivery",
+    "exceptions": "Candidate blocks actor after batching; insufficient credits",
+    "source": "Design derived from D1 pp.2-6",
+    "status": "Retained source design",
+    "data_scope": "Synthetic workflow envelopes plus linked hiring/gig records where applicable",
+    "step_count": 4,
+    "actor_ids": [
+      "ACT-07"
+    ]
+  },
+  {
+    "workflow_id": "WF-09",
+    "workflow": "Visibility blocking",
+    "group": "Identity and profile",
+    "primary_actor": "Candidate",
+    "trigger": "Block party",
+    "business_sequence": "Candidate selects party > create user/company block > invalidate visibility cache > exclude search/view/export/outreach > append denied-read evidence",
+    "exceptions": "Existing caches and export links must reauthorize",
+    "source": "Design derived from D1 pp.2-6",
+    "status": "Retained source design",
+    "data_scope": "Synthetic workflow envelopes plus linked hiring/gig records where applicable",
+    "step_count": 4,
+    "actor_ids": [
+      "ACT-05"
+    ]
+  },
+  {
+    "workflow_id": "WF-10",
+    "workflow": "Gig marketplace",
+    "group": "Gig marketplace",
+    "primary_actor": "Gig Worker",
+    "trigger": "Worker applies to gig",
+    "business_sequence": "Worker creates separate gig profile > declares service/rate/availability > requester posts gig > worker applies > requester accepts > validate nonoverlap > create handoff",
+    "exceptions": "Reverse-direction bid rejected; overlapping assignment",
+    "source": "Design derived from D1 pp.2-6",
+    "status": "Retained source design",
+    "data_scope": "Synthetic workflow envelopes plus linked hiring/gig records where applicable",
+    "step_count": 7,
+    "actor_ids": [
+      "ACT-10"
+    ]
+  },
+  {
+    "workflow_id": "WF-11",
+    "workflow": "Gig reconciliation",
+    "group": "Gig marketplace",
+    "primary_actor": "Integration Worker",
+    "trigger": "External handoff callback",
+    "business_sequence": "Persist external handoff key > ingest idempotent provider event > reconcile assignment status > snapshot external earnings > requester rates completed gig",
+    "exceptions": "Provider down; duplicate or out-of-order completion",
+    "source": "Design derived from D1 pp.2-6",
+    "status": "Retained source design",
+    "data_scope": "Synthetic workflow envelopes plus linked hiring/gig records where applicable",
+    "step_count": 5,
+    "actor_ids": [
+      "ACT-15"
+    ]
+  },
+  {
+    "workflow_id": "WF-12",
+    "workflow": "Seat and login",
+    "group": "Organisation and access",
+    "primary_actor": "Account Admin",
+    "trigger": "Allocate seat or start session",
+    "business_sequence": "Lock licence > allocate available seat > register owned device > lock user > expire stale sessions > count active sessions > admit or deny > audit/revoke",
+    "exceptions": "Concurrent final seat; expired session; revoked device",
+    "source": "Design derived from D1 pp.2-6",
+    "status": "Retained source design",
+    "data_scope": "Synthetic workflow envelopes plus linked hiring/gig records where applicable",
+    "step_count": 6,
+    "actor_ids": [
+      "ACT-03"
+    ]
+  },
+  {
+    "workflow_id": "WF-13",
+    "workflow": "Subscriptions and payments",
+    "group": "Commerce and support",
+    "primary_actor": "Payment Worker",
+    "trigger": "Payment callback or renewal",
+    "business_sequence": "Choose plan > create nonoverlapping period > create payment order > verify provider capture > append payment and credit > issue invoice > bound cumulative refunds",
+    "exceptions": "Duplicate capture; overlapping period; excessive refund",
+    "source": "Design derived from D1 pp.2-6",
+    "status": "Retained source design",
+    "data_scope": "Synthetic workflow envelopes plus linked hiring/gig records where applicable",
+    "step_count": 10,
+    "actor_ids": [
+      "ACT-16"
+    ]
+  },
+  {
+    "workflow_id": "WF-14",
+    "workflow": "Profile download",
+    "group": "Sourcing and messaging",
+    "primary_actor": "Recruiter",
+    "trigger": "Download request",
+    "business_sequence": "Authorize recruiter and candidate visibility > lock wallet > reuse idempotency key or append debit > append download event > issue short-lived object access",
+    "exceptions": "Blocked user; retry uses same idempotency key",
+    "source": "Design derived from D1 pp.2-6",
+    "status": "Retained source design",
+    "data_scope": "Synthetic workflow envelopes plus linked hiring/gig records where applicable",
+    "step_count": 3,
+    "actor_ids": [
+      "ACT-07"
+    ]
+  },
+  {
+    "workflow_id": "WF-15",
+    "workflow": "Preferences and alerts",
+    "group": "Sourcing and messaging",
+    "primary_actor": "Candidate",
+    "trigger": "Preference change or job alert",
+    "business_sequence": "Update language/privacy/channel preference > match published job alert > check purpose consent > enqueue notification > recheck opt-out > record provider delivery",
+    "exceptions": "Consent revoked before delivery; provider unavailable",
+    "source": "Design derived from D1 pp.2-6",
+    "status": "Retained source design",
+    "data_scope": "Synthetic workflow envelopes plus linked hiring/gig records where applicable",
+    "step_count": 5,
+    "actor_ids": [
+      "ACT-05"
+    ]
+  },
+  {
+    "workflow_id": "WF-16",
+    "workflow": "Community and support",
+    "group": "Commerce and support",
+    "primary_actor": "Support Agent",
+    "trigger": "Post or ticket request",
+    "business_sequence": "Create post or support ticket > moderate or assign > append reaction/referral events > resolve/reopen ticket > localize FAQ > record candidate activity",
+    "exceptions": "Abusive content; ticket reopen; repeated referral event",
+    "source": "Design derived from D1 pp.2-6",
+    "status": "Retained source design",
+    "data_scope": "Synthetic workflow envelopes plus linked hiring/gig records where applicable",
+    "step_count": 8,
+    "actor_ids": [
+      "ACT-13"
+    ]
+  },
+  {
+    "workflow_id": "WF-17",
+    "workflow": "Governance and analytics",
+    "group": "Data and governance",
+    "primary_actor": "Data Engineer",
+    "trigger": "Scheduled refresh",
+    "business_sequence": "Version reference codes/translations > apply role grants > refresh conformed dimensions > load facts at declared grain > aggregate KPIs > record failures",
+    "exceptions": "Missing translation falls back; stale dimensions flagged",
+    "source": "Design derived from D1 pp.2-6",
+    "status": "Retained source design",
+    "data_scope": "Synthetic workflow envelopes plus linked hiring/gig records where applicable",
+    "step_count": 21,
+    "actor_ids": [
+      "ACT-01",
+      "ACT-02",
+      "ACT-09",
+      "ACT-12",
+      "ACT-14",
+      "ACT-18"
+    ]
+  },
+  {
+    "workflow_id": "WF-18",
+    "workflow": "Integration and retention",
+    "group": "Identity and profile",
+    "primary_actor": "Retention Worker",
+    "trigger": "Scheduled reconciliation or erasure",
+    "business_sequence": "Receive external or retention trigger > validate version/policy > reconcile or quarantine > unlink expired personal tokens > purge authorized data > append evidence",
+    "exceptions": "Provider retries; expired retention; financial token unlink",
+    "source": "Design derived from D1 pp.2-6",
+    "status": "Retained source design",
+    "data_scope": "Synthetic workflow envelopes plus linked hiring/gig records where applicable",
+    "step_count": 4,
+    "actor_ids": [
+      "ACT-17"
+    ]
+  },
+  {
+    "workflow_id": "WF-19",
+    "workflow": "Search and job eligibility",
+    "group": "Demand and eligibility",
+    "primary_actor": "Candidate",
+    "trigger": "Search matches and job-scoped screening",
+    "business_sequence": "Create target-job journey > Bind candidate and account scope > Resolve job family and engagement > Evaluate the versioned eligibility rules > Record screening source event > Permit eligible candidate submission",
+    "exceptions": "Cross-account, missing required input, blocked subject, duplicate or invalid business transition",
+    "source": "Mentor image / v6 business scenarios and gap register",
+    "status": "Proposed detailed workflow",
+    "data_scope": "Synthetic workflow envelopes; proposed fields remain staging examples",
+    "step_count": 6,
+    "actor_ids": [
+      "ACT-04",
+      "ACT-05",
+      "ACT-19"
+    ]
+  },
+  {
+    "workflow_id": "WF-20",
+    "workflow": "Assessment with application context",
+    "group": "Hiring decisions",
+    "primary_actor": "Assessment Provider",
+    "trigger": "Assessment completion and its source event",
+    "business_sequence": "Confirm application and assessment context > Issue a scoped assessment invitation > Record a tokenized provider attempt > Validate completion and result units > Link the attempt to this application > Publish the assessed milestone",
+    "exceptions": "Cross-account, missing required input, blocked subject, duplicate or invalid business transition",
+    "source": "Mentor image / v6 business scenarios and gap register",
+    "status": "Proposed detailed workflow",
+    "data_scope": "Synthetic workflow envelopes; proposed fields remain staging examples",
+    "step_count": 6,
+    "actor_ids": [
+      "ACT-07",
+      "ACT-15",
+      "ACT-20"
+    ]
+  },
+  {
+    "workflow_id": "WF-21",
+    "workflow": "Interview and employer decision",
+    "group": "Hiring decisions",
+    "primary_actor": "Interviewer",
+    "trigger": "Assigned interview and employer decision",
+    "business_sequence": "Authorize the assigned interviewer > Schedule the candidate interview > Record interview completion > Apply the job-specific evaluation rubric > Record selected or employer-rejected decision > Publish outcome to the hiring cohort",
+    "exceptions": "Cross-account, missing required input, blocked subject, duplicate or invalid business transition",
+    "source": "Mentor image / v6 business scenarios and gap register",
+    "status": "Proposed detailed workflow",
+    "data_scope": "Synthetic workflow envelopes; proposed fields remain staging examples",
+    "step_count": 6,
+    "actor_ids": [
+      "ACT-07",
+      "ACT-15",
+      "ACT-21",
+      "ACT-22"
+    ]
+  },
+  {
+    "workflow_id": "WF-22",
+    "workflow": "Offer issue and candidate response",
+    "group": "Hiring decisions",
+    "primary_actor": "Hiring Manager",
+    "trigger": "Offer, acceptance and candidate decline",
+    "business_sequence": "Verify selection before offer creation > Approve terms, currency and expiry > Deliver the offer under valid consent > Authenticate the responding candidate > Record acceptance or candidate decline > Publish the first offer and response times",
+    "exceptions": "Cross-account, missing required input, blocked subject, duplicate or invalid business transition",
+    "source": "Mentor image / v6 business scenarios and gap register",
+    "status": "Proposed detailed workflow",
+    "data_scope": "Synthetic workflow envelopes; proposed fields remain staging examples",
+    "step_count": 6,
+    "actor_ids": [
+      "ACT-05",
+      "ACT-15",
+      "ACT-22",
+      "ACT-26"
+    ]
+  },
+  {
+    "workflow_id": "WF-23",
+    "workflow": "Onboarding confirmation",
+    "group": "Hiring decisions",
+    "primary_actor": "Employer",
+    "trigger": "Acceptance, joining and vacancy reconciliation",
+    "business_sequence": "Verify accepted offer and identity > Keep pending onboarding visible > Confirm the actual joining date > Validate job vacancy capacity > Publish the onboarded milestone > Reconcile onboarding KPI and pending ageing",
+    "exceptions": "Cross-account, missing required input, blocked subject, duplicate or invalid business transition",
+    "source": "Mentor image / v6 business scenarios and gap register",
+    "status": "Proposed detailed workflow",
+    "data_scope": "Synthetic workflow envelopes; proposed fields remain staging examples",
+    "step_count": 6,
+    "actor_ids": [
+      "ACT-06",
+      "ACT-07",
+      "ACT-14",
+      "ACT-15"
+    ]
+  },
+  {
+    "workflow_id": "WF-24",
+    "workflow": "External gig fulfilment",
+    "group": "Gig marketplace",
+    "primary_actor": "Requester",
+    "trigger": "External handoff, callback, earnings and rating",
+    "business_sequence": "Verify accepted assignment and time window > Send a uniquely keyed external handoff > Return signed provider state and source version > Keep failed handoff pending for retry > Reconcile externally completed earnings > Allow the owner to rate completed work",
+    "exceptions": "Cross-account, missing required input, blocked subject, duplicate or invalid business transition",
+    "source": "Mentor image / v6 business scenarios and gap register",
+    "status": "Proposed detailed workflow",
+    "data_scope": "Synthetic workflow envelopes; proposed fields remain staging examples",
+    "step_count": 6,
+    "actor_ids": [
+      "ACT-11",
+      "ACT-15",
+      "ACT-25"
+    ]
+  },
+  {
+    "workflow_id": "WF-25",
+    "workflow": "Source ingest and reconciliation",
+    "group": "Data and governance",
+    "primary_actor": "Data Engineer",
+    "trigger": "Owned source contracts and quarantined records",
+    "business_sequence": "Fingerprint the received file and contract > Validate account binding and required types > Translate source identifiers within account > Detect duplicate keys and conflicting payloads > Quarantine invalid or stale state updates > Reconcile applied, refused and pending counts",
+    "exceptions": "Cross-account, missing required input, blocked subject, duplicate or invalid business transition",
+    "source": "Mentor image / v6 business scenarios and gap register",
+    "status": "Proposed detailed workflow",
+    "data_scope": "Synthetic workflow envelopes; proposed fields remain staging examples",
+    "step_count": 6,
+    "actor_ids": [
+      "ACT-15",
+      "ACT-18",
+      "ACT-27"
+    ]
+  },
+  {
+    "workflow_id": "WF-26",
+    "workflow": "Consent-aware notification delivery",
+    "group": "Sourcing and messaging",
+    "primary_actor": "Notification Worker",
+    "trigger": "Queued notification and delivery result",
+    "business_sequence": "Resolve the owning account and recipient > Recheck consent, blocking and expiry > Reserve an idempotent delivery key > Send or retain a bounded pending retry > Audit delivery or cancellation outcome",
+    "exceptions": "Cross-account, missing required input, blocked subject, duplicate or invalid business transition",
+    "source": "Mentor image / v6 business scenarios and gap register",
+    "status": "Proposed detailed workflow",
+    "data_scope": "Synthetic workflow envelopes; proposed fields remain staging examples",
+    "step_count": 5,
+    "actor_ids": [
+      "ACT-26"
+    ]
+  },
+  {
+    "workflow_id": "WF-27",
+    "workflow": "Workflow dataset analytics",
+    "group": "Data and governance",
+    "primary_actor": "Data Engineer",
+    "trigger": "Versioned smaller sets and reproducible analytics",
+    "business_sequence": "Select mini or seed and its workflow set > Resolve the set grain, filters and source hashes > Generate scoped workflow example envelopes > Calculate counts, outcomes and business ratios > Review anomalies and publish the evidence",
+    "exceptions": "Cross-account, missing required input, blocked subject, duplicate or invalid business transition",
+    "source": "Mentor image / v6 business scenarios and gap register",
+    "status": "Proposed detailed workflow",
+    "data_scope": "Synthetic workflow envelopes; proposed fields remain staging examples",
+    "step_count": 5,
+    "actor_ids": [
+      "ACT-14",
+      "ACT-18",
+      "ACT-27"
+    ]
+  }
+]

@@ -1,0 +1,20 @@
+# Whitelist: code, the latest releases (v7 steps 1-22, v8 steps 23-25) and the control site.
+/*
+!/.gitignore
+!/README.md
+!/work/
+# sites/talentra-control is its own (empty) git repo holding an old v3 build; not included
+!/outputs/
+/outputs/*
+!/outputs/talentra_step22_mini_seed_v7/
+!/outputs/talentra_phase4_steps_23_25_v8/
+
+# Never commit: generated data (regenerable from seed 23), staging, caches, the proof database
+/work/phase4_platform/data/
+/work/phase4_platform/evidence/native_metadata.csv
+__pycache__/
+*.pyc
+/.pgproof/
+*.zip
+# GitHub rejects files over 100 MB; inspect dumps are regenerable diagnostics
+*.inspect.ndjson

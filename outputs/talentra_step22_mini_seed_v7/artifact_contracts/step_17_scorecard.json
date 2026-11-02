@@ -1,0 +1,76 @@
+{
+  "title": "Step17 Schema Rating Scorecard",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "properties": {
+      "Step": {
+        "type": [
+          "integer",
+          "number"
+        ]
+      },
+      "Deliverable": {
+        "type": [
+          "string"
+        ]
+      },
+      "Dimension": {
+        "type": [
+          "string"
+        ]
+      },
+      "Weight": {
+        "type": [
+          "integer",
+          "number"
+        ]
+      },
+      "Critical": {
+        "type": [
+          "string"
+        ]
+      },
+      "Measure": {
+        "type": [
+          "string"
+        ]
+      },
+      "Score": {
+        "type": [
+          "integer",
+          "number"
+        ]
+      },
+      "Contribution": {
+        "type": [
+          "integer",
+          "number"
+        ]
+      },
+      "Evidence": {
+        "type": [
+          "string"
+        ]
+      },
+      "Return stage": {
+        "type": [
+          "string"
+        ]
+      }
+    },
+    "required": [
+      "Step",
+      "Deliverable",
+      "Dimension",
+      "Weight",
+      "Critical",
+      "Measure",
+      "Score",
+      "Contribution",
+      "Evidence",
+      "Return stage"
+    ],
+    "additionalProperties": false
+  }
+}

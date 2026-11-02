@@ -1,0 +1,20 @@
+{
+  "source_a": {
+    "score": 82.36290322580646,
+    "tables": 120,
+    "columns": 1250,
+    "source_file": "Talentra_Combined.xlsx",
+    "sha256": "7cbd640e3c9e7b3c280cbca4be08fdb468e8dfe088f59e824a73fc824eef7e8e"
+  },
+  "source_b": {
+    "file": "Talentra_Master_Lifecycle_Steps_01_to_21.xlsx",
+    "sha256": "e7f86541317cce9095366c5bb92ca39408c5df8c85dc48cf371f64fe4b902183",
+    "sheets": 24,
+    "tables": 73,
+    "dictionary_columns": 462,
+    "placeholder_definitions": 293,
+    "reported_output_score": 93,
+    "author_interview": "Pending; source provisional4 is not accepted as observed",
+    "model": "Unknown"
+  }
+}

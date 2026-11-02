@@ -1,0 +1,27 @@
+{
+  "checks": [
+    {
+      "file": "steps/19_Data_Dictionary_v2/a_Output_Schema_Definition.xlsx",
+      "errors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/19_Data_Dictionary_v2/b_Schema_Rating_Scorecard.xlsx",
+      "errors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/19_Data_Dictionary_v2/c_Output_Document.xlsx",
+      "errors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "Talentra_Combined.xlsx",
+      "errors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    }
+  ],
+  "formulaEditTest": {
+    "before": 81.60877192982458,
+    "changed": 81.57192982456142,
+    "restored": 81.60877192982458
+  },
+  "workbooks": 64,
+  "previews": 21
+}

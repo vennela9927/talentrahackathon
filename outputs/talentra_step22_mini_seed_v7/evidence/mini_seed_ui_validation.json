@@ -1,0 +1,31 @@
+{
+  "date": "2026-11-01",
+  "scope": "Mini and seed dashboard; portable datasets and offline artifacts",
+  "actors": 27,
+  "workflow_steps": 168,
+  "groups": 8,
+  "versions": [
+    "mini",
+    "seed"
+  ],
+  "workflow_sets": 54,
+  "family_sets": 12,
+  "default_step_rows": 168,
+  "guest_participation_filter": true,
+  "seed_gig_workflow_rows": 6,
+  "seed_gig_case_count": 60,
+  "new_step22_output_sections": 10,
+  "step22_filtered_records": 168,
+  "hierarchy_levels": [
+    1,
+    2,
+    3,
+    4
+  ],
+  "download_clicked": "Updated output Excel",
+  "download_mechanism": "Browser download verified before final membership metadata update. All final embedded payloads compared byte-for-byte with saved files.",
+  "embedded_downloads_verified": 136,
+  "saved_workbook_checks": "mini_seed_saved_artifacts.json",
+  "native_database_or_load_proof": false,
+  "result": "PASS"
+}

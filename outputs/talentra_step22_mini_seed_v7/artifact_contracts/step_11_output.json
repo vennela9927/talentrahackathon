@@ -1,0 +1,642 @@
+{
+  "title": "Step11 Output Document",
+  "type": "object",
+  "properties": {
+    "Rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Rule ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Title": {
+            "type": [
+              "string"
+            ]
+          },
+          "Statement": {
+            "type": [
+              "string"
+            ]
+          },
+          "Table": {
+            "type": [
+              "string"
+            ]
+          },
+          "Enforcement": {
+            "type": [
+              "string"
+            ]
+          },
+          "Requirement ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proof status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Rule ID",
+          "Title",
+          "Statement",
+          "Table",
+          "Enforcement",
+          "Requirement ID",
+          "Proof status",
+          "Source"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Compliance": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Rule group": {
+            "type": [
+              "string"
+            ]
+          },
+          "Status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Mechanism": {
+            "type": [
+              "string"
+            ]
+          },
+          "Verification boundary": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Rule group",
+          "Status",
+          "Mechanism",
+          "Verification boundary",
+          "Source"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Constraints": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Constraint kind": {
+            "type": [
+              "string"
+            ]
+          },
+          "Applies to": {
+            "type": [
+              "string"
+            ]
+          },
+          "Definition": {
+            "type": [
+              "string"
+            ]
+          },
+          "Concurrency design": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Constraint kind",
+          "Applies to",
+          "Definition",
+          "Concurrency design",
+          "Source"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Production rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Rule ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Title": {
+            "type": [
+              "string"
+            ]
+          },
+          "Statement": {
+            "type": [
+              "string"
+            ]
+          },
+          "Objects": {
+            "type": [
+              "string"
+            ]
+          },
+          "Enforcement": {
+            "type": [
+              "string"
+            ]
+          },
+          "Owner": {
+            "type": [
+              "string"
+            ]
+          },
+          "Positive case": {
+            "type": [
+              "string"
+            ]
+          },
+          "Negative case": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Rule ID",
+          "Title",
+          "Statement",
+          "Objects",
+          "Enforcement",
+          "Owner",
+          "Positive case",
+          "Negative case"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T164 1. Business and cross-table rules": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Rule": {
+            "type": [
+              "string"
+            ]
+          },
+          "Table(s)": {
+            "type": [
+              "string"
+            ]
+          },
+          "Enforcement point": {
+            "type": [
+              "string"
+            ]
+          },
+          "Mechanism": {
+            "type": [
+              "string"
+            ]
+          },
+          "Business rule": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "ID",
+          "Rule",
+          "Table(s)",
+          "Enforcement point",
+          "Mechanism",
+          "Business rule",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T165 2. Standard domains (rule group 3)": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Domain": {
+            "type": [
+              "string"
+            ]
+          },
+          "Base type": {
+            "type": [
+              "string"
+            ]
+          },
+          "Rule": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "ID",
+          "Domain",
+          "Base type",
+          "Rule",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T166 3. Single-table constraints, per tab": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Table": {
+            "type": [
+              "string"
+            ]
+          },
+          "Kind": {
+            "type": [
+              "string"
+            ]
+          },
+          "Name": {
+            "type": [
+              "string"
+            ]
+          },
+          "Rule (as declared)": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "ID",
+          "Table",
+          "Kind",
+          "Name",
+          "Rule (as declared)",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T167 4. Cross-table rules (the playbook's": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Rule": {
+            "type": [
+              "string"
+            ]
+          },
+          "Mechanism": {
+            "type": [
+              "string"
+            ]
+          },
+          "Why it cannot be a CHECK": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Rule",
+          "Mechanism",
+          "Why it cannot be a CHECK",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Cross-source comparison": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Comparison ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Step": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Decision or field": {
+            "type": [
+              "string"
+            ]
+          },
+          "A value": {
+            "type": [
+              "string"
+            ]
+          },
+          "B value": {
+            "type": [
+              "string"
+            ]
+          },
+          "Agreement": {
+            "type": [
+              "string"
+            ]
+          },
+          "B locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Hybrid conclusion": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Comparison ID",
+          "Step",
+          "Decision or field",
+          "A value",
+          "B value",
+          "Agreement",
+          "B locator",
+          "Hybrid conclusion"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Hybrid handoff": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Handoff ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Concern": {
+            "type": [
+              "string"
+            ]
+          },
+          "Inputs": {
+            "type": [
+              "string"
+            ]
+          },
+          "Next use": {
+            "type": [
+              "string"
+            ]
+          },
+          "Acceptance condition": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proposed owner": {
+            "type": [
+              "string"
+            ]
+          },
+          "Status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Reason": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Handoff ID",
+          "Concern",
+          "Inputs",
+          "Next use",
+          "Acceptance condition",
+          "Proposed owner",
+          "Status",
+          "Reason"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Human review prompts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Question ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Question": {
+            "type": [
+              "string"
+            ]
+          },
+          "Expected evidence anchor": {
+            "type": [
+              "string"
+            ]
+          },
+          "Human response": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "Reviewer score 0 to 5": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "Review status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proposed reviewer role": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Question ID",
+          "Question",
+          "Expected evidence anchor",
+          "Human response",
+          "Reviewer score 0 to 5",
+          "Review status",
+          "Proposed reviewer role"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Acceptance cases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Case ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Case": {
+            "type": [
+              "string"
+            ]
+          },
+          "Expected result": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proof layer": {
+            "type": [
+              "string"
+            ]
+          },
+          "Status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Owner": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Case ID",
+          "Case",
+          "Expected result",
+          "Proof layer",
+          "Status",
+          "Owner"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "Rules",
+    "Compliance",
+    "Constraints",
+    "Production rules",
+    "B T164 1. Business and cross-table rules",
+    "B T165 2. Standard domains (rule group 3)",
+    "B T166 3. Single-table constraints, per tab",
+    "B T167 4. Cross-table rules (the playbook's",
+    "Cross-source comparison",
+    "Hybrid handoff",
+    "Human review prompts",
+    "Acceptance cases"
+  ],
+  "additionalProperties": false
+}

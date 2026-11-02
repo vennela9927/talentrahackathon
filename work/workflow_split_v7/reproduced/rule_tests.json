@@ -1,0 +1,452 @@
+[
+  {
+    "test_id": "R01-valid",
+    "rule_id": "R01",
+    "case": "valid",
+    "expected": true,
+    "actual": true,
+    "result": "PASS",
+    "layer": "Portable rule function; no deployed endpoint or native SQL proof"
+  },
+  {
+    "test_id": "R01-refusal",
+    "rule_id": "R01",
+    "case": "refusal",
+    "expected": false,
+    "actual": false,
+    "result": "PASS",
+    "layer": "Portable rule function; no deployed endpoint or native SQL proof"
+  },
+  {
+    "test_id": "R02-valid",
+    "rule_id": "R02",
+    "case": "valid",
+    "expected": true,
+    "actual": true,
+    "result": "PASS",
+    "layer": "Portable rule function; no deployed endpoint or native SQL proof"
+  },
+  {
+    "test_id": "R02-refusal",
+    "rule_id": "R02",
+    "case": "refusal",
+    "expected": false,
+    "actual": false,
+    "result": "PASS",
+    "layer": "Portable rule function; no deployed endpoint or native SQL proof"
+  },
+  {
+    "test_id": "R03-valid",
+    "rule_id": "R03",
+    "case": "valid",
+    "expected": true,
+    "actual": true,
+    "result": "PASS",
+    "layer": "Portable rule function; no deployed endpoint or native SQL proof"
+  },
+  {
+    "test_id": "R03-refusal",
+    "rule_id": "R03",
+    "case": "refusal",
+    "expected": false,
+    "actual": false,
+    "result": "PASS",
+    "layer": "Portable rule function; no deployed endpoint or native SQL proof"
+  },
+  {
+    "test_id": "R04-valid",
+    "rule_id": "R04",
+    "case": "valid",
+    "expected": true,
+    "actual": true,
+    "result": "PASS",
+    "layer": "Portable rule function; no deployed endpoint or native SQL proof"
+  },
+  {
+    "test_id": "R04-refusal",
+    "rule_id": "R04",
+    "case": "refusal",
+    "expected": false,
+    "actual": false,
+    "result": "PASS",
+    "layer": "Portable rule function; no deployed endpoint or native SQL proof"
+  },
+  {
+    "test_id": "R05-valid",
+    "rule_id": "R05",
+    "case": "valid",
+    "expected": true,
+    "actual": true,
+    "result": "PASS",
+    "layer": "Portable rule function; no deployed endpoint or native SQL proof"
+  },
+  {
+    "test_id": "R05-refusal",
+    "rule_id": "R05",
+    "case": "refusal",
+    "expected": false,
+    "actual": false,
+    "result": "PASS",
+    "layer": "Portable rule function; no deployed endpoint or native SQL proof"
+  },
+  {
+    "test_id": "R06-valid",
+    "rule_id": "R06",
+    "case": "valid",
+    "expected": true,
+    "actual": true,
+    "result": "PASS",
+    "layer": "Portable rule function; no deployed endpoint or native SQL proof"
+  },
+  {
+    "test_id": "R06-refusal",
+    "rule_id": "R06",
+    "case": "refusal",
+    "expected": false,
+    "actual": false,
+    "result": "PASS",
+    "layer": "Portable rule function; no deployed endpoint or native SQL proof"
+  },
+  {
+    "test_id": "R07-valid",
+    "rule_id": "R07",
+    "case": "valid",
+    "expected": true,
+    "actual": true,
+    "result": "PASS",
+    "layer": "Portable rule function; no deployed endpoint or native SQL proof"
+  },
+  {
+    "test_id": "R07-refusal",
+    "rule_id": "R07",
+    "case": "refusal",
+    "expected": false,
+    "actual": false,
+    "result": "PASS",
+    "layer": "Portable rule function; no deployed endpoint or native SQL proof"
+  },
+  {
+    "test_id": "R08-valid",
+    "rule_id": "R08",
+    "case": "valid",
+    "expected": true,
+    "actual": true,
+    "result": "PASS",
+    "layer": "Portable rule function; no deployed endpoint or native SQL proof"
+  },
+  {
+    "test_id": "R08-refusal",
+    "rule_id": "R08",
+    "case": "refusal",
+    "expected": false,
+    "actual": false,
+    "result": "PASS",
+    "layer": "Portable rule function; no deployed endpoint or native SQL proof"
+  },
+  {
+    "test_id": "R09-valid",
+    "rule_id": "R09",
+    "case": "valid",
+    "expected": true,
+    "actual": true,
+    "result": "PASS",
+    "layer": "Portable rule function; no deployed endpoint or native SQL proof"
+  },
+  {
+    "test_id": "R09-refusal",
+    "rule_id": "R09",
+    "case": "refusal",
+    "expected": false,
+    "actual": false,
+    "result": "PASS",
+    "layer": "Portable rule function; no deployed endpoint or native SQL proof"
+  },
+  {
+    "test_id": "R10-valid",
+    "rule_id": "R10",
+    "case": "valid",
+    "expected": true,
+    "actual": true,
+    "result": "PASS",
+    "layer": "Portable rule function; no deployed endpoint or native SQL proof"
+  },
+  {
+    "test_id": "R10-refusal",
+    "rule_id": "R10",
+    "case": "refusal",
+    "expected": false,
+    "actual": false,
+    "result": "PASS",
+    "layer": "Portable rule function; no deployed endpoint or native SQL proof"
+  },
+  {
+    "test_id": "R11-valid",
+    "rule_id": "R11",
+    "case": "valid",
+    "expected": true,
+    "actual": true,
+    "result": "PASS",
+    "layer": "Portable rule function; no deployed endpoint or native SQL proof"
+  },
+  {
+    "test_id": "R11-refusal",
+    "rule_id": "R11",
+    "case": "refusal",
+    "expected": false,
+    "actual": false,
+    "result": "PASS",
+    "layer": "Portable rule function; no deployed endpoint or native SQL proof"
+  },
+  {
+    "test_id": "R12-valid",
+    "rule_id": "R12",
+    "case": "valid",
+    "expected": true,
+    "actual": true,
+    "result": "PASS",
+    "layer": "Portable rule function; no deployed endpoint or native SQL proof"
+  },
+  {
+    "test_id": "R12-refusal",
+    "rule_id": "R12",
+    "case": "refusal",
+    "expected": false,
+    "actual": false,
+    "result": "PASS",
+    "layer": "Portable rule function; no deployed endpoint or native SQL proof"
+  },
+  {
+    "test_id": "R13-valid",
+    "rule_id": "R13",
+    "case": "valid",
+    "expected": true,
+    "actual": true,
+    "result": "PASS",
+    "layer": "Portable rule function; no deployed endpoint or native SQL proof"
+  },
+  {
+    "test_id": "R13-refusal",
+    "rule_id": "R13",
+    "case": "refusal",
+    "expected": false,
+    "actual": false,
+    "result": "PASS",
+    "layer": "Portable rule function; no deployed endpoint or native SQL proof"
+  },
+  {
+    "test_id": "R14-valid",
+    "rule_id": "R14",
+    "case": "valid",
+    "expected": true,
+    "actual": true,
+    "result": "PASS",
+    "layer": "Portable rule function; no deployed endpoint or native SQL proof"
+  },
+  {
+    "test_id": "R14-refusal",
+    "rule_id": "R14",
+    "case": "refusal",
+    "expected": false,
+    "actual": false,
+    "result": "PASS",
+    "layer": "Portable rule function; no deployed endpoint or native SQL proof"
+  },
+  {
+    "test_id": "R15-valid",
+    "rule_id": "R15",
+    "case": "valid",
+    "expected": true,
+    "actual": true,
+    "result": "PASS",
+    "layer": "Portable rule function; no deployed endpoint or native SQL proof"
+  },
+  {
+    "test_id": "R15-refusal",
+    "rule_id": "R15",
+    "case": "refusal",
+    "expected": false,
+    "actual": false,
+    "result": "PASS",
+    "layer": "Portable rule function; no deployed endpoint or native SQL proof"
+  },
+  {
+    "test_id": "R16-valid",
+    "rule_id": "R16",
+    "case": "valid",
+    "expected": true,
+    "actual": true,
+    "result": "PASS",
+    "layer": "Portable rule function; no deployed endpoint or native SQL proof"
+  },
+  {
+    "test_id": "R16-refusal",
+    "rule_id": "R16",
+    "case": "refusal",
+    "expected": false,
+    "actual": false,
+    "result": "PASS",
+    "layer": "Portable rule function; no deployed endpoint or native SQL proof"
+  },
+  {
+    "test_id": "R17-valid",
+    "rule_id": "R17",
+    "case": "valid",
+    "expected": true,
+    "actual": true,
+    "result": "PASS",
+    "layer": "Portable rule function; no deployed endpoint or native SQL proof"
+  },
+  {
+    "test_id": "R17-refusal",
+    "rule_id": "R17",
+    "case": "refusal",
+    "expected": false,
+    "actual": false,
+    "result": "PASS",
+    "layer": "Portable rule function; no deployed endpoint or native SQL proof"
+  },
+  {
+    "test_id": "R18-valid",
+    "rule_id": "R18",
+    "case": "valid",
+    "expected": true,
+    "actual": true,
+    "result": "PASS",
+    "layer": "Portable rule function; no deployed endpoint or native SQL proof"
+  },
+  {
+    "test_id": "R18-refusal",
+    "rule_id": "R18",
+    "case": "refusal",
+    "expected": false,
+    "actual": false,
+    "result": "PASS",
+    "layer": "Portable rule function; no deployed endpoint or native SQL proof"
+  },
+  {
+    "test_id": "R19-valid",
+    "rule_id": "R19",
+    "case": "valid",
+    "expected": true,
+    "actual": true,
+    "result": "PASS",
+    "layer": "Portable rule function; no deployed endpoint or native SQL proof"
+  },
+  {
+    "test_id": "R19-refusal",
+    "rule_id": "R19",
+    "case": "refusal",
+    "expected": false,
+    "actual": false,
+    "result": "PASS",
+    "layer": "Portable rule function; no deployed endpoint or native SQL proof"
+  },
+  {
+    "test_id": "R20-valid",
+    "rule_id": "R20",
+    "case": "valid",
+    "expected": true,
+    "actual": true,
+    "result": "PASS",
+    "layer": "Portable rule function; no deployed endpoint or native SQL proof"
+  },
+  {
+    "test_id": "R20-refusal",
+    "rule_id": "R20",
+    "case": "refusal",
+    "expected": false,
+    "actual": false,
+    "result": "PASS",
+    "layer": "Portable rule function; no deployed endpoint or native SQL proof"
+  },
+  {
+    "test_id": "R21-valid",
+    "rule_id": "R21",
+    "case": "valid",
+    "expected": true,
+    "actual": true,
+    "result": "PASS",
+    "layer": "Portable rule function; no deployed endpoint or native SQL proof"
+  },
+  {
+    "test_id": "R21-refusal",
+    "rule_id": "R21",
+    "case": "refusal",
+    "expected": false,
+    "actual": false,
+    "result": "PASS",
+    "layer": "Portable rule function; no deployed endpoint or native SQL proof"
+  },
+  {
+    "test_id": "R22-valid",
+    "rule_id": "R22",
+    "case": "valid",
+    "expected": true,
+    "actual": true,
+    "result": "PASS",
+    "layer": "Portable rule function; no deployed endpoint or native SQL proof"
+  },
+  {
+    "test_id": "R22-refusal",
+    "rule_id": "R22",
+    "case": "refusal",
+    "expected": false,
+    "actual": false,
+    "result": "PASS",
+    "layer": "Portable rule function; no deployed endpoint or native SQL proof"
+  },
+  {
+    "test_id": "R23-valid",
+    "rule_id": "R23",
+    "case": "valid",
+    "expected": true,
+    "actual": true,
+    "result": "PASS",
+    "layer": "Portable rule function; no deployed endpoint or native SQL proof"
+  },
+  {
+    "test_id": "R23-refusal",
+    "rule_id": "R23",
+    "case": "refusal",
+    "expected": false,
+    "actual": false,
+    "result": "PASS",
+    "layer": "Portable rule function; no deployed endpoint or native SQL proof"
+  },
+  {
+    "test_id": "R24-valid",
+    "rule_id": "R24",
+    "case": "valid",
+    "expected": true,
+    "actual": true,
+    "result": "PASS",
+    "layer": "Portable rule function; no deployed endpoint or native SQL proof"
+  },
+  {
+    "test_id": "R24-refusal",
+    "rule_id": "R24",
+    "case": "refusal",
+    "expected": false,
+    "actual": false,
+    "result": "PASS",
+    "layer": "Portable rule function; no deployed endpoint or native SQL proof"
+  },
+  {
+    "test_id": "R25-valid",
+    "rule_id": "R25",
+    "case": "valid",
+    "expected": true,
+    "actual": true,
+    "result": "PASS",
+    "layer": "Portable rule function; no deployed endpoint or native SQL proof"
+  },
+  {
+    "test_id": "R25-refusal",
+    "rule_id": "R25",
+    "case": "refusal",
+    "expected": false,
+    "actual": false,
+    "result": "PASS",
+    "layer": "Portable rule function; no deployed endpoint or native SQL proof"
+  }
+]

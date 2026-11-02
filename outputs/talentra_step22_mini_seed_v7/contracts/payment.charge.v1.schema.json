@@ -1,0 +1,69 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:talentra:payment.charge.v1",
+  "title": "payment.charge.v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "event_id",
+    "correlation_id",
+    "schema_version",
+    "occurred_at",
+    "source_version",
+    "payment_order_id",
+    "amount",
+    "currency_code",
+    "idempotency_key"
+  ],
+  "properties": {
+    "event_id": {
+      "type": "string",
+      "description": "Globally unique producer event key within contract",
+      "maxLength": 255
+    },
+    "correlation_id": {
+      "type": "string",
+      "description": "Safe trace correlation key",
+      "maxLength": 255
+    },
+    "schema_version": {
+      "type": "integer",
+      "description": "Positive exact supported contract version",
+      "minimum": 0
+    },
+    "occurred_at": {
+      "type": "string",
+      "description": "UTC ISO8601 source timestamp",
+      "maxLength": 255,
+      "format": "date-time"
+    },
+    "source_version": {
+      "type": "integer",
+      "description": "Monotonic aggregate version",
+      "minimum": 0
+    },
+    "payment_order_id": {
+      "type": "integer",
+      "description": "Local payment correlation key",
+      "minimum": 0
+    },
+    "amount": {
+      "type": "string",
+      "description": "Exact decimal monetary amount",
+      "maxLength": 19,
+      "pattern": "^\\d{1,16}\\.\\d{2}$"
+    },
+    "currency_code": {
+      "type": "string",
+      "description": "ISO currency code",
+      "maxLength": 3,
+      "minLength": 3,
+      "pattern": "^[A-Z]{3}$"
+    },
+    "idempotency_key": {
+      "type": "string",
+      "description": "Stable payment command replay key",
+      "maxLength": 255
+    }
+  }
+}

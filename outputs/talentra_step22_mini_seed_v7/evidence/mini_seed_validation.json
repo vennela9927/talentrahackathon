@@ -1,0 +1,74 @@
+[
+  {
+    "check": "Actor catalogue",
+    "result": "PASS",
+    "observed": 27,
+    "scope": "18 retained + 9 proposed contexts"
+  },
+  {
+    "check": "Workflow steps",
+    "result": "PASS",
+    "observed": 168,
+    "scope": "116 retained + 52 proposed steps; not lifecycle step numbers"
+  },
+  {
+    "check": "Per-workflow smaller sets",
+    "result": "PASS",
+    "observed": 54,
+    "scope": "27 workflows for each of two versions"
+  },
+  {
+    "check": "Rule examples",
+    "result": "PASS",
+    "observed": 50,
+    "scope": "25 positive + 25 refusal portable checks"
+  },
+  {
+    "check": "Step example coverage",
+    "result": "PASS",
+    "observed": 168,
+    "scope": "Every declared step has a dictionary or explicit staging example"
+  },
+  {
+    "check": "Seed source fingerprints",
+    "result": "PASS",
+    "observed": 5,
+    "scope": "All five seed core files match v6 byte-for-byte"
+  },
+  {
+    "check": "Mini linkage and family/outcome coverage",
+    "result": "PASS",
+    "observed": 120,
+    "scope": "Six families, ten current outcomes, two examples per combination"
+  },
+  {
+    "check": "Full-file business invariants",
+    "result": "PASS",
+    "observed": 2,
+    "scope": "Mini and seed saved-file event order, organisation, application and gig guards"
+  },
+  {
+    "check": "Steps 1–21 retained unchanged",
+    "result": "PASS",
+    "observed": 63,
+    "scope": "SHA256 matches for all 63 existing workbooks"
+  },
+  {
+    "check": "Saved workflow cases, joins and analytics",
+    "result": "PASS",
+    "observed": 54,
+    "scope": "Read back each set, recompute outcome counts, and compare all four files with independent regeneration"
+  },
+  {
+    "check": "Smaller family datasets and analytics",
+    "result": "PASS",
+    "observed": 12,
+    "scope": "Six physical family sets per version, each file read back and family membership checked"
+  },
+  {
+    "check": "Added output contract values",
+    "result": "PASS",
+    "observed": 4210,
+    "scope": "Every added row width and field type verified against the extended serialized output contract"
+  }
+]

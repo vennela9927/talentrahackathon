@@ -1,0 +1,641 @@
+{
+  "title": "Step5 Output Document",
+  "type": "object",
+  "properties": {
+    "Workflow maps": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Workflow ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Workflow": {
+            "type": [
+              "string"
+            ]
+          },
+          "Actor": {
+            "type": [
+              "string"
+            ]
+          },
+          "Trigger": {
+            "type": [
+              "string"
+            ]
+          },
+          "Sequence": {
+            "type": [
+              "string"
+            ]
+          },
+          "Exceptions": {
+            "type": [
+              "string"
+            ]
+          },
+          "Output": {
+            "type": [
+              "string"
+            ]
+          },
+          "Requirement IDs": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Workflow ID",
+          "Workflow",
+          "Actor",
+          "Trigger",
+          "Sequence",
+          "Exceptions",
+          "Output",
+          "Requirement IDs",
+          "Source"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Workflow operations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Operation ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Workflow ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Actor": {
+            "type": [
+              "string"
+            ]
+          },
+          "Operation": {
+            "type": [
+              "string"
+            ]
+          },
+          "Entity": {
+            "type": [
+              "string"
+            ]
+          },
+          "Data contract": {
+            "type": [
+              "string"
+            ]
+          },
+          "Retrieval": {
+            "type": [
+              "string"
+            ]
+          },
+          "Audit": {
+            "type": [
+              "string"
+            ]
+          },
+          "Coverage": {
+            "type": [
+              "string"
+            ]
+          },
+          "Owner": {
+            "type": [
+              "string"
+            ]
+          },
+          "Requirement IDs": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Operation ID",
+          "Workflow ID",
+          "Actor",
+          "Operation",
+          "Entity",
+          "Data contract",
+          "Retrieval",
+          "Audit",
+          "Coverage",
+          "Owner",
+          "Requirement IDs"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Integration boundaries": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Boundary ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Boundary": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source of truth": {
+            "type": [
+              "string"
+            ]
+          },
+          "Stored versus referenced": {
+            "type": [
+              "string"
+            ]
+          },
+          "Failure behaviour": {
+            "type": [
+              "string"
+            ]
+          },
+          "Idempotency": {
+            "type": [
+              "string"
+            ]
+          },
+          "Audit": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Boundary ID",
+          "Boundary",
+          "Source of truth",
+          "Stored versus referenced",
+          "Failure behaviour",
+          "Idempotency",
+          "Audit",
+          "Source"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Failure paths": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Failure ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Trigger": {
+            "type": [
+              "string"
+            ]
+          },
+          "Outcome": {
+            "type": [
+              "string"
+            ]
+          },
+          "Retry or recovery": {
+            "type": [
+              "string"
+            ]
+          },
+          "Owner": {
+            "type": [
+              "string"
+            ]
+          },
+          "Invariant": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Failure ID",
+          "Trigger",
+          "Outcome",
+          "Retry or recovery",
+          "Owner",
+          "Invariant",
+          "Evidence"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T020 Workbook introduction": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Workflow": {
+            "type": [
+              "string"
+            ]
+          },
+          "Actors": {
+            "type": [
+              "string"
+            ]
+          },
+          "Central to schema?": {
+            "type": [
+              "string"
+            ]
+          },
+          "v2 scope": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "ID",
+          "Workflow",
+          "Actors",
+          "Central to schema?",
+          "v2 scope",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T021 ▶ WF-14 Data erasure (DPDP Act 2023)": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Workflow": {
+            "type": [
+              "string"
+            ]
+          },
+          "Type": {
+            "type": [
+              "string"
+            ]
+          },
+          "Exception": {
+            "type": [
+              "string"
+            ]
+          },
+          "Handling": {
+            "type": [
+              "string"
+            ]
+          },
+          "Enforced by": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "ID",
+          "Workflow",
+          "Type",
+          "Exception",
+          "Handling",
+          "Enforced by",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T022 ▶ WF-14 Data erasure (DPDP Act 2023)": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Outline": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "ID",
+          "Outline",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Cross-source comparison": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Comparison ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Step": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Decision or field": {
+            "type": [
+              "string"
+            ]
+          },
+          "A value": {
+            "type": [
+              "string"
+            ]
+          },
+          "B value": {
+            "type": [
+              "string"
+            ]
+          },
+          "Agreement": {
+            "type": [
+              "string"
+            ]
+          },
+          "B locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Hybrid conclusion": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Comparison ID",
+          "Step",
+          "Decision or field",
+          "A value",
+          "B value",
+          "Agreement",
+          "B locator",
+          "Hybrid conclusion"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Hybrid handoff": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Handoff ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Concern": {
+            "type": [
+              "string"
+            ]
+          },
+          "Inputs": {
+            "type": [
+              "string"
+            ]
+          },
+          "Next use": {
+            "type": [
+              "string"
+            ]
+          },
+          "Acceptance condition": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proposed owner": {
+            "type": [
+              "string"
+            ]
+          },
+          "Status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Reason": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Handoff ID",
+          "Concern",
+          "Inputs",
+          "Next use",
+          "Acceptance condition",
+          "Proposed owner",
+          "Status",
+          "Reason"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Human review prompts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Question ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Question": {
+            "type": [
+              "string"
+            ]
+          },
+          "Expected evidence anchor": {
+            "type": [
+              "string"
+            ]
+          },
+          "Human response": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "Reviewer score 0 to 5": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "Review status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proposed reviewer role": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Question ID",
+          "Question",
+          "Expected evidence anchor",
+          "Human response",
+          "Reviewer score 0 to 5",
+          "Review status",
+          "Proposed reviewer role"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Acceptance cases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Case ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Case": {
+            "type": [
+              "string"
+            ]
+          },
+          "Expected result": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proof layer": {
+            "type": [
+              "string"
+            ]
+          },
+          "Status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Owner": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Case ID",
+          "Case",
+          "Expected result",
+          "Proof layer",
+          "Status",
+          "Owner"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "Workflow maps",
+    "Workflow operations",
+    "Integration boundaries",
+    "Failure paths",
+    "B T020 Workbook introduction",
+    "B T021 ▶ WF-14 Data erasure (DPDP Act 2023)",
+    "B T022 ▶ WF-14 Data erasure (DPDP Act 2023)",
+    "Cross-source comparison",
+    "Hybrid handoff",
+    "Human review prompts",
+    "Acceptance cases"
+  ],
+  "additionalProperties": false
+}

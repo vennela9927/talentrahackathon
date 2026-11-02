@@ -1,0 +1,207 @@
+{
+  "checks": [
+    {
+      "file": "steps/01_Requirement_Analysis_Docket/a_Output_Schema_Definition.xlsx",
+      "errors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/01_Requirement_Analysis_Docket/b_Schema_Rating_Scorecard.xlsx",
+      "errors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/01_Requirement_Analysis_Docket/c_Output_Document.xlsx",
+      "errors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/02_Stakeholders_Personas_and_Roles/a_Output_Schema_Definition.xlsx",
+      "errors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/02_Stakeholders_Personas_and_Roles/b_Schema_Rating_Scorecard.xlsx",
+      "errors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/02_Stakeholders_Personas_and_Roles/c_Output_Document.xlsx",
+      "errors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/03_Feature_Discovery/a_Output_Schema_Definition.xlsx",
+      "errors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/03_Feature_Discovery/b_Schema_Rating_Scorecard.xlsx",
+      "errors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/03_Feature_Discovery/c_Output_Document.xlsx",
+      "errors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/04_NFR_Discovery/a_Output_Schema_Definition.xlsx",
+      "errors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/04_NFR_Discovery/b_Schema_Rating_Scorecard.xlsx",
+      "errors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/04_NFR_Discovery/c_Output_Document.xlsx",
+      "errors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/05_Business_Workflow_Analysis/a_Output_Schema_Definition.xlsx",
+      "errors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/05_Business_Workflow_Analysis/b_Schema_Rating_Scorecard.xlsx",
+      "errors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/05_Business_Workflow_Analysis/c_Output_Document.xlsx",
+      "errors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/06_Entities_Discovery/a_Output_Schema_Definition.xlsx",
+      "errors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/06_Entities_Discovery/b_Schema_Rating_Scorecard.xlsx",
+      "errors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/06_Entities_Discovery/c_Output_Document.xlsx",
+      "errors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/07_Attributes_Discovery/a_Output_Schema_Definition.xlsx",
+      "errors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/07_Attributes_Discovery/b_Schema_Rating_Scorecard.xlsx",
+      "errors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/07_Attributes_Discovery/c_Output_Document.xlsx",
+      "errors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/08_Entity_Lifecycle_and_State_Machines/a_Output_Schema_Definition.xlsx",
+      "errors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/08_Entity_Lifecycle_and_State_Machines/b_Schema_Rating_Scorecard.xlsx",
+      "errors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/08_Entity_Lifecycle_and_State_Machines/c_Output_Document.xlsx",
+      "errors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/09_Database_Tables_and_Relationships_Discovery/a_Output_Schema_Definition.xlsx",
+      "errors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/09_Database_Tables_and_Relationships_Discovery/b_Schema_Rating_Scorecard.xlsx",
+      "errors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/09_Database_Tables_and_Relationships_Discovery/c_Output_Document.xlsx",
+      "errors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/10_Data_Dictionary_v1/a_Output_Schema_Definition.xlsx",
+      "errors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/10_Data_Dictionary_v1/b_Schema_Rating_Scorecard.xlsx",
+      "errors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/10_Data_Dictionary_v1/c_Output_Document.xlsx",
+      "errors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/11_Data_Rules_and_Constraints_Discovery/a_Output_Schema_Definition.xlsx",
+      "errors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/11_Data_Rules_and_Constraints_Discovery/b_Schema_Rating_Scorecard.xlsx",
+      "errors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/11_Data_Rules_and_Constraints_Discovery/c_Output_Document.xlsx",
+      "errors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/12_Data_Classification_and_Privacy/a_Output_Schema_Definition.xlsx",
+      "errors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/12_Data_Classification_and_Privacy/b_Schema_Rating_Scorecard.xlsx",
+      "errors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/12_Data_Classification_and_Privacy/c_Output_Document.xlsx",
+      "errors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/13_Data_Volumetrics_and_Distribution_Profile/a_Output_Schema_Definition.xlsx",
+      "errors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/13_Data_Volumetrics_and_Distribution_Profile/b_Schema_Rating_Scorecard.xlsx",
+      "errors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/13_Data_Volumetrics_and_Distribution_Profile/c_Output_Document.xlsx",
+      "errors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/14_Sample_Data_Generation_Discovery/a_Output_Schema_Definition.xlsx",
+      "errors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/14_Sample_Data_Generation_Discovery/b_Schema_Rating_Scorecard.xlsx",
+      "errors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/14_Sample_Data_Generation_Discovery/c_Output_Document.xlsx",
+      "errors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/15_Test_Suite_v1_Data/a_Output_Schema_Definition.xlsx",
+      "errors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/15_Test_Suite_v1_Data/b_Schema_Rating_Scorecard.xlsx",
+      "errors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/15_Test_Suite_v1_Data/c_Output_Document.xlsx",
+      "errors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/16_Schema_Coverage_against_Business_Workflow/a_Output_Schema_Definition.xlsx",
+      "errors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/16_Schema_Coverage_against_Business_Workflow/b_Schema_Rating_Scorecard.xlsx",
+      "errors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/16_Schema_Coverage_against_Business_Workflow/c_Output_Document.xlsx",
+      "errors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "Talentra_Combined.xlsx",
+      "errors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    }
+  ],
+  "formulaEditTest": {
+    "before": 81.79047619047621,
+    "changed": 81.7404761904762,
+    "restored": 81.79047619047621
+  },
+  "workbooks": 49,
+  "previews": 169
+}

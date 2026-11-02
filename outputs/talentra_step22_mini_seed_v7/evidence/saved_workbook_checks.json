@@ -1,0 +1,404 @@
+[
+  {
+    "file": "steps/01_Requirement_Analysis_Docket/a_Output_Schema_Definition.xlsx",
+    "sheets": 4,
+    "formulas": 0,
+    "errors": []
+  },
+  {
+    "file": "steps/01_Requirement_Analysis_Docket/b_Schema_Rating_Scorecard.xlsx",
+    "sheets": 6,
+    "formulas": 87,
+    "errors": []
+  },
+  {
+    "file": "steps/01_Requirement_Analysis_Docket/c_Output_Document.xlsx",
+    "sheets": 13,
+    "formulas": 0,
+    "errors": []
+  },
+  {
+    "file": "steps/02_Stakeholders_Personas_and_Roles/a_Output_Schema_Definition.xlsx",
+    "sheets": 4,
+    "formulas": 0,
+    "errors": []
+  },
+  {
+    "file": "steps/02_Stakeholders_Personas_and_Roles/b_Schema_Rating_Scorecard.xlsx",
+    "sheets": 6,
+    "formulas": 87,
+    "errors": []
+  },
+  {
+    "file": "steps/02_Stakeholders_Personas_and_Roles/c_Output_Document.xlsx",
+    "sheets": 13,
+    "formulas": 0,
+    "errors": []
+  },
+  {
+    "file": "steps/03_Feature_Discovery/a_Output_Schema_Definition.xlsx",
+    "sheets": 4,
+    "formulas": 0,
+    "errors": []
+  },
+  {
+    "file": "steps/03_Feature_Discovery/b_Schema_Rating_Scorecard.xlsx",
+    "sheets": 6,
+    "formulas": 71,
+    "errors": []
+  },
+  {
+    "file": "steps/03_Feature_Discovery/c_Output_Document.xlsx",
+    "sheets": 9,
+    "formulas": 0,
+    "errors": []
+  },
+  {
+    "file": "steps/04_NFR_Discovery/a_Output_Schema_Definition.xlsx",
+    "sheets": 4,
+    "formulas": 0,
+    "errors": []
+  },
+  {
+    "file": "steps/04_NFR_Discovery/b_Schema_Rating_Scorecard.xlsx",
+    "sheets": 6,
+    "formulas": 75,
+    "errors": []
+  },
+  {
+    "file": "steps/04_NFR_Discovery/c_Output_Document.xlsx",
+    "sheets": 10,
+    "formulas": 0,
+    "errors": []
+  },
+  {
+    "file": "steps/05_Business_Workflow_Analysis/a_Output_Schema_Definition.xlsx",
+    "sheets": 4,
+    "formulas": 0,
+    "errors": []
+  },
+  {
+    "file": "steps/05_Business_Workflow_Analysis/b_Schema_Rating_Scorecard.xlsx",
+    "sheets": 6,
+    "formulas": 83,
+    "errors": []
+  },
+  {
+    "file": "steps/05_Business_Workflow_Analysis/c_Output_Document.xlsx",
+    "sheets": 12,
+    "formulas": 0,
+    "errors": []
+  },
+  {
+    "file": "steps/06_Entities_Discovery/a_Output_Schema_Definition.xlsx",
+    "sheets": 4,
+    "formulas": 0,
+    "errors": []
+  },
+  {
+    "file": "steps/06_Entities_Discovery/b_Schema_Rating_Scorecard.xlsx",
+    "sheets": 6,
+    "formulas": 99,
+    "errors": []
+  },
+  {
+    "file": "steps/06_Entities_Discovery/c_Output_Document.xlsx",
+    "sheets": 16,
+    "formulas": 0,
+    "errors": []
+  },
+  {
+    "file": "steps/07_Attributes_Discovery/a_Output_Schema_Definition.xlsx",
+    "sheets": 4,
+    "formulas": 0,
+    "errors": []
+  },
+  {
+    "file": "steps/07_Attributes_Discovery/b_Schema_Rating_Scorecard.xlsx",
+    "sheets": 6,
+    "formulas": 75,
+    "errors": []
+  },
+  {
+    "file": "steps/07_Attributes_Discovery/c_Output_Document.xlsx",
+    "sheets": 10,
+    "formulas": 0,
+    "errors": []
+  },
+  {
+    "file": "steps/08_Entity_Lifecycle_and_State_Machines/a_Output_Schema_Definition.xlsx",
+    "sheets": 4,
+    "formulas": 0,
+    "errors": []
+  },
+  {
+    "file": "steps/08_Entity_Lifecycle_and_State_Machines/b_Schema_Rating_Scorecard.xlsx",
+    "sheets": 6,
+    "formulas": 159,
+    "errors": []
+  },
+  {
+    "file": "steps/08_Entity_Lifecycle_and_State_Machines/c_Output_Document.xlsx",
+    "sheets": 31,
+    "formulas": 0,
+    "errors": []
+  },
+  {
+    "file": "steps/09_Database_Tables_and_Relationships_Discovery/a_Output_Schema_Definition.xlsx",
+    "sheets": 4,
+    "formulas": 0,
+    "errors": []
+  },
+  {
+    "file": "steps/09_Database_Tables_and_Relationships_Discovery/b_Schema_Rating_Scorecard.xlsx",
+    "sheets": 6,
+    "formulas": 91,
+    "errors": []
+  },
+  {
+    "file": "steps/09_Database_Tables_and_Relationships_Discovery/c_Output_Document.xlsx",
+    "sheets": 14,
+    "formulas": 0,
+    "errors": []
+  },
+  {
+    "file": "steps/10_Data_Dictionary_v1/a_Output_Schema_Definition.xlsx",
+    "sheets": 4,
+    "formulas": 0,
+    "errors": []
+  },
+  {
+    "file": "steps/10_Data_Dictionary_v1/b_Schema_Rating_Scorecard.xlsx",
+    "sheets": 6,
+    "formulas": 71,
+    "errors": []
+  },
+  {
+    "file": "steps/10_Data_Dictionary_v1/c_Output_Document.xlsx",
+    "sheets": 9,
+    "formulas": 0,
+    "errors": []
+  },
+  {
+    "file": "steps/11_Data_Rules_and_Constraints_Discovery/a_Output_Schema_Definition.xlsx",
+    "sheets": 4,
+    "formulas": 0,
+    "errors": []
+  },
+  {
+    "file": "steps/11_Data_Rules_and_Constraints_Discovery/b_Schema_Rating_Scorecard.xlsx",
+    "sheets": 6,
+    "formulas": 87,
+    "errors": []
+  },
+  {
+    "file": "steps/11_Data_Rules_and_Constraints_Discovery/c_Output_Document.xlsx",
+    "sheets": 13,
+    "formulas": 0,
+    "errors": []
+  },
+  {
+    "file": "steps/12_Data_Classification_and_Privacy/a_Output_Schema_Definition.xlsx",
+    "sheets": 4,
+    "formulas": 0,
+    "errors": []
+  },
+  {
+    "file": "steps/12_Data_Classification_and_Privacy/b_Schema_Rating_Scorecard.xlsx",
+    "sheets": 6,
+    "formulas": 99,
+    "errors": []
+  },
+  {
+    "file": "steps/12_Data_Classification_and_Privacy/c_Output_Document.xlsx",
+    "sheets": 16,
+    "formulas": 0,
+    "errors": []
+  },
+  {
+    "file": "steps/13_Data_Volumetrics_and_Distribution_Profile/a_Output_Schema_Definition.xlsx",
+    "sheets": 4,
+    "formulas": 0,
+    "errors": []
+  },
+  {
+    "file": "steps/13_Data_Volumetrics_and_Distribution_Profile/b_Schema_Rating_Scorecard.xlsx",
+    "sheets": 6,
+    "formulas": 103,
+    "errors": []
+  },
+  {
+    "file": "steps/13_Data_Volumetrics_and_Distribution_Profile/c_Output_Document.xlsx",
+    "sheets": 17,
+    "formulas": 0,
+    "errors": []
+  },
+  {
+    "file": "steps/14_Sample_Data_Generation_Discovery/a_Output_Schema_Definition.xlsx",
+    "sheets": 4,
+    "formulas": 0,
+    "errors": []
+  },
+  {
+    "file": "steps/14_Sample_Data_Generation_Discovery/b_Schema_Rating_Scorecard.xlsx",
+    "sheets": 6,
+    "formulas": 99,
+    "errors": []
+  },
+  {
+    "file": "steps/14_Sample_Data_Generation_Discovery/c_Output_Document.xlsx",
+    "sheets": 16,
+    "formulas": 0,
+    "errors": []
+  },
+  {
+    "file": "steps/15_Test_Suite_v1_Data/a_Output_Schema_Definition.xlsx",
+    "sheets": 4,
+    "formulas": 0,
+    "errors": []
+  },
+  {
+    "file": "steps/15_Test_Suite_v1_Data/b_Schema_Rating_Scorecard.xlsx",
+    "sheets": 6,
+    "formulas": 87,
+    "errors": []
+  },
+  {
+    "file": "steps/15_Test_Suite_v1_Data/c_Output_Document.xlsx",
+    "sheets": 13,
+    "formulas": 0,
+    "errors": []
+  },
+  {
+    "file": "steps/16_Schema_Coverage_against_Business_Workflow/a_Output_Schema_Definition.xlsx",
+    "sheets": 4,
+    "formulas": 0,
+    "errors": []
+  },
+  {
+    "file": "steps/16_Schema_Coverage_against_Business_Workflow/b_Schema_Rating_Scorecard.xlsx",
+    "sheets": 6,
+    "formulas": 127,
+    "errors": []
+  },
+  {
+    "file": "steps/16_Schema_Coverage_against_Business_Workflow/c_Output_Document.xlsx",
+    "sheets": 23,
+    "formulas": 0,
+    "errors": []
+  },
+  {
+    "file": "steps/17_Design_Based_Refinement/a_Output_Schema_Definition.xlsx",
+    "sheets": 4,
+    "formulas": 0,
+    "errors": []
+  },
+  {
+    "file": "steps/17_Design_Based_Refinement/b_Schema_Rating_Scorecard.xlsx",
+    "sheets": 6,
+    "formulas": 87,
+    "errors": []
+  },
+  {
+    "file": "steps/17_Design_Based_Refinement/c_Output_Document.xlsx",
+    "sheets": 13,
+    "formulas": 0,
+    "errors": []
+  },
+  {
+    "file": "steps/18_Business_Rules_and_Data_Constraints_v2/a_Output_Schema_Definition.xlsx",
+    "sheets": 4,
+    "formulas": 0,
+    "errors": []
+  },
+  {
+    "file": "steps/18_Business_Rules_and_Data_Constraints_v2/b_Schema_Rating_Scorecard.xlsx",
+    "sheets": 6,
+    "formulas": 99,
+    "errors": []
+  },
+  {
+    "file": "steps/18_Business_Rules_and_Data_Constraints_v2/c_Output_Document.xlsx",
+    "sheets": 16,
+    "formulas": 0,
+    "errors": []
+  },
+  {
+    "file": "steps/19_Data_Dictionary_v2/a_Output_Schema_Definition.xlsx",
+    "sheets": 4,
+    "formulas": 0,
+    "errors": []
+  },
+  {
+    "file": "steps/19_Data_Dictionary_v2/b_Schema_Rating_Scorecard.xlsx",
+    "sheets": 6,
+    "formulas": 79,
+    "errors": []
+  },
+  {
+    "file": "steps/19_Data_Dictionary_v2/c_Output_Document.xlsx",
+    "sheets": 11,
+    "formulas": 0,
+    "errors": []
+  },
+  {
+    "file": "steps/20_Test_Suite_v2_Data_Business_and_NFR/a_Output_Schema_Definition.xlsx",
+    "sheets": 4,
+    "formulas": 0,
+    "errors": []
+  },
+  {
+    "file": "steps/20_Test_Suite_v2_Data_Business_and_NFR/b_Schema_Rating_Scorecard.xlsx",
+    "sheets": 6,
+    "formulas": 95,
+    "errors": []
+  },
+  {
+    "file": "steps/20_Test_Suite_v2_Data_Business_and_NFR/c_Output_Document.xlsx",
+    "sheets": 15,
+    "formulas": 0,
+    "errors": []
+  },
+  {
+    "file": "steps/21_Baseline_ER_and_Physical_Model/a_Output_Schema_Definition.xlsx",
+    "sheets": 4,
+    "formulas": 0,
+    "errors": []
+  },
+  {
+    "file": "steps/21_Baseline_ER_and_Physical_Model/b_Schema_Rating_Scorecard.xlsx",
+    "sheets": 6,
+    "formulas": 107,
+    "errors": []
+  },
+  {
+    "file": "steps/21_Baseline_ER_and_Physical_Model/c_Output_Document.xlsx",
+    "sheets": 18,
+    "formulas": 0,
+    "errors": []
+  },
+  {
+    "file": "steps/22_Integration_and_Source_Mapping/a_Output_Schema_Definition.xlsx",
+    "sheets": 4,
+    "formulas": 0,
+    "errors": []
+  },
+  {
+    "file": "steps/22_Integration_and_Source_Mapping/b_Schema_Rating_Scorecard.xlsx",
+    "sheets": 6,
+    "formulas": 83,
+    "errors": []
+  },
+  {
+    "file": "steps/22_Integration_and_Source_Mapping/c_Output_Document.xlsx",
+    "sheets": 12,
+    "formulas": 0,
+    "errors": []
+  },
+  {
+    "file": "Talentra_Combined.xlsx",
+    "sheets": 19,
+    "formulas": 1986,
+    "errors": []
+  }
+]

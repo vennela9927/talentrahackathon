@@ -1,0 +1,861 @@
+{
+  "title": "Step13 Output Document",
+  "type": "object",
+  "properties": {
+    "Volumetrics": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Table": {
+            "type": [
+              "string"
+            ]
+          },
+          "Launch rows": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Year 1 rows": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Year 3 rows": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Nullable share assumption": {
+            "type": [
+              "number"
+            ]
+          },
+          "Skew": {
+            "type": [
+              "string"
+            ]
+          },
+          "Peak factor": {
+            "type": [
+              "number"
+            ]
+          },
+          "Reason": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Table",
+          "Launch rows",
+          "Year 1 rows",
+          "Year 3 rows",
+          "Nullable share assumption",
+          "Skew",
+          "Peak factor",
+          "Reason",
+          "Source"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Scale profiles": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Profile": {
+            "type": [
+              "string"
+            ]
+          },
+          "Candidates": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Jobs": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Applications": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Profile",
+          "Candidates",
+          "Jobs",
+          "Applications",
+          "Status",
+          "Source"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Generation distributions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Dimension": {
+            "type": [
+              "string"
+            ]
+          },
+          "Distribution": {
+            "type": [
+              "string"
+            ]
+          },
+          "Tolerance": {
+            "type": [
+              "integer",
+              "number"
+            ]
+          },
+          "Reason": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Dimension",
+          "Distribution",
+          "Tolerance",
+          "Reason",
+          "Source"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Storage and growth": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Topic": {
+            "type": [
+              "string"
+            ]
+          },
+          "Decision": {
+            "type": [
+              "string"
+            ]
+          },
+          "Measurement trigger": {
+            "type": [
+              "string"
+            ]
+          },
+          "Risk": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Topic",
+          "Decision",
+          "Measurement trigger",
+          "Risk"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T012 3. Volumetrics and capacity": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Table group": {
+            "type": [
+              "string"
+            ]
+          },
+          "Rows": {
+            "type": [
+              "integer",
+              "null",
+              "string"
+            ]
+          },
+          "Size": {
+            "type": [
+              "string"
+            ]
+          },
+          "Bytes per row": {
+            "type": [
+              "integer",
+              "null",
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Table group",
+          "Rows",
+          "Size",
+          "Bytes per row",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T013 3. Volumetrics and capacity": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Table group": {
+            "type": [
+              "string"
+            ]
+          },
+          "Full-scale rows": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "Size": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Table group",
+          "Full-scale rows",
+          "Size",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T014 3. Volumetrics and capacity": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Flow": {
+            "type": [
+              "string"
+            ]
+          },
+          "Daily volume": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "Average": {
+            "type": [
+              "string"
+            ]
+          },
+          "Peak": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Flow",
+          "Daily volume",
+          "Average",
+          "Peak",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T172 1. Scale Tiers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Tier Code": {
+            "type": [
+              "string"
+            ]
+          },
+          "Candidate Profiles Anchor": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Description": {
+            "type": [
+              "string"
+            ]
+          },
+          "Horizon": {
+            "type": [
+              "string"
+            ]
+          },
+          "Sizing Basis": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Tier Code",
+          "Candidate Profiles Anchor",
+          "Description",
+          "Horizon",
+          "Sizing Basis",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T173 2. Table Volumetric Sheet": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Table": {
+            "type": [
+              "string"
+            ]
+          },
+          "Entity": {
+            "type": [
+              "string"
+            ]
+          },
+          "Prove (30)": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Launch (100k)": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Year 1 (2.5M)": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Year 3 (10M)": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Growth Pattern": {
+            "type": [
+              "string"
+            ]
+          },
+          "Row (B)": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Year 3 (GB)": {
+            "type": [
+              "integer",
+              "number"
+            ]
+          },
+          "Growth Note": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Table",
+          "Entity",
+          "Prove (30)",
+          "Launch (100k)",
+          "Year 1 (2.5M)",
+          "Year 3 (10M)",
+          "Growth Pattern",
+          "Row (B)",
+          "Year 3 (GB)",
+          "Growth Note",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T174 3. Cardinality and Skew Distribution": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Relation": {
+            "type": [
+              "string"
+            ]
+          },
+          "Parent → Child": {
+            "type": [
+              "string"
+            ]
+          },
+          "Cardinality (min / med / p95 / max)": {
+            "type": [
+              "string"
+            ]
+          },
+          "Skew & Distribution Profile": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Relation",
+          "Parent → Child",
+          "Cardinality (min / med / p95 / max)",
+          "Skew & Distribution Profile",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T175 4. Null-Rate Profile for Key Nullabl": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Table": {
+            "type": [
+              "string"
+            ]
+          },
+          "Column": {
+            "type": [
+              "string"
+            ]
+          },
+          "Expected Null %": {
+            "type": [
+              "string"
+            ]
+          },
+          "Business Rationale & Index Strategy": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Table",
+          "Column",
+          "Expected Null %",
+          "Business Rationale & Index Strategy",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T176 5. Seasonality, Peak Days and Burst ": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Workload": {
+            "type": [
+              "string"
+            ]
+          },
+          "Avg RPS (Y3)": {
+            "type": [
+              "integer",
+              "number"
+            ]
+          },
+          "Peak Burst RPS": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Peak Window & Multiplier": {
+            "type": [
+              "string"
+            ]
+          },
+          "Architectural & Index Handling": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Workload",
+          "Avg RPS (Y3)",
+          "Peak Burst RPS",
+          "Peak Window & Multiplier",
+          "Architectural & Index Handling",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Cross-source comparison": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Comparison ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Step": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Decision or field": {
+            "type": [
+              "string"
+            ]
+          },
+          "A value": {
+            "type": [
+              "string"
+            ]
+          },
+          "B value": {
+            "type": [
+              "string"
+            ]
+          },
+          "Agreement": {
+            "type": [
+              "string"
+            ]
+          },
+          "B locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Hybrid conclusion": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Comparison ID",
+          "Step",
+          "Decision or field",
+          "A value",
+          "B value",
+          "Agreement",
+          "B locator",
+          "Hybrid conclusion"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Hybrid handoff": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Handoff ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Concern": {
+            "type": [
+              "string"
+            ]
+          },
+          "Inputs": {
+            "type": [
+              "string"
+            ]
+          },
+          "Next use": {
+            "type": [
+              "string"
+            ]
+          },
+          "Acceptance condition": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proposed owner": {
+            "type": [
+              "string"
+            ]
+          },
+          "Status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Reason": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Handoff ID",
+          "Concern",
+          "Inputs",
+          "Next use",
+          "Acceptance condition",
+          "Proposed owner",
+          "Status",
+          "Reason"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Human review prompts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Question ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Question": {
+            "type": [
+              "string"
+            ]
+          },
+          "Expected evidence anchor": {
+            "type": [
+              "string"
+            ]
+          },
+          "Human response": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "Reviewer score 0 to 5": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "Review status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proposed reviewer role": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Question ID",
+          "Question",
+          "Expected evidence anchor",
+          "Human response",
+          "Reviewer score 0 to 5",
+          "Review status",
+          "Proposed reviewer role"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Acceptance cases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Case ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Case": {
+            "type": [
+              "string"
+            ]
+          },
+          "Expected result": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proof layer": {
+            "type": [
+              "string"
+            ]
+          },
+          "Status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Owner": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Case ID",
+          "Case",
+          "Expected result",
+          "Proof layer",
+          "Status",
+          "Owner"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "Volumetrics",
+    "Scale profiles",
+    "Generation distributions",
+    "Storage and growth",
+    "B T012 3. Volumetrics and capacity",
+    "B T013 3. Volumetrics and capacity",
+    "B T014 3. Volumetrics and capacity",
+    "B T172 1. Scale Tiers",
+    "B T173 2. Table Volumetric Sheet",
+    "B T174 3. Cardinality and Skew Distribution",
+    "B T175 4. Null-Rate Profile for Key Nullabl",
+    "B T176 5. Seasonality, Peak Days and Burst ",
+    "Cross-source comparison",
+    "Hybrid handoff",
+    "Human review prompts",
+    "Acceptance cases"
+  ],
+  "additionalProperties": false
+}

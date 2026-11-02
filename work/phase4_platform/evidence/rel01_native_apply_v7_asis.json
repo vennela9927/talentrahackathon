@@ -1,0 +1,92 @@
+{
+ "gate": "REL-01",
+ "results": [
+  {
+   "script": "001_baseline.sql",
+   "exit_code": 0,
+   "seconds": 2.88,
+   "errors": [],
+   "stderr_tail": [],
+   "stdout_tail": []
+  },
+  {
+   "script": "003_seed.sql",
+   "exit_code": 0,
+   "seconds": 1.42,
+   "errors": [],
+   "stderr_tail": [],
+   "stdout_tail": [
+    "(1 row)",
+    "",
+    " setval ",
+    "--------",
+    "     47",
+    "(1 row)",
+    "",
+    " setval ",
+    "--------",
+    "      3",
+    "(1 row)",
+    ""
+   ]
+  },
+  {
+   "script": "002_controls.sql",
+   "exit_code": 0,
+   "seconds": 0.68,
+   "errors": [],
+   "stderr_tail": [],
+   "stdout_tail": []
+  },
+  {
+   "script": "004_verify.sql",
+   "exit_code": 0,
+   "seconds": 0.28,
+   "errors": [],
+   "stderr_tail": [],
+   "stdout_tail": [
+    " wallet_ledger_entry      | occurred_at                          | timestamp with time zone | NO          |                          |                   |              ",
+    " wallet_ledger_entry      | created_at                           | timestamp with time zone | NO          |                          |                   |              ",
+    " wallet_ledger_entry      | created_by                           | bigint                   | YES         |                          |                64 |             0",
+    " wallet_ledger_entry      | updated_at                           | timestamp with time zone | NO          |                          |                   |              ",
+    " wallet_ledger_entry      | updated_by                           | bigint                   | YES         |                          |                64 |             0",
+    "(1099 rows)",
+    "",
+    "                                          result                                           ",
+    "-------------------------------------------------------------------------------------------",
+    " Native smoke checks completed; concurrency and NFR cases require the stated separate runs",
+    "(1 row)",
+    ""
+   ]
+  },
+  {
+   "script": "005_scale_integration.sql",
+   "exit_code": 0,
+   "seconds": 0.73,
+   "errors": [],
+   "stderr_tail": [],
+   "stdout_tail": []
+  },
+  {
+   "script": "006_v3_vocab_controls.sql",
+   "exit_code": 0,
+   "seconds": 0.17,
+   "errors": [],
+   "stderr_tail": [],
+   "stdout_tail": []
+  }
+ ],
+ "passed": true,
+ "metadata": {
+  "server": "PostgreSQL 18.6 on x86_64-windows, compiled by msvc-19.44.35229, 64-bit",
+  "tables": 120,
+  "indexes": 476,
+  "foreign_keys": 494,
+  "check_constraints": 90,
+  "triggers": 95,
+  "schemas": [
+   "public",
+   "talentra"
+  ]
+ }
+}

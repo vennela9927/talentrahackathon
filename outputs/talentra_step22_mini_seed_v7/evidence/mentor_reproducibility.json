@@ -1,0 +1,6 @@
+{
+  "population": 1000,
+  "all_five_dataset_sha256_equal": true,
+  "result": "PASS",
+  "scope": "Deterministic reproduction; not an independent author review"
+}

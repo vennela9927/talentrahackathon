@@ -1,0 +1,44 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "actor_id": {
+      "type": "string"
+    },
+    "actor": {
+      "type": "string"
+    },
+    "kind": {
+      "type": "string"
+    },
+    "parent_context": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "purpose": {
+      "type": "string"
+    },
+    "scope": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "actor_id",
+    "actor",
+    "kind",
+    "parent_context",
+    "purpose",
+    "scope",
+    "source",
+    "status"
+  ],
+  "additionalProperties": false
+}

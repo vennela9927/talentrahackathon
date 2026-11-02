@@ -1,0 +1,91 @@
+{
+  "version": "2.0",
+  "as_of": "2026-10-27",
+  "project_rating": 81.60877192982458,
+  "phase3_rating": 81.33076923076922,
+  "steps": 21,
+  "step_deliverables": 63,
+  "workbooks": 64,
+  "phase3_steps": [
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21
+  ],
+  "new_steps": [
+    17,
+    18,
+    19,
+    20,
+    21
+  ],
+  "summary": {
+    "attribute_count": 1099,
+    "baseline_indexes": 217,
+    "contract_passed": 187,
+    "contract_tests": 187,
+    "database_passed": 15,
+    "database_tests": 15,
+    "dictionary_drift": 0,
+    "entity_count": 110,
+    "foreign_key_issues": 0,
+    "logical_coverage": 1,
+    "nfr_cases": 17,
+    "nfr_pending": 13,
+    "operation_count": 116,
+    "physical_tables": 110,
+    "relationship_count": 431,
+    "reproducible": true,
+    "rule_count": 62,
+    "sample_hash": "f6cd76f2068caaa7a0e2b03dbfbe06fc2e7926264bd28f2a48c98b6f7cce58d1",
+    "sample_rows": 1247,
+    "v2_executed": 1565,
+    "v2_failed": 0,
+    "v2_passed": 1565,
+    "workflow_count": 18
+  },
+  "database_files": [
+    {
+      "file": "database/001_baseline.sql",
+      "sha256": "8766624d3486955aea5da1f2d0e83be68443ee984972fd3a0664320e055a5ef4"
+    },
+    {
+      "file": "database/002_controls.sql",
+      "sha256": "846d92da435a95ab1d0c242af799bc3fe2208ab6b2da3203176718e596a7eec4"
+    },
+    {
+      "file": "database/003_seed.sql",
+      "sha256": "c6abf1c38062125f39b0af4250769652a4132512b99ca65792d68fbe97af9c64"
+    },
+    {
+      "file": "database/004_verify.sql",
+      "sha256": "df0da34ab7e331087dd8f0f918a5446369aee364562d60e5e83f1025d9becc76"
+    },
+    {
+      "file": "database/900_rollback.sql",
+      "sha256": "673717a393d35ffbf8ec03d215251c4045902f2a39f2c48ce389cd63608858a0"
+    },
+    {
+      "file": "database/check_dictionary.py",
+      "sha256": "33d808369ebecb7ab11db7bbf23492b3761273156f8233e2fbba595b64db2b36"
+    },
+    {
+      "file": "database/export_metadata.sql",
+      "sha256": "209f3fb549817736ef968e682df7476d488855ac4b6be649ab07cd337018e953"
+    },
+    {
+      "file": "database/physical_model.json",
+      "sha256": "9b13c80765808f4efa7c34317ccd26f76c57190117cde84d99490a9191ca8153"
+    },
+    {
+      "file": "database/RUN_ORDER.md",
+      "sha256": "85c67cc9912c32de3bedcd9faedac2c1a6e399110d3d3c5fe887ee846d3b230a"
+    }
+  ],
+  "gate_g3": "OPEN: PostgreSQL execution, target-volume NFRs and human review pending"
+}

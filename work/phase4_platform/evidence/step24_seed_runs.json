@@ -1,0 +1,335 @@
+[
+ {
+  "env": "test",
+  "first_run_rows_changed": 258,
+  "second_run_rows_changed": 0,
+  "same_state_after_second_run": true,
+  "same_state_on_a_fresh_database": true,
+  "changes_first_run": {
+   "account": {
+    "inserted": 3,
+    "updated": 0
+   },
+   "app_user": {
+    "inserted": 9,
+    "updated": 0
+   },
+   "application_status_event": {
+    "inserted": 39,
+    "updated": 0
+   },
+   "candidate_profile": {
+    "inserted": 6,
+    "updated": 0
+   },
+   "city": {
+    "inserted": 40,
+    "updated": 0
+   },
+   "industry": {
+    "inserted": 12,
+    "updated": 0
+   },
+   "ingest.key_map": {
+    "inserted": 67,
+    "updated": 0
+   },
+   "integration_contract": {
+    "inserted": 4,
+    "updated": 0
+   },
+   "integration_source": {
+    "inserted": 4,
+    "updated": 0
+   },
+   "job_application": {
+    "inserted": 12,
+    "updated": 0
+   },
+   "job_requirement": {
+    "inserted": 4,
+    "updated": 0
+   },
+   "job_role": {
+    "inserted": 19,
+    "updated": 0
+   },
+   "organisation": {
+    "inserted": 3,
+    "updated": 0
+   },
+   "recruiter_membership": {
+    "inserted": 3,
+    "updated": 0
+   },
+   "state": {
+    "inserted": 21,
+    "updated": 0
+   },
+   "user_role": {
+    "inserted": 12,
+    "updated": 0
+   }
+  },
+  "golden_answers": {
+   "applications": {
+    "expected": 12,
+    "observed": 12,
+    "pass": true
+   },
+   "applications_by_status": {
+    "expected": {
+     "applied": 1,
+     "shortlisted": 1,
+     "interviewed": 1,
+     "offered": 0,
+     "joined": 1,
+     "rejected": 4,
+     "withdrawn": 4
+    },
+    "observed": {
+     "applied": 1,
+     "interviewed": 1,
+     "joined": 1,
+     "offered": 0,
+     "rejected": 4,
+     "shortlisted": 1,
+     "withdrawn": 4
+    },
+    "pass": true
+   },
+   "status_events": {
+    "expected": 39,
+    "observed": 39,
+    "pass": true
+   },
+   "applications_by_organisation": {
+    "expected": {
+     "Golden Employer A": 5,
+     "Golden Employer B": 4,
+     "Golden Employer C": 3
+    },
+    "observed": {
+     "Golden Employer A": 5,
+     "Golden Employer B": 4,
+     "Golden Employer C": 3
+    },
+    "pass": true
+   },
+   "joined_by_organisation": {
+    "expected": {
+     "Golden Employer A": 1
+    },
+    "observed": {
+     "Golden Employer A": 1
+    },
+    "pass": true
+   },
+   "reached_shortlisted": {
+    "expected": 9,
+    "observed": 9,
+    "pass": true
+   },
+   "reached_interviewed": {
+    "expected": 6,
+    "observed": 6,
+    "pass": true
+   },
+   "reached_offered": {
+    "expected": 3,
+    "observed": 3,
+    "pass": true
+   },
+   "candidates_with_applications": {
+    "expected": 6,
+    "observed": 6,
+    "pass": true
+   },
+   "jobs_without_applications": {
+    "expected": 0,
+    "observed": 0,
+    "pass": true
+   },
+   "withdrawn_by_candidate_events": {
+    "expected": 4,
+    "observed": 4,
+    "pass": true
+   },
+   "recruiter_events": {
+    "expected": 23,
+    "observed": 23,
+    "pass": true
+   }
+  }
+ },
+ {
+  "env": "dev",
+  "first_run_rows_changed": 1700,
+  "second_run_rows_changed": 0,
+  "same_state_after_second_run": true,
+  "same_state_on_a_fresh_database": true,
+  "changes_first_run": {
+   "account": {
+    "inserted": 200,
+    "updated": 0
+   },
+   "app_user": {
+    "inserted": 200,
+    "updated": 0
+   },
+   "city": {
+    "inserted": 40,
+    "updated": 0
+   },
+   "industry": {
+    "inserted": 12,
+    "updated": 0
+   },
+   "ingest.key_map": {
+    "inserted": 400,
+    "updated": 0
+   },
+   "integration_contract": {
+    "inserted": 4,
+    "updated": 0
+   },
+   "integration_source": {
+    "inserted": 4,
+    "updated": 0
+   },
+   "job_role": {
+    "inserted": 19,
+    "updated": 0
+   },
+   "organisation": {
+    "inserted": 200,
+    "updated": 0
+   },
+   "recruiter_membership": {
+    "inserted": 200,
+    "updated": 0
+   },
+   "state": {
+    "inserted": 21,
+    "updated": 0
+   },
+   "user_role": {
+    "inserted": 400,
+    "updated": 0
+   }
+  }
+ },
+ {
+  "env": "demo",
+  "first_run_rows_changed": 500,
+  "second_run_rows_changed": 0,
+  "same_state_after_second_run": true,
+  "same_state_on_a_fresh_database": true,
+  "changes_first_run": {
+   "account": {
+    "inserted": 50,
+    "updated": 0
+   },
+   "app_user": {
+    "inserted": 50,
+    "updated": 0
+   },
+   "city": {
+    "inserted": 40,
+    "updated": 0
+   },
+   "industry": {
+    "inserted": 12,
+    "updated": 0
+   },
+   "ingest.key_map": {
+    "inserted": 100,
+    "updated": 0
+   },
+   "integration_contract": {
+    "inserted": 4,
+    "updated": 0
+   },
+   "integration_source": {
+    "inserted": 4,
+    "updated": 0
+   },
+   "job_role": {
+    "inserted": 19,
+    "updated": 0
+   },
+   "organisation": {
+    "inserted": 50,
+    "updated": 0
+   },
+   "recruiter_membership": {
+    "inserted": 50,
+    "updated": 0
+   },
+   "state": {
+    "inserted": 21,
+    "updated": 0
+   },
+   "user_role": {
+    "inserted": 100,
+    "updated": 0
+   }
+  }
+ },
+ {
+  "env": "bench",
+  "first_run_rows_changed": 160100,
+  "second_run_rows_changed": 0,
+  "same_state_after_second_run": true,
+  "changes_first_run": {
+   "account": {
+    "inserted": 20000,
+    "updated": 0
+   },
+   "app_user": {
+    "inserted": 20000,
+    "updated": 0
+   },
+   "city": {
+    "inserted": 40,
+    "updated": 0
+   },
+   "industry": {
+    "inserted": 12,
+    "updated": 0
+   },
+   "ingest.key_map": {
+    "inserted": 40000,
+    "updated": 0
+   },
+   "integration_contract": {
+    "inserted": 4,
+    "updated": 0
+   },
+   "integration_source": {
+    "inserted": 4,
+    "updated": 0
+   },
+   "job_role": {
+    "inserted": 19,
+    "updated": 0
+   },
+   "organisation": {
+    "inserted": 20000,
+    "updated": 0
+   },
+   "recruiter_membership": {
+    "inserted": 20000,
+    "updated": 0
+   },
+   "state": {
+    "inserted": 21,
+    "updated": 0
+   },
+   "user_role": {
+    "inserted": 40000,
+    "updated": 0
+   }
+  }
+ }
+]

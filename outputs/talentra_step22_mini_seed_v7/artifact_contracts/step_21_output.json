@@ -1,0 +1,881 @@
+{
+  "title": "Step21 Output Document",
+  "type": "object",
+  "properties": {
+    "Physical columns": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Table": {
+            "type": [
+              "string"
+            ]
+          },
+          "Column": {
+            "type": [
+              "string"
+            ]
+          },
+          "SQL type": {
+            "type": [
+              "string"
+            ]
+          },
+          "Not null": {
+            "type": [
+              "boolean"
+            ]
+          },
+          "Default": {
+            "type": [
+              "string"
+            ]
+          },
+          "Class": {
+            "type": [
+              "string"
+            ]
+          },
+          "Rule IDs": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Table",
+          "Column",
+          "SQL type",
+          "Not null",
+          "Default",
+          "Class",
+          "Rule IDs"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Foreign keys": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Relationship ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Child": {
+            "type": [
+              "string"
+            ]
+          },
+          "Column": {
+            "type": [
+              "string"
+            ]
+          },
+          "Parent": {
+            "type": [
+              "string"
+            ]
+          },
+          "Cardinality": {
+            "type": [
+              "string"
+            ]
+          },
+          "Optional": {
+            "type": [
+              "boolean"
+            ]
+          },
+          "On update": {
+            "type": [
+              "string"
+            ]
+          },
+          "On delete": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Relationship ID",
+          "Child",
+          "Column",
+          "Parent",
+          "Cardinality",
+          "Optional",
+          "On update",
+          "On delete"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Indexes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Index": {
+            "type": [
+              "string"
+            ]
+          },
+          "Table": {
+            "type": [
+              "string"
+            ]
+          },
+          "Columns": {
+            "type": [
+              "string"
+            ]
+          },
+          "Type": {
+            "type": [
+              "string"
+            ]
+          },
+          "Purpose": {
+            "type": [
+              "string"
+            ]
+          },
+          "Validation": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Index",
+          "Table",
+          "Columns",
+          "Type",
+          "Purpose",
+          "Validation"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Baseline files": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Artifact": {
+            "type": [
+              "string"
+            ]
+          },
+          "Relative file": {
+            "type": [
+              "string"
+            ]
+          },
+          "Purpose": {
+            "type": [
+              "string"
+            ]
+          },
+          "Verification": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Artifact",
+          "Relative file",
+          "Purpose",
+          "Verification"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Partition strategy": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Table family": {
+            "type": [
+              "string"
+            ]
+          },
+          "Baseline": {
+            "type": [
+              "string"
+            ]
+          },
+          "Future strategy": {
+            "type": [
+              "string"
+            ]
+          },
+          "Reason": {
+            "type": [
+              "string"
+            ]
+          },
+          "Trigger for review": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Table family",
+          "Baseline",
+          "Future strategy",
+          "Reason",
+          "Trigger for review"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Gate G3": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Criterion": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence": {
+            "type": [
+              "string"
+            ]
+          },
+          "Status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Owner": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Criterion",
+          "Evidence",
+          "Status",
+          "Owner"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Extension columns": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Table": {
+            "type": [
+              "string"
+            ]
+          },
+          "Column": {
+            "type": [
+              "string"
+            ]
+          },
+          "SQL type": {
+            "type": [
+              "string"
+            ]
+          },
+          "Not null": {
+            "type": [
+              "boolean"
+            ]
+          },
+          "Default": {
+            "type": [
+              "string"
+            ]
+          },
+          "Class": {
+            "type": [
+              "string"
+            ]
+          },
+          "Rule IDs": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Table",
+          "Column",
+          "SQL type",
+          "Not null",
+          "Default",
+          "Class",
+          "Rule IDs"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Release gates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Gate ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Concern": {
+            "type": [
+              "string"
+            ]
+          },
+          "Required evidence": {
+            "type": [
+              "string"
+            ]
+          },
+          "Owner": {
+            "type": [
+              "string"
+            ]
+          },
+          "Status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Reason": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Gate ID",
+          "Concern",
+          "Required evidence",
+          "Owner",
+          "Status",
+          "Reason"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "V3 index candidates": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Index": {
+            "type": [
+              "string"
+            ]
+          },
+          "Table": {
+            "type": [
+              "string"
+            ]
+          },
+          "Columns": {
+            "type": [
+              "string"
+            ]
+          },
+          "Type": {
+            "type": [
+              "string"
+            ]
+          },
+          "Purpose": {
+            "type": [
+              "string"
+            ]
+          },
+          "Validation": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Index",
+          "Table",
+          "Columns",
+          "Type",
+          "Purpose",
+          "Validation"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T281 3. Index Catalogue and Access-Patter": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Index Name": {
+            "type": [
+              "string"
+            ]
+          },
+          "Table & Columns": {
+            "type": [
+              "string"
+            ]
+          },
+          "Index Method": {
+            "type": [
+              "string"
+            ]
+          },
+          "Purpose & Access Pattern Supported": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Index Name",
+          "Table & Columns",
+          "Index Method",
+          "Purpose & Access Pattern Supported",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T282 5. Versioned DDL Migration Inventory": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Version": {
+            "type": [
+              "string"
+            ]
+          },
+          "File Name": {
+            "type": [
+              "string"
+            ]
+          },
+          "Objects Created": {
+            "type": [
+              "string"
+            ]
+          },
+          "Checksum Policy": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Version",
+          "File Name",
+          "Objects Created",
+          "Checksum Policy",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T283 6. Documented Standard Deviations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Deviation ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Standard Rule Group": {
+            "type": [
+              "string"
+            ]
+          },
+          "Physical Reality & Scope": {
+            "type": [
+              "string"
+            ]
+          },
+          "Engineering Justification": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Deviation ID",
+          "Standard Rule Group",
+          "Physical Reality & Scope",
+          "Engineering Justification",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Cross-source comparison": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Comparison ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Step": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Decision or field": {
+            "type": [
+              "string"
+            ]
+          },
+          "A value": {
+            "type": [
+              "string"
+            ]
+          },
+          "B value": {
+            "type": [
+              "string"
+            ]
+          },
+          "Agreement": {
+            "type": [
+              "string"
+            ]
+          },
+          "B locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Hybrid conclusion": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Comparison ID",
+          "Step",
+          "Decision or field",
+          "A value",
+          "B value",
+          "Agreement",
+          "B locator",
+          "Hybrid conclusion"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Hybrid physical changeset": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Attribute ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Table": {
+            "type": [
+              "string"
+            ]
+          },
+          "Column": {
+            "type": [
+              "string"
+            ]
+          },
+          "SQL type": {
+            "type": [
+              "string"
+            ]
+          },
+          "Nullable": {
+            "type": [
+              "boolean"
+            ]
+          },
+          "Owner": {
+            "type": [
+              "string"
+            ]
+          },
+          "Validation": {
+            "type": [
+              "string"
+            ]
+          },
+          "Implementation status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Default": {
+            "type": [
+              "string"
+            ]
+          },
+          "Foreign key target": {
+            "type": [
+              "string"
+            ]
+          },
+          "Retention": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Attribute ID",
+          "Table",
+          "Column",
+          "SQL type",
+          "Nullable",
+          "Owner",
+          "Validation",
+          "Implementation status",
+          "Default",
+          "Foreign key target",
+          "Retention"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Hybrid handoff": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Handoff ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Concern": {
+            "type": [
+              "string"
+            ]
+          },
+          "Inputs": {
+            "type": [
+              "string"
+            ]
+          },
+          "Next use": {
+            "type": [
+              "string"
+            ]
+          },
+          "Acceptance condition": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proposed owner": {
+            "type": [
+              "string"
+            ]
+          },
+          "Status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Reason": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Handoff ID",
+          "Concern",
+          "Inputs",
+          "Next use",
+          "Acceptance condition",
+          "Proposed owner",
+          "Status",
+          "Reason"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Human review prompts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Question ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Question": {
+            "type": [
+              "string"
+            ]
+          },
+          "Expected evidence anchor": {
+            "type": [
+              "string"
+            ]
+          },
+          "Human response": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "Reviewer score 0 to 5": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "Review status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proposed reviewer role": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Question ID",
+          "Question",
+          "Expected evidence anchor",
+          "Human response",
+          "Reviewer score 0 to 5",
+          "Review status",
+          "Proposed reviewer role"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Acceptance cases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Case ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Case": {
+            "type": [
+              "string"
+            ]
+          },
+          "Expected result": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proof layer": {
+            "type": [
+              "string"
+            ]
+          },
+          "Status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Owner": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Case ID",
+          "Case",
+          "Expected result",
+          "Proof layer",
+          "Status",
+          "Owner"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "Physical columns",
+    "Foreign keys",
+    "Indexes",
+    "Baseline files",
+    "Partition strategy",
+    "Gate G3",
+    "Extension columns",
+    "Release gates",
+    "V3 index candidates",
+    "B T281 3. Index Catalogue and Access-Patter",
+    "B T282 5. Versioned DDL Migration Inventory",
+    "B T283 6. Documented Standard Deviations",
+    "Cross-source comparison",
+    "Hybrid physical changeset",
+    "Hybrid handoff",
+    "Human review prompts",
+    "Acceptance cases"
+  ],
+  "additionalProperties": false
+}

@@ -1,0 +1,30 @@
+[
+  [
+    "LOOP-01",
+    "Audit",
+    "40 proposed examples absent; per-step exports not regenerated from hybrid",
+    "Retain source rows and classify missing evidence",
+    "Executed audit"
+  ],
+  [
+    "LOOP-02",
+    "Enrich",
+    "Typed synthetic fixtures,1407-field views,66 contracts,22 handoffs and66 interview prompts",
+    "Add relevant data and machine-readable contracts",
+    "Executed enrichment"
+  ],
+  [
+    "LOOP-03",
+    "Validate",
+    "438 documentary/serialized-contract checks passed",
+    "Recalculate and inspect exported Excel plus UI in final checks",
+    "Python checks PASS; native and human gates remain open"
+  ],
+  [
+    "STOP",
+    "Evidence boundary",
+    "Additional self-authoring cannot supply a human interview or independent/native execution",
+    "Use90+ closure plan; preserve actual full scores",
+    "External evidence required"
+  ]
+]

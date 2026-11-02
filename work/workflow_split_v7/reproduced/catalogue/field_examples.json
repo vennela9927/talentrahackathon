@@ -1,0 +1,3116 @@
+[
+  {
+    "step_id": "WF-01.01",
+    "entity": "app_user",
+    "data_elements": "app_user: email, person_name, status_reference_value_id, preferred_language; BR-006, BR-014",
+    "example_payload": {
+      "id": 1,
+      "email": "candidate001@example.invalid",
+      "person_name": "Asha Synthetic",
+      "status_reference_value_id": 1,
+      "preferred_language": "en",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z",
+      "time_zone": "Synthetic time zone",
+      "last_login_at": "2026-10-28T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-01.02",
+    "entity": "credential",
+    "data_elements": "credential: app_user_id, password_hash, changed_at; BR-032",
+    "example_payload": {
+      "id": 1,
+      "app_user_id": 1,
+      "password_hash": "argon2id$synthetic_test_only",
+      "changed_at": "2026-10-27T00:00:00Z",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z",
+      "failed_attempt_count": 0,
+      "locked_until": "2026-10-28T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-01.03",
+    "entity": "candidate_profile",
+    "data_elements": "candidate_profile: app_user_id, city_id, headline, birth_date, status_reference_value_id, content_language; BR-014, BR-045",
+    "example_payload": {
+      "id": 1,
+      "app_user_id": 1,
+      "city_id": 1,
+      "headline": "Synthetic example",
+      "birth_date": "2026-10-01",
+      "status_reference_value_id": 1,
+      "content_language": "en",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z",
+      "row_version": 1,
+      "summary": "Synthetic summary",
+      "total_experience_months": 0,
+      "expected_salary_amount": "0.00",
+      "expected_salary_currency_code": "INR",
+      "salary_disclosure_reference_value_id": 1,
+      "notice_period_days": 0,
+      "is_open_to_work": false,
+      "last_active_at": "2026-10-28T00:00:00Z",
+      "search_vector": "'synthetic':1"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-01.04",
+    "entity": "consent_record",
+    "data_elements": "consent_record: app_user_id, purpose_reference_value_id, policy_version, granted_at, revoked_at; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "app_user_id": 1,
+      "purpose_reference_value_id": 1,
+      "policy_version": "synthetic_code",
+      "granted_at": "2026-10-27T00:00:00Z",
+      "revoked_at": "2026-10-27T00:00:00Z",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "consent_purpose_id": 1,
+      "is_granted": false,
+      "recorded_at": "2026-10-28T00:00:00Z",
+      "ip_address": "192.0.2.1"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-02.01",
+    "entity": "candidate_profile",
+    "data_elements": "candidate_profile: app_user_id, city_id, headline, birth_date, status_reference_value_id, content_language; BR-014, BR-045",
+    "example_payload": {
+      "id": 1,
+      "app_user_id": 1,
+      "city_id": 1,
+      "headline": "Synthetic example",
+      "birth_date": "2026-10-01",
+      "status_reference_value_id": 1,
+      "content_language": "en",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z",
+      "row_version": 1,
+      "summary": "Synthetic summary",
+      "total_experience_months": 0,
+      "expected_salary_amount": "0.00",
+      "expected_salary_currency_code": "INR",
+      "salary_disclosure_reference_value_id": 1,
+      "notice_period_days": 0,
+      "is_open_to_work": false,
+      "last_active_at": "2026-10-28T00:00:00Z",
+      "search_vector": "'synthetic':1"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-02.02",
+    "entity": "candidate_contact",
+    "data_elements": "candidate_contact: candidate_profile_id, phone_number, country_id, contact_email; BR-007",
+    "example_payload": {
+      "id": 1,
+      "candidate_profile_id": 1,
+      "phone_number": "+15550000001",
+      "country_id": 1,
+      "contact_email": "candidate001@example.invalid",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-02.03",
+    "entity": "candidate_education",
+    "data_elements": "candidate_education: candidate_profile_id, qualification_id, institution_name, start_date, end_date; BR-008",
+    "example_payload": {
+      "id": 1,
+      "candidate_profile_id": 1,
+      "qualification_id": 1,
+      "institution_name": "Asha Synthetic",
+      "start_date": "2026-10-01",
+      "end_date": "2026-10-01",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z",
+      "field_of_study": "Synthetic field of study"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-02.04",
+    "entity": "candidate_experience",
+    "data_elements": "candidate_experience: candidate_profile_id, employer_name, role_name, start_date, end_date; BR-008",
+    "example_payload": {
+      "id": 1,
+      "candidate_profile_id": 1,
+      "employer_name": "Asha Synthetic",
+      "role_name": "Asha Synthetic",
+      "start_date": "2026-10-01",
+      "end_date": "2026-10-01",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z",
+      "organisation_id": 1,
+      "employment_type_id": 1,
+      "description": "Synthetic description"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-02.05",
+    "entity": "candidate_skill",
+    "data_elements": "candidate_skill: candidate_profile_id, skill_id, proficiency_reference_value_id; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "candidate_profile_id": 1,
+      "skill_id": 1,
+      "proficiency_reference_value_id": 1,
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z",
+      "experience_months": 0
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-02.06",
+    "entity": "candidate_language",
+    "data_elements": "candidate_language: candidate_profile_id, language_code, proficiency_reference_value_id; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "candidate_profile_id": 1,
+      "language_code": "en",
+      "proficiency_reference_value_id": 1,
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-02.07",
+    "entity": "resume_version",
+    "data_elements": "resume_version: candidate_profile_id, resume_template_id, version_number, object_key, content_hash, content_language; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "candidate_profile_id": 1,
+      "resume_template_id": 1,
+      "version_number": 1,
+      "object_key": "synthetic/resume_001.pdf",
+      "content_hash": "synthetic_token_001",
+      "content_language": "en",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z",
+      "is_primary": false
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-02.08",
+    "entity": "candidate_project",
+    "data_elements": "candidate_project: candidate_profile_id, title, role_name, start_date, end_date, outcome; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "candidate_profile_id": 1,
+      "title": "Asha Synthetic",
+      "role_name": "Asha Synthetic",
+      "start_date": "2026-10-01",
+      "end_date": "2026-10-01",
+      "outcome": "Synthetic example",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-02.09",
+    "entity": "assessment_attempt",
+    "data_elements": "assessment_attempt: candidate_profile_id, assessment_id, score, completed_at; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "candidate_profile_id": 1,
+      "assessment_id": 1,
+      "score": "4.0000",
+      "completed_at": "2026-10-27T00:00:00Z",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-02.10",
+    "entity": "course_enrolment",
+    "data_elements": "course_enrolment: candidate_profile_id, course_id, status_reference_value_id, enrolled_at; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "candidate_profile_id": 1,
+      "course_id": 1,
+      "status_reference_value_id": 1,
+      "enrolled_at": "2026-10-27T00:00:00Z",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-02.11",
+    "entity": "profile_completion",
+    "data_elements": "profile_completion: candidate_profile_id, rule_version, completion_percentage, calculated_at; BR-033",
+    "example_payload": {
+      "id": 1,
+      "candidate_profile_id": 1,
+      "rule_version": "synthetic_code",
+      "completion_percentage": "80.00",
+      "calculated_at": "2026-10-27T00:00:00Z",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-03.01",
+    "entity": "account",
+    "data_elements": "account: name, status_reference_value_id; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "name": "Asha Synthetic",
+      "status_reference_value_id": 1,
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-03.02",
+    "entity": "organisation",
+    "data_elements": "organisation: account_id, parent_organisation_id, name, industry_id, status_reference_value_id; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "account_id": 1,
+      "parent_organisation_id": 1,
+      "name": "Asha Synthetic",
+      "industry_id": 1,
+      "status_reference_value_id": 1,
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z",
+      "display_name": "Synthetic display name",
+      "country_id": 1,
+      "website_url": "Synthetic website url",
+      "verified_at": "2026-10-28T00:00:00Z",
+      "account_status_id": 1
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-03.03",
+    "entity": "organisation_location",
+    "data_elements": "organisation_location: organisation_id, city_id, address_text; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "organisation_id": 1,
+      "city_id": 1,
+      "address_text": "Synthetic example",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z",
+      "postal_code": "Synthetic postal code",
+      "latitude": "0.00",
+      "longitude": "0.00",
+      "is_headquarters": false
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-03.04",
+    "entity": "organisation_identifier",
+    "data_elements": "organisation_identifier: organisation_id, country_id, type_reference_value_id, identifier_token, masked_identifier; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "organisation_id": 1,
+      "country_id": 1,
+      "type_reference_value_id": 1,
+      "identifier_token": "synthetic_token_001",
+      "masked_identifier": "synthetic_code",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z",
+      "verification_status_id": 1,
+      "verified_at": "2026-10-28T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-03.05",
+    "entity": "verification_record",
+    "data_elements": "verification_record: organisation_id, provider_token, outcome_reference_value_id, verified_at; BR-032",
+    "example_payload": {
+      "id": 1,
+      "organisation_id": 1,
+      "provider_token": "synthetic_token_001",
+      "outcome_reference_value_id": 1,
+      "verified_at": "2026-10-27T00:00:00Z",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-03.06",
+    "entity": "recruiter_membership",
+    "data_elements": "recruiter_membership: organisation_id, app_user_id, valid_from, valid_to; BR-013",
+    "example_payload": {
+      "id": 1,
+      "organisation_id": 1,
+      "app_user_id": 1,
+      "valid_from": "2026-10-27T00:00:00Z",
+      "valid_to": "2026-10-27T00:00:00Z",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z",
+      "access_role_id": 1
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-03.07",
+    "entity": "account_administrator",
+    "data_elements": "account_administrator: account_id, app_user_id, valid_from, valid_to; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "account_id": 1,
+      "app_user_id": 1,
+      "valid_from": "2026-10-27T00:00:00Z",
+      "valid_to": "2026-10-27T00:00:00Z",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-04.01",
+    "entity": "job_requirement",
+    "data_elements": "job_requirement: organisation_id, job_role_id, employment_type_reference_value_id, work_type_reference_value_id, city_id, title; BR-010, BR-011, BR-013, BR-037",
+    "example_payload": {
+      "id": 1,
+      "organisation_id": 1,
+      "job_role_id": 1,
+      "employment_type_reference_value_id": 1,
+      "work_type_reference_value_id": 1,
+      "city_id": 1,
+      "title": "Asha Synthetic",
+      "description": "Synthetic job or resume body",
+      "positions": 1,
+      "status_reference_value_id": 1,
+      "publish_state_reference_value_id": 1,
+      "open_to_consultant": false,
+      "salary_min": "100.00",
+      "salary_max": "100.00",
+      "currency_code": "INR",
+      "salary_disclosure_reference_value_id": 1,
+      "source_timezone": "synthetic_code",
+      "content_language": "en",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z",
+      "row_version": 1,
+      "industry_id": 1,
+      "min_experience_months": 0,
+      "max_experience_months": 0,
+      "positions_filled": 0,
+      "published_at": "2026-10-28T00:00:00Z",
+      "closes_on": "2026-10-28",
+      "search_vector": "'synthetic':1"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-04.02",
+    "entity": "job_skill",
+    "data_elements": "job_skill: job_requirement_id, skill_id, mandatory; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "job_requirement_id": 1,
+      "skill_id": 1,
+      "mandatory": false,
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-04.03",
+    "entity": "job_question",
+    "data_elements": "job_question: job_requirement_id, question_text, answer_type_reference_value_id, sort_order, mandatory; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "job_requirement_id": 1,
+      "question_text": "Synthetic example",
+      "answer_type_reference_value_id": 1,
+      "sort_order": 1,
+      "mandatory": false,
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-05.01",
+    "entity": "job_search_event",
+    "data_elements": "job_search_event: candidate_profile_id, search_text, searched_at; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "candidate_profile_id": 1,
+      "search_text": "Synthetic example",
+      "searched_at": "2026-10-27T00:00:00Z",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-05.02",
+    "entity": "job_bookmark",
+    "data_elements": "job_bookmark: candidate_profile_id, job_requirement_id; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "candidate_profile_id": 1,
+      "job_requirement_id": 1,
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-05.03",
+    "entity": "job_application",
+    "data_elements": "job_application: job_requirement_id, candidate_profile_id, resume_version_id, status_reference_value_id, applied_at; BR-012, BR-038",
+    "example_payload": {
+      "id": 1,
+      "job_requirement_id": 1,
+      "candidate_profile_id": 1,
+      "resume_version_id": 1,
+      "status_reference_value_id": 1,
+      "applied_at": "2026-10-27T00:00:00Z",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z",
+      "row_version": 1,
+      "organisation_id": 1,
+      "application_source_id": 1,
+      "sourced_by_app_user_id": 1,
+      "status_changed_at": "2026-10-28T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-05.04",
+    "entity": "application_answer",
+    "data_elements": "application_answer: job_application_id, job_question_id, answer_text; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "job_application_id": 1,
+      "job_question_id": 1,
+      "answer_text": "Synthetic example",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z",
+      "job_requirement_id": 1
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-05.05",
+    "entity": "application_status_event",
+    "data_elements": "application_status_event: job_application_id, from_reference_value_id, to_reference_value_id, actor_app_user_id, occurred_at; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "job_application_id": 1,
+      "from_reference_value_id": 1,
+      "to_reference_value_id": 1,
+      "actor_app_user_id": 1,
+      "occurred_at": "2026-10-27T00:00:00Z",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-06.01",
+    "entity": "candidate_shortlist",
+    "data_elements": "candidate_shortlist: job_requirement_id, candidate_profile_id, owner_app_user_id; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "job_requirement_id": 1,
+      "candidate_profile_id": 1,
+      "owner_app_user_id": 1,
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-06.02",
+    "entity": "interview",
+    "data_elements": "interview: job_application_id, scheduled_at, status_reference_value_id; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "job_application_id": 1,
+      "scheduled_at": "2026-10-27T00:00:00Z",
+      "status_reference_value_id": 1,
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-06.03",
+    "entity": "job_offer",
+    "data_elements": "job_offer: job_application_id, offered_amount, currency_code, expires_at, status_reference_value_id; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "job_application_id": 1,
+      "offered_amount": "100.00",
+      "currency_code": "INR",
+      "expires_at": "2026-10-27T00:00:00Z",
+      "status_reference_value_id": 1,
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-06.04",
+    "entity": "joining_record",
+    "data_elements": "joining_record: job_application_id, joined_on, confirmed_by_app_user_id; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "job_application_id": 1,
+      "joined_on": "2026-10-01",
+      "confirmed_by_app_user_id": 1,
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-06.05",
+    "entity": "application_status_event",
+    "data_elements": "application_status_event: job_application_id, from_reference_value_id, to_reference_value_id, actor_app_user_id, occurred_at; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "job_application_id": 1,
+      "from_reference_value_id": 1,
+      "to_reference_value_id": 1,
+      "actor_app_user_id": 1,
+      "occurred_at": "2026-10-27T00:00:00Z",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-07.01",
+    "entity": "sourcing_request",
+    "data_elements": "sourcing_request: job_requirement_id, consultant_app_user_id, status_reference_value_id, requested_at; BR-016, BR-043",
+    "example_payload": {
+      "id": 1,
+      "job_requirement_id": 1,
+      "consultant_app_user_id": 1,
+      "status_reference_value_id": 1,
+      "requested_at": "2026-10-27T00:00:00Z",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-07.02",
+    "entity": "sourcing_decision",
+    "data_elements": "sourcing_decision: sourcing_request_id, employer_app_user_id, decision_reference_value_id, decided_at; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "sourcing_request_id": 1,
+      "employer_app_user_id": 1,
+      "decision_reference_value_id": 1,
+      "decided_at": "2026-10-27T00:00:00Z",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-07.03",
+    "entity": "sourcing_shortlist",
+    "data_elements": "sourcing_shortlist: sourcing_request_id, candidate_shortlist_id; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "sourcing_request_id": 1,
+      "candidate_shortlist_id": 1,
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-07.04",
+    "entity": "candidate_shortlist",
+    "data_elements": "candidate_shortlist: job_requirement_id, candidate_profile_id, owner_app_user_id; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "job_requirement_id": 1,
+      "candidate_profile_id": 1,
+      "owner_app_user_id": 1,
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-08.01",
+    "entity": "outreach_batch",
+    "data_elements": "outreach_batch: job_requirement_id, actor_app_user_id, idempotency_key, status_reference_value_id; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "job_requirement_id": 1,
+      "actor_app_user_id": 1,
+      "idempotency_key": "synthetic_code",
+      "status_reference_value_id": 1,
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-08.02",
+    "entity": "outreach_recipient",
+    "data_elements": "outreach_recipient: outreach_batch_id, candidate_profile_id, wallet_ledger_entry_id, status_reference_value_id; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "outreach_batch_id": 1,
+      "candidate_profile_id": 1,
+      "wallet_ledger_entry_id": 1,
+      "status_reference_value_id": 1,
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-08.03",
+    "entity": "wallet",
+    "data_elements": "wallet: account_id, currency_code; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "account_id": 1,
+      "currency_code": "INR",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-08.04",
+    "entity": "wallet_ledger_entry",
+    "data_elements": "wallet_ledger_entry: wallet_id, payment_event_id, original_wallet_ledger_entry_id, signed_amount, currency_code, entry_type_reference_value_id; BR-025, BR-027",
+    "example_payload": {
+      "id": 1,
+      "wallet_id": 1,
+      "payment_event_id": 1,
+      "original_wallet_ledger_entry_id": 1,
+      "signed_amount": "100.00",
+      "currency_code": "INR",
+      "entry_type_reference_value_id": 1,
+      "idempotency_key": "synthetic_code",
+      "occurred_at": "2026-10-27T00:00:00Z",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-09.01",
+    "entity": "blocking_entry",
+    "data_elements": "blocking_entry: blocker_app_user_id, blocked_app_user_id, blocked_organisation_id; BR-015, BR-034",
+    "example_payload": {
+      "id": 1,
+      "blocker_app_user_id": 1,
+      "blocked_app_user_id": 1,
+      "blocked_organisation_id": 1,
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z",
+      "candidate_profile_id": 1,
+      "blocked_at": "2026-10-28T00:00:00Z",
+      "unblocked_at": "2026-10-28T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-09.02",
+    "entity": "candidate_profile",
+    "data_elements": "candidate_profile: app_user_id, city_id, headline, birth_date, status_reference_value_id, content_language; BR-014, BR-045",
+    "example_payload": {
+      "id": 1,
+      "app_user_id": 1,
+      "city_id": 1,
+      "headline": "Synthetic example",
+      "birth_date": "2026-10-01",
+      "status_reference_value_id": 1,
+      "content_language": "en",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z",
+      "row_version": 1,
+      "summary": "Synthetic summary",
+      "total_experience_months": 0,
+      "expected_salary_amount": "0.00",
+      "expected_salary_currency_code": "INR",
+      "salary_disclosure_reference_value_id": 1,
+      "notice_period_days": 0,
+      "is_open_to_work": false,
+      "last_active_at": "2026-10-28T00:00:00Z",
+      "search_vector": "'synthetic':1"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-09.03",
+    "entity": "profile_view_event",
+    "data_elements": "profile_view_event: actor_app_user_id, candidate_profile_id, viewed_at; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "actor_app_user_id": 1,
+      "candidate_profile_id": 1,
+      "viewed_at": "2026-10-27T00:00:00Z",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-09.04",
+    "entity": "candidate_bookmark",
+    "data_elements": "candidate_bookmark: actor_app_user_id, candidate_profile_id, status_reference_value_id; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "actor_app_user_id": 1,
+      "candidate_profile_id": 1,
+      "status_reference_value_id": 1,
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-10.01",
+    "entity": "gig_worker_profile",
+    "data_elements": "gig_worker_profile: app_user_id, bio, status_reference_value_id; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "app_user_id": 1,
+      "bio": "Synthetic example",
+      "status_reference_value_id": 1,
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-10.02",
+    "entity": "gig_service",
+    "data_elements": "gig_service: gig_worker_profile_id, skill_id, charge_amount, currency_code, rate_unit_reference_value_id; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "gig_worker_profile_id": 1,
+      "skill_id": 1,
+      "charge_amount": "100.00",
+      "currency_code": "INR",
+      "rate_unit_reference_value_id": 1,
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-10.03",
+    "entity": "gig_availability",
+    "data_elements": "gig_availability: gig_worker_profile_id, start_at, end_at, source_timezone; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "gig_worker_profile_id": 1,
+      "start_at": "2026-10-27T00:00:00Z",
+      "end_at": "2026-10-27T00:00:00Z",
+      "source_timezone": "synthetic_code",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-10.04",
+    "entity": "gig_request",
+    "data_elements": "gig_request: requester_organisation_id, title, start_at, end_at, price_amount, currency_code; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "requester_organisation_id": 1,
+      "title": "Asha Synthetic",
+      "start_at": "2026-10-27T00:00:00Z",
+      "end_at": "2026-10-27T00:00:00Z",
+      "price_amount": "100.00",
+      "currency_code": "INR",
+      "pricing_type_reference_value_id": 1,
+      "status_reference_value_id": 1,
+      "source_timezone": "synthetic_code",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-10.05",
+    "entity": "gig_application",
+    "data_elements": "gig_application: gig_request_id, gig_worker_profile_id, status_reference_value_id, applied_at; BR-017, BR-039",
+    "example_payload": {
+      "id": 1,
+      "gig_request_id": 1,
+      "gig_worker_profile_id": 1,
+      "status_reference_value_id": 1,
+      "applied_at": "2026-10-27T00:00:00Z",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-10.06",
+    "entity": "gig_assignment",
+    "data_elements": "gig_assignment: gig_application_id, gig_worker_profile_id, start_at, end_at, external_handoff_key, status_reference_value_id; BR-018, BR-040",
+    "example_payload": {
+      "id": 1,
+      "gig_application_id": 1,
+      "gig_worker_profile_id": 1,
+      "start_at": "2026-10-27T00:00:00Z",
+      "end_at": "2026-10-27T00:00:00Z",
+      "external_handoff_key": "synthetic_token_001",
+      "status_reference_value_id": 1,
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z",
+      "blocks_window": true,
+      "row_version": 1
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-10.07",
+    "entity": "gig_project",
+    "data_elements": "gig_project: gig_worker_profile_id, gig_assignment_id, title, role_name, start_date, end_date; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "gig_worker_profile_id": 1,
+      "gig_assignment_id": 1,
+      "title": "Asha Synthetic",
+      "role_name": "Asha Synthetic",
+      "start_date": "2026-10-01",
+      "end_date": "2026-10-01",
+      "outcome": "Synthetic example",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-11.01",
+    "entity": "gig_assignment",
+    "data_elements": "gig_assignment: gig_application_id, gig_worker_profile_id, start_at, end_at, external_handoff_key, status_reference_value_id; BR-018, BR-040",
+    "example_payload": {
+      "id": 1,
+      "gig_application_id": 1,
+      "gig_worker_profile_id": 1,
+      "start_at": "2026-10-27T00:00:00Z",
+      "end_at": "2026-10-27T00:00:00Z",
+      "external_handoff_key": "synthetic_token_001",
+      "status_reference_value_id": 1,
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z",
+      "blocks_window": true,
+      "row_version": 1
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-11.02",
+    "entity": "gig_earnings_snapshot",
+    "data_elements": "gig_earnings_snapshot: gig_assignment_id, provider_reference, estimated_amount, total_amount, projected_amount, currency_code; BR-036",
+    "example_payload": {
+      "id": 1,
+      "gig_assignment_id": 1,
+      "provider_reference": "synthetic_token_001",
+      "estimated_amount": "100.00",
+      "total_amount": "100.00",
+      "projected_amount": "100.00",
+      "currency_code": "INR",
+      "reconciled_at": "2026-10-27T00:00:00Z",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-11.03",
+    "entity": "gig_rating",
+    "data_elements": "gig_rating: gig_assignment_id, requester_app_user_id, rating, comment_text; BR-019",
+    "example_payload": {
+      "id": 1,
+      "gig_assignment_id": 1,
+      "requester_app_user_id": 1,
+      "rating": 5,
+      "comment_text": "Synthetic example",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-11.04",
+    "entity": "gig_worker_list_entry",
+    "data_elements": "gig_worker_list_entry: requester_organisation_id, gig_worker_profile_id, list_type_reference_value_id; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "requester_organisation_id": 1,
+      "gig_worker_profile_id": 1,
+      "list_type_reference_value_id": 1,
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-11.05",
+    "entity": "integration_event",
+    "data_elements": "integration_event: provider_code, provider_event_key, payload_hash, status_reference_value_id, received_at; BR-026",
+    "example_payload": {
+      "id": 1,
+      "provider_code": "synthetic_code",
+      "provider_event_key": "synthetic_code",
+      "payload_hash": "synthetic_token_001",
+      "status_reference_value_id": 1,
+      "received_at": "2026-10-27T00:00:00Z",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-12.01",
+    "entity": "licence",
+    "data_elements": "licence: account_id, max_user_count, max_device_per_user, status_reference_value_id; BR-020",
+    "example_payload": {
+      "id": 1,
+      "account_id": 1,
+      "max_user_count": 1,
+      "max_device_per_user": 1,
+      "status_reference_value_id": 1,
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z",
+      "row_version": 1
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-12.02",
+    "entity": "licence_seat",
+    "data_elements": "licence_seat: licence_id, app_user_id, allocated_at, released_at; BR-021",
+    "example_payload": {
+      "id": 1,
+      "licence_id": 1,
+      "app_user_id": 1,
+      "allocated_at": "2026-10-27T00:00:00Z",
+      "released_at": "2026-10-27T00:00:00Z",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-12.03",
+    "entity": "registered_device",
+    "data_elements": "registered_device: app_user_id, device_token, registered_at, revoked_at; BR-023",
+    "example_payload": {
+      "id": 1,
+      "app_user_id": 1,
+      "device_token": "synthetic_token_001",
+      "registered_at": "2026-10-27T00:00:00Z",
+      "revoked_at": "2026-10-27T00:00:00Z",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z",
+      "device_label": "Synthetic device label",
+      "last_seen_at": "2026-10-28T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-12.04",
+    "entity": "user_session",
+    "data_elements": "user_session: app_user_id, registered_device_id, licence_id, started_at, last_activity_at, expires_at; BR-022, BR-023, BR-035, BR-046",
+    "example_payload": {
+      "id": 1,
+      "app_user_id": 1,
+      "registered_device_id": 1,
+      "licence_id": 1,
+      "started_at": "2026-10-27T00:00:00Z",
+      "last_activity_at": "2026-10-27T00:00:00Z",
+      "expires_at": "2026-10-27T00:00:00Z",
+      "ended_at": "2026-10-27T00:00:00Z",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z",
+      "row_version": 1,
+      "token_hash": "\\x00",
+      "session_end_reason_id": 1
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-12.05",
+    "entity": "login_attempt",
+    "data_elements": "login_attempt: app_user_id, device_token, outcome_reference_value_id, attempted_at; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "app_user_id": 1,
+      "device_token": "synthetic_token_001",
+      "outcome_reference_value_id": 1,
+      "attempted_at": "2026-10-27T00:00:00Z",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-12.06",
+    "entity": "revocation_event",
+    "data_elements": "revocation_event: app_user_id, registered_device_id, user_session_id, actor_app_user_id, occurred_at; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "app_user_id": 1,
+      "registered_device_id": 1,
+      "user_session_id": 1,
+      "actor_app_user_id": 1,
+      "occurred_at": "2026-10-27T00:00:00Z",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-13.01",
+    "entity": "subscription_plan",
+    "data_elements": "subscription_plan: code, name, price_amount, currency_code; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "code": "synthetic_code",
+      "name": "Asha Synthetic",
+      "price_amount": "100.00",
+      "currency_code": "INR",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z",
+      "billing_period_months": 0,
+      "max_seats": 0,
+      "max_devices_per_user": 0,
+      "included_credits": 0,
+      "is_active": false
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-13.02",
+    "entity": "plan_entitlement",
+    "data_elements": "plan_entitlement: subscription_plan_id, entitlement_reference_value_id, quantity; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "subscription_plan_id": 1,
+      "entitlement_reference_value_id": 1,
+      "quantity": 1,
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-13.03",
+    "entity": "subscription_period",
+    "data_elements": "subscription_period: licence_id, subscription_plan_id, start_at, end_at, status_reference_value_id; BR-024, BR-041",
+    "example_payload": {
+      "id": 1,
+      "licence_id": 1,
+      "subscription_plan_id": 1,
+      "start_at": "2026-10-27T00:00:00Z",
+      "end_at": "2026-10-27T00:00:00Z",
+      "status_reference_value_id": 1,
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z",
+      "row_version": 1,
+      "organisation_id": 1,
+      "max_seats": 0,
+      "max_devices_per_user": 0,
+      "auto_renew": false,
+      "cancelled_at": "2026-10-28T00:00:00Z",
+      "renewed_from_subscription_id": 1,
+      "payment_order_id": 1
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-13.04",
+    "entity": "payment_order",
+    "data_elements": "payment_order: account_id, subscription_period_id, amount, currency_code, idempotency_key, status_reference_value_id; BR-042",
+    "example_payload": {
+      "id": 1,
+      "account_id": 1,
+      "subscription_period_id": 1,
+      "amount": "100.00",
+      "currency_code": "INR",
+      "idempotency_key": "synthetic_code",
+      "status_reference_value_id": 1,
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z",
+      "organisation_id": 1,
+      "payment_purpose_id": 1,
+      "credits_to_grant": 0,
+      "plan_id": 1,
+      "gateway_order_ref": "Synthetic gateway order ref"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-13.05",
+    "entity": "payment_event",
+    "data_elements": "payment_event: payment_order_id, provider_event_key, provider_reference, amount, currency_code, status_reference_value_id; BR-025, BR-026, BR-032",
+    "example_payload": {
+      "id": 1,
+      "payment_order_id": 1,
+      "provider_event_key": "synthetic_code",
+      "provider_reference": "synthetic_token_001",
+      "amount": "100.00",
+      "currency_code": "INR",
+      "status_reference_value_id": 1,
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "occurred_at": "2026-10-28T00:00:00Z",
+      "payload_sha256": "\\x00"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-13.06",
+    "entity": "invoice",
+    "data_elements": "invoice: payment_order_id, invoice_number, total_amount, currency_code, issued_at; BR-029",
+    "example_payload": {
+      "id": 1,
+      "payment_order_id": 1,
+      "invoice_number": "synthetic_code",
+      "total_amount": "100.00",
+      "currency_code": "INR",
+      "issued_at": "2026-10-27T00:00:00Z",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z",
+      "issued_on": "2026-10-28",
+      "subtotal_amount": "0.00",
+      "tax_amount": "0.00"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-13.07",
+    "entity": "invoice_line",
+    "data_elements": "invoice_line: invoice_id, line_number, description, line_amount, currency_code; BR-029",
+    "example_payload": {
+      "id": 1,
+      "invoice_id": 1,
+      "line_number": 1,
+      "description": "Synthetic example",
+      "line_amount": "100.00",
+      "currency_code": "INR",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-13.08",
+    "entity": "refund",
+    "data_elements": "refund: payment_order_id, original_payment_event_id, amount, currency_code, idempotency_key, status_reference_value_id; BR-028",
+    "example_payload": {
+      "id": 1,
+      "payment_order_id": 1,
+      "original_payment_event_id": 1,
+      "amount": "100.00",
+      "currency_code": "INR",
+      "idempotency_key": "synthetic_code",
+      "status_reference_value_id": 1,
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-13.09",
+    "entity": "wallet",
+    "data_elements": "wallet: account_id, currency_code; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "account_id": 1,
+      "currency_code": "INR",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-13.10",
+    "entity": "wallet_ledger_entry",
+    "data_elements": "wallet_ledger_entry: wallet_id, payment_event_id, original_wallet_ledger_entry_id, signed_amount, currency_code, entry_type_reference_value_id; BR-025, BR-027",
+    "example_payload": {
+      "id": 1,
+      "wallet_id": 1,
+      "payment_event_id": 1,
+      "original_wallet_ledger_entry_id": 1,
+      "signed_amount": "100.00",
+      "currency_code": "INR",
+      "entry_type_reference_value_id": 1,
+      "idempotency_key": "synthetic_code",
+      "occurred_at": "2026-10-27T00:00:00Z",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-14.01",
+    "entity": "profile_download_event",
+    "data_elements": "profile_download_event: actor_app_user_id, candidate_profile_id, wallet_ledger_entry_id, downloaded_at, idempotency_key; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "actor_app_user_id": 1,
+      "candidate_profile_id": 1,
+      "wallet_ledger_entry_id": 1,
+      "downloaded_at": "2026-10-27T00:00:00Z",
+      "idempotency_key": "synthetic_code",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "organisation_id": 1
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-14.02",
+    "entity": "wallet_ledger_entry",
+    "data_elements": "wallet_ledger_entry: wallet_id, payment_event_id, original_wallet_ledger_entry_id, signed_amount, currency_code, entry_type_reference_value_id; BR-025, BR-027",
+    "example_payload": {
+      "id": 1,
+      "wallet_id": 1,
+      "payment_event_id": 1,
+      "original_wallet_ledger_entry_id": 1,
+      "signed_amount": "100.00",
+      "currency_code": "INR",
+      "entry_type_reference_value_id": 1,
+      "idempotency_key": "synthetic_code",
+      "occurred_at": "2026-10-27T00:00:00Z",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-14.03",
+    "entity": "profile_view_event",
+    "data_elements": "profile_view_event: actor_app_user_id, candidate_profile_id, viewed_at; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "actor_app_user_id": 1,
+      "candidate_profile_id": 1,
+      "viewed_at": "2026-10-27T00:00:00Z",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-15.01",
+    "entity": "user_preference",
+    "data_elements": "user_preference: app_user_id, language_code, privacy_reference_value_id; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "app_user_id": 1,
+      "language_code": "en",
+      "privacy_reference_value_id": 1,
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-15.02",
+    "entity": "notification_preference",
+    "data_elements": "notification_preference: app_user_id, channel_reference_value_id, enabled; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "app_user_id": 1,
+      "channel_reference_value_id": 1,
+      "enabled": false,
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z",
+      "notification_category_id": 1
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-15.03",
+    "entity": "job_alert_preference",
+    "data_elements": "job_alert_preference: app_user_id, job_role_id, city_id, enabled; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "app_user_id": 1,
+      "job_role_id": 1,
+      "city_id": 1,
+      "enabled": false,
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z",
+      "keywords": "Synthetic keywords",
+      "min_salary_amount": "0.00",
+      "salary_currency_id": 1,
+      "alert_frequency_id": 1,
+      "last_sent_at": "2026-10-28T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-15.04",
+    "entity": "notification",
+    "data_elements": "notification: recipient_app_user_id, template_key, purpose_reference_value_id, expires_at; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "recipient_app_user_id": 1,
+      "template_key": "synthetic_code",
+      "purpose_reference_value_id": 1,
+      "expires_at": "2026-10-27T00:00:00Z",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z",
+      "notification_channel_id": 1
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-15.05",
+    "entity": "notification_delivery",
+    "data_elements": "notification_delivery: notification_id, provider_reference, status_reference_value_id, attempted_at; BR-030",
+    "example_payload": {
+      "id": 1,
+      "notification_id": 1,
+      "provider_reference": "synthetic_token_001",
+      "status_reference_value_id": 1,
+      "attempted_at": "2026-10-27T00:00:00Z",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-16.01",
+    "entity": "community_post",
+    "data_elements": "community_post: author_app_user_id, body_text, content_language, status_reference_value_id; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "author_app_user_id": 1,
+      "body_text": "Synthetic job or resume body",
+      "content_language": "en",
+      "status_reference_value_id": 1,
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-16.02",
+    "entity": "post_reaction",
+    "data_elements": "post_reaction: community_post_id, app_user_id, reaction_reference_value_id; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "community_post_id": 1,
+      "app_user_id": 1,
+      "reaction_reference_value_id": 1,
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-16.03",
+    "entity": "support_ticket",
+    "data_elements": "support_ticket: requester_app_user_id, assigned_app_user_id, subject, status_reference_value_id; BR-044",
+    "example_payload": {
+      "id": 1,
+      "requester_app_user_id": 1,
+      "assigned_app_user_id": 1,
+      "subject": "Synthetic example",
+      "status_reference_value_id": 1,
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z",
+      "row_version": 1
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-16.04",
+    "entity": "faq",
+    "data_elements": "faq: label_key, answer_key, status_reference_value_id; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "label_key": "synthetic_code",
+      "answer_key": "synthetic_code",
+      "status_reference_value_id": 1,
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-16.05",
+    "entity": "referral",
+    "data_elements": "referral: referrer_app_user_id, candidate_profile_id, referral_key; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "referrer_app_user_id": 1,
+      "candidate_profile_id": 1,
+      "referral_key": "synthetic_code",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-16.06",
+    "entity": "referral_event",
+    "data_elements": "referral_event: referral_id, event_reference_value_id, occurred_at; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "referral_id": 1,
+      "event_reference_value_id": 1,
+      "occurred_at": "2026-10-27T00:00:00Z",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-16.07",
+    "entity": "social_share_event",
+    "data_elements": "social_share_event: app_user_id, job_requirement_id, channel_reference_value_id, shared_at; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "app_user_id": 1,
+      "job_requirement_id": 1,
+      "channel_reference_value_id": 1,
+      "shared_at": "2026-10-27T00:00:00Z",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-16.08",
+    "entity": "candidate_activity",
+    "data_elements": "candidate_activity: candidate_profile_id, action_reference_value_id, occurred_at; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "candidate_profile_id": 1,
+      "action_reference_value_id": 1,
+      "occurred_at": "2026-10-27T00:00:00Z",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-17.01",
+    "entity": "reference_domain",
+    "data_elements": "reference_domain: code, description; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "code": "synthetic_code",
+      "description": "Synthetic example",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-17.02",
+    "entity": "reference_value",
+    "data_elements": "reference_value: reference_domain_id, code, label_key, active, sort_order; BR-031",
+    "example_payload": {
+      "id": 1,
+      "reference_domain_id": 1,
+      "code": "synthetic_code",
+      "label_key": "synthetic_code",
+      "active": false,
+      "sort_order": 1,
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-17.03",
+    "entity": "ui_translation",
+    "data_elements": "ui_translation: label_key, language_code, translated_text; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "label_key": "synthetic_code",
+      "language_code": "en",
+      "translated_text": "Synthetic example",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-17.04",
+    "entity": "country",
+    "data_elements": "country: code, name; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "code": "IN",
+      "name": "Asha Synthetic",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z",
+      "phone_country_code": "Synthetic phone country code",
+      "currency_id": 1,
+      "is_active": false
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-17.05",
+    "entity": "state",
+    "data_elements": "state: country_id, code, name; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "country_id": 1,
+      "code": "synthetic_code",
+      "name": "Asha Synthetic",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-17.06",
+    "entity": "city",
+    "data_elements": "city: state_id, name, latitude, longitude, coordinate_source; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "state_id": 1,
+      "name": "Asha Synthetic",
+      "latitude": "12.971600",
+      "longitude": "77.594600",
+      "coordinate_source": "Synthetic example",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z",
+      "is_active": false
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-17.07",
+    "entity": "skill",
+    "data_elements": "skill: code, name; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "code": "synthetic_code",
+      "name": "Asha Synthetic",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z",
+      "is_active": false
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-17.08",
+    "entity": "qualification",
+    "data_elements": "qualification: code, name; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "code": "synthetic_code",
+      "name": "Asha Synthetic",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z",
+      "ui_label_id": 1,
+      "is_active": false,
+      "sort_order": 0
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-17.09",
+    "entity": "industry",
+    "data_elements": "industry: code, name; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "code": "synthetic_code",
+      "name": "Asha Synthetic",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z",
+      "ui_label_id": 1,
+      "is_active": false,
+      "sort_order": 0
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-17.10",
+    "entity": "job_role",
+    "data_elements": "job_role: code, name; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "code": "synthetic_code",
+      "name": "Asha Synthetic",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-17.11",
+    "entity": "access_role",
+    "data_elements": "access_role: code, name; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "code": "synthetic_code",
+      "name": "Asha Synthetic",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z",
+      "ui_label_id": 1,
+      "is_active": false,
+      "sort_order": 0
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-17.12",
+    "entity": "permission",
+    "data_elements": "permission: code, resource_name, action_name; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "code": "synthetic_code",
+      "resource_name": "synthetic_code",
+      "action_name": "synthetic_code",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z",
+      "ui_label_id": 1,
+      "is_active": false,
+      "sort_order": 0
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-17.13",
+    "entity": "user_role",
+    "data_elements": "user_role: app_user_id, access_role_id; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "app_user_id": 1,
+      "access_role_id": 1,
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-17.14",
+    "entity": "role_permission",
+    "data_elements": "role_permission: access_role_id, permission_id; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "access_role_id": 1,
+      "permission_id": 1,
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-17.15",
+    "entity": "an_dim_date",
+    "data_elements": "an_dim_date: calendar_date, year_number, month_number; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "calendar_date": "2026-10-01",
+      "year_number": 1,
+      "month_number": 1,
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-17.16",
+    "entity": "an_dim_candidate",
+    "data_elements": "an_dim_candidate: candidate_profile_id, pseudonymous_key, valid_from, valid_to; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "candidate_profile_id": 1,
+      "pseudonymous_key": "synthetic_token_001",
+      "valid_from": "2026-10-27T00:00:00Z",
+      "valid_to": "2026-10-27T00:00:00Z",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-17.17",
+    "entity": "an_dim_organisation",
+    "data_elements": "an_dim_organisation: organisation_id, valid_from, valid_to; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "organisation_id": 1,
+      "valid_from": "2026-10-27T00:00:00Z",
+      "valid_to": "2026-10-27T00:00:00Z",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-17.18",
+    "entity": "an_fact_application",
+    "data_elements": "an_fact_application: job_application_id, an_dim_date_id, an_dim_candidate_id, an_dim_organisation_id, event_count; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "job_application_id": 1,
+      "an_dim_date_id": 1,
+      "an_dim_candidate_id": 1,
+      "an_dim_organisation_id": 1,
+      "event_count": 1,
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-17.19",
+    "entity": "an_fact_credit",
+    "data_elements": "an_fact_credit: wallet_ledger_entry_id, an_dim_date_id, signed_amount, currency_code; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "wallet_ledger_entry_id": 1,
+      "an_dim_date_id": 1,
+      "signed_amount": "100.00",
+      "currency_code": "INR",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-17.20",
+    "entity": "system_error",
+    "data_elements": "system_error: error_code, correlation_key, sanitized_message, occurred_at; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "error_code": "synthetic_code",
+      "correlation_key": "synthetic_code",
+      "sanitized_message": "Synthetic example",
+      "occurred_at": "2026-10-27T00:00:00Z",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "service_name": "Synthetic service name",
+      "safe_message": "Synthetic safe message",
+      "app_user_id": 1,
+      "context": "{\"fixture\":true}"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-17.21",
+    "entity": "audit_event",
+    "data_elements": "audit_event: actor_app_user_id, action_code, subject_token, outcome_reference_value_id, correlation_key, occurred_at; BR-025",
+    "example_payload": {
+      "id": 1,
+      "actor_app_user_id": 1,
+      "action_code": "synthetic_code",
+      "subject_token": "synthetic_token_001",
+      "outcome_reference_value_id": 1,
+      "correlation_key": "synthetic_code",
+      "occurred_at": "2026-10-27T00:00:00Z",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "organisation_id": 1,
+      "subject_table": "Synthetic subject table",
+      "subject_id": 1,
+      "details": "{\"fixture\":true}"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-18.01",
+    "entity": "integration_event",
+    "data_elements": "integration_event: provider_code, provider_event_key, payload_hash, status_reference_value_id, received_at; BR-026",
+    "example_payload": {
+      "id": 1,
+      "provider_code": "synthetic_code",
+      "provider_event_key": "synthetic_code",
+      "payload_hash": "synthetic_token_001",
+      "status_reference_value_id": 1,
+      "received_at": "2026-10-27T00:00:00Z",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-18.02",
+    "entity": "consent_record",
+    "data_elements": "consent_record: app_user_id, purpose_reference_value_id, policy_version, granted_at, revoked_at; BR-001 through BR-005",
+    "example_payload": {
+      "id": 1,
+      "app_user_id": 1,
+      "purpose_reference_value_id": 1,
+      "policy_version": "synthetic_code",
+      "granted_at": "2026-10-27T00:00:00Z",
+      "revoked_at": "2026-10-27T00:00:00Z",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "consent_purpose_id": 1,
+      "is_granted": false,
+      "recorded_at": "2026-10-28T00:00:00Z",
+      "ip_address": "192.0.2.1"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-18.03",
+    "entity": "candidate_profile",
+    "data_elements": "candidate_profile: app_user_id, city_id, headline, birth_date, status_reference_value_id, content_language; BR-014, BR-045",
+    "example_payload": {
+      "id": 1,
+      "app_user_id": 1,
+      "city_id": 1,
+      "headline": "Synthetic example",
+      "birth_date": "2026-10-01",
+      "status_reference_value_id": 1,
+      "content_language": "en",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z",
+      "row_version": 1,
+      "summary": "Synthetic summary",
+      "total_experience_months": 0,
+      "expected_salary_amount": "0.00",
+      "expected_salary_currency_code": "INR",
+      "salary_disclosure_reference_value_id": 1,
+      "notice_period_days": 0,
+      "is_open_to_work": false,
+      "last_active_at": "2026-10-28T00:00:00Z",
+      "search_vector": "'synthetic':1"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-18.04",
+    "entity": "audit_event",
+    "data_elements": "audit_event: actor_app_user_id, action_code, subject_token, outcome_reference_value_id, correlation_key, occurred_at; BR-025",
+    "example_payload": {
+      "id": 1,
+      "actor_app_user_id": 1,
+      "action_code": "synthetic_code",
+      "subject_token": "synthetic_token_001",
+      "outcome_reference_value_id": 1,
+      "correlation_key": "synthetic_code",
+      "occurred_at": "2026-10-27T00:00:00Z",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "organisation_id": 1,
+      "subject_table": "Synthetic subject table",
+      "subject_id": 1,
+      "details": "{\"fixture\":true}"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-19.01",
+    "entity": "candidate_job_journey",
+    "data_elements": "candidate_job_journey.journey_id;job_requirement.id",
+    "example_payload": {
+      "business_context": "candidate_job_journey.journey_id;job_requirement.id",
+      "organisation_id": 1,
+      "source_version": 1,
+      "is_synthetic": true
+    },
+    "status": "Proposed staging example; no physical target claimed"
+  },
+  {
+    "step_id": "WF-19.02",
+    "entity": "candidate_profile",
+    "data_elements": "candidate_profile.id;job_requirement.organisation_id",
+    "example_payload": {
+      "id": 1,
+      "app_user_id": 1,
+      "city_id": 1,
+      "headline": "Synthetic example",
+      "birth_date": "2026-10-01",
+      "status_reference_value_id": 1,
+      "content_language": "en",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z",
+      "row_version": 1,
+      "summary": "Synthetic summary",
+      "total_experience_months": 0,
+      "expected_salary_amount": "0.00",
+      "expected_salary_currency_code": "INR",
+      "salary_disclosure_reference_value_id": 1,
+      "notice_period_days": 0,
+      "is_open_to_work": false,
+      "last_active_at": "2026-10-28T00:00:00Z",
+      "search_vector": "'synthetic':1"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-19.03",
+    "entity": "job_family_code;engagement_type",
+    "data_elements": "job_family_code;engagement_type",
+    "example_payload": {
+      "business_context": "job_family_code;engagement_type",
+      "organisation_id": 1,
+      "source_version": 1,
+      "is_synthetic": true
+    },
+    "status": "Proposed staging example; no physical target claimed"
+  },
+  {
+    "step_id": "WF-19.04",
+    "entity": "eligibility_outcome;rule_version",
+    "data_elements": "eligibility_outcome;rule_version",
+    "example_payload": {
+      "business_context": "eligibility_outcome;rule_version",
+      "organisation_id": 1,
+      "source_version": 1,
+      "is_synthetic": true
+    },
+    "status": "Proposed staging example; no physical target claimed"
+  },
+  {
+    "step_id": "WF-19.05",
+    "entity": "journey_stage_event",
+    "data_elements": "journey_stage_event.source_event_id;occurred_at",
+    "example_payload": {
+      "business_context": "journey_stage_event.source_event_id;occurred_at",
+      "organisation_id": 1,
+      "source_version": 1,
+      "is_synthetic": true
+    },
+    "status": "Proposed staging example; no physical target claimed"
+  },
+  {
+    "step_id": "WF-19.06",
+    "entity": "job_application",
+    "data_elements": "job_application.applied_at",
+    "example_payload": {
+      "id": 1,
+      "job_requirement_id": 1,
+      "candidate_profile_id": 1,
+      "resume_version_id": 1,
+      "status_reference_value_id": 1,
+      "applied_at": "2026-10-27T00:00:00Z",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z",
+      "row_version": 1,
+      "organisation_id": 1,
+      "application_source_id": 1,
+      "sourced_by_app_user_id": 1,
+      "status_changed_at": "2026-10-28T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-20.01",
+    "entity": "job_application",
+    "data_elements": "job_application.id;assessment_attempt.id",
+    "example_payload": {
+      "id": 1,
+      "job_requirement_id": 1,
+      "candidate_profile_id": 1,
+      "resume_version_id": 1,
+      "status_reference_value_id": 1,
+      "applied_at": "2026-10-27T00:00:00Z",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z",
+      "row_version": 1,
+      "organisation_id": 1,
+      "application_source_id": 1,
+      "sourced_by_app_user_id": 1,
+      "status_changed_at": "2026-10-28T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-20.02",
+    "entity": "assessment_id;invitation_reference",
+    "data_elements": "assessment_id;invitation_reference",
+    "example_payload": {
+      "business_context": "assessment_id;invitation_reference",
+      "organisation_id": 1,
+      "source_version": 1,
+      "is_synthetic": true
+    },
+    "status": "Proposed staging example; no physical target claimed"
+  },
+  {
+    "step_id": "WF-20.03",
+    "entity": "assessment_attempt",
+    "data_elements": "assessment_attempt.candidate_profile_id;provider_attempt_ref",
+    "example_payload": {
+      "id": 1,
+      "candidate_profile_id": 1,
+      "assessment_id": 1,
+      "score": "4.0000",
+      "completed_at": "2026-10-27T00:00:00Z",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-20.04",
+    "entity": "assessment_attempt",
+    "data_elements": "assessment_attempt.completed_at;score;score_scale",
+    "example_payload": {
+      "id": 1,
+      "candidate_profile_id": 1,
+      "assessment_id": 1,
+      "score": "4.0000",
+      "completed_at": "2026-10-27T00:00:00Z",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-20.05",
+    "entity": "assessment_application_bridge",
+    "data_elements": "assessment_application_bridge.application_id",
+    "example_payload": {
+      "business_context": "assessment_application_bridge.application_id",
+      "organisation_id": 1,
+      "source_version": 1,
+      "is_synthetic": true
+    },
+    "status": "Proposed staging example; no physical target claimed"
+  },
+  {
+    "step_id": "WF-20.06",
+    "entity": "journey_stage_event",
+    "data_elements": "journey_stage_event.stage_code;occurred_at",
+    "example_payload": {
+      "business_context": "journey_stage_event.stage_code;occurred_at",
+      "organisation_id": 1,
+      "source_version": 1,
+      "is_synthetic": true
+    },
+    "status": "Proposed staging example; no physical target claimed"
+  },
+  {
+    "step_id": "WF-21.01",
+    "entity": "interview",
+    "data_elements": "interview.id;organisation_id",
+    "example_payload": {
+      "id": 1,
+      "job_application_id": 1,
+      "scheduled_at": "2026-10-27T00:00:00Z",
+      "status_reference_value_id": 1,
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-21.02",
+    "entity": "interview",
+    "data_elements": "interview.scheduled_at;candidate_profile.id",
+    "example_payload": {
+      "id": 1,
+      "job_application_id": 1,
+      "scheduled_at": "2026-10-27T00:00:00Z",
+      "status_reference_value_id": 1,
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-21.03",
+    "entity": "interview",
+    "data_elements": "interview.completed_at;outcome_code",
+    "example_payload": {
+      "id": 1,
+      "job_application_id": 1,
+      "scheduled_at": "2026-10-27T00:00:00Z",
+      "status_reference_value_id": 1,
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-21.04",
+    "entity": "rubric_version;interview_score",
+    "data_elements": "rubric_version;interview_score",
+    "example_payload": {
+      "business_context": "rubric_version;interview_score",
+      "organisation_id": 1,
+      "source_version": 1,
+      "is_synthetic": true
+    },
+    "status": "Proposed staging example; no physical target claimed"
+  },
+  {
+    "step_id": "WF-21.05",
+    "entity": "application_status_event",
+    "data_elements": "application_status_event.occurred_at;decision_owner",
+    "example_payload": {
+      "id": 1,
+      "job_application_id": 1,
+      "from_reference_value_id": 1,
+      "to_reference_value_id": 1,
+      "actor_app_user_id": 1,
+      "occurred_at": "2026-10-27T00:00:00Z",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-21.06",
+    "entity": "journey_stage_event",
+    "data_elements": "journey_stage_event.stage_code;source_version",
+    "example_payload": {
+      "business_context": "journey_stage_event.stage_code;source_version",
+      "organisation_id": 1,
+      "source_version": 1,
+      "is_synthetic": true
+    },
+    "status": "Proposed staging example; no physical target claimed"
+  },
+  {
+    "step_id": "WF-22.01",
+    "entity": "job_application",
+    "data_elements": "job_application.id;selected_at",
+    "example_payload": {
+      "id": 1,
+      "job_requirement_id": 1,
+      "candidate_profile_id": 1,
+      "resume_version_id": 1,
+      "status_reference_value_id": 1,
+      "applied_at": "2026-10-27T00:00:00Z",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z",
+      "row_version": 1,
+      "organisation_id": 1,
+      "application_source_id": 1,
+      "sourced_by_app_user_id": 1,
+      "status_changed_at": "2026-10-28T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-22.02",
+    "entity": "job_offer",
+    "data_elements": "job_offer.id;currency_code;expires_at",
+    "example_payload": {
+      "id": 1,
+      "job_application_id": 1,
+      "offered_amount": "100.00",
+      "currency_code": "INR",
+      "expires_at": "2026-10-27T00:00:00Z",
+      "status_reference_value_id": 1,
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-22.03",
+    "entity": "notification",
+    "data_elements": "notification.id;consent_record.id",
+    "example_payload": {
+      "id": 1,
+      "recipient_app_user_id": 1,
+      "template_key": "synthetic_code",
+      "purpose_reference_value_id": 1,
+      "expires_at": "2026-10-27T00:00:00Z",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z",
+      "notification_channel_id": 1
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-22.04",
+    "entity": "candidate_profile",
+    "data_elements": "candidate_profile.id;job_offer.id",
+    "example_payload": {
+      "id": 1,
+      "app_user_id": 1,
+      "city_id": 1,
+      "headline": "Synthetic example",
+      "birth_date": "2026-10-01",
+      "status_reference_value_id": 1,
+      "content_language": "en",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z",
+      "row_version": 1,
+      "summary": "Synthetic summary",
+      "total_experience_months": 0,
+      "expected_salary_amount": "0.00",
+      "expected_salary_currency_code": "INR",
+      "salary_disclosure_reference_value_id": 1,
+      "notice_period_days": 0,
+      "is_open_to_work": false,
+      "last_active_at": "2026-10-28T00:00:00Z",
+      "search_vector": "'synthetic':1"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-22.05",
+    "entity": "job_offer",
+    "data_elements": "job_offer.status_reference_value_id;responded_at",
+    "example_payload": {
+      "id": 1,
+      "job_application_id": 1,
+      "offered_amount": "100.00",
+      "currency_code": "INR",
+      "expires_at": "2026-10-27T00:00:00Z",
+      "status_reference_value_id": 1,
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-22.06",
+    "entity": "journey_stage_event",
+    "data_elements": "journey_stage_event.occurred_at;stage_code",
+    "example_payload": {
+      "business_context": "journey_stage_event.occurred_at;stage_code",
+      "organisation_id": 1,
+      "source_version": 1,
+      "is_synthetic": true
+    },
+    "status": "Proposed staging example; no physical target claimed"
+  },
+  {
+    "step_id": "WF-23.01",
+    "entity": "job_offer",
+    "data_elements": "job_offer.id;candidate_profile.id",
+    "example_payload": {
+      "id": 1,
+      "job_application_id": 1,
+      "offered_amount": "100.00",
+      "currency_code": "INR",
+      "expires_at": "2026-10-27T00:00:00Z",
+      "status_reference_value_id": 1,
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-23.02",
+    "entity": "pending_since;expected_joining_date",
+    "data_elements": "pending_since;expected_joining_date",
+    "example_payload": {
+      "business_context": "pending_since;expected_joining_date",
+      "organisation_id": 1,
+      "source_version": 1,
+      "is_synthetic": true
+    },
+    "status": "Proposed staging example; no physical target claimed"
+  },
+  {
+    "step_id": "WF-23.03",
+    "entity": "joining_record",
+    "data_elements": "joining_record.joined_on",
+    "example_payload": {
+      "id": 1,
+      "job_application_id": 1,
+      "joined_on": "2026-10-01",
+      "confirmed_by_app_user_id": 1,
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-23.04",
+    "entity": "job_requirement",
+    "data_elements": "job_requirement.positions;positions_filled",
+    "example_payload": {
+      "id": 1,
+      "organisation_id": 1,
+      "job_role_id": 1,
+      "employment_type_reference_value_id": 1,
+      "work_type_reference_value_id": 1,
+      "city_id": 1,
+      "title": "Asha Synthetic",
+      "description": "Synthetic job or resume body",
+      "positions": 1,
+      "status_reference_value_id": 1,
+      "publish_state_reference_value_id": 1,
+      "open_to_consultant": false,
+      "salary_min": "100.00",
+      "salary_max": "100.00",
+      "currency_code": "INR",
+      "salary_disclosure_reference_value_id": 1,
+      "source_timezone": "synthetic_code",
+      "content_language": "en",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z",
+      "row_version": 1,
+      "industry_id": 1,
+      "min_experience_months": 0,
+      "max_experience_months": 0,
+      "positions_filled": 0,
+      "published_at": "2026-10-28T00:00:00Z",
+      "closes_on": "2026-10-28",
+      "search_vector": "'synthetic':1"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-23.05",
+    "entity": "journey_stage_event",
+    "data_elements": "journey_stage_event.stage_code;occurred_at",
+    "example_payload": {
+      "business_context": "journey_stage_event.stage_code;occurred_at",
+      "organisation_id": 1,
+      "source_version": 1,
+      "is_synthetic": true
+    },
+    "status": "Proposed staging example; no physical target claimed"
+  },
+  {
+    "step_id": "WF-23.06",
+    "entity": "cohort_code;first_accepted_at;first_onboarded_at",
+    "data_elements": "cohort_code;first_accepted_at;first_onboarded_at",
+    "example_payload": {
+      "business_context": "cohort_code;first_accepted_at;first_onboarded_at",
+      "organisation_id": 1,
+      "source_version": 1,
+      "is_synthetic": true
+    },
+    "status": "Proposed staging example; no physical target claimed"
+  },
+  {
+    "step_id": "WF-24.01",
+    "entity": "gig_assignment",
+    "data_elements": "gig_assignment.id;start_at;end_at",
+    "example_payload": {
+      "id": 1,
+      "gig_application_id": 1,
+      "gig_worker_profile_id": 1,
+      "start_at": "2026-10-27T00:00:00Z",
+      "end_at": "2026-10-27T00:00:00Z",
+      "external_handoff_key": "synthetic_token_001",
+      "status_reference_value_id": 1,
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z",
+      "blocks_window": true,
+      "row_version": 1
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-24.02",
+    "entity": "gig_assignment",
+    "data_elements": "gig_assignment.external_handoff_key",
+    "example_payload": {
+      "id": 1,
+      "gig_application_id": 1,
+      "gig_worker_profile_id": 1,
+      "start_at": "2026-10-27T00:00:00Z",
+      "end_at": "2026-10-27T00:00:00Z",
+      "external_handoff_key": "synthetic_token_001",
+      "status_reference_value_id": 1,
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z",
+      "blocks_window": true,
+      "row_version": 1
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-24.03",
+    "entity": "provider_status;source_version;source_event_id",
+    "data_elements": "provider_status;source_version;source_event_id",
+    "example_payload": {
+      "business_context": "provider_status;source_version;source_event_id",
+      "organisation_id": 1,
+      "source_version": 1,
+      "is_synthetic": true
+    },
+    "status": "Proposed staging example; no physical target claimed"
+  },
+  {
+    "step_id": "WF-24.04",
+    "entity": "retry_at;attempt_count;handoff_key",
+    "data_elements": "retry_at;attempt_count;handoff_key",
+    "example_payload": {
+      "business_context": "retry_at;attempt_count;handoff_key",
+      "organisation_id": 1,
+      "source_version": 1,
+      "is_synthetic": true
+    },
+    "status": "Proposed staging example; no physical target claimed"
+  },
+  {
+    "step_id": "WF-24.05",
+    "entity": "gig_earnings_snapshot",
+    "data_elements": "gig_earnings_snapshot.total_amount;currency_code",
+    "example_payload": {
+      "id": 1,
+      "gig_assignment_id": 1,
+      "provider_reference": "synthetic_token_001",
+      "estimated_amount": "100.00",
+      "total_amount": "100.00",
+      "projected_amount": "100.00",
+      "currency_code": "INR",
+      "reconciled_at": "2026-10-27T00:00:00Z",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-24.06",
+    "entity": "gig_rating",
+    "data_elements": "gig_rating.rating;requester_organisation_id",
+    "example_payload": {
+      "id": 1,
+      "gig_assignment_id": 1,
+      "requester_app_user_id": 1,
+      "rating": 5,
+      "comment_text": "Synthetic example",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-25.01",
+    "entity": "file_sha256;contract_id;schema_version",
+    "data_elements": "file_sha256;contract_id;schema_version",
+    "example_payload": {
+      "business_context": "file_sha256;contract_id;schema_version",
+      "organisation_id": 1,
+      "source_version": 1,
+      "is_synthetic": true
+    },
+    "status": "Proposed staging example; no physical target claimed"
+  },
+  {
+    "step_id": "WF-25.02",
+    "entity": "organisation_id;required_fields",
+    "data_elements": "organisation_id;required_fields",
+    "example_payload": {
+      "business_context": "organisation_id;required_fields",
+      "organisation_id": 1,
+      "source_version": 1,
+      "is_synthetic": true
+    },
+    "status": "Proposed staging example; no physical target claimed"
+  },
+  {
+    "step_id": "WF-25.03",
+    "entity": "source_id;canonical_id;organisation_id",
+    "data_elements": "source_id;canonical_id;organisation_id",
+    "example_payload": {
+      "business_context": "source_id;canonical_id;organisation_id",
+      "organisation_id": 1,
+      "source_version": 1,
+      "is_synthetic": true
+    },
+    "status": "Proposed staging example; no physical target claimed"
+  },
+  {
+    "step_id": "WF-25.04",
+    "entity": "event_key;payload_hash",
+    "data_elements": "event_key;payload_hash",
+    "example_payload": {
+      "business_context": "event_key;payload_hash",
+      "organisation_id": 1,
+      "source_version": 1,
+      "is_synthetic": true
+    },
+    "status": "Proposed staging example; no physical target claimed"
+  },
+  {
+    "step_id": "WF-25.05",
+    "entity": "rejection_code;source_version",
+    "data_elements": "rejection_code;source_version",
+    "example_payload": {
+      "business_context": "rejection_code;source_version",
+      "organisation_id": 1,
+      "source_version": 1,
+      "is_synthetic": true
+    },
+    "status": "Proposed staging example; no physical target claimed"
+  },
+  {
+    "step_id": "WF-25.06",
+    "entity": "reconciliation_run",
+    "data_elements": "reconciliation_run.id;source_rows;outcome_counts",
+    "example_payload": {
+      "id": 1,
+      "account_id": 1,
+      "integration_source_id": 1,
+      "window_start": "2026-10-28T00:00:00Z",
+      "window_end": "2026-10-29T00:00:00Z",
+      "source_count": 10,
+      "applied_count": 7,
+      "rejected_count": 2,
+      "duplicate_count": 1,
+      "pending_count": 0,
+      "completed_at": "NULL under stated optional event",
+      "created_at": "2026-10-28T00:00:00Z",
+      "created_by": "NULL under stated optional event",
+      "updated_at": "2026-10-28T00:00:00Z",
+      "updated_by": "NULL under stated optional event"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-26.01",
+    "entity": "notification",
+    "data_elements": "notification.recipient_app_user_id",
+    "example_payload": {
+      "id": 1,
+      "recipient_app_user_id": 1,
+      "template_key": "synthetic_code",
+      "purpose_reference_value_id": 1,
+      "expires_at": "2026-10-27T00:00:00Z",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "deleted_at": "2026-10-27T00:00:00Z",
+      "notification_channel_id": 1
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-26.02",
+    "entity": "consent_record",
+    "data_elements": "consent_record.revoked_at;blocking_entry.id;expires_at",
+    "example_payload": {
+      "id": 1,
+      "app_user_id": 1,
+      "purpose_reference_value_id": 1,
+      "policy_version": "synthetic_code",
+      "granted_at": "2026-10-27T00:00:00Z",
+      "revoked_at": "2026-10-27T00:00:00Z",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "consent_purpose_id": 1,
+      "is_granted": false,
+      "recorded_at": "2026-10-28T00:00:00Z",
+      "ip_address": "192.0.2.1"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-26.03",
+    "entity": "notification_event",
+    "data_elements": "notification_event.id;event_key",
+    "example_payload": {
+      "business_context": "notification_event.id;event_key",
+      "organisation_id": 1,
+      "source_version": 1,
+      "is_synthetic": true
+    },
+    "status": "Proposed staging example; no physical target claimed"
+  },
+  {
+    "step_id": "WF-26.04",
+    "entity": "provider_ref;retry_at;attempt_count",
+    "data_elements": "provider_ref;retry_at;attempt_count",
+    "example_payload": {
+      "business_context": "provider_ref;retry_at;attempt_count",
+      "organisation_id": 1,
+      "source_version": 1,
+      "is_synthetic": true
+    },
+    "status": "Proposed staging example; no physical target claimed"
+  },
+  {
+    "step_id": "WF-26.05",
+    "entity": "audit_event",
+    "data_elements": "audit_event.action_code;occurred_at",
+    "example_payload": {
+      "id": 1,
+      "actor_app_user_id": 1,
+      "action_code": "synthetic_code",
+      "subject_token": "synthetic_token_001",
+      "outcome_reference_value_id": 1,
+      "correlation_key": "synthetic_code",
+      "occurred_at": "2026-10-27T00:00:00Z",
+      "created_at": "2026-10-27T00:00:00Z",
+      "created_by": 1,
+      "updated_at": "2026-10-27T00:00:00Z",
+      "updated_by": 1,
+      "organisation_id": 1,
+      "subject_table": "Synthetic subject table",
+      "subject_id": 1,
+      "details": "{\"fixture\":true}"
+    },
+    "status": "Dictionary-derived scalar examples; not a joined native row"
+  },
+  {
+    "step_id": "WF-27.01",
+    "entity": "version;workflow_id;set_id",
+    "data_elements": "version;workflow_id;set_id",
+    "example_payload": {
+      "business_context": "version;workflow_id;set_id",
+      "organisation_id": 1,
+      "source_version": 1,
+      "is_synthetic": true
+    },
+    "status": "Proposed staging example; no physical target claimed"
+  },
+  {
+    "step_id": "WF-27.02",
+    "entity": "grain;selector;source_sha256",
+    "data_elements": "grain;selector;source_sha256",
+    "example_payload": {
+      "business_context": "grain;selector;source_sha256",
+      "organisation_id": 1,
+      "source_version": 1,
+      "is_synthetic": true
+    },
+    "status": "Proposed staging example; no physical target claimed"
+  },
+  {
+    "step_id": "WF-27.03",
+    "entity": "case_id;step_id;example_payload",
+    "data_elements": "case_id;step_id;example_payload",
+    "example_payload": {
+      "business_context": "case_id;step_id;example_payload",
+      "organisation_id": 1,
+      "source_version": 1,
+      "is_synthetic": true
+    },
+    "status": "Proposed staging example; no physical target claimed"
+  },
+  {
+    "step_id": "WF-27.04",
+    "entity": "numerator;denominator;metric_unit",
+    "data_elements": "numerator;denominator;metric_unit",
+    "example_payload": {
+      "business_context": "numerator;denominator;metric_unit",
+      "organisation_id": 1,
+      "source_version": 1,
+      "is_synthetic": true
+    },
+    "status": "Proposed staging example; no physical target claimed"
+  },
+  {
+    "step_id": "WF-27.05",
+    "entity": "validation_id;owner;review_status",
+    "data_elements": "validation_id;owner;review_status",
+    "example_payload": {
+      "business_context": "validation_id;owner;review_status",
+      "organisation_id": 1,
+      "source_version": 1,
+      "is_synthetic": true
+    },
+    "status": "Proposed staging example; no physical target claimed"
+  }
+]

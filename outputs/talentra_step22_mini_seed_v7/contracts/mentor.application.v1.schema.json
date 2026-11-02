@@ -1,0 +1,87 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "mentor.application.v1",
+  "type": "object",
+  "properties": {
+    "application_id": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "Synthetic canonical application_id; CSV \\N is parsed as JSON null only for nullable properties",
+      "minimum": 1
+    },
+    "candidate_profile_id": {
+      "type": [
+        "integer"
+      ],
+      "description": "Synthetic canonical candidate_profile_id; CSV \\N is parsed as JSON null only for nullable properties",
+      "minimum": 1
+    },
+    "job_requirement_id": {
+      "type": [
+        "integer"
+      ],
+      "description": "Synthetic canonical job_requirement_id; CSV \\N is parsed as JSON null only for nullable properties",
+      "minimum": 1
+    },
+    "organisation_id": {
+      "type": [
+        "integer"
+      ],
+      "description": "Synthetic canonical organisation_id; CSV \\N is parsed as JSON null only for nullable properties",
+      "minimum": 1
+    },
+    "source_channel": {
+      "type": [
+        "string"
+      ],
+      "description": "Synthetic canonical source_channel; CSV \\N is parsed as JSON null only for nullable properties"
+    },
+    "applied_at": {
+      "type": [
+        "string"
+      ],
+      "description": "Synthetic canonical applied_at; CSV \\N is parsed as JSON null only for nullable properties",
+      "format": "date-time"
+    },
+    "current_stage": {
+      "type": [
+        "string"
+      ],
+      "description": "Synthetic canonical current_stage; CSV \\N is parsed as JSON null only for nullable properties",
+      "enum": [
+        "searched",
+        "screened",
+        "applied",
+        "shortlisted",
+        "assessed",
+        "interviewed",
+        "selected",
+        "rejected",
+        "offered",
+        "accepted",
+        "offer_declined",
+        "onboarded"
+      ]
+    },
+    "is_synthetic": {
+      "type": [
+        "boolean"
+      ],
+      "description": "Synthetic canonical is_synthetic; CSV \\N is parsed as JSON null only for nullable properties",
+      "const": true
+    }
+  },
+  "required": [
+    "application_id",
+    "candidate_profile_id",
+    "job_requirement_id",
+    "organisation_id",
+    "source_channel",
+    "applied_at",
+    "current_stage",
+    "is_synthetic"
+  ],
+  "additionalProperties": false
+}

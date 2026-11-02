@@ -1,0 +1,702 @@
+{
+  "title": "Step9 Output Document",
+  "type": "object",
+  "properties": {
+    "Relationships": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Relationship ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Child table": {
+            "type": [
+              "string"
+            ]
+          },
+          "Foreign key": {
+            "type": [
+              "string"
+            ]
+          },
+          "Parent table": {
+            "type": [
+              "string"
+            ]
+          },
+          "Child to parent": {
+            "type": [
+              "string"
+            ]
+          },
+          "Parent to child": {
+            "type": [
+              "string"
+            ]
+          },
+          "Optional": {
+            "type": [
+              "boolean"
+            ]
+          },
+          "On update": {
+            "type": [
+              "string"
+            ]
+          },
+          "On delete": {
+            "type": [
+              "string"
+            ]
+          },
+          "Enforcement": {
+            "type": [
+              "string"
+            ]
+          },
+          "Reason": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Relationship ID",
+          "Child table",
+          "Foreign key",
+          "Parent table",
+          "Child to parent",
+          "Parent to child",
+          "Optional",
+          "On update",
+          "On delete",
+          "Enforcement",
+          "Reason",
+          "Source"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Normalization": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Area": {
+            "type": [
+              "string"
+            ]
+          },
+          "Decision": {
+            "type": [
+              "string"
+            ]
+          },
+          "Functional dependency": {
+            "type": [
+              "string"
+            ]
+          },
+          "History": {
+            "type": [
+              "string"
+            ]
+          },
+          "Tradeoff": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Area",
+          "Decision",
+          "Functional dependency",
+          "History",
+          "Tradeoff",
+          "Source"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Platform relationships": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Relationship ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Child": {
+            "type": [
+              "string"
+            ]
+          },
+          "Foreign key": {
+            "type": [
+              "string"
+            ]
+          },
+          "Parent": {
+            "type": [
+              "string"
+            ]
+          },
+          "Nullable": {
+            "type": [
+              "boolean"
+            ]
+          },
+          "On update": {
+            "type": [
+              "string"
+            ]
+          },
+          "On delete": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Relationship ID",
+          "Child",
+          "Foreign key",
+          "Parent",
+          "Nullable",
+          "On update",
+          "On delete"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Account scope keys": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Child": {
+            "type": [
+              "string"
+            ]
+          },
+          "Columns": {
+            "type": [
+              "string"
+            ]
+          },
+          "Parent": {
+            "type": [
+              "string"
+            ]
+          },
+          "Parent columns": {
+            "type": [
+              "string"
+            ]
+          },
+          "Purpose": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Child",
+          "Columns",
+          "Parent",
+          "Parent columns",
+          "Purpose"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T019 3. Entity definitions and business r": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Entity": {
+            "type": [
+              "string"
+            ]
+          },
+          "Definition": {
+            "type": [
+              "string"
+            ]
+          },
+          "Key business rules": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Entity",
+          "Definition",
+          "Key business rules",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T111 2. Relationship register": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "#": {
+            "type": [
+              "string"
+            ]
+          },
+          "Parent": {
+            "type": [
+              "string"
+            ]
+          },
+          "Child": {
+            "type": [
+              "string"
+            ]
+          },
+          "Key (child side)": {
+            "type": [
+              "string"
+            ]
+          },
+          "Parent → child": {
+            "type": [
+              "string"
+            ]
+          },
+          "Child → parent": {
+            "type": [
+              "string"
+            ]
+          },
+          "Delete rule": {
+            "type": [
+              "string"
+            ]
+          },
+          "Note": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "#",
+          "Parent",
+          "Child",
+          "Key (child side)",
+          "Parent → child",
+          "Child → parent",
+          "Delete rule",
+          "Note",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T112 4. Many-to-many relationships resolv": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Junction": {
+            "type": [
+              "string"
+            ]
+          },
+          "Resolves": {
+            "type": [
+              "string"
+            ]
+          },
+          "Extra attributes on the junction": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Junction",
+          "Resolves",
+          "Extra attributes on the junction",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T113 5. Normalisation": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Redundant value": {
+            "type": [
+              "string"
+            ]
+          },
+          "Why": {
+            "type": [
+              "string"
+            ]
+          },
+          "Kept consistent by": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Redundant value",
+          "Why",
+          "Kept consistent by",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T114 6. How history is kept, and why (the": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Pattern": {
+            "type": [
+              "string"
+            ]
+          },
+          "Used for": {
+            "type": [
+              "string"
+            ]
+          },
+          "Why this pattern, not another": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Pattern",
+          "Used for",
+          "Why this pattern, not another",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Cross-source comparison": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Comparison ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Step": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Decision or field": {
+            "type": [
+              "string"
+            ]
+          },
+          "A value": {
+            "type": [
+              "string"
+            ]
+          },
+          "B value": {
+            "type": [
+              "string"
+            ]
+          },
+          "Agreement": {
+            "type": [
+              "string"
+            ]
+          },
+          "B locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Hybrid conclusion": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Comparison ID",
+          "Step",
+          "Decision or field",
+          "A value",
+          "B value",
+          "Agreement",
+          "B locator",
+          "Hybrid conclusion"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Hybrid handoff": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Handoff ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Concern": {
+            "type": [
+              "string"
+            ]
+          },
+          "Inputs": {
+            "type": [
+              "string"
+            ]
+          },
+          "Next use": {
+            "type": [
+              "string"
+            ]
+          },
+          "Acceptance condition": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proposed owner": {
+            "type": [
+              "string"
+            ]
+          },
+          "Status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Reason": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Handoff ID",
+          "Concern",
+          "Inputs",
+          "Next use",
+          "Acceptance condition",
+          "Proposed owner",
+          "Status",
+          "Reason"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Human review prompts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Question ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Question": {
+            "type": [
+              "string"
+            ]
+          },
+          "Expected evidence anchor": {
+            "type": [
+              "string"
+            ]
+          },
+          "Human response": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "Reviewer score 0 to 5": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "Review status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proposed reviewer role": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Question ID",
+          "Question",
+          "Expected evidence anchor",
+          "Human response",
+          "Reviewer score 0 to 5",
+          "Review status",
+          "Proposed reviewer role"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Acceptance cases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Case ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Case": {
+            "type": [
+              "string"
+            ]
+          },
+          "Expected result": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proof layer": {
+            "type": [
+              "string"
+            ]
+          },
+          "Status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Owner": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Case ID",
+          "Case",
+          "Expected result",
+          "Proof layer",
+          "Status",
+          "Owner"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "Relationships",
+    "Normalization",
+    "Platform relationships",
+    "Account scope keys",
+    "B T019 3. Entity definitions and business r",
+    "B T111 2. Relationship register",
+    "B T112 4. Many-to-many relationships resolv",
+    "B T113 5. Normalisation",
+    "B T114 6. How history is kept, and why (the",
+    "Cross-source comparison",
+    "Hybrid handoff",
+    "Human review prompts",
+    "Acceptance cases"
+  ],
+  "additionalProperties": false
+}

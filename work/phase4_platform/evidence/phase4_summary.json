@@ -1,0 +1,57 @@
+{
+ "profile": "demo",
+ "started": "2026-11-02 13:25:54",
+ "rel01": {
+  "database": "talentra_demo_run",
+  "scripts": [
+   "001_baseline.sql",
+   "003_seed.sql",
+   "002_controls.sql",
+   "004_verify.sql",
+   "005_scale_integration.sql",
+   "006_v3_vocab_controls.sql",
+   "007_ingestion_control.sql (Phase 4 addition)"
+  ],
+  "applied_cleanly": true,
+  "smoke_checks_004": "passed (script raises on any failed check)",
+  "dictionary_drift": {
+   "mismatches": [],
+   "expected_columns": 1250,
+   "actual_columns": 1250
+  },
+  "drift_exit_code": 0,
+  "catalogue": {
+   "tables": 120,
+   "foreign_keys": 494,
+   "checks": 90,
+   "triggers": 95,
+   "server": "PostgreSQL 18.6 on x86_64-windows, compiled by msvc-19.44.35229, 64-bit"
+  },
+  "seconds": 7.3
+ },
+ "step23_pass": false,
+ "step24_pass": true,
+ "step25_pass": true,
+ "database_bytes": 40203967,
+ "relation_sizes": [
+  {
+   "relation": "ingest.key_map",
+   "table_bytes": 4595712,
+   "index_bytes": 3661824,
+   "rows": 33930
+  },
+  {
+   "relation": "talentra.application_status_event",
+   "table_bytes": 2400256,
+   "index_bytes": 2220032,
+   "rows": 21633
+  },
+  {
+   "relation": "talentra.job_application",
+   "table_bytes": 1277952,
+   "index_bytes": 1728512,
+   "rows": 10012
+  }
+ ],
+ "finished": "2026-11-02 13:28:06"
+}

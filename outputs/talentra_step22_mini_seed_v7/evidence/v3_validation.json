@@ -1,0 +1,2797 @@
+{
+  "date": "2026-10-28",
+  "engine": "Python and SQLite; PostgreSQL native NOT RUN",
+  "tests": [
+    [
+      "MAP-0001",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0002",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0003",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0004",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0005",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0006",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0007",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0008",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0009",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0010",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0011",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0012",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0013",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0014",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0015",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0016",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0017",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0018",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0019",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0020",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0021",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0022",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0023",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0024",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0025",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0026",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0027",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0028",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0029",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0030",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0031",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0032",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0033",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0034",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0035",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0036",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0037",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0038",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0039",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0040",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0041",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0042",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0043",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0044",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0045",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0046",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0047",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0048",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0049",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0050",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0051",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0052",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0053",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0054",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0055",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0056",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0057",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0058",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0059",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0060",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0061",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0062",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0063",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0064",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0065",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0066",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0067",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0068",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0069",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0070",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0071",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0072",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0073",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0074",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0075",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0076",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0077",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0078",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0079",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0080",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0081",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0082",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0083",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0084",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0085",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0086",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0087",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0088",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0089",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0090",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0091",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0092",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0093",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0094",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0095",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0096",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0097",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0098",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0099",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0100",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0101",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0102",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0103",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0104",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0105",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0106",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0107",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0108",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0109",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0110",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0111",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0112",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0113",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0114",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0115",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0116",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0117",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0118",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0119",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0120",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0121",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0122",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0123",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0124",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0125",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0126",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0127",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0128",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0129",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0130",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0131",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0132",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0133",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0134",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0135",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0136",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0137",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0138",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0139",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0140",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0141",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0142",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0143",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0144",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0145",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0146",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0147",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0148",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0149",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0150",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0151",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0152",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0153",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0154",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0155",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0156",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0157",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0158",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0159",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0160",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0161",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0162",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0163",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0164",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0165",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0166",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0167",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0168",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0169",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0170",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0171",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0172",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0173",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0174",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0175",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0176",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0177",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0178",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0179",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0180",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0181",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0182",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0183",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0184",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0185",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0186",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0187",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0188",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0189",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0190",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0191",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0192",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0193",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0194",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0195",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0196",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0197",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0198",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0199",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0200",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0201",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0202",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0203",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0204",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0205",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0206",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0207",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0208",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0209",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0210",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0211",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0212",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0213",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0214",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0215",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0216",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0217",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0218",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0219",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0220",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0221",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0222",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0223",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0224",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0225",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0226",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0227",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0228",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0229",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0230",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0231",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0232",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0233",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0234",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0235",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0236",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0237",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0238",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0239",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0240",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0241",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0242",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0243",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0244",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0245",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0246",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0247",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0248",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0249",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0250",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0251",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0252",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0253",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0254",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0255",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0256",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0257",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0258",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0259",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0260",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0261",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0262",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0263",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0264",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0265",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0266",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0267",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0268",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0269",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0270",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "MAP-0271",
+      "Declared mapping target",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "CON-001-fields",
+      "Schema/mapping field parity",
+      "[\"amount\", \"correlation_id\", \"currency_code\", \"event_id\", \"idempotency_key\", \"occurred_at\", \"payment_order_id\", \"schema_version\", \"source_version\"]",
+      "[\"amount\", \"correlation_id\", \"currency_code\", \"event_id\", \"idempotency_key\", \"occurred_at\", \"payment_order_id\", \"schema_version\", \"source_version\"]",
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "CON-001-owner",
+      "Contract owner populated",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "CON-002-fields",
+      "Schema/mapping field parity",
+      "[\"amount\", \"correlation_id\", \"currency_code\", \"event_id\", \"occurred_at\", \"payment_order_id\", \"provider_reference\", \"schema_version\", \"source_version\", \"status_code\"]",
+      "[\"amount\", \"correlation_id\", \"currency_code\", \"event_id\", \"occurred_at\", \"payment_order_id\", \"provider_reference\", \"schema_version\", \"source_version\", \"status_code\"]",
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "CON-002-owner",
+      "Contract owner populated",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "CON-003-fields",
+      "Schema/mapping field parity",
+      "[\"candidate_profile_id\", \"consent_token\", \"correlation_id\", \"event_id\", \"occurred_at\", \"schema_version\", \"source_version\"]",
+      "[\"candidate_profile_id\", \"consent_token\", \"correlation_id\", \"event_id\", \"occurred_at\", \"schema_version\", \"source_version\"]",
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "CON-003-owner",
+      "Contract owner populated",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "CON-004-fields",
+      "Schema/mapping field parity",
+      "[\"candidate_profile_id\", \"correlation_id\", \"event_id\", \"occurred_at\", \"outcome_code\", \"provider_token\", \"schema_version\", \"source_version\", \"verified_at\"]",
+      "[\"candidate_profile_id\", \"correlation_id\", \"event_id\", \"occurred_at\", \"outcome_code\", \"provider_token\", \"schema_version\", \"source_version\", \"verified_at\"]",
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "CON-004-owner",
+      "Contract owner populated",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "CON-005-fields",
+      "Schema/mapping field parity",
+      "[\"correlation_id\", \"country_id\", \"event_id\", \"identifier_token\", \"occurred_at\", \"organisation_id\", \"schema_version\", \"source_version\"]",
+      "[\"correlation_id\", \"country_id\", \"event_id\", \"identifier_token\", \"occurred_at\", \"organisation_id\", \"schema_version\", \"source_version\"]",
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "CON-005-owner",
+      "Contract owner populated",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "CON-006-fields",
+      "Schema/mapping field parity",
+      "[\"correlation_id\", \"event_id\", \"occurred_at\", \"organisation_id\", \"outcome_code\", \"provider_token\", \"schema_version\", \"source_version\", \"verified_at\"]",
+      "[\"correlation_id\", \"event_id\", \"occurred_at\", \"organisation_id\", \"outcome_code\", \"provider_token\", \"schema_version\", \"source_version\", \"verified_at\"]",
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "CON-006-owner",
+      "Contract owner populated",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "CON-007-fields",
+      "Schema/mapping field parity",
+      "[\"assignment_id\", \"correlation_id\", \"end_at\", \"event_id\", \"handoff_key\", \"occurred_at\", \"schema_version\", \"source_version\", \"start_at\"]",
+      "[\"assignment_id\", \"correlation_id\", \"end_at\", \"event_id\", \"handoff_key\", \"occurred_at\", \"schema_version\", \"source_version\", \"start_at\"]",
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "CON-007-owner",
+      "Contract owner populated",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "CON-008-fields",
+      "Schema/mapping field parity",
+      "[\"assignment_id\", \"correlation_id\", \"event_id\", \"handoff_key\", \"occurred_at\", \"schema_version\", \"source_version\", \"status_code\"]",
+      "[\"assignment_id\", \"correlation_id\", \"event_id\", \"handoff_key\", \"occurred_at\", \"schema_version\", \"source_version\", \"status_code\"]",
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "CON-008-owner",
+      "Contract owner populated",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "CON-009-fields",
+      "Schema/mapping field parity",
+      "[\"assignment_id\", \"correlation_id\", \"currency_code\", \"estimated_amount\", \"event_id\", \"occurred_at\", \"projected_amount\", \"provider_reference\", \"reconciled_at\", \"schema_version\", \"source_version\", \"total_amount\"]",
+      "[\"assignment_id\", \"correlation_id\", \"currency_code\", \"estimated_amount\", \"event_id\", \"occurred_at\", \"projected_amount\", \"provider_reference\", \"reconciled_at\", \"schema_version\", \"source_version\", \"total_amount\"]",
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "CON-009-owner",
+      "Contract owner populated",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "CON-010-fields",
+      "Schema/mapping field parity",
+      "[\"app_user_id\", \"birth_date\", \"city_id\", \"content_language\", \"correlation_id\", \"event_id\", \"external_key\", \"headline\", \"occurred_at\", \"schema_version\", \"source_version\", \"status_reference_value_id\"]",
+      "[\"app_user_id\", \"birth_date\", \"city_id\", \"content_language\", \"correlation_id\", \"event_id\", \"external_key\", \"headline\", \"occurred_at\", \"schema_version\", \"source_version\", \"status_reference_value_id\"]",
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "CON-010-owner",
+      "Contract owner populated",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "CON-011-fields",
+      "Schema/mapping field parity",
+      "[\"candidate_profile_id\", \"contact_email\", \"correlation_id\", \"country_id\", \"event_id\", \"external_key\", \"occurred_at\", \"phone_number\", \"schema_version\", \"source_version\"]",
+      "[\"candidate_profile_id\", \"contact_email\", \"correlation_id\", \"country_id\", \"event_id\", \"external_key\", \"occurred_at\", \"phone_number\", \"schema_version\", \"source_version\"]",
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "CON-011-owner",
+      "Contract owner populated",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "CON-012-fields",
+      "Schema/mapping field parity",
+      "[\"candidate_profile_id\", \"correlation_id\", \"end_date\", \"event_id\", \"external_key\", \"institution_name\", \"occurred_at\", \"qualification_id\", \"schema_version\", \"source_version\", \"start_date\"]",
+      "[\"candidate_profile_id\", \"correlation_id\", \"end_date\", \"event_id\", \"external_key\", \"institution_name\", \"occurred_at\", \"qualification_id\", \"schema_version\", \"source_version\", \"start_date\"]",
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "CON-012-owner",
+      "Contract owner populated",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "CON-013-fields",
+      "Schema/mapping field parity",
+      "[\"candidate_profile_id\", \"correlation_id\", \"employer_name\", \"end_date\", \"event_id\", \"external_key\", \"occurred_at\", \"role_name\", \"schema_version\", \"source_version\", \"start_date\"]",
+      "[\"candidate_profile_id\", \"correlation_id\", \"employer_name\", \"end_date\", \"event_id\", \"external_key\", \"occurred_at\", \"role_name\", \"schema_version\", \"source_version\", \"start_date\"]",
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "CON-013-owner",
+      "Contract owner populated",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "CON-014-fields",
+      "Schema/mapping field parity",
+      "[\"candidate_profile_id\", \"correlation_id\", \"event_id\", \"external_key\", \"occurred_at\", \"proficiency_reference_value_id\", \"schema_version\", \"skill_id\", \"source_version\"]",
+      "[\"candidate_profile_id\", \"correlation_id\", \"event_id\", \"external_key\", \"occurred_at\", \"proficiency_reference_value_id\", \"schema_version\", \"skill_id\", \"source_version\"]",
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "CON-014-owner",
+      "Contract owner populated",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "CON-015-fields",
+      "Schema/mapping field parity",
+      "[\"candidate_profile_id\", \"correlation_id\", \"event_id\", \"external_key\", \"language_code\", \"occurred_at\", \"proficiency_reference_value_id\", \"schema_version\", \"source_version\"]",
+      "[\"candidate_profile_id\", \"correlation_id\", \"event_id\", \"external_key\", \"language_code\", \"occurred_at\", \"proficiency_reference_value_id\", \"schema_version\", \"source_version\"]",
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "CON-015-owner",
+      "Contract owner populated",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "CON-016-fields",
+      "Schema/mapping field parity",
+      "[\"candidate_profile_id\", \"correlation_id\", \"end_date\", \"event_id\", \"external_key\", \"occurred_at\", \"outcome\", \"role_name\", \"schema_version\", \"source_version\", \"start_date\", \"title\"]",
+      "[\"candidate_profile_id\", \"correlation_id\", \"end_date\", \"event_id\", \"external_key\", \"occurred_at\", \"outcome\", \"role_name\", \"schema_version\", \"source_version\", \"start_date\", \"title\"]",
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "CON-016-owner",
+      "Contract owner populated",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "CON-017-fields",
+      "Schema/mapping field parity",
+      "[\"candidate_profile_id\", \"content_hash\", \"content_language\", \"correlation_id\", \"event_id\", \"external_key\", \"object_key\", \"occurred_at\", \"resume_template_id\", \"schema_version\", \"source_version\", \"version_number\"]",
+      "[\"candidate_profile_id\", \"content_hash\", \"content_language\", \"correlation_id\", \"event_id\", \"external_key\", \"object_key\", \"occurred_at\", \"resume_template_id\", \"schema_version\", \"source_version\", \"version_number\"]",
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "CON-017-owner",
+      "Contract owner populated",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "CON-018-fields",
+      "Schema/mapping field parity",
+      "[\"city_id\", \"content_language\", \"correlation_id\", \"currency_code\", \"description\", \"employment_type_reference_value_id\", \"event_id\", \"external_key\", \"job_role_id\", \"occurred_at\", \"open_to_consultant\", \"organisation_id\", \"positions\", \"publish_state_reference_value_id\", \"salary_disclosure_reference_value_id\", \"salary_max\", \"salary_min\", \"schema_version\", \"source_timezone\", \"source_version\", \"status_reference_value_id\", \"title\", \"work_type_reference_value_id\"]",
+      "[\"city_id\", \"content_language\", \"correlation_id\", \"currency_code\", \"description\", \"employment_type_reference_value_id\", \"event_id\", \"external_key\", \"job_role_id\", \"occurred_at\", \"open_to_consultant\", \"organisation_id\", \"positions\", \"publish_state_reference_value_id\", \"salary_disclosure_reference_value_id\", \"salary_max\", \"salary_min\", \"schema_version\", \"source_timezone\", \"source_version\", \"status_reference_value_id\", \"title\", \"work_type_reference_value_id\"]",
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "CON-018-owner",
+      "Contract owner populated",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "CON-019-fields",
+      "Schema/mapping field parity",
+      "[\"correlation_id\", \"event_id\", \"external_key\", \"job_requirement_id\", \"mandatory\", \"occurred_at\", \"schema_version\", \"skill_id\", \"source_version\"]",
+      "[\"correlation_id\", \"event_id\", \"external_key\", \"job_requirement_id\", \"mandatory\", \"occurred_at\", \"schema_version\", \"skill_id\", \"source_version\"]",
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "CON-019-owner",
+      "Contract owner populated",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "CON-020-fields",
+      "Schema/mapping field parity",
+      "[\"answer_type_reference_value_id\", \"correlation_id\", \"event_id\", \"external_key\", \"job_requirement_id\", \"mandatory\", \"occurred_at\", \"question_text\", \"schema_version\", \"sort_order\", \"source_version\"]",
+      "[\"answer_type_reference_value_id\", \"correlation_id\", \"event_id\", \"external_key\", \"job_requirement_id\", \"mandatory\", \"occurred_at\", \"question_text\", \"schema_version\", \"sort_order\", \"source_version\"]",
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "CON-020-owner",
+      "Contract owner populated",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "CON-021-fields",
+      "Schema/mapping field parity",
+      "[\"active\", \"code\", \"correlation_id\", \"event_id\", \"external_key\", \"job_question_id\", \"label_key\", \"occurred_at\", \"schema_version\", \"sort_order\", \"source_version\"]",
+      "[\"active\", \"code\", \"correlation_id\", \"event_id\", \"external_key\", \"job_question_id\", \"label_key\", \"occurred_at\", \"schema_version\", \"sort_order\", \"source_version\"]",
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "CON-021-owner",
+      "Contract owner populated",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "CON-022-fields",
+      "Schema/mapping field parity",
+      "[\"correlation_id\", \"event_id\", \"expires_at\", \"notification_id\", \"occurred_at\", \"recipient_token\", \"schema_version\", \"source_version\", \"template_key\"]",
+      "[\"correlation_id\", \"event_id\", \"expires_at\", \"notification_id\", \"occurred_at\", \"recipient_token\", \"schema_version\", \"source_version\", \"template_key\"]",
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "CON-022-owner",
+      "Contract owner populated",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "CON-023-fields",
+      "Schema/mapping field parity",
+      "[\"attempted_at\", \"correlation_id\", \"event_id\", \"notification_id\", \"occurred_at\", \"provider_reference\", \"schema_version\", \"source_version\", \"status_code\"]",
+      "[\"attempted_at\", \"correlation_id\", \"event_id\", \"notification_id\", \"occurred_at\", \"provider_reference\", \"schema_version\", \"source_version\", \"status_code\"]",
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "CON-023-owner",
+      "Contract owner populated",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "CON-024-fields",
+      "Schema/mapping field parity",
+      "[\"channel_code\", \"correlation_id\", \"event_id\", \"job_requirement_id\", \"occurred_at\", \"schema_version\", \"shared_at\", \"source_version\"]",
+      "[\"channel_code\", \"correlation_id\", \"event_id\", \"job_requirement_id\", \"occurred_at\", \"schema_version\", \"shared_at\", \"source_version\"]",
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "CON-024-owner",
+      "Contract owner populated",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "CON-025-fields",
+      "Schema/mapping field parity",
+      "[\"city_id\", \"correlation_id\", \"event_id\", \"occurred_at\", \"place_query\", \"schema_version\", \"source_version\"]",
+      "[\"city_id\", \"correlation_id\", \"event_id\", \"occurred_at\", \"place_query\", \"schema_version\", \"source_version\"]",
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "CON-025-owner",
+      "Contract owner populated",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "CON-026-fields",
+      "Schema/mapping field parity",
+      "[\"city_id\", \"coordinate_source\", \"correlation_id\", \"event_id\", \"latitude\", \"longitude\", \"occurred_at\", \"schema_version\", \"source_version\"]",
+      "[\"city_id\", \"coordinate_source\", \"correlation_id\", \"event_id\", \"latitude\", \"longitude\", \"occurred_at\", \"schema_version\", \"source_version\"]",
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "CON-026-owner",
+      "Contract owner populated",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "CON-027-fields",
+      "Schema/mapping field parity",
+      "[\"correlation_id\", \"event_id\", \"insight_kind\", \"occurred_at\", \"refresh_at\", \"schema_version\", \"source_reference\", \"source_version\"]",
+      "[\"correlation_id\", \"event_id\", \"insight_kind\", \"occurred_at\", \"refresh_at\", \"schema_version\", \"source_reference\", \"source_version\"]",
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "CON-027-owner",
+      "Contract owner populated",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "V3-DRIFT",
+      "Emitted DDL vs current dictionary",
+      0,
+      0,
+      "PASS",
+      "Independent static SQL parser; native metadata comparison remains pending"
+    ],
+    [
+      "V3-SQLITE-TABLES",
+      "SQLite structural schema",
+      120,
+      120,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "V3-FK-BASE",
+      "Baseline sample orphan rows",
+      0,
+      0,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "V3-DUPLICATE",
+      "Inbox duplicate key rejected",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "V3-TENANT",
+      "Cross-account contract rejected",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "V3-RECON-POS",
+      "Valid reconciliation stored",
+      1,
+      1,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "V3-RECON-NEG",
+      "Unbalanced counts rejected",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "V3-LEASE",
+      "Incomplete lease token pair rejected",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "V3-ERASURE",
+      "Unverified erasure completion rejected",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "V3-NULLABLE",
+      "Nullable metadata has reasons",
+      1250,
+      1250,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "V3-PII",
+      "Dictionary classifications valid",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "V3-MONEY-10.00",
+      "Money lexical contract",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "V3-MONEY-0.00",
+      "Money lexical contract",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "V3-MONEY-1.234",
+      "Money lexical contract",
+      false,
+      false,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "V3-MONEY--1.00",
+      "Money lexical contract",
+      false,
+      false,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "V3-MONEY-1e3",
+      "Money lexical contract",
+      false,
+      false,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "V3-HASH-SAME",
+      "Same-key same-body policy",
+      "DUPLICATE",
+      "DUPLICATE",
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "V3-HASH-DIFFERENT",
+      "Same-key changed-body policy",
+      "KEY_REUSE",
+      "KEY_REUSE",
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "V3-STALE",
+      "Stale version policy",
+      false,
+      false,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "V3-UNKNOWN-FIELD",
+      "Raw identity field excluded",
+      false,
+      false,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "V3-UNKNOWN-VERSION",
+      "Unsupported version excluded",
+      false,
+      false,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "V3-FINAL-FK",
+      "Final portable orphan count",
+      0,
+      0,
+      "PASS",
+      "Portable design/SQLite check only"
+    ],
+    [
+      "V3-SCHEMA-SHAPE",
+      "All document rows match owning schema",
+      true,
+      true,
+      "PASS",
+      "Portable design/SQLite check only"
+    ]
+  ],
+  "executed": 348,
+  "passed": 348,
+  "failed": 0,
+  "drift": [],
+  "provider_callbacks": "NOT RUN",
+  "concurrency": "NOT RUN",
+  "target_volume": "NOT RUN"
+}

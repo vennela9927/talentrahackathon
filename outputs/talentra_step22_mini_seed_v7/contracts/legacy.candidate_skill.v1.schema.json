@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:talentra:legacy.candidate_skill.v1",
+  "title": "legacy.candidate_skill.v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "event_id",
+    "correlation_id",
+    "schema_version",
+    "occurred_at",
+    "source_version",
+    "external_key",
+    "candidate_profile_id",
+    "skill_id",
+    "proficiency_reference_value_id"
+  ],
+  "properties": {
+    "event_id": {
+      "type": "string",
+      "description": "Globally unique producer event key within contract",
+      "maxLength": 255
+    },
+    "correlation_id": {
+      "type": "string",
+      "description": "Safe trace correlation key",
+      "maxLength": 255
+    },
+    "schema_version": {
+      "type": "integer",
+      "description": "Positive exact supported contract version",
+      "minimum": 0
+    },
+    "occurred_at": {
+      "type": "string",
+      "description": "UTC ISO8601 source timestamp",
+      "maxLength": 255,
+      "format": "date-time"
+    },
+    "source_version": {
+      "type": "integer",
+      "description": "Monotonic aggregate version",
+      "minimum": 0
+    },
+    "external_key": {
+      "type": "string",
+      "description": "Stable opaque legacy entity key",
+      "maxLength": 255
+    },
+    "candidate_profile_id": {
+      "type": "integer",
+      "description": "64-bit surrogate identity; candidate profile id on candidate_skill",
+      "minimum": 0
+    },
+    "skill_id": {
+      "type": "integer",
+      "description": "64-bit surrogate identity; skill id on candidate_skill",
+      "minimum": 0
+    },
+    "proficiency_reference_value_id": {
+      "type": "integer",
+      "description": "64-bit surrogate identity; proficiency reference value id on candidate_skill",
+      "minimum": 0
+    }
+  }
+}

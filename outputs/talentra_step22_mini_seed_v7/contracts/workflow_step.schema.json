@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "step_id": {
+      "type": "string"
+    },
+    "workflow_id": {
+      "type": "string"
+    },
+    "sequence": {
+      "type": "integer"
+    },
+    "actor_id": {
+      "type": "string"
+    },
+    "actor": {
+      "type": "string"
+    },
+    "action": {
+      "type": "string"
+    },
+    "data_elements": {
+      "type": "string"
+    },
+    "target_entity": {
+      "type": "string"
+    },
+    "rules": {
+      "type": "string"
+    },
+    "failure": {
+      "type": "string"
+    },
+    "source": {
+      "type": "string"
+    },
+    "status": {
+      "type": "string"
+    },
+    "native_proof": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "step_id",
+    "workflow_id",
+    "sequence",
+    "actor_id",
+    "actor",
+    "action",
+    "data_elements",
+    "target_entity",
+    "rules",
+    "failure",
+    "source",
+    "status",
+    "native_proof"
+  ],
+  "additionalProperties": false
+}

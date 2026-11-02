@@ -1,0 +1,669 @@
+{
+  "title": "Step2 Output Document",
+  "type": "object",
+  "properties": {
+    "Personas": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Actor ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Actor": {
+            "type": [
+              "string"
+            ]
+          },
+          "Goal": {
+            "type": [
+              "string"
+            ]
+          },
+          "Permission": {
+            "type": [
+              "string"
+            ]
+          },
+          "Frequency": {
+            "type": [
+              "string"
+            ]
+          },
+          "Module": {
+            "type": [
+              "string"
+            ]
+          },
+          "Requirement ID": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Actor ID",
+          "Actor",
+          "Goal",
+          "Permission",
+          "Frequency",
+          "Module",
+          "Requirement ID"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Permissions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Permission ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Actor": {
+            "type": [
+              "string"
+            ]
+          },
+          "Operation": {
+            "type": [
+              "string"
+            ]
+          },
+          "Decision": {
+            "type": [
+              "string"
+            ]
+          },
+          "Enforcement": {
+            "type": [
+              "string"
+            ]
+          },
+          "Failure behaviour": {
+            "type": [
+              "string"
+            ]
+          },
+          "Requirement ID": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Permission ID",
+          "Actor",
+          "Operation",
+          "Decision",
+          "Enforcement",
+          "Failure behaviour",
+          "Requirement ID"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Goals": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Goal ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Outcome": {
+            "type": [
+              "string"
+            ]
+          },
+          "Metric": {
+            "type": [
+              "string"
+            ]
+          },
+          "Stakeholders": {
+            "type": [
+              "string"
+            ]
+          },
+          "Requirement IDs": {
+            "type": [
+              "string"
+            ]
+          },
+          "Target": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Goal ID",
+          "Outcome",
+          "Metric",
+          "Stakeholders",
+          "Requirement IDs",
+          "Target",
+          "Source"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "System responsibilities": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Actor ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Actor": {
+            "type": [
+              "string"
+            ]
+          },
+          "Permitted work": {
+            "type": [
+              "string"
+            ]
+          },
+          "Scope check": {
+            "type": [
+              "string"
+            ]
+          },
+          "Denied work": {
+            "type": [
+              "string"
+            ]
+          },
+          "Audit evidence": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Actor ID",
+          "Actor",
+          "Permitted work",
+          "Scope check",
+          "Denied work",
+          "Audit evidence"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T006 1. Stakeholder map": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Stakeholder": {
+            "type": [
+              "string"
+            ]
+          },
+          "Type": {
+            "type": [
+              "string"
+            ]
+          },
+          "Interest": {
+            "type": [
+              "string"
+            ]
+          },
+          "Influence": {
+            "type": [
+              "string"
+            ]
+          },
+          "What they need from the data platform": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Stakeholder",
+          "Type",
+          "Interest",
+          "Influence",
+          "What they need from the data platform",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T007 ▶ Frequency of use and edge actors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Persona / actor": {
+            "type": [
+              "string"
+            ]
+          },
+          "Frequency of use": {
+            "type": [
+              "string"
+            ]
+          },
+          "Peak usage": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Persona / actor",
+          "Frequency of use",
+          "Peak usage",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T008 3. Roles and permissions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Permission ↓ / Role →": {
+            "type": [
+              "string"
+            ]
+          },
+          "Super admin": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "Admin": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "Account admin": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "Employer": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "Recruiter": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "Consultant": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "TPO": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "Candidate": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "Guest": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Permission ↓ / Role →",
+          "Super admin",
+          "Admin",
+          "Account admin",
+          "Employer",
+          "Recruiter",
+          "Consultant",
+          "TPO",
+          "Candidate",
+          "Guest",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T009 3. Roles and permissions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Rule": {
+            "type": [
+              "string"
+            ]
+          },
+          "Enforcement": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Rule",
+          "Enforcement",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Cross-source comparison": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Comparison ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Step": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Decision or field": {
+            "type": [
+              "string"
+            ]
+          },
+          "A value": {
+            "type": [
+              "string"
+            ]
+          },
+          "B value": {
+            "type": [
+              "string"
+            ]
+          },
+          "Agreement": {
+            "type": [
+              "string"
+            ]
+          },
+          "B locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Hybrid conclusion": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Comparison ID",
+          "Step",
+          "Decision or field",
+          "A value",
+          "B value",
+          "Agreement",
+          "B locator",
+          "Hybrid conclusion"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Hybrid handoff": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Handoff ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Concern": {
+            "type": [
+              "string"
+            ]
+          },
+          "Inputs": {
+            "type": [
+              "string"
+            ]
+          },
+          "Next use": {
+            "type": [
+              "string"
+            ]
+          },
+          "Acceptance condition": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proposed owner": {
+            "type": [
+              "string"
+            ]
+          },
+          "Status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Reason": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Handoff ID",
+          "Concern",
+          "Inputs",
+          "Next use",
+          "Acceptance condition",
+          "Proposed owner",
+          "Status",
+          "Reason"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Human review prompts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Question ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Question": {
+            "type": [
+              "string"
+            ]
+          },
+          "Expected evidence anchor": {
+            "type": [
+              "string"
+            ]
+          },
+          "Human response": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "Reviewer score 0 to 5": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "Review status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proposed reviewer role": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Question ID",
+          "Question",
+          "Expected evidence anchor",
+          "Human response",
+          "Reviewer score 0 to 5",
+          "Review status",
+          "Proposed reviewer role"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Acceptance cases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Case ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Case": {
+            "type": [
+              "string"
+            ]
+          },
+          "Expected result": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proof layer": {
+            "type": [
+              "string"
+            ]
+          },
+          "Status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Owner": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Case ID",
+          "Case",
+          "Expected result",
+          "Proof layer",
+          "Status",
+          "Owner"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "Personas",
+    "Permissions",
+    "Goals",
+    "System responsibilities",
+    "B T006 1. Stakeholder map",
+    "B T007 ▶ Frequency of use and edge actors",
+    "B T008 3. Roles and permissions",
+    "B T009 3. Roles and permissions",
+    "Cross-source comparison",
+    "Hybrid handoff",
+    "Human review prompts",
+    "Acceptance cases"
+  ],
+  "additionalProperties": false
+}

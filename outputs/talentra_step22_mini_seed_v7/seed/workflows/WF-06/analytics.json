@@ -1,0 +1,22 @@
+{
+  "version": "seed",
+  "set_id": "seed-WF-06",
+  "workflow_id": "WF-06",
+  "workflow": "Hiring pipeline",
+  "group": "Hiring decisions",
+  "case_count": 60,
+  "accepted_examples": 10,
+  "refused_or_duplicate": 50,
+  "step_example_rows": 50,
+  "defined_steps": 5,
+  "covered_steps": 5,
+  "outcomes": {
+    "ACCEPTED_EXAMPLE": 10,
+    "CROSS_ACCOUNT": 10,
+    "MISSING_REQUIRED": 10,
+    "BLOCKED_SUBJECT": 10,
+    "DUPLICATE_NO_SECOND_EFFECT": 10,
+    "STALE_VERSION": 10
+  },
+  "scope": "Workflow envelope fixtures and examples. No endpoint, database transaction, or external provider was invoked."
+}

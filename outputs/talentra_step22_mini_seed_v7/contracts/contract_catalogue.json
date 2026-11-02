@@ -1,0 +1,3009 @@
+[
+  {
+    "id": "CON-001",
+    "key": "payment.charge.v1",
+    "boundary": "INT-01",
+    "direction": "Outbound",
+    "owner": "Payments owner",
+    "priority": "P0",
+    "fields": [
+      {
+        "name": "event_id",
+        "target": "outbox_event.event_key",
+        "meaning": "Globally unique producer event key within contract",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "correlation_id",
+        "target": "TRANSPORT_ONLY",
+        "meaning": "Safe trace correlation key",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "schema_version",
+        "target": "integration_contract.schema_version",
+        "meaning": "Positive exact supported contract version",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "occurred_at",
+        "target": "TRANSPORT_ONLY",
+        "meaning": "UTC ISO8601 source timestamp",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "source_version",
+        "target": "TRANSPORT_ONLY",
+        "meaning": "Monotonic aggregate version",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "payment_order_id",
+        "target": "payment_order.id",
+        "meaning": "Local payment correlation key",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "amount",
+        "target": "payment_order.amount",
+        "meaning": "Exact decimal monetary amount",
+        "type": "string",
+        "required": true,
+        "transform": "Serialize fixed 2dp decimal; never binary float",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "currency_code",
+        "target": "payment_order.currency_code",
+        "meaning": "ISO currency code",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "idempotency_key",
+        "target": "payment_order.idempotency_key",
+        "meaning": "Stable payment command replay key",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      }
+    ],
+    "sha256": "c1e223b91d57957f20508767a769e3427ff090ee6238b4951b1569a9bd6eb028"
+  },
+  {
+    "id": "CON-002",
+    "key": "payment.status.v1",
+    "boundary": "INT-01",
+    "direction": "Inbound",
+    "owner": "Payments owner",
+    "priority": "P0",
+    "fields": [
+      {
+        "name": "event_id",
+        "target": "integration_inbox.event_key",
+        "meaning": "Globally unique producer event key within contract",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "correlation_id",
+        "target": "integration_inbox.correlation_key",
+        "meaning": "Safe trace correlation key",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "schema_version",
+        "target": "integration_contract.schema_version",
+        "meaning": "Positive exact supported contract version",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "occurred_at",
+        "target": "integration_inbox.occurred_at",
+        "meaning": "UTC ISO8601 source timestamp",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "source_version",
+        "target": "integration_inbox.source_version",
+        "meaning": "Monotonic aggregate version",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "payment_order_id",
+        "target": "payment_event.payment_order_id",
+        "meaning": "Resolve previously issued local order",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "provider_reference",
+        "target": "payment_event.provider_reference",
+        "meaning": "Opaque gateway settlement reference",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "amount",
+        "target": "payment_event.amount",
+        "meaning": "Settled exact decimal amount",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "currency_code",
+        "target": "payment_event.currency_code",
+        "meaning": "Settlement currency",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "status_code",
+        "target": "payment_event.status_reference_value_id",
+        "meaning": "Gateway payment state",
+        "type": "string",
+        "required": true,
+        "transform": "Map signed provider code to payment status lookup; reject unknown domain",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      }
+    ],
+    "sha256": "67162836e53620de93721099f03f261a021bf5ba9e8dc89b614ae9d5fa5f5c6e"
+  },
+  {
+    "id": "CON-003",
+    "key": "identity.request.v1",
+    "boundary": "INT-02",
+    "direction": "Outbound",
+    "owner": "Privacy owner",
+    "priority": "P0",
+    "fields": [
+      {
+        "name": "event_id",
+        "target": "outbox_event.event_key",
+        "meaning": "Globally unique producer event key within contract",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "correlation_id",
+        "target": "TRANSPORT_ONLY",
+        "meaning": "Safe trace correlation key",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "schema_version",
+        "target": "integration_contract.schema_version",
+        "meaning": "Positive exact supported contract version",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "occurred_at",
+        "target": "TRANSPORT_ONLY",
+        "meaning": "UTC ISO8601 source timestamp",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "source_version",
+        "target": "TRANSPORT_ONLY",
+        "meaning": "Monotonic aggregate version",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "candidate_profile_id",
+        "target": "candidate_profile.id",
+        "meaning": "Authenticated subject identifier",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "consent_token",
+        "target": "TRANSPORT_ONLY",
+        "meaning": "Scoped consent receipt token; expire after request",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      }
+    ],
+    "sha256": "161a548d4841dbe3bc15bcda84943a0dcd083e27174d7981fe0d46475094431b"
+  },
+  {
+    "id": "CON-004",
+    "key": "identity.result.v1",
+    "boundary": "INT-02",
+    "direction": "Inbound",
+    "owner": "Privacy owner",
+    "priority": "P0",
+    "fields": [
+      {
+        "name": "event_id",
+        "target": "integration_inbox.event_key",
+        "meaning": "Globally unique producer event key within contract",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "correlation_id",
+        "target": "integration_inbox.correlation_key",
+        "meaning": "Safe trace correlation key",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "schema_version",
+        "target": "integration_contract.schema_version",
+        "meaning": "Positive exact supported contract version",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "occurred_at",
+        "target": "integration_inbox.occurred_at",
+        "meaning": "UTC ISO8601 source timestamp",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "source_version",
+        "target": "integration_inbox.source_version",
+        "meaning": "Monotonic aggregate version",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "candidate_profile_id",
+        "target": "candidate_verification.candidate_profile_id",
+        "meaning": "Verified candidate correlation",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "provider_token",
+        "target": "candidate_verification.provider_token",
+        "meaning": "Opaque identity outcome token; no raw identity number",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "outcome_code",
+        "target": "candidate_verification.outcome_reference_value_id",
+        "meaning": "Provider outcome",
+        "type": "string",
+        "required": true,
+        "transform": "Resolve verification outcome domain; fail closed",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "verified_at",
+        "target": "candidate_verification.verified_at",
+        "meaning": "UTC decision timestamp",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      }
+    ],
+    "sha256": "9d1547b438b894f96082faedea7b57a56ac39e40354573651f2886e52a148850"
+  },
+  {
+    "id": "CON-005",
+    "key": "company.verify.v1",
+    "boundary": "INT-03",
+    "direction": "Outbound",
+    "owner": "Organisation owner",
+    "priority": "P0",
+    "fields": [
+      {
+        "name": "event_id",
+        "target": "outbox_event.event_key",
+        "meaning": "Globally unique producer event key within contract",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "correlation_id",
+        "target": "TRANSPORT_ONLY",
+        "meaning": "Safe trace correlation key",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "schema_version",
+        "target": "integration_contract.schema_version",
+        "meaning": "Positive exact supported contract version",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "occurred_at",
+        "target": "TRANSPORT_ONLY",
+        "meaning": "UTC ISO8601 source timestamp",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "source_version",
+        "target": "TRANSPORT_ONLY",
+        "meaning": "Monotonic aggregate version",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "organisation_id",
+        "target": "organisation.id",
+        "meaning": "Organisation correlation",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "identifier_token",
+        "target": "organisation_identifier.identifier_token",
+        "meaning": "Tokenized tax or registration lookup value",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "country_id",
+        "target": "organisation_identifier.country_id",
+        "meaning": "Country of identifier",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      }
+    ],
+    "sha256": "fea816aab9295471decc6fbb9d6c4625bd5d81c0e281d3a6fc4a80dcd86c71ff"
+  },
+  {
+    "id": "CON-006",
+    "key": "company.result.v1",
+    "boundary": "INT-03",
+    "direction": "Inbound",
+    "owner": "Organisation owner",
+    "priority": "P0",
+    "fields": [
+      {
+        "name": "event_id",
+        "target": "integration_inbox.event_key",
+        "meaning": "Globally unique producer event key within contract",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "correlation_id",
+        "target": "integration_inbox.correlation_key",
+        "meaning": "Safe trace correlation key",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "schema_version",
+        "target": "integration_contract.schema_version",
+        "meaning": "Positive exact supported contract version",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "occurred_at",
+        "target": "integration_inbox.occurred_at",
+        "meaning": "UTC ISO8601 source timestamp",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "source_version",
+        "target": "integration_inbox.source_version",
+        "meaning": "Monotonic aggregate version",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "organisation_id",
+        "target": "verification_record.organisation_id",
+        "meaning": "Organisation correlation",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "provider_token",
+        "target": "verification_record.provider_token",
+        "meaning": "Opaque verification reference",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "outcome_code",
+        "target": "verification_record.outcome_reference_value_id",
+        "meaning": "Outcome mapping",
+        "type": "string",
+        "required": true,
+        "transform": "Resolve verification_outcome code; pending is never approved",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "verified_at",
+        "target": "verification_record.verified_at",
+        "meaning": "UTC decision timestamp",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      }
+    ],
+    "sha256": "6bbcbf21f948cbc2b2278f4e736613cec9e48e662f33469def33db61ae17abfb"
+  },
+  {
+    "id": "CON-007",
+    "key": "gig.handoff.v1",
+    "boundary": "INT-04",
+    "direction": "Outbound",
+    "owner": "Gig operations owner",
+    "priority": "P0",
+    "fields": [
+      {
+        "name": "event_id",
+        "target": "outbox_event.event_key",
+        "meaning": "Globally unique producer event key within contract",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "correlation_id",
+        "target": "TRANSPORT_ONLY",
+        "meaning": "Safe trace correlation key",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "schema_version",
+        "target": "integration_contract.schema_version",
+        "meaning": "Positive exact supported contract version",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "occurred_at",
+        "target": "TRANSPORT_ONLY",
+        "meaning": "UTC ISO8601 source timestamp",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "source_version",
+        "target": "TRANSPORT_ONLY",
+        "meaning": "Monotonic aggregate version",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "assignment_id",
+        "target": "gig_assignment.id",
+        "meaning": "Accepted assignment ID",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "start_at",
+        "target": "gig_assignment.start_at",
+        "meaning": "UTC half-open gig window start",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "end_at",
+        "target": "gig_assignment.end_at",
+        "meaning": "UTC half-open gig window end",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "handoff_key",
+        "target": "gig_assignment.external_handoff_key",
+        "meaning": "Replay-safe external assignment request key",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      }
+    ],
+    "sha256": "c8f42b0d97cf0ed900cf45b5038d909a8fc23041a256bebdddf4145dd2cedf69"
+  },
+  {
+    "id": "CON-008",
+    "key": "gig.status.v1",
+    "boundary": "INT-04",
+    "direction": "Inbound",
+    "owner": "Gig operations owner",
+    "priority": "P0",
+    "fields": [
+      {
+        "name": "event_id",
+        "target": "integration_inbox.event_key",
+        "meaning": "Globally unique producer event key within contract",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "correlation_id",
+        "target": "integration_inbox.correlation_key",
+        "meaning": "Safe trace correlation key",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "schema_version",
+        "target": "integration_contract.schema_version",
+        "meaning": "Positive exact supported contract version",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "occurred_at",
+        "target": "integration_inbox.occurred_at",
+        "meaning": "UTC ISO8601 source timestamp",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "source_version",
+        "target": "integration_inbox.source_version",
+        "meaning": "Monotonic aggregate version",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "assignment_id",
+        "target": "gig_assignment.id",
+        "meaning": "Existing assignment",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "handoff_key",
+        "target": "gig_assignment.external_handoff_key",
+        "meaning": "Provider accepted handoff reference",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "status_code",
+        "target": "gig_assignment.status_reference_value_id",
+        "meaning": "External fulfilment state",
+        "type": "string",
+        "required": true,
+        "transform": "Map allowed transition under assignment lock; reject stale/regressive event",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      }
+    ],
+    "sha256": "cb55a66bf09d974dc408c194297fef10d3c31047119bd7b107fef4bb7a5a9d93"
+  },
+  {
+    "id": "CON-009",
+    "key": "gig.earnings.v1",
+    "boundary": "INT-04",
+    "direction": "Inbound",
+    "owner": "Gig finance owner",
+    "priority": "P0",
+    "fields": [
+      {
+        "name": "event_id",
+        "target": "integration_inbox.event_key",
+        "meaning": "Globally unique producer event key within contract",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "correlation_id",
+        "target": "integration_inbox.correlation_key",
+        "meaning": "Safe trace correlation key",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "schema_version",
+        "target": "integration_contract.schema_version",
+        "meaning": "Positive exact supported contract version",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "occurred_at",
+        "target": "integration_inbox.occurred_at",
+        "meaning": "UTC ISO8601 source timestamp",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "source_version",
+        "target": "integration_inbox.source_version",
+        "meaning": "Monotonic aggregate version",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "assignment_id",
+        "target": "gig_earnings_snapshot.gig_assignment_id",
+        "meaning": "Existing assignment",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "provider_reference",
+        "target": "gig_earnings_snapshot.provider_reference",
+        "meaning": "Earnings statement reference",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "estimated_amount",
+        "target": "gig_earnings_snapshot.estimated_amount",
+        "meaning": "Provider-owned reconciled monetary amount",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "total_amount",
+        "target": "gig_earnings_snapshot.total_amount",
+        "meaning": "Provider-owned reconciled monetary amount",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "projected_amount",
+        "target": "gig_earnings_snapshot.projected_amount",
+        "meaning": "Provider-owned reconciled monetary amount",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "currency_code",
+        "target": "gig_earnings_snapshot.currency_code",
+        "meaning": "Earnings currency",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "reconciled_at",
+        "target": "gig_earnings_snapshot.reconciled_at",
+        "meaning": "UTC statement reconciliation time",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      }
+    ],
+    "sha256": "4db06d446b2dbbd23a6310600f743c2f0bad236746edac52ab6d3817c1726b0f"
+  },
+  {
+    "id": "CON-010",
+    "key": "legacy.candidate_profile.v1",
+    "boundary": "INT-05",
+    "direction": "Inbound",
+    "owner": "Migration data owner",
+    "priority": "P0",
+    "fields": [
+      {
+        "name": "event_id",
+        "target": "integration_inbox.event_key",
+        "meaning": "Globally unique producer event key within contract",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "correlation_id",
+        "target": "integration_inbox.correlation_key",
+        "meaning": "Safe trace correlation key",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "schema_version",
+        "target": "integration_contract.schema_version",
+        "meaning": "Positive exact supported contract version",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "occurred_at",
+        "target": "integration_inbox.occurred_at",
+        "meaning": "UTC ISO8601 source timestamp",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "source_version",
+        "target": "integration_inbox.source_version",
+        "meaning": "Monotonic aggregate version",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "external_key",
+        "target": "external_reference.external_key",
+        "meaning": "Stable opaque legacy entity key",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "app_user_id",
+        "target": "candidate_profile.app_user_id",
+        "meaning": "64-bit surrogate identity; app user id on candidate_profile",
+        "type": "integer",
+        "required": true,
+        "transform": "Resolve natural/source reference to approved local surrogate in same ownership scope",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      },
+      {
+        "name": "city_id",
+        "target": "candidate_profile.city_id",
+        "meaning": "64-bit surrogate identity; city id on candidate_profile",
+        "type": "integer",
+        "required": false,
+        "transform": "Resolve natural/source reference to approved local surrogate in same ownership scope",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      },
+      {
+        "name": "headline",
+        "target": "candidate_profile.headline",
+        "meaning": "Bounded explanatory text; headline on candidate_profile",
+        "type": "string",
+        "required": false,
+        "transform": "Normalize Unicode NFC; validate dictionary type/domain; preserve NULL versus zero",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      },
+      {
+        "name": "birth_date",
+        "target": "candidate_profile.birth_date",
+        "meaning": "Calendar date; birth date on candidate_profile",
+        "type": "string",
+        "required": false,
+        "transform": "Normalize Unicode NFC; validate dictionary type/domain; preserve NULL versus zero",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      },
+      {
+        "name": "status_reference_value_id",
+        "target": "candidate_profile.status_reference_value_id",
+        "meaning": "64-bit surrogate identity; status reference value id on candidate_profile",
+        "type": "integer",
+        "required": true,
+        "transform": "Resolve natural/source reference to approved local surrogate in same ownership scope",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      },
+      {
+        "name": "content_language",
+        "target": "candidate_profile.content_language",
+        "meaning": "Content/UI language code; content language on candidate_profile",
+        "type": "string",
+        "required": true,
+        "transform": "Normalize Unicode NFC; validate dictionary type/domain; preserve NULL versus zero",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      }
+    ],
+    "sha256": "c3ab98504b557680b74a1eddcf5f7d3ea1ce4fe8d30d43d282320a746c83d870"
+  },
+  {
+    "id": "CON-011",
+    "key": "legacy.candidate_contact.v1",
+    "boundary": "INT-05",
+    "direction": "Inbound",
+    "owner": "Migration data owner",
+    "priority": "P0",
+    "fields": [
+      {
+        "name": "event_id",
+        "target": "integration_inbox.event_key",
+        "meaning": "Globally unique producer event key within contract",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "correlation_id",
+        "target": "integration_inbox.correlation_key",
+        "meaning": "Safe trace correlation key",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "schema_version",
+        "target": "integration_contract.schema_version",
+        "meaning": "Positive exact supported contract version",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "occurred_at",
+        "target": "integration_inbox.occurred_at",
+        "meaning": "UTC ISO8601 source timestamp",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "source_version",
+        "target": "integration_inbox.source_version",
+        "meaning": "Monotonic aggregate version",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "external_key",
+        "target": "external_reference.external_key",
+        "meaning": "Stable opaque legacy entity key",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "candidate_profile_id",
+        "target": "candidate_contact.candidate_profile_id",
+        "meaning": "64-bit surrogate identity; candidate profile id on candidate_contact",
+        "type": "integer",
+        "required": true,
+        "transform": "Resolve natural/source reference to approved local surrogate in same ownership scope",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      },
+      {
+        "name": "phone_number",
+        "target": "candidate_contact.phone_number",
+        "meaning": "International telephone number; phone number on candidate_contact",
+        "type": "string",
+        "required": false,
+        "transform": "Normalize Unicode NFC; validate dictionary type/domain; preserve NULL versus zero",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      },
+      {
+        "name": "country_id",
+        "target": "candidate_contact.country_id",
+        "meaning": "64-bit surrogate identity; country id on candidate_contact",
+        "type": "integer",
+        "required": false,
+        "transform": "Resolve natural/source reference to approved local surrogate in same ownership scope",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      },
+      {
+        "name": "contact_email",
+        "target": "candidate_contact.contact_email",
+        "meaning": "Normalized electronic mail address; contact email on candidate_contact",
+        "type": "string",
+        "required": false,
+        "transform": "Normalize Unicode NFC; validate dictionary type/domain; preserve NULL versus zero",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      }
+    ],
+    "sha256": "8b0063d7ea659ebe3ec9c286f0fef576820831c0061720e881e4c9cc9b5884a7"
+  },
+  {
+    "id": "CON-012",
+    "key": "legacy.candidate_education.v1",
+    "boundary": "INT-05",
+    "direction": "Inbound",
+    "owner": "Migration data owner",
+    "priority": "P0",
+    "fields": [
+      {
+        "name": "event_id",
+        "target": "integration_inbox.event_key",
+        "meaning": "Globally unique producer event key within contract",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "correlation_id",
+        "target": "integration_inbox.correlation_key",
+        "meaning": "Safe trace correlation key",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "schema_version",
+        "target": "integration_contract.schema_version",
+        "meaning": "Positive exact supported contract version",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "occurred_at",
+        "target": "integration_inbox.occurred_at",
+        "meaning": "UTC ISO8601 source timestamp",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "source_version",
+        "target": "integration_inbox.source_version",
+        "meaning": "Monotonic aggregate version",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "external_key",
+        "target": "external_reference.external_key",
+        "meaning": "Stable opaque legacy entity key",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "candidate_profile_id",
+        "target": "candidate_education.candidate_profile_id",
+        "meaning": "64-bit surrogate identity; candidate profile id on candidate_education",
+        "type": "integer",
+        "required": true,
+        "transform": "Resolve natural/source reference to approved local surrogate in same ownership scope",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      },
+      {
+        "name": "qualification_id",
+        "target": "candidate_education.qualification_id",
+        "meaning": "64-bit surrogate identity; qualification id on candidate_education",
+        "type": "integer",
+        "required": true,
+        "transform": "Resolve natural/source reference to approved local surrogate in same ownership scope",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      },
+      {
+        "name": "institution_name",
+        "target": "candidate_education.institution_name",
+        "meaning": "Unicode name without word-order assumption; institution name on candidate_education",
+        "type": "string",
+        "required": true,
+        "transform": "Normalize Unicode NFC; validate dictionary type/domain; preserve NULL versus zero",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      },
+      {
+        "name": "start_date",
+        "target": "candidate_education.start_date",
+        "meaning": "Calendar date; start date on candidate_education",
+        "type": "string",
+        "required": true,
+        "transform": "Normalize Unicode NFC; validate dictionary type/domain; preserve NULL versus zero",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      },
+      {
+        "name": "end_date",
+        "target": "candidate_education.end_date",
+        "meaning": "Calendar date; end date on candidate_education",
+        "type": "string",
+        "required": false,
+        "transform": "Normalize Unicode NFC; validate dictionary type/domain; preserve NULL versus zero",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      }
+    ],
+    "sha256": "1aae906748b81827b327682628c048f4b170a1a3c7e92b83dc9e5dc27e6db27f"
+  },
+  {
+    "id": "CON-013",
+    "key": "legacy.candidate_experience.v1",
+    "boundary": "INT-05",
+    "direction": "Inbound",
+    "owner": "Migration data owner",
+    "priority": "P0",
+    "fields": [
+      {
+        "name": "event_id",
+        "target": "integration_inbox.event_key",
+        "meaning": "Globally unique producer event key within contract",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "correlation_id",
+        "target": "integration_inbox.correlation_key",
+        "meaning": "Safe trace correlation key",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "schema_version",
+        "target": "integration_contract.schema_version",
+        "meaning": "Positive exact supported contract version",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "occurred_at",
+        "target": "integration_inbox.occurred_at",
+        "meaning": "UTC ISO8601 source timestamp",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "source_version",
+        "target": "integration_inbox.source_version",
+        "meaning": "Monotonic aggregate version",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "external_key",
+        "target": "external_reference.external_key",
+        "meaning": "Stable opaque legacy entity key",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "candidate_profile_id",
+        "target": "candidate_experience.candidate_profile_id",
+        "meaning": "64-bit surrogate identity; candidate profile id on candidate_experience",
+        "type": "integer",
+        "required": true,
+        "transform": "Resolve natural/source reference to approved local surrogate in same ownership scope",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      },
+      {
+        "name": "employer_name",
+        "target": "candidate_experience.employer_name",
+        "meaning": "Unicode name without word-order assumption; employer name on candidate_experience",
+        "type": "string",
+        "required": true,
+        "transform": "Normalize Unicode NFC; validate dictionary type/domain; preserve NULL versus zero",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      },
+      {
+        "name": "role_name",
+        "target": "candidate_experience.role_name",
+        "meaning": "Unicode name without word-order assumption; role name on candidate_experience",
+        "type": "string",
+        "required": true,
+        "transform": "Normalize Unicode NFC; validate dictionary type/domain; preserve NULL versus zero",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      },
+      {
+        "name": "start_date",
+        "target": "candidate_experience.start_date",
+        "meaning": "Calendar date; start date on candidate_experience",
+        "type": "string",
+        "required": true,
+        "transform": "Normalize Unicode NFC; validate dictionary type/domain; preserve NULL versus zero",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      },
+      {
+        "name": "end_date",
+        "target": "candidate_experience.end_date",
+        "meaning": "Calendar date; end date on candidate_experience",
+        "type": "string",
+        "required": false,
+        "transform": "Normalize Unicode NFC; validate dictionary type/domain; preserve NULL versus zero",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      }
+    ],
+    "sha256": "53cb8bcf6112b499532a52a6f2089b57e13fe7f17854fe7e264bd7eef374540b"
+  },
+  {
+    "id": "CON-014",
+    "key": "legacy.candidate_skill.v1",
+    "boundary": "INT-05",
+    "direction": "Inbound",
+    "owner": "Migration data owner",
+    "priority": "P0",
+    "fields": [
+      {
+        "name": "event_id",
+        "target": "integration_inbox.event_key",
+        "meaning": "Globally unique producer event key within contract",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "correlation_id",
+        "target": "integration_inbox.correlation_key",
+        "meaning": "Safe trace correlation key",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "schema_version",
+        "target": "integration_contract.schema_version",
+        "meaning": "Positive exact supported contract version",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "occurred_at",
+        "target": "integration_inbox.occurred_at",
+        "meaning": "UTC ISO8601 source timestamp",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "source_version",
+        "target": "integration_inbox.source_version",
+        "meaning": "Monotonic aggregate version",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "external_key",
+        "target": "external_reference.external_key",
+        "meaning": "Stable opaque legacy entity key",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "candidate_profile_id",
+        "target": "candidate_skill.candidate_profile_id",
+        "meaning": "64-bit surrogate identity; candidate profile id on candidate_skill",
+        "type": "integer",
+        "required": true,
+        "transform": "Resolve natural/source reference to approved local surrogate in same ownership scope",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      },
+      {
+        "name": "skill_id",
+        "target": "candidate_skill.skill_id",
+        "meaning": "64-bit surrogate identity; skill id on candidate_skill",
+        "type": "integer",
+        "required": true,
+        "transform": "Resolve natural/source reference to approved local surrogate in same ownership scope",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      },
+      {
+        "name": "proficiency_reference_value_id",
+        "target": "candidate_skill.proficiency_reference_value_id",
+        "meaning": "64-bit surrogate identity; proficiency reference value id on candidate_skill",
+        "type": "integer",
+        "required": true,
+        "transform": "Resolve natural/source reference to approved local surrogate in same ownership scope",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      }
+    ],
+    "sha256": "54d71b9d81ef50f18db5e975e8ebfa853036099560884d7634f1b05eefd68354"
+  },
+  {
+    "id": "CON-015",
+    "key": "legacy.candidate_language.v1",
+    "boundary": "INT-05",
+    "direction": "Inbound",
+    "owner": "Migration data owner",
+    "priority": "P0",
+    "fields": [
+      {
+        "name": "event_id",
+        "target": "integration_inbox.event_key",
+        "meaning": "Globally unique producer event key within contract",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "correlation_id",
+        "target": "integration_inbox.correlation_key",
+        "meaning": "Safe trace correlation key",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "schema_version",
+        "target": "integration_contract.schema_version",
+        "meaning": "Positive exact supported contract version",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "occurred_at",
+        "target": "integration_inbox.occurred_at",
+        "meaning": "UTC ISO8601 source timestamp",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "source_version",
+        "target": "integration_inbox.source_version",
+        "meaning": "Monotonic aggregate version",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "external_key",
+        "target": "external_reference.external_key",
+        "meaning": "Stable opaque legacy entity key",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "candidate_profile_id",
+        "target": "candidate_language.candidate_profile_id",
+        "meaning": "64-bit surrogate identity; candidate profile id on candidate_language",
+        "type": "integer",
+        "required": true,
+        "transform": "Resolve natural/source reference to approved local surrogate in same ownership scope",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      },
+      {
+        "name": "language_code",
+        "target": "candidate_language.language_code",
+        "meaning": "Content/UI language code; language code on candidate_language",
+        "type": "string",
+        "required": true,
+        "transform": "Normalize Unicode NFC; validate dictionary type/domain; preserve NULL versus zero",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      },
+      {
+        "name": "proficiency_reference_value_id",
+        "target": "candidate_language.proficiency_reference_value_id",
+        "meaning": "64-bit surrogate identity; proficiency reference value id on candidate_language",
+        "type": "integer",
+        "required": true,
+        "transform": "Resolve natural/source reference to approved local surrogate in same ownership scope",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      }
+    ],
+    "sha256": "1fb1c3a7745e0d9204ec0404c8ad4dbd3f484db348abf7586636c518fa75e6c5"
+  },
+  {
+    "id": "CON-016",
+    "key": "legacy.candidate_project.v1",
+    "boundary": "INT-05",
+    "direction": "Inbound",
+    "owner": "Migration data owner",
+    "priority": "P0",
+    "fields": [
+      {
+        "name": "event_id",
+        "target": "integration_inbox.event_key",
+        "meaning": "Globally unique producer event key within contract",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "correlation_id",
+        "target": "integration_inbox.correlation_key",
+        "meaning": "Safe trace correlation key",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "schema_version",
+        "target": "integration_contract.schema_version",
+        "meaning": "Positive exact supported contract version",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "occurred_at",
+        "target": "integration_inbox.occurred_at",
+        "meaning": "UTC ISO8601 source timestamp",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "source_version",
+        "target": "integration_inbox.source_version",
+        "meaning": "Monotonic aggregate version",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "external_key",
+        "target": "external_reference.external_key",
+        "meaning": "Stable opaque legacy entity key",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "candidate_profile_id",
+        "target": "candidate_project.candidate_profile_id",
+        "meaning": "64-bit surrogate identity; candidate profile id on candidate_project",
+        "type": "integer",
+        "required": true,
+        "transform": "Resolve natural/source reference to approved local surrogate in same ownership scope",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      },
+      {
+        "name": "title",
+        "target": "candidate_project.title",
+        "meaning": "Unicode name without word-order assumption; title on candidate_project",
+        "type": "string",
+        "required": true,
+        "transform": "Normalize Unicode NFC; validate dictionary type/domain; preserve NULL versus zero",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      },
+      {
+        "name": "role_name",
+        "target": "candidate_project.role_name",
+        "meaning": "Unicode name without word-order assumption; role name on candidate_project",
+        "type": "string",
+        "required": true,
+        "transform": "Normalize Unicode NFC; validate dictionary type/domain; preserve NULL versus zero",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      },
+      {
+        "name": "start_date",
+        "target": "candidate_project.start_date",
+        "meaning": "Calendar date; start date on candidate_project",
+        "type": "string",
+        "required": true,
+        "transform": "Normalize Unicode NFC; validate dictionary type/domain; preserve NULL versus zero",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      },
+      {
+        "name": "end_date",
+        "target": "candidate_project.end_date",
+        "meaning": "Calendar date; end date on candidate_project",
+        "type": "string",
+        "required": false,
+        "transform": "Normalize Unicode NFC; validate dictionary type/domain; preserve NULL versus zero",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      },
+      {
+        "name": "outcome",
+        "target": "candidate_project.outcome",
+        "meaning": "Bounded explanatory text; outcome on candidate_project",
+        "type": "string",
+        "required": false,
+        "transform": "Normalize Unicode NFC; validate dictionary type/domain; preserve NULL versus zero",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      }
+    ],
+    "sha256": "10f4e14469bb132a802c0d3c34d2802dc88a7ec9626637365ac13d7ff4a73306"
+  },
+  {
+    "id": "CON-017",
+    "key": "legacy.resume_version.v1",
+    "boundary": "INT-05",
+    "direction": "Inbound",
+    "owner": "Migration data owner",
+    "priority": "P0",
+    "fields": [
+      {
+        "name": "event_id",
+        "target": "integration_inbox.event_key",
+        "meaning": "Globally unique producer event key within contract",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "correlation_id",
+        "target": "integration_inbox.correlation_key",
+        "meaning": "Safe trace correlation key",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "schema_version",
+        "target": "integration_contract.schema_version",
+        "meaning": "Positive exact supported contract version",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "occurred_at",
+        "target": "integration_inbox.occurred_at",
+        "meaning": "UTC ISO8601 source timestamp",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "source_version",
+        "target": "integration_inbox.source_version",
+        "meaning": "Monotonic aggregate version",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "external_key",
+        "target": "external_reference.external_key",
+        "meaning": "Stable opaque legacy entity key",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "candidate_profile_id",
+        "target": "resume_version.candidate_profile_id",
+        "meaning": "64-bit surrogate identity; candidate profile id on resume_version",
+        "type": "integer",
+        "required": true,
+        "transform": "Resolve natural/source reference to approved local surrogate in same ownership scope",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      },
+      {
+        "name": "resume_template_id",
+        "target": "resume_version.resume_template_id",
+        "meaning": "64-bit surrogate identity; resume template id on resume_version",
+        "type": "integer",
+        "required": false,
+        "transform": "Resolve natural/source reference to approved local surrogate in same ownership scope",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      },
+      {
+        "name": "version_number",
+        "target": "resume_version.version_number",
+        "meaning": "Integer quantity; version number on resume_version",
+        "type": "integer",
+        "required": true,
+        "transform": "Normalize Unicode NFC; validate dictionary type/domain; preserve NULL versus zero",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      },
+      {
+        "name": "object_key",
+        "target": "resume_version.object_key",
+        "meaning": "Private object-store reference; object key on resume_version",
+        "type": "string",
+        "required": true,
+        "transform": "Normalize Unicode NFC; validate dictionary type/domain; preserve NULL versus zero",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      },
+      {
+        "name": "content_hash",
+        "target": "resume_version.content_hash",
+        "meaning": "Opaque reference or cryptographic hash; content hash on resume_version",
+        "type": "string",
+        "required": true,
+        "transform": "Normalize Unicode NFC; validate dictionary type/domain; preserve NULL versus zero",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      },
+      {
+        "name": "content_language",
+        "target": "resume_version.content_language",
+        "meaning": "Content/UI language code; content language on resume_version",
+        "type": "string",
+        "required": true,
+        "transform": "Normalize Unicode NFC; validate dictionary type/domain; preserve NULL versus zero",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      }
+    ],
+    "sha256": "7b074ae1f12da592764c27147aeaac13305e562689d23a8b2a6f97ed99819183"
+  },
+  {
+    "id": "CON-018",
+    "key": "legacy.job_requirement.v1",
+    "boundary": "INT-05",
+    "direction": "Inbound",
+    "owner": "Migration data owner",
+    "priority": "P0",
+    "fields": [
+      {
+        "name": "event_id",
+        "target": "integration_inbox.event_key",
+        "meaning": "Globally unique producer event key within contract",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "correlation_id",
+        "target": "integration_inbox.correlation_key",
+        "meaning": "Safe trace correlation key",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "schema_version",
+        "target": "integration_contract.schema_version",
+        "meaning": "Positive exact supported contract version",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "occurred_at",
+        "target": "integration_inbox.occurred_at",
+        "meaning": "UTC ISO8601 source timestamp",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "source_version",
+        "target": "integration_inbox.source_version",
+        "meaning": "Monotonic aggregate version",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "external_key",
+        "target": "external_reference.external_key",
+        "meaning": "Stable opaque legacy entity key",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "organisation_id",
+        "target": "job_requirement.organisation_id",
+        "meaning": "64-bit surrogate identity; organisation id on job_requirement",
+        "type": "integer",
+        "required": true,
+        "transform": "Resolve natural/source reference to approved local surrogate in same ownership scope",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      },
+      {
+        "name": "job_role_id",
+        "target": "job_requirement.job_role_id",
+        "meaning": "64-bit surrogate identity; job role id on job_requirement",
+        "type": "integer",
+        "required": true,
+        "transform": "Resolve natural/source reference to approved local surrogate in same ownership scope",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      },
+      {
+        "name": "employment_type_reference_value_id",
+        "target": "job_requirement.employment_type_reference_value_id",
+        "meaning": "64-bit surrogate identity; employment type reference value id on job_requirement",
+        "type": "integer",
+        "required": true,
+        "transform": "Resolve natural/source reference to approved local surrogate in same ownership scope",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      },
+      {
+        "name": "work_type_reference_value_id",
+        "target": "job_requirement.work_type_reference_value_id",
+        "meaning": "64-bit surrogate identity; work type reference value id on job_requirement",
+        "type": "integer",
+        "required": true,
+        "transform": "Resolve natural/source reference to approved local surrogate in same ownership scope",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      },
+      {
+        "name": "city_id",
+        "target": "job_requirement.city_id",
+        "meaning": "64-bit surrogate identity; city id on job_requirement",
+        "type": "integer",
+        "required": false,
+        "transform": "Resolve natural/source reference to approved local surrogate in same ownership scope",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      },
+      {
+        "name": "title",
+        "target": "job_requirement.title",
+        "meaning": "Unicode name without word-order assumption; title on job_requirement",
+        "type": "string",
+        "required": true,
+        "transform": "Normalize Unicode NFC; validate dictionary type/domain; preserve NULL versus zero",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      },
+      {
+        "name": "description",
+        "target": "job_requirement.description",
+        "meaning": "Long-form authored content; description on job_requirement",
+        "type": "string",
+        "required": true,
+        "transform": "Normalize Unicode NFC; validate dictionary type/domain; preserve NULL versus zero",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      },
+      {
+        "name": "positions",
+        "target": "job_requirement.positions",
+        "meaning": "Integer quantity; positions on job_requirement",
+        "type": "integer",
+        "required": true,
+        "transform": "Normalize Unicode NFC; validate dictionary type/domain; preserve NULL versus zero",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      },
+      {
+        "name": "status_reference_value_id",
+        "target": "job_requirement.status_reference_value_id",
+        "meaning": "64-bit surrogate identity; status reference value id on job_requirement",
+        "type": "integer",
+        "required": true,
+        "transform": "Resolve natural/source reference to approved local surrogate in same ownership scope",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      },
+      {
+        "name": "publish_state_reference_value_id",
+        "target": "job_requirement.publish_state_reference_value_id",
+        "meaning": "64-bit surrogate identity; publish state reference value id on job_requirement",
+        "type": "integer",
+        "required": true,
+        "transform": "Resolve natural/source reference to approved local surrogate in same ownership scope",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      },
+      {
+        "name": "open_to_consultant",
+        "target": "job_requirement.open_to_consultant",
+        "meaning": "Explicit true/false flag; open to consultant on job_requirement",
+        "type": "boolean",
+        "required": true,
+        "transform": "Normalize Unicode NFC; validate dictionary type/domain; preserve NULL versus zero",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      },
+      {
+        "name": "salary_min",
+        "target": "job_requirement.salary_min",
+        "meaning": "Fixed-precision monetary amount; salary min on job_requirement",
+        "type": "string",
+        "required": false,
+        "transform": "Normalize Unicode NFC; validate dictionary type/domain; preserve NULL versus zero",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      },
+      {
+        "name": "salary_max",
+        "target": "job_requirement.salary_max",
+        "meaning": "Fixed-precision monetary amount; salary max on job_requirement",
+        "type": "string",
+        "required": false,
+        "transform": "Normalize Unicode NFC; validate dictionary type/domain; preserve NULL versus zero",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      },
+      {
+        "name": "currency_code",
+        "target": "job_requirement.currency_code",
+        "meaning": "Monetary currency code; currency code on job_requirement",
+        "type": "string",
+        "required": false,
+        "transform": "Normalize Unicode NFC; validate dictionary type/domain; preserve NULL versus zero",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      },
+      {
+        "name": "salary_disclosure_reference_value_id",
+        "target": "job_requirement.salary_disclosure_reference_value_id",
+        "meaning": "64-bit surrogate identity; salary disclosure reference value id on job_requirement",
+        "type": "integer",
+        "required": true,
+        "transform": "Resolve natural/source reference to approved local surrogate in same ownership scope",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      },
+      {
+        "name": "source_timezone",
+        "target": "job_requirement.source_timezone",
+        "meaning": "Stable code, not a user label; source timezone on job_requirement",
+        "type": "string",
+        "required": true,
+        "transform": "Normalize Unicode NFC; validate dictionary type/domain; preserve NULL versus zero",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      },
+      {
+        "name": "content_language",
+        "target": "job_requirement.content_language",
+        "meaning": "Content/UI language code; content language on job_requirement",
+        "type": "string",
+        "required": true,
+        "transform": "Normalize Unicode NFC; validate dictionary type/domain; preserve NULL versus zero",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      }
+    ],
+    "sha256": "724aa5b7488a0f6dd8e2387b239426ff4314fa36fdeac133038053196bec655b"
+  },
+  {
+    "id": "CON-019",
+    "key": "legacy.job_skill.v1",
+    "boundary": "INT-05",
+    "direction": "Inbound",
+    "owner": "Migration data owner",
+    "priority": "P0",
+    "fields": [
+      {
+        "name": "event_id",
+        "target": "integration_inbox.event_key",
+        "meaning": "Globally unique producer event key within contract",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "correlation_id",
+        "target": "integration_inbox.correlation_key",
+        "meaning": "Safe trace correlation key",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "schema_version",
+        "target": "integration_contract.schema_version",
+        "meaning": "Positive exact supported contract version",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "occurred_at",
+        "target": "integration_inbox.occurred_at",
+        "meaning": "UTC ISO8601 source timestamp",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "source_version",
+        "target": "integration_inbox.source_version",
+        "meaning": "Monotonic aggregate version",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "external_key",
+        "target": "external_reference.external_key",
+        "meaning": "Stable opaque legacy entity key",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "job_requirement_id",
+        "target": "job_skill.job_requirement_id",
+        "meaning": "64-bit surrogate identity; job requirement id on job_skill",
+        "type": "integer",
+        "required": true,
+        "transform": "Resolve natural/source reference to approved local surrogate in same ownership scope",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      },
+      {
+        "name": "skill_id",
+        "target": "job_skill.skill_id",
+        "meaning": "64-bit surrogate identity; skill id on job_skill",
+        "type": "integer",
+        "required": true,
+        "transform": "Resolve natural/source reference to approved local surrogate in same ownership scope",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      },
+      {
+        "name": "mandatory",
+        "target": "job_skill.mandatory",
+        "meaning": "Explicit true/false flag; mandatory on job_skill",
+        "type": "boolean",
+        "required": true,
+        "transform": "Normalize Unicode NFC; validate dictionary type/domain; preserve NULL versus zero",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      }
+    ],
+    "sha256": "0fdfb355161bc8d6366f1f6d45a166f1ae9b5c1ed3b3944bdc5d3bb98b44f41e"
+  },
+  {
+    "id": "CON-020",
+    "key": "legacy.job_question.v1",
+    "boundary": "INT-05",
+    "direction": "Inbound",
+    "owner": "Migration data owner",
+    "priority": "P0",
+    "fields": [
+      {
+        "name": "event_id",
+        "target": "integration_inbox.event_key",
+        "meaning": "Globally unique producer event key within contract",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "correlation_id",
+        "target": "integration_inbox.correlation_key",
+        "meaning": "Safe trace correlation key",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "schema_version",
+        "target": "integration_contract.schema_version",
+        "meaning": "Positive exact supported contract version",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "occurred_at",
+        "target": "integration_inbox.occurred_at",
+        "meaning": "UTC ISO8601 source timestamp",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "source_version",
+        "target": "integration_inbox.source_version",
+        "meaning": "Monotonic aggregate version",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "external_key",
+        "target": "external_reference.external_key",
+        "meaning": "Stable opaque legacy entity key",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "job_requirement_id",
+        "target": "job_question.job_requirement_id",
+        "meaning": "64-bit surrogate identity; job requirement id on job_question",
+        "type": "integer",
+        "required": true,
+        "transform": "Resolve natural/source reference to approved local surrogate in same ownership scope",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      },
+      {
+        "name": "question_text",
+        "target": "job_question.question_text",
+        "meaning": "Bounded explanatory text; question text on job_question",
+        "type": "string",
+        "required": true,
+        "transform": "Normalize Unicode NFC; validate dictionary type/domain; preserve NULL versus zero",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      },
+      {
+        "name": "answer_type_reference_value_id",
+        "target": "job_question.answer_type_reference_value_id",
+        "meaning": "64-bit surrogate identity; answer type reference value id on job_question",
+        "type": "integer",
+        "required": true,
+        "transform": "Resolve natural/source reference to approved local surrogate in same ownership scope",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      },
+      {
+        "name": "sort_order",
+        "target": "job_question.sort_order",
+        "meaning": "Integer quantity; sort order on job_question",
+        "type": "integer",
+        "required": true,
+        "transform": "Normalize Unicode NFC; validate dictionary type/domain; preserve NULL versus zero",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      },
+      {
+        "name": "mandatory",
+        "target": "job_question.mandatory",
+        "meaning": "Explicit true/false flag; mandatory on job_question",
+        "type": "boolean",
+        "required": true,
+        "transform": "Normalize Unicode NFC; validate dictionary type/domain; preserve NULL versus zero",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      }
+    ],
+    "sha256": "039e85cbfea7b68ca463026f79e6b5200482f8b26f64b162af7149cc39c93bd3"
+  },
+  {
+    "id": "CON-021",
+    "key": "legacy.job_question_option.v1",
+    "boundary": "INT-05",
+    "direction": "Inbound",
+    "owner": "Migration data owner",
+    "priority": "P0",
+    "fields": [
+      {
+        "name": "event_id",
+        "target": "integration_inbox.event_key",
+        "meaning": "Globally unique producer event key within contract",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "correlation_id",
+        "target": "integration_inbox.correlation_key",
+        "meaning": "Safe trace correlation key",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "schema_version",
+        "target": "integration_contract.schema_version",
+        "meaning": "Positive exact supported contract version",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "occurred_at",
+        "target": "integration_inbox.occurred_at",
+        "meaning": "UTC ISO8601 source timestamp",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "source_version",
+        "target": "integration_inbox.source_version",
+        "meaning": "Monotonic aggregate version",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "external_key",
+        "target": "external_reference.external_key",
+        "meaning": "Stable opaque legacy entity key",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "job_question_id",
+        "target": "job_question_option.job_question_id",
+        "meaning": "Owning question",
+        "type": "integer",
+        "required": true,
+        "transform": "Resolve natural/source reference to approved local surrogate in same ownership scope",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      },
+      {
+        "name": "code",
+        "target": "job_question_option.code",
+        "meaning": "Stable option code within question",
+        "type": "string",
+        "required": true,
+        "transform": "Normalize Unicode NFC; validate dictionary type/domain; preserve NULL versus zero",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      },
+      {
+        "name": "label_key",
+        "target": "job_question_option.label_key",
+        "meaning": "UI translation key",
+        "type": "string",
+        "required": true,
+        "transform": "Normalize Unicode NFC; validate dictionary type/domain; preserve NULL versus zero",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      },
+      {
+        "name": "sort_order",
+        "target": "job_question_option.sort_order",
+        "meaning": "Option display order",
+        "type": "integer",
+        "required": true,
+        "transform": "Normalize Unicode NFC; validate dictionary type/domain; preserve NULL versus zero",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      },
+      {
+        "name": "active",
+        "target": "job_question_option.active",
+        "meaning": "Whether option can be selected",
+        "type": "boolean",
+        "required": true,
+        "transform": "Normalize Unicode NFC; validate dictionary type/domain; preserve NULL versus zero",
+        "owner": "Platform integration owner",
+        "conflict": "Talentra owns user-edited fields after cutover; legacy owns only approved pre-cutover fields; conflict quarantines"
+      }
+    ],
+    "sha256": "62a343ec64ef3f9fd48aa75b216ad97d1f2e832d39d0c10e800f66ece3bf2955"
+  },
+  {
+    "id": "CON-022",
+    "key": "messaging.send.v1",
+    "boundary": "INT-06",
+    "direction": "Outbound",
+    "owner": "Messaging owner",
+    "priority": "P0",
+    "fields": [
+      {
+        "name": "event_id",
+        "target": "outbox_event.event_key",
+        "meaning": "Globally unique producer event key within contract",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "correlation_id",
+        "target": "TRANSPORT_ONLY",
+        "meaning": "Safe trace correlation key",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "schema_version",
+        "target": "integration_contract.schema_version",
+        "meaning": "Positive exact supported contract version",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "occurred_at",
+        "target": "TRANSPORT_ONLY",
+        "meaning": "UTC ISO8601 source timestamp",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "source_version",
+        "target": "TRANSPORT_ONLY",
+        "meaning": "Monotonic aggregate version",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "notification_id",
+        "target": "notification.id",
+        "meaning": "Notification intent",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "recipient_token",
+        "target": "TRANSPORT_ONLY",
+        "meaning": "Just-in-time permitted recipient token; never persisted in attempt logs",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "template_key",
+        "target": "notification.template_key",
+        "meaning": "Approved versioned message template",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "expires_at",
+        "target": "notification.expires_at",
+        "meaning": "UTC intent expiry",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      }
+    ],
+    "sha256": "0247875fbbdf0f3b44d328291c55d5edf9c5a66970fe70c6ca899769454dad39"
+  },
+  {
+    "id": "CON-023",
+    "key": "messaging.receipt.v1",
+    "boundary": "INT-06",
+    "direction": "Inbound",
+    "owner": "Messaging owner",
+    "priority": "P0",
+    "fields": [
+      {
+        "name": "event_id",
+        "target": "integration_inbox.event_key",
+        "meaning": "Globally unique producer event key within contract",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "correlation_id",
+        "target": "integration_inbox.correlation_key",
+        "meaning": "Safe trace correlation key",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "schema_version",
+        "target": "integration_contract.schema_version",
+        "meaning": "Positive exact supported contract version",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "occurred_at",
+        "target": "integration_inbox.occurred_at",
+        "meaning": "UTC ISO8601 source timestamp",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "source_version",
+        "target": "integration_inbox.source_version",
+        "meaning": "Monotonic aggregate version",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "notification_id",
+        "target": "notification_delivery.notification_id",
+        "meaning": "Issued notification",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "provider_reference",
+        "target": "notification_delivery.provider_reference",
+        "meaning": "Delivery receipt reference",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "status_code",
+        "target": "notification_delivery.status_reference_value_id",
+        "meaning": "Provider delivery state",
+        "type": "string",
+        "required": true,
+        "transform": "Map allowed delivery domain; delivered receipt is not proof of message read",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "attempted_at",
+        "target": "notification_delivery.attempted_at",
+        "meaning": "UTC provider attempt timestamp",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      }
+    ],
+    "sha256": "5b41f8a63aa928af283f1f647012ceb6b2874838b5b07654ec1afb0b65522dc2"
+  },
+  {
+    "id": "CON-024",
+    "key": "social.share.v1",
+    "boundary": "INT-07",
+    "direction": "Outbound",
+    "owner": "Community owner",
+    "priority": "P1",
+    "fields": [
+      {
+        "name": "event_id",
+        "target": "outbox_event.event_key",
+        "meaning": "Globally unique producer event key within contract",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "correlation_id",
+        "target": "TRANSPORT_ONLY",
+        "meaning": "Safe trace correlation key",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "schema_version",
+        "target": "integration_contract.schema_version",
+        "meaning": "Positive exact supported contract version",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "occurred_at",
+        "target": "TRANSPORT_ONLY",
+        "meaning": "UTC ISO8601 source timestamp",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "source_version",
+        "target": "TRANSPORT_ONLY",
+        "meaning": "Monotonic aggregate version",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "job_requirement_id",
+        "target": "social_share_event.job_requirement_id",
+        "meaning": "Published job correlation",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "channel_code",
+        "target": "social_share_event.channel_reference_value_id",
+        "meaning": "Approved network code",
+        "type": "string",
+        "required": true,
+        "transform": "Resolve social_channel domain; no post-content ingestion",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "shared_at",
+        "target": "social_share_event.shared_at",
+        "meaning": "UTC outbound link activation time",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      }
+    ],
+    "sha256": "ca67dbb6991ae3a31948e6e29e6d5d302673902f755b0392705b50a40180d3b1"
+  },
+  {
+    "id": "CON-025",
+    "key": "geo.lookup.v1",
+    "boundary": "INT-08",
+    "direction": "Outbound",
+    "owner": "Master data owner",
+    "priority": "P1",
+    "fields": [
+      {
+        "name": "event_id",
+        "target": "outbox_event.event_key",
+        "meaning": "Globally unique producer event key within contract",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "correlation_id",
+        "target": "TRANSPORT_ONLY",
+        "meaning": "Safe trace correlation key",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "schema_version",
+        "target": "integration_contract.schema_version",
+        "meaning": "Positive exact supported contract version",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "occurred_at",
+        "target": "TRANSPORT_ONLY",
+        "meaning": "UTC ISO8601 source timestamp",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "source_version",
+        "target": "TRANSPORT_ONLY",
+        "meaning": "Monotonic aggregate version",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "city_id",
+        "target": "city.id",
+        "meaning": "Place correlation",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "place_query",
+        "target": "TRANSPORT_ONLY",
+        "meaning": "Country-qualified city label; no precise personal location",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      }
+    ],
+    "sha256": "e9f4c7084689ad2368d7e84ed2d47e2abfad63b99cee4f8200ab51c1a68c3bf8"
+  },
+  {
+    "id": "CON-026",
+    "key": "geo.result.v1",
+    "boundary": "INT-08",
+    "direction": "Inbound",
+    "owner": "Master data owner",
+    "priority": "P1",
+    "fields": [
+      {
+        "name": "event_id",
+        "target": "integration_inbox.event_key",
+        "meaning": "Globally unique producer event key within contract",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "correlation_id",
+        "target": "integration_inbox.correlation_key",
+        "meaning": "Safe trace correlation key",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "schema_version",
+        "target": "integration_contract.schema_version",
+        "meaning": "Positive exact supported contract version",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "occurred_at",
+        "target": "integration_inbox.occurred_at",
+        "meaning": "UTC ISO8601 source timestamp",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "source_version",
+        "target": "integration_inbox.source_version",
+        "meaning": "Monotonic aggregate version",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "city_id",
+        "target": "city.id",
+        "meaning": "Resolved master city",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "latitude",
+        "target": "city.latitude",
+        "meaning": "Decimal latitude within -90..90",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "longitude",
+        "target": "city.longitude",
+        "meaning": "Decimal longitude within -180..180",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "coordinate_source",
+        "target": "city.coordinate_source",
+        "meaning": "Provider attribution and place reference",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      }
+    ],
+    "sha256": "8724cfa61d781f58aa931674d7b67bcae47e869215740b67bf7cd1ee15c41903"
+  },
+  {
+    "id": "CON-027",
+    "key": "reference.insights.v1",
+    "boundary": "INT-09",
+    "direction": "Inbound",
+    "owner": "Analytics owner",
+    "priority": "P2",
+    "fields": [
+      {
+        "name": "event_id",
+        "target": "integration_inbox.event_key",
+        "meaning": "Globally unique producer event key within contract",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "correlation_id",
+        "target": "integration_inbox.correlation_key",
+        "meaning": "Safe trace correlation key",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "schema_version",
+        "target": "integration_contract.schema_version",
+        "meaning": "Positive exact supported contract version",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "occurred_at",
+        "target": "integration_inbox.occurred_at",
+        "meaning": "UTC ISO8601 source timestamp",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "source_version",
+        "target": "integration_inbox.source_version",
+        "meaning": "Monotonic aggregate version",
+        "type": "integer",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "source_reference",
+        "target": "REFERENCE_ONLY",
+        "meaning": "Approved attribution URL; optional Tier3 data held outside transactional core",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "refresh_at",
+        "target": "REFERENCE_ONLY",
+        "meaning": "UTC refresh instant; stale value must be visibly marked",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      },
+      {
+        "name": "insight_kind",
+        "target": "REFERENCE_ONLY",
+        "meaning": "salary_benchmark or company_review; do not collect review author PII",
+        "type": "string",
+        "required": true,
+        "transform": "Validate type and length; reject invalid values",
+        "owner": "Platform integration owner",
+        "conflict": "Source owns this field; reject stale versions"
+      }
+    ],
+    "sha256": "3d340e4d01b4ce5f284e34f03e0fa5a296bb1019acfba9312f91eb96760094b3"
+  }
+]

@@ -1,0 +1,272 @@
+[
+  {
+    "actor_id": "ACT-01",
+    "actor": "Super Admin",
+    "kind": "Existing project persona",
+    "parent_context": null,
+    "purpose": "Platform ownership and emergency controls",
+    "scope": "Approve platform configuration; audited emergency access",
+    "source": "Step 2 Personas / ACT-01",
+    "status": "Retained project design"
+  },
+  {
+    "actor_id": "ACT-02",
+    "actor": "Admin",
+    "kind": "Existing project persona",
+    "parent_context": null,
+    "purpose": "Master data and verification operations",
+    "scope": "Manage reference data; scoped verification",
+    "source": "Step 2 Personas / ACT-02",
+    "status": "Retained project design"
+  },
+  {
+    "actor_id": "ACT-03",
+    "actor": "Account Admin",
+    "kind": "Existing project persona",
+    "parent_context": null,
+    "purpose": "Tenant seats and billing",
+    "scope": "Manage own organisation account, licence and subscription",
+    "source": "Step 2 Personas / ACT-03",
+    "status": "Retained project design"
+  },
+  {
+    "actor_id": "ACT-04",
+    "actor": "Guest",
+    "kind": "Existing project persona",
+    "parent_context": null,
+    "purpose": "Evaluate public job opportunities",
+    "scope": "Read published public jobs only",
+    "source": "Step 2 Personas / ACT-04",
+    "status": "Retained project design"
+  },
+  {
+    "actor_id": "ACT-05",
+    "actor": "Candidate",
+    "kind": "Existing project persona",
+    "parent_context": null,
+    "purpose": "Build profile and find work",
+    "scope": "Maintain self; apply; block parties; control preferences",
+    "source": "Step 2 Personas / ACT-05",
+    "status": "Retained project design"
+  },
+  {
+    "actor_id": "ACT-06",
+    "actor": "Employer",
+    "kind": "Existing project persona",
+    "parent_context": null,
+    "purpose": "Publish requirements and hire",
+    "scope": "Own-organisation jobs; requester gig decisions",
+    "source": "Step 2 Personas / ACT-06",
+    "status": "Retained project design"
+  },
+  {
+    "actor_id": "ACT-07",
+    "actor": "Recruiter",
+    "kind": "Existing project persona",
+    "parent_context": null,
+    "purpose": "Source and progress candidates",
+    "scope": "Assigned-company requirements only; no candidate registration",
+    "source": "Step 2 Personas / ACT-07",
+    "status": "Retained project design"
+  },
+  {
+    "actor_id": "ACT-08",
+    "actor": "Consultant",
+    "kind": "Existing project persona",
+    "parent_context": null,
+    "purpose": "Source on approved open requirements",
+    "scope": "Accepted sourcing requests only",
+    "source": "Step 2 Personas / ACT-08",
+    "status": "Retained project design"
+  },
+  {
+    "actor_id": "ACT-09",
+    "actor": "Placement Officer",
+    "kind": "Existing project persona",
+    "parent_context": null,
+    "purpose": "Support a campus hiring cohort",
+    "scope": "Consented cohort reporting; no unrestricted candidate editing",
+    "source": "Step 2 Personas / ACT-09",
+    "status": "Retained project design"
+  },
+  {
+    "actor_id": "ACT-10",
+    "actor": "Gig Worker",
+    "kind": "Existing project persona",
+    "parent_context": null,
+    "purpose": "Offer services and complete gigs",
+    "scope": "Own gig profile and applications",
+    "source": "Step 2 Personas / ACT-10",
+    "status": "Retained project design"
+  },
+  {
+    "actor_id": "ACT-11",
+    "actor": "Requester",
+    "kind": "Existing project persona",
+    "parent_context": null,
+    "purpose": "Select gig workers",
+    "scope": "Own gigs, favourites, blacklist and completed-gig ratings",
+    "source": "Step 2 Personas / ACT-11",
+    "status": "Retained project design"
+  },
+  {
+    "actor_id": "ACT-12",
+    "actor": "Auditor",
+    "kind": "Existing project persona",
+    "parent_context": null,
+    "purpose": "Review sensitive actions",
+    "scope": "Read-only redacted audit with purpose and access log",
+    "source": "Step 2 Personas / ACT-12",
+    "status": "Retained project design"
+  },
+  {
+    "actor_id": "ACT-13",
+    "actor": "Support Agent",
+    "kind": "Existing project persona",
+    "parent_context": null,
+    "purpose": "Resolve tickets",
+    "scope": "Assigned tickets and masked account context",
+    "source": "Step 2 Personas / ACT-13",
+    "status": "Retained project design"
+  },
+  {
+    "actor_id": "ACT-14",
+    "actor": "Analyst",
+    "kind": "Existing project persona",
+    "parent_context": null,
+    "purpose": "Inspect hiring KPIs",
+    "scope": "Aggregated or pseudonymized facts only",
+    "source": "Step 2 Personas / ACT-14",
+    "status": "Retained project design"
+  },
+  {
+    "actor_id": "ACT-15",
+    "actor": "Integration Worker",
+    "kind": "Existing project persona",
+    "parent_context": null,
+    "purpose": "Reconcile provider events",
+    "scope": "Service identity restricted to owned event types",
+    "source": "Step 2 Personas / ACT-15",
+    "status": "Retained project design"
+  },
+  {
+    "actor_id": "ACT-16",
+    "actor": "Payment Worker",
+    "kind": "Existing project persona",
+    "parent_context": null,
+    "purpose": "Reconcile payment status",
+    "scope": "Verify signed events; append payments and ledger entries",
+    "source": "Step 2 Personas / ACT-16",
+    "status": "Retained project design"
+  },
+  {
+    "actor_id": "ACT-17",
+    "actor": "Retention Worker",
+    "kind": "Existing project persona",
+    "parent_context": null,
+    "purpose": "Apply approved erasure schedules",
+    "scope": "Erase or unlink expired personal data with evidence",
+    "source": "Step 2 Personas / ACT-17",
+    "status": "Retained project design"
+  },
+  {
+    "actor_id": "ACT-18",
+    "actor": "Data Engineer",
+    "kind": "Existing project persona",
+    "parent_context": null,
+    "purpose": "Own contracts and data quality",
+    "scope": "Version dictionary, datasets and rules",
+    "source": "Step 2 Personas / ACT-18",
+    "status": "Retained project design"
+  },
+  {
+    "actor_id": "ACT-19",
+    "actor": "Eligibility Worker",
+    "kind": "Service context",
+    "parent_context": "Integration Worker",
+    "purpose": "Evaluate job-scoped pre-application eligibility",
+    "scope": "Scoped to assigned organisation, subject or owned provider contract",
+    "source": "WF-19 / Step 22 mentor-derived detail",
+    "status": "Proposed actor context; not a new deployed RBAC role"
+  },
+  {
+    "actor_id": "ACT-20",
+    "actor": "Assessment Provider",
+    "kind": "External provider",
+    "parent_context": "Integration Worker",
+    "purpose": "Supply assessment completion with application context",
+    "scope": "Scoped to assigned organisation, subject or owned provider contract",
+    "source": "WF-20 / Step 22 mentor-derived detail",
+    "status": "Proposed actor context; not a new deployed RBAC role"
+  },
+  {
+    "actor_id": "ACT-21",
+    "actor": "Interviewer",
+    "kind": "Business subrole",
+    "parent_context": "Employer",
+    "purpose": "Record assigned interview evidence",
+    "scope": "Scoped to assigned organisation, subject or owned provider contract",
+    "source": "WF-21 / Step 22 mentor-derived detail",
+    "status": "Proposed actor context; not a new deployed RBAC role"
+  },
+  {
+    "actor_id": "ACT-22",
+    "actor": "Hiring Manager",
+    "kind": "Business subrole",
+    "parent_context": "Employer",
+    "purpose": "Approve selection and offer terms for own organisation",
+    "scope": "Scoped to assigned organisation, subject or owned provider contract",
+    "source": "WF-22 / Step 22 mentor-derived detail",
+    "status": "Proposed actor context; not a new deployed RBAC role"
+  },
+  {
+    "actor_id": "ACT-23",
+    "actor": "Identity Verification Provider",
+    "kind": "External provider",
+    "parent_context": "Integration Worker",
+    "purpose": "Return a tokenized identity outcome",
+    "scope": "Scoped to assigned organisation, subject or owned provider contract",
+    "source": "WF-01;WF-03 / Step 22 mentor-derived detail",
+    "status": "Proposed actor context; not a new deployed RBAC role"
+  },
+  {
+    "actor_id": "ACT-24",
+    "actor": "Company Verification Provider",
+    "kind": "External provider",
+    "parent_context": "Integration Worker",
+    "purpose": "Return company verification outcome",
+    "scope": "Scoped to assigned organisation, subject or owned provider contract",
+    "source": "WF-03;WF-04 / Step 22 mentor-derived detail",
+    "status": "Proposed actor context; not a new deployed RBAC role"
+  },
+  {
+    "actor_id": "ACT-25",
+    "actor": "Gig Fulfilment Provider",
+    "kind": "External provider",
+    "parent_context": "Integration Worker",
+    "purpose": "Own external fulfilment, completion and earnings status",
+    "scope": "Scoped to assigned organisation, subject or owned provider contract",
+    "source": "WF-24 / Step 22 mentor-derived detail",
+    "status": "Proposed actor context; not a new deployed RBAC role"
+  },
+  {
+    "actor_id": "ACT-26",
+    "actor": "Notification Worker",
+    "kind": "Service context",
+    "parent_context": "Integration Worker",
+    "purpose": "Recheck consent and deliver bounded notifications",
+    "scope": "Scoped to assigned organisation, subject or owned provider contract",
+    "source": "WF-26 / Step 22 mentor-derived detail",
+    "status": "Proposed actor context; not a new deployed RBAC role"
+  },
+  {
+    "actor_id": "ACT-27",
+    "actor": "Reconciliation Analyst",
+    "kind": "Business subrole",
+    "parent_context": "Analyst",
+    "purpose": "Review quarantined input and reconcile aggregates",
+    "scope": "Scoped to assigned organisation, subject or owned provider contract",
+    "source": "WF-25;WF-27 / Step 22 mentor-derived detail",
+    "status": "Proposed actor context; not a new deployed RBAC role"
+  }
+]

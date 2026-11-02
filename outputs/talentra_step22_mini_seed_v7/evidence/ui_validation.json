@@ -1,0 +1,21 @@
+{
+  "date": "2026-10-30",
+  "scope": "Step22 mentor scenario UI and offline artifact integrity",
+  "business_panel_visible": true,
+  "population_display": "15,00,000",
+  "application_display": "6,69,375",
+  "actor_filter": "Gig Requester",
+  "actor_rows": 3,
+  "native_handoff_field_visible": true,
+  "kpis": 18,
+  "explicit_time_to_hire_endpoints": true,
+  "gig_completion_includes_pending_denominator": true,
+  "scenario_rows": 14,
+  "step22_excel_links": 3,
+  "full_data_links": 5,
+  "embedded_file_checks": 136,
+  "all_embedded_downloads_equal_saved_files": true,
+  "all_synthetic_gzip_sha256_match": true,
+  "result": "PASS",
+  "limits": "Synthetic and portable evidence only; no production load, native SQL, provider signature or authorization proof"
+}

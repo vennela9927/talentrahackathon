@@ -1,0 +1,464 @@
+[
+  [
+    1,
+    "Output Schema Definition",
+    "artifact_contracts/step_01_schema.json",
+    "c43c7d1e72bdbe8b09bfa61dbb975b5701ee864254f8f7f90a11f5131d2ae0e7",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    1,
+    "Schema Rating Scorecard",
+    "artifact_contracts/step_01_scorecard.json",
+    "10a22109e8dfa49c6baf8ca99b4772056cf095c54e817f4849c04278a8871e6e",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    1,
+    "Output Document",
+    "artifact_contracts/step_01_output.json",
+    "988ee5949eed0e776e61f03159e307e3f8089bad776544db777ba05542788028",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    2,
+    "Output Schema Definition",
+    "artifact_contracts/step_02_schema.json",
+    "3eaec612e5e08ee9823b45fcc4683048782d67915587082fb6b413091b31d24c",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    2,
+    "Schema Rating Scorecard",
+    "artifact_contracts/step_02_scorecard.json",
+    "da65c0a59d7319ce4f462c206f6f2dfbc236b77749cb84bf748f95e60d5a966f",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    2,
+    "Output Document",
+    "artifact_contracts/step_02_output.json",
+    "1b9b4613f3c96245be5931fe67e134e50183d1a34c2c4edb9fee560e69159dd4",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    3,
+    "Output Schema Definition",
+    "artifact_contracts/step_03_schema.json",
+    "e1473947c9eb49dcdd9d1066d659cfabe6bd65a2e7aa0e945a1476789bb6f5ac",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    3,
+    "Schema Rating Scorecard",
+    "artifact_contracts/step_03_scorecard.json",
+    "824fe4c2f48aa4753a158f4217ad8b4aed25983171ccdea76b9f490ced5b06ab",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    3,
+    "Output Document",
+    "artifact_contracts/step_03_output.json",
+    "48b0d250468fcf11bd164cba33a8c486b39cb1b26dd7f42e42a19a9937461633",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    4,
+    "Output Schema Definition",
+    "artifact_contracts/step_04_schema.json",
+    "eee919f63526fa5361825b034452684c9fad2302aa76fee418a8e91650804041",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    4,
+    "Schema Rating Scorecard",
+    "artifact_contracts/step_04_scorecard.json",
+    "b970cb6bc1b7a732861fa2fbfd5defcc79abc0cc33597643b808beb2365c0711",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    4,
+    "Output Document",
+    "artifact_contracts/step_04_output.json",
+    "3062d80667128151366ddecf84a46bb50cf9bf8d789284891733f5781b121d3e",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    5,
+    "Output Schema Definition",
+    "artifact_contracts/step_05_schema.json",
+    "f648190292b8b9704a31a870e5bd298e53639dd8e9a3240cadb035b54e2c4621",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    5,
+    "Schema Rating Scorecard",
+    "artifact_contracts/step_05_scorecard.json",
+    "bbf94ee0c96492cf61c70a9063fd868324c4329cdf01ad764a7ab251022cbeef",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    5,
+    "Output Document",
+    "artifact_contracts/step_05_output.json",
+    "ad0ecc2f1afe483d9ae1ac7f2f1aafe0aa4d8e361d9a510f60ccc0d9d5043816",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    6,
+    "Output Schema Definition",
+    "artifact_contracts/step_06_schema.json",
+    "cb3832b6bf42a18a2dc07d43b85ac895a4a13d5c0c8b3c5ca412068852c735a6",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    6,
+    "Schema Rating Scorecard",
+    "artifact_contracts/step_06_scorecard.json",
+    "9d2c99e76da2e131a42b99be5ecc13c88cded4913a611ae6adfc7c8fe0a2d7fa",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    6,
+    "Output Document",
+    "artifact_contracts/step_06_output.json",
+    "8cac0013aa8a44d32ac8ad421fa98ef7743423b748010a285594ab687ba3fb84",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    7,
+    "Output Schema Definition",
+    "artifact_contracts/step_07_schema.json",
+    "2c614988c953b891f32db7bd14d1727583298178ce670c4c0c8e9b84c1e2f385",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    7,
+    "Schema Rating Scorecard",
+    "artifact_contracts/step_07_scorecard.json",
+    "d84d395f40d67b7e2b97241713788b97bf2c5806ab12ea1bfd485fc60381f1b8",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    7,
+    "Output Document",
+    "artifact_contracts/step_07_output.json",
+    "46476f651b2ee0d345cc555cd444fd22b67b3cdee32c611e5ca00486b9347c89",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    8,
+    "Output Schema Definition",
+    "artifact_contracts/step_08_schema.json",
+    "6682cd78a95ca9c6dbb083444de65b0a56cfd4bea0b93c7fcbc4bac3ddace89f",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    8,
+    "Schema Rating Scorecard",
+    "artifact_contracts/step_08_scorecard.json",
+    "af26a55763d2b6cc67b7b61e9ad6b024aad6d89abe3fb6e0439ae65a4c57efeb",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    8,
+    "Output Document",
+    "artifact_contracts/step_08_output.json",
+    "dedabb6264070e5fe708b9f5912f94686061fa0e83c7e1f9590b2b7214d5837b",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    9,
+    "Output Schema Definition",
+    "artifact_contracts/step_09_schema.json",
+    "1c61f1ecf51721e56cd5b7ab617aef1747dbfb0d17b3848d73c1ffd253187c40",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    9,
+    "Schema Rating Scorecard",
+    "artifact_contracts/step_09_scorecard.json",
+    "6f9435a0e08d056de44ca9bd0a7b43a1d843b252cbb233d4db69010e49faa9aa",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    9,
+    "Output Document",
+    "artifact_contracts/step_09_output.json",
+    "3fba2047a5212657ff9a3487c4ed53b3562dd61c60f0bd115a69df0a4b2ffae5",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    10,
+    "Output Schema Definition",
+    "artifact_contracts/step_10_schema.json",
+    "5885067115f4207d68706123b6203e2b2a6d8fda240fbf7bd9be1a2aa5f5178b",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    10,
+    "Schema Rating Scorecard",
+    "artifact_contracts/step_10_scorecard.json",
+    "2d887feac5367be242794468bc3c2072797a9b3a94d231233e91f585027c7a93",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    10,
+    "Output Document",
+    "artifact_contracts/step_10_output.json",
+    "d9e0bdefbee700460759a987d7a15a71749a5c8bbf221fb555a2b2e56ad85502",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    11,
+    "Output Schema Definition",
+    "artifact_contracts/step_11_schema.json",
+    "4e0b9f45a4865ced52460ee874ee870870e8ba7f305d99a77b1430f95adbb025",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    11,
+    "Schema Rating Scorecard",
+    "artifact_contracts/step_11_scorecard.json",
+    "42cd47150dd8e90bd1f6d63ac02f09207401ea92c5ebc89ff5dd810910c240e6",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    11,
+    "Output Document",
+    "artifact_contracts/step_11_output.json",
+    "514c203cfcb1d4c40fce9ef4d0015f2b9424b5bfbf06a6ce5d0bbe34288f924e",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    12,
+    "Output Schema Definition",
+    "artifact_contracts/step_12_schema.json",
+    "154b1f4a0aa49a5d276036afe5c91fdb3449983d1608721f179d2fb02c7fdd36",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    12,
+    "Schema Rating Scorecard",
+    "artifact_contracts/step_12_scorecard.json",
+    "12413c123f90256697f5c06ca36a04c8dd0d868c3aacec9d27341184c8acb21d",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    12,
+    "Output Document",
+    "artifact_contracts/step_12_output.json",
+    "d1bfe138ea373486adf580be3dafefbaaa58d9def31b7c6e993caca38899e467",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    13,
+    "Output Schema Definition",
+    "artifact_contracts/step_13_schema.json",
+    "f2d14157f9aeca43a720a634b22dd6aed266fd3627526de36fbdb025c8e37c1b",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    13,
+    "Schema Rating Scorecard",
+    "artifact_contracts/step_13_scorecard.json",
+    "5d7f911bb33075e0c2cc0df809afaeb97b79e65152771954f33b572a7eb5827e",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    13,
+    "Output Document",
+    "artifact_contracts/step_13_output.json",
+    "7733e01b17f8f04a26a86acd33f16eac09f26187bafccc66ede3a5b73a94911b",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    14,
+    "Output Schema Definition",
+    "artifact_contracts/step_14_schema.json",
+    "3699da6ddd4ff8a287518dfa96cdba1ce494a6c4dbcf1003d4892f4d6b672c2e",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    14,
+    "Schema Rating Scorecard",
+    "artifact_contracts/step_14_scorecard.json",
+    "4d95c56454c7426f322f4357cd786e5f95c4cc59edd8c33c3c0db53ce71d0748",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    14,
+    "Output Document",
+    "artifact_contracts/step_14_output.json",
+    "11993341a6d7c3145936665880571bfbc29546464563b32b2b554cc2efd69e4a",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    15,
+    "Output Schema Definition",
+    "artifact_contracts/step_15_schema.json",
+    "59f0918dd72ce09ccfd58506700acbd0abedac91c6c41dee4b9570a6ad7dd112",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    15,
+    "Schema Rating Scorecard",
+    "artifact_contracts/step_15_scorecard.json",
+    "b4923a6b2ff2eb945160df3982a73a7356d5d5f9ac5a60368b3e73fa45e7323c",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    15,
+    "Output Document",
+    "artifact_contracts/step_15_output.json",
+    "51dd11947c9ffa06e06d8106bc35ff6d3d30004c944dd2aeaaadd725d9027c8c",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    16,
+    "Output Schema Definition",
+    "artifact_contracts/step_16_schema.json",
+    "8ed0673e9689dded89a89d32ffc921f6d27ccce6191d5a8dc76db91612d41d13",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    16,
+    "Schema Rating Scorecard",
+    "artifact_contracts/step_16_scorecard.json",
+    "7bfff00c8f941ca593d8567cd5633d6a52d3a43e79a255fc2029b2646b93a9c5",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    16,
+    "Output Document",
+    "artifact_contracts/step_16_output.json",
+    "7ab2faf932fb707614acbf6c6d7395cc6771b3ebe3006bfb52001edb5476e5ca",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    17,
+    "Output Schema Definition",
+    "artifact_contracts/step_17_schema.json",
+    "2b2be6f9597ba2a9fe35e1660802f29a7875c37107bb01f811c217ff230f6871",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    17,
+    "Schema Rating Scorecard",
+    "artifact_contracts/step_17_scorecard.json",
+    "cd6914f55d16d91d3df46cf98c176d35c2bd682a2ce3bba5067a9b9d1e7d9651",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    17,
+    "Output Document",
+    "artifact_contracts/step_17_output.json",
+    "ef336c8fe8e92b117713e3fe8e5f3c15793b8335b84354d0d4462a5bce8566d5",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    18,
+    "Output Schema Definition",
+    "artifact_contracts/step_18_schema.json",
+    "65f9e36478b49eb49d9706a539004a7db8beb77d4244854073a4b7a3ef218fa2",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    18,
+    "Schema Rating Scorecard",
+    "artifact_contracts/step_18_scorecard.json",
+    "3c56249ac56d174061e9007ee7936a7ec74a6fc86ab4149abb20183fd89613cd",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    18,
+    "Output Document",
+    "artifact_contracts/step_18_output.json",
+    "880ef56b42f4b52fd3c283490393c7b5d99added640a308dbda90bd6f42d6087",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    19,
+    "Output Schema Definition",
+    "artifact_contracts/step_19_schema.json",
+    "48639c426e1e992b849016a973b8b9ed52a471eee34b5a1153c7a2179a8d1407",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    19,
+    "Schema Rating Scorecard",
+    "artifact_contracts/step_19_scorecard.json",
+    "249f86107a0652040d78f733ecb8e46767a1a20f3cb0c075df38af4e5a847625",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    19,
+    "Output Document",
+    "artifact_contracts/step_19_output.json",
+    "823801b1f358772844dabbaf6a236cf0192863c66c968cfed3687a658ff24827",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    20,
+    "Output Schema Definition",
+    "artifact_contracts/step_20_schema.json",
+    "6dbfd85a2ba9c5f6323dee45a2b38f0ef0a9892eb7768b653fd9df7057e6d480",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    20,
+    "Schema Rating Scorecard",
+    "artifact_contracts/step_20_scorecard.json",
+    "8973c3b34bce46cd0aad671356f6433884315544dec699427e8c086e19145efc",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    20,
+    "Output Document",
+    "artifact_contracts/step_20_output.json",
+    "2afd11a7f9cbf7204c69f7dbfcbbf875f71d930978cd174426ebd524704d6032",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    21,
+    "Output Schema Definition",
+    "artifact_contracts/step_21_schema.json",
+    "ee4057915cfdaf2178dc6dc7a7399944f335f1db6c5e5dfb1f5717519e7d16fd",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    21,
+    "Schema Rating Scorecard",
+    "artifact_contracts/step_21_scorecard.json",
+    "4a834e7edbc6ecff83155e393a4cbd91aaa57597d6196417201c0e9eb9f7876b",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    21,
+    "Output Document",
+    "artifact_contracts/step_21_output.json",
+    "9c237d32d24ae714f013902c81c67acbcdc7a8f9dfe18141c4abd7271b9066d6",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    22,
+    "Output Schema Definition",
+    "artifact_contracts/step_22_schema.json",
+    "36c2d3c258acf7f2ee7f06e7f4176e4a1b5d91fb571c73971d3d55ade09d72da",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    22,
+    "Schema Rating Scorecard",
+    "artifact_contracts/step_22_scorecard.json",
+    "9e4b8860c55f8e23e2248606d8250d6eb3b1ab4b825511f1bf7d7dda4208a44f",
+    "One serialized contract per deliverable; Python checked against actual records"
+  ],
+  [
+    22,
+    "Output Document",
+    "artifact_contracts/step_22_output.json",
+    "71572715b941cc388b5a60f819e6c580ed6029eec764d0f23fa9fe7cb79bf88c",
+    "v7 retained sections plus mini/seed output contracts"
+  ]
+]

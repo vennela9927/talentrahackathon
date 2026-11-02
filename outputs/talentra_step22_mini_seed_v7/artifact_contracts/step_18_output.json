@@ -1,0 +1,911 @@
+{
+  "title": "Step18 Output Document",
+  "type": "object",
+  "properties": {
+    "Unified rules v2": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Rule ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Title": {
+            "type": [
+              "string"
+            ]
+          },
+          "Statement": {
+            "type": [
+              "string"
+            ]
+          },
+          "Objects": {
+            "type": [
+              "string"
+            ]
+          },
+          "Owner": {
+            "type": [
+              "string"
+            ]
+          },
+          "Enforcement": {
+            "type": [
+              "string"
+            ]
+          },
+          "Requirement ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Planned tests": {
+            "type": [
+              "string"
+            ]
+          },
+          "Version": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Rule ID",
+          "Title",
+          "Statement",
+          "Objects",
+          "Owner",
+          "Enforcement",
+          "Requirement ID",
+          "Planned tests",
+          "Version",
+          "Source"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Decision tables": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Decision ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Action": {
+            "type": [
+              "string"
+            ]
+          },
+          "Preconditions": {
+            "type": [
+              "string"
+            ]
+          },
+          "Outcome": {
+            "type": [
+              "string"
+            ]
+          },
+          "Rule IDs": {
+            "type": [
+              "string"
+            ]
+          },
+          "Alternate result": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Decision ID",
+          "Action",
+          "Preconditions",
+          "Outcome",
+          "Rule IDs",
+          "Alternate result"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Enum vocabularies": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Table": {
+            "type": [
+              "string"
+            ]
+          },
+          "Column": {
+            "type": [
+              "string"
+            ]
+          },
+          "Domain ID": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Allowed codes": {
+            "type": [
+              "string"
+            ]
+          },
+          "Enforcement": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Table",
+          "Column",
+          "Domain ID",
+          "Allowed codes",
+          "Enforcement",
+          "Source"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Production rules v3": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Rule ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Title": {
+            "type": [
+              "string"
+            ]
+          },
+          "Statement": {
+            "type": [
+              "string"
+            ]
+          },
+          "Objects": {
+            "type": [
+              "string"
+            ]
+          },
+          "Enforcement": {
+            "type": [
+              "string"
+            ]
+          },
+          "Owner": {
+            "type": [
+              "string"
+            ]
+          },
+          "Positive case": {
+            "type": [
+              "string"
+            ]
+          },
+          "Negative case": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Rule ID",
+          "Title",
+          "Statement",
+          "Objects",
+          "Enforcement",
+          "Owner",
+          "Positive case",
+          "Negative case"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T193 1. Unified Rules Catalogue v2": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Rule ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Category": {
+            "type": [
+              "string"
+            ]
+          },
+          "Statement": {
+            "type": [
+              "string"
+            ]
+          },
+          "Owner": {
+            "type": [
+              "string"
+            ]
+          },
+          "Enforcement Point": {
+            "type": [
+              "string"
+            ]
+          },
+          "Mechanism": {
+            "type": [
+              "string"
+            ]
+          },
+          "Planned Test": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Rule ID",
+          "Category",
+          "Statement",
+          "Owner",
+          "Enforcement Point",
+          "Mechanism",
+          "Planned Test",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T194 ▶ DT-01 — Candidate Profile Visibili": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Condition / Outcome": {
+            "type": [
+              "string"
+            ]
+          },
+          "R1: Owner": {
+            "type": [
+              "string"
+            ]
+          },
+          "R2: Platform Staff": {
+            "type": [
+              "string"
+            ]
+          },
+          "R3: Recruiter / Consultant (Valid)": {
+            "type": [
+              "string"
+            ]
+          },
+          "R4: Profile Soft-Deleted": {
+            "type": [
+              "string"
+            ]
+          },
+          "R5: Visibility = Hidden (3)": {
+            "type": [
+              "string"
+            ]
+          },
+          "R6: Withdrew Purpose 3 Consent": {
+            "type": [
+              "string"
+            ]
+          },
+          "R7: Candidate Blocked Viewer/Org": {
+            "type": [
+              "string"
+            ]
+          },
+          "R8: Guest / Other Candidate": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Condition / Outcome",
+          "R1: Owner",
+          "R2: Platform Staff",
+          "R3: Recruiter / Consultant (Valid)",
+          "R4: Profile Soft-Deleted",
+          "R5: Visibility = Hidden (3)",
+          "R6: Withdrew Purpose 3 Consent",
+          "R7: Candidate Blocked Viewer/Org",
+          "R8: Guest / Other Candidate",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T195 ▶ DT-02 — Notification Suppression a": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Condition / Outcome": {
+            "type": [
+              "string"
+            ]
+          },
+          "R1: Security Notice": {
+            "type": [
+              "string"
+            ]
+          },
+          "R2: Explicit Channel Opt-Out": {
+            "type": [
+              "string"
+            ]
+          },
+          "R3: Marketing without Purpose 4 Consent": {
+            "type": [
+              "string"
+            ]
+          },
+          "R4: WhatsApp without Purpose 5 Consent": {
+            "type": [
+              "string"
+            ]
+          },
+          "R5: Default / Consented": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Condition / Outcome",
+          "R1: Security Notice",
+          "R2: Explicit Channel Opt-Out",
+          "R3: Marketing without Purpose 4 Consent",
+          "R4: WhatsApp without Purpose 5 Consent",
+          "R5: Default / Consented",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T196 ▶ DT-03 — Login & Session Admission ": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Condition / Outcome": {
+            "type": [
+              "string"
+            ]
+          },
+          "R1: Inactive / Erased User": {
+            "type": [
+              "string"
+            ]
+          },
+          "R2: Brute-Force Locked": {
+            "type": [
+              "string"
+            ]
+          },
+          "R3: Device Revoked": {
+            "type": [
+              "string"
+            ]
+          },
+          "R4: Existing Active Device": {
+            "type": [
+              "string"
+            ]
+          },
+          "R5: New Device Under Limit": {
+            "type": [
+              "string"
+            ]
+          },
+          "R6: New Device At/Over Limit": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Condition / Outcome",
+          "R1: Inactive / Erased User",
+          "R2: Brute-Force Locked",
+          "R3: Device Revoked",
+          "R4: Existing Active Device",
+          "R5: New Device Under Limit",
+          "R6: New Device At/Over Limit",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T197 ▶ DT-04 — Paid Profile Download & Co": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Condition / Outcome": {
+            "type": [
+              "string"
+            ]
+          },
+          "R1: Not Org Member / No Perm": {
+            "type": [
+              "string"
+            ]
+          },
+          "R2: Candidate Not Visible / Blocked": {
+            "type": [
+              "string"
+            ]
+          },
+          "R3: Downloaded < 30 Days Ago": {
+            "type": [
+              "string"
+            ]
+          },
+          "R4: First Download (Wallet >= 1 cr)": {
+            "type": [
+              "string"
+            ]
+          },
+          "R5: First Download (Wallet = 0 cr)": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Condition / Outcome",
+          "R1: Not Org Member / No Perm",
+          "R2: Candidate Not Visible / Blocked",
+          "R3: Downloaded < 30 Days Ago",
+          "R4: First Download (Wallet >= 1 cr)",
+          "R5: First Download (Wallet = 0 cr)",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T198 ▶ DT-05 — Payment Gateway Webhook Pr": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Condition / Outcome": {
+            "type": [
+              "string"
+            ]
+          },
+          "R1: Duplicate gateway_event_ref": {
+            "type": [
+              "string"
+            ]
+          },
+          "R2: Amount Mismatch": {
+            "type": [
+              "string"
+            ]
+          },
+          "R3: Out-of-Order / Late State": {
+            "type": [
+              "string"
+            ]
+          },
+          "R4: Valid captured (Recharge/Sub)": {
+            "type": [
+              "string"
+            ]
+          },
+          "R5: Valid refunded (Credits Unspent)": {
+            "type": [
+              "string"
+            ]
+          },
+          "R6: Valid refunded (Credits Spent)": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Condition / Outcome",
+          "R1: Duplicate gateway_event_ref",
+          "R2: Amount Mismatch",
+          "R3: Out-of-Order / Late State",
+          "R4: Valid captured (Recharge/Sub)",
+          "R5: Valid refunded (Credits Unspent)",
+          "R6: Valid refunded (Credits Spent)",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Hybrid rule crosswalk": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "B rule ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "B statement": {
+            "type": [
+              "string"
+            ]
+          },
+          "Related A rule": {
+            "type": [
+              "string"
+            ]
+          },
+          "A statement": {
+            "type": [
+              "string"
+            ]
+          },
+          "Lexical similarity": {
+            "type": [
+              "number"
+            ]
+          },
+          "Mapping confidence": {
+            "type": [
+              "string"
+            ]
+          },
+          "B source": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "B rule ID",
+          "B statement",
+          "Related A rule",
+          "A statement",
+          "Lexical similarity",
+          "Mapping confidence",
+          "B source"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Cross-source comparison": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Comparison ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Step": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Decision or field": {
+            "type": [
+              "string"
+            ]
+          },
+          "A value": {
+            "type": [
+              "string"
+            ]
+          },
+          "B value": {
+            "type": [
+              "string"
+            ]
+          },
+          "Agreement": {
+            "type": [
+              "string"
+            ]
+          },
+          "B locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Hybrid conclusion": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Comparison ID",
+          "Step",
+          "Decision or field",
+          "A value",
+          "B value",
+          "Agreement",
+          "B locator",
+          "Hybrid conclusion"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Hybrid handoff": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Handoff ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Concern": {
+            "type": [
+              "string"
+            ]
+          },
+          "Inputs": {
+            "type": [
+              "string"
+            ]
+          },
+          "Next use": {
+            "type": [
+              "string"
+            ]
+          },
+          "Acceptance condition": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proposed owner": {
+            "type": [
+              "string"
+            ]
+          },
+          "Status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Reason": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Handoff ID",
+          "Concern",
+          "Inputs",
+          "Next use",
+          "Acceptance condition",
+          "Proposed owner",
+          "Status",
+          "Reason"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Human review prompts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Question ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Question": {
+            "type": [
+              "string"
+            ]
+          },
+          "Expected evidence anchor": {
+            "type": [
+              "string"
+            ]
+          },
+          "Human response": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "Reviewer score 0 to 5": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "Review status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proposed reviewer role": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Question ID",
+          "Question",
+          "Expected evidence anchor",
+          "Human response",
+          "Reviewer score 0 to 5",
+          "Review status",
+          "Proposed reviewer role"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Acceptance cases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Case ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Case": {
+            "type": [
+              "string"
+            ]
+          },
+          "Expected result": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proof layer": {
+            "type": [
+              "string"
+            ]
+          },
+          "Status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Owner": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Case ID",
+          "Case",
+          "Expected result",
+          "Proof layer",
+          "Status",
+          "Owner"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "Unified rules v2",
+    "Decision tables",
+    "Enum vocabularies",
+    "Production rules v3",
+    "B T193 1. Unified Rules Catalogue v2",
+    "B T194 ▶ DT-01 — Candidate Profile Visibili",
+    "B T195 ▶ DT-02 — Notification Suppression a",
+    "B T196 ▶ DT-03 — Login & Session Admission ",
+    "B T197 ▶ DT-04 — Paid Profile Download & Co",
+    "B T198 ▶ DT-05 — Payment Gateway Webhook Pr",
+    "Hybrid rule crosswalk",
+    "Cross-source comparison",
+    "Hybrid handoff",
+    "Human review prompts",
+    "Acceptance cases"
+  ],
+  "additionalProperties": false
+}

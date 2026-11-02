@@ -1,0 +1,7 @@
+{
+  "declared_columns": 1099,
+  "dictionary_columns": 1099,
+  "native_postgresql": "NOT RUN",
+  "portable_tables": 110,
+  "static_mismatches": []
+}

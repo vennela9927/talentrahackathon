@@ -1,0 +1,3854 @@
+[
+  [
+    "V5-00001",
+    1,
+    "contract",
+    "Requirements column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00002",
+    1,
+    "contract",
+    "Scope column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00003",
+    1,
+    "contract",
+    "Decisions column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00004",
+    1,
+    "contract",
+    "Questions column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00005",
+    1,
+    "contract",
+    "Release obligations column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00006",
+    1,
+    "contract",
+    "B T004 Workbook introduction column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00007",
+    1,
+    "contract",
+    "B T005 Open questions (ranked by design imp column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00008",
+    1,
+    "contract",
+    "Hybrid requirement crosswalk column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00009",
+    1,
+    "contract",
+    "Cross-source comparison column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00010",
+    1,
+    "contract",
+    "Hybrid handoff column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00011",
+    1,
+    "contract",
+    "Human review prompts column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00012",
+    1,
+    "contract",
+    "Acceptance cases column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00013",
+    2,
+    "contract",
+    "Personas column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00014",
+    2,
+    "contract",
+    "Permissions column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00015",
+    2,
+    "contract",
+    "Goals column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00016",
+    2,
+    "contract",
+    "System responsibilities column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00017",
+    2,
+    "contract",
+    "B T006 1. Stakeholder map column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00018",
+    2,
+    "contract",
+    "B T007 ▶ Frequency of use and edge actors column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00019",
+    2,
+    "contract",
+    "B T008 3. Roles and permissions column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00020",
+    2,
+    "contract",
+    "B T009 3. Roles and permissions column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00021",
+    2,
+    "contract",
+    "Cross-source comparison column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00022",
+    2,
+    "contract",
+    "Hybrid handoff column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00023",
+    2,
+    "contract",
+    "Human review prompts column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00024",
+    2,
+    "contract",
+    "Acceptance cases column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00025",
+    3,
+    "contract",
+    "Features column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00026",
+    3,
+    "contract",
+    "Competitor matrix column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00027",
+    3,
+    "contract",
+    "Discovery decisions column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00028",
+    3,
+    "contract",
+    "Scale safety features column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00029",
+    3,
+    "contract",
+    "Hybrid feature implications column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00030",
+    3,
+    "contract",
+    "Hybrid handoff column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00031",
+    3,
+    "contract",
+    "Human review prompts column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00032",
+    3,
+    "contract",
+    "Acceptance cases column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00033",
+    4,
+    "contract",
+    "NFR register column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00034",
+    4,
+    "contract",
+    "Sizing assumptions column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00035",
+    4,
+    "contract",
+    "Capacity inputs column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00036",
+    4,
+    "contract",
+    "Scale cases column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00037",
+    4,
+    "contract",
+    "B T015 4. Access patterns column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00038",
+    4,
+    "contract",
+    "Cross-source comparison column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00039",
+    4,
+    "contract",
+    "Hybrid handoff column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00040",
+    4,
+    "contract",
+    "Human review prompts column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00041",
+    4,
+    "contract",
+    "Acceptance cases column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00042",
+    5,
+    "contract",
+    "Workflow maps column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00043",
+    5,
+    "contract",
+    "Workflow operations column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00044",
+    5,
+    "contract",
+    "Integration boundaries column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00045",
+    5,
+    "contract",
+    "Failure paths column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00046",
+    5,
+    "contract",
+    "B T020 Workbook introduction column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00047",
+    5,
+    "contract",
+    "B T021 ▶ WF-14 Data erasure (DPDP Act 2023) column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00048",
+    5,
+    "contract",
+    "B T022 ▶ WF-14 Data erasure (DPDP Act 2023) column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00049",
+    5,
+    "contract",
+    "Cross-source comparison column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00050",
+    5,
+    "contract",
+    "Hybrid handoff column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00051",
+    5,
+    "contract",
+    "Human review prompts column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00052",
+    5,
+    "contract",
+    "Acceptance cases column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00053",
+    6,
+    "contract",
+    "Entity catalogue column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00054",
+    6,
+    "contract",
+    "Module coverage column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00055",
+    6,
+    "contract",
+    "Design deviations column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00056",
+    6,
+    "contract",
+    "Platform entities column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00057",
+    6,
+    "contract",
+    "B T010 1. Data entity inventory column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00058",
+    6,
+    "contract",
+    "B T023 1. Catalogue column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00059",
+    6,
+    "contract",
+    "B T024 2. Hidden entities (the playbook's \" column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00060",
+    6,
+    "contract",
+    "B T025 3. Synonyms merged column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00061",
+    6,
+    "contract",
+    "B T026 4. Nouns that are attributes, not en column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00062",
+    6,
+    "contract",
+    "B T027 5. Deferred entities (designed at co column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00063",
+    6,
+    "contract",
+    "Hybrid entity crosswalk column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00064",
+    6,
+    "contract",
+    "Cross-source comparison column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00065",
+    6,
+    "contract",
+    "Hybrid handoff column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00066",
+    6,
+    "contract",
+    "Human review prompts column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00067",
+    6,
+    "contract",
+    "Acceptance cases column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00068",
+    7,
+    "contract",
+    "Attributes column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00069",
+    7,
+    "contract",
+    "Derived metrics column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00070",
+    7,
+    "contract",
+    "Scale fields column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00071",
+    7,
+    "contract",
+    "Hybrid attribute mapping column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00072",
+    7,
+    "contract",
+    "Cross-source comparison column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00073",
+    7,
+    "contract",
+    "Canonical hybrid attributes column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00074",
+    7,
+    "contract",
+    "Hybrid handoff column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00075",
+    7,
+    "contract",
+    "Human review prompts column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00076",
+    7,
+    "contract",
+    "Acceptance cases column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00077",
+    8,
+    "contract",
+    "States column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00078",
+    8,
+    "contract",
+    "Transitions column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00079",
+    8,
+    "contract",
+    "Illegal transitions column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00080",
+    8,
+    "contract",
+    "Integration state machine column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00081",
+    8,
+    "contract",
+    "B T089 Workbook introduction column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00082",
+    8,
+    "contract",
+    "B T090 Workbook introduction column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00083",
+    8,
+    "contract",
+    "B T091 Workbook introduction column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00084",
+    8,
+    "contract",
+    "B T092 1. ENT-26 Application — application. column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00085",
+    8,
+    "contract",
+    "B T093 1. ENT-26 Application — application. column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00086",
+    8,
+    "contract",
+    "B T094 2. ENT-22 Job requirement — job_requ column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00087",
+    8,
+    "contract",
+    "B T095 2. ENT-22 Job requirement — job_requ column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00088",
+    8,
+    "contract",
+    "B T096 3. ENT-10 Organisation verification  column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00089",
+    8,
+    "contract",
+    "B T097 3. ENT-10 Organisation verification  column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00090",
+    8,
+    "contract",
+    "B T098 4. ENT-12 Tax identifier verificatio column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00091",
+    8,
+    "contract",
+    "B T099 5. ENT-01 User account — app_user.ac column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00092",
+    8,
+    "contract",
+    "B T100 5. ENT-01 User account — app_user.ac column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00093",
+    8,
+    "contract",
+    "B T101 6. ENT-34 Payment order — payment_or column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00094",
+    8,
+    "contract",
+    "B T102 6. ENT-34 Payment order — payment_or column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00095",
+    8,
+    "contract",
+    "B T103 7. ENT-31 Subscription — derived fro column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00096",
+    8,
+    "contract",
+    "B T104 7. ENT-31 Subscription — derived fro column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00097",
+    8,
+    "contract",
+    "B T105 8. ENT-09 Session — derived from end column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00098",
+    8,
+    "contract",
+    "B T106 9. ENT-08 Device — derived from revo column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00099",
+    8,
+    "contract",
+    "B T107 10. ENT-13 Membership and 11. ENT-20 column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00100",
+    8,
+    "contract",
+    "B T108 10. ENT-13 Membership and 11. ENT-20 column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00101",
+    8,
+    "contract",
+    "B T109 12. ENT-39 Notification — notificati column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00102",
+    8,
+    "contract",
+    "B T110 13. ENT-33 Ledger entry and 14. ENT- column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00103",
+    8,
+    "contract",
+    "Cross-source comparison column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00104",
+    8,
+    "contract",
+    "Hybrid handoff column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00105",
+    8,
+    "contract",
+    "Human review prompts column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00106",
+    8,
+    "contract",
+    "Acceptance cases column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00107",
+    9,
+    "contract",
+    "Relationships column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00108",
+    9,
+    "contract",
+    "Normalization column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00109",
+    9,
+    "contract",
+    "Platform relationships column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00110",
+    9,
+    "contract",
+    "Account scope keys column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00111",
+    9,
+    "contract",
+    "B T019 3. Entity definitions and business r column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00112",
+    9,
+    "contract",
+    "B T111 2. Relationship register column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00113",
+    9,
+    "contract",
+    "B T112 4. Many-to-many relationships resolv column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00114",
+    9,
+    "contract",
+    "B T113 5. Normalisation column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00115",
+    9,
+    "contract",
+    "B T114 6. How history is kept, and why (the column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00116",
+    9,
+    "contract",
+    "Cross-source comparison column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00117",
+    9,
+    "contract",
+    "Hybrid handoff column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00118",
+    9,
+    "contract",
+    "Human review prompts column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00119",
+    9,
+    "contract",
+    "Acceptance cases column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00120",
+    10,
+    "contract",
+    "Dictionary column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00121",
+    10,
+    "contract",
+    "Domains column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00122",
+    10,
+    "contract",
+    "Dictionary evolution column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00123",
+    10,
+    "contract",
+    "Cross-source comparison column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00124",
+    10,
+    "contract",
+    "Hybrid dictionary additions column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00125",
+    10,
+    "contract",
+    "Hybrid handoff column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00126",
+    10,
+    "contract",
+    "Human review prompts column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00127",
+    10,
+    "contract",
+    "Acceptance cases column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00128",
+    11,
+    "contract",
+    "Rules column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00129",
+    11,
+    "contract",
+    "Compliance column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00130",
+    11,
+    "contract",
+    "Constraints column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00131",
+    11,
+    "contract",
+    "Production rules column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00132",
+    11,
+    "contract",
+    "B T164 1. Business and cross-table rules column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00133",
+    11,
+    "contract",
+    "B T165 2. Standard domains (rule group 3) column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00134",
+    11,
+    "contract",
+    "B T166 3. Single-table constraints, per tab column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00135",
+    11,
+    "contract",
+    "B T167 4. Cross-table rules (the playbook's column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00136",
+    11,
+    "contract",
+    "Cross-source comparison column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00137",
+    11,
+    "contract",
+    "Hybrid handoff column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00138",
+    11,
+    "contract",
+    "Human review prompts column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00139",
+    11,
+    "contract",
+    "Acceptance cases column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00140",
+    12,
+    "contract",
+    "Classification column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00141",
+    12,
+    "contract",
+    "Retention decisions column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00142",
+    12,
+    "contract",
+    "Threat controls column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00143",
+    12,
+    "contract",
+    "Platform privacy column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00144",
+    12,
+    "contract",
+    "B T011 2. Data classification summary column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00145",
+    12,
+    "contract",
+    "B T016 5. Retention and lifecycle column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00146",
+    12,
+    "contract",
+    "B T168 2. Masking codes column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00147",
+    12,
+    "contract",
+    "B T169 3. Register of personal and sensitiv column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00148",
+    12,
+    "contract",
+    "B T170 4. Reclassification found by the rev column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00149",
+    12,
+    "contract",
+    "B T171 5. Entity summary column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00150",
+    12,
+    "contract",
+    "Cross-source comparison column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00151",
+    12,
+    "contract",
+    "Hybrid field privacy column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00152",
+    12,
+    "contract",
+    "Hybrid handoff column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00153",
+    12,
+    "contract",
+    "Human review prompts column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00154",
+    12,
+    "contract",
+    "Acceptance cases column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00155",
+    13,
+    "contract",
+    "Volumetrics column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00156",
+    13,
+    "contract",
+    "Scale profiles column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00157",
+    13,
+    "contract",
+    "Generation distributions column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00158",
+    13,
+    "contract",
+    "Storage and growth column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00159",
+    13,
+    "contract",
+    "B T012 3. Volumetrics and capacity column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00160",
+    13,
+    "contract",
+    "B T013 3. Volumetrics and capacity column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00161",
+    13,
+    "contract",
+    "B T014 3. Volumetrics and capacity column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00162",
+    13,
+    "contract",
+    "B T172 1. Scale Tiers column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00163",
+    13,
+    "contract",
+    "B T173 2. Table Volumetric Sheet column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00164",
+    13,
+    "contract",
+    "B T174 3. Cardinality and Skew Distribution column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00165",
+    13,
+    "contract",
+    "B T175 4. Null-Rate Profile for Key Nullabl column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00166",
+    13,
+    "contract",
+    "B T176 5. Seasonality, Peak Days and Burst  column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00167",
+    13,
+    "contract",
+    "Cross-source comparison column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00168",
+    13,
+    "contract",
+    "Hybrid handoff column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00169",
+    13,
+    "contract",
+    "Human review prompts column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00170",
+    13,
+    "contract",
+    "Acceptance cases column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00171",
+    14,
+    "contract",
+    "Sample manifest column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00172",
+    14,
+    "contract",
+    "Scenarios column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00173",
+    14,
+    "contract",
+    "Invalid fixtures column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00174",
+    14,
+    "contract",
+    "Golden answers column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00175",
+    14,
+    "contract",
+    "Integration fixtures column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00176",
+    14,
+    "contract",
+    "B T018 7. Data quality: rules, distribution column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00177",
+    14,
+    "contract",
+    "B T178 2. State and Lookup Coverage Proof column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00178",
+    14,
+    "contract",
+    "B T179 3. Golden Dataset with Pre-Known Ans column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00179",
+    14,
+    "contract",
+    "B T180 4. Planted Data-Quality Findings column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00180",
+    14,
+    "contract",
+    "B T181 5. Deliberate Invalid Rows (Negative column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00181",
+    14,
+    "contract",
+    "Cross-source comparison column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00182",
+    14,
+    "contract",
+    "Hybrid synthetic fixtures column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00183",
+    14,
+    "contract",
+    "Hybrid handoff column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00184",
+    14,
+    "contract",
+    "Human review prompts column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00185",
+    14,
+    "contract",
+    "Acceptance cases column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00186",
+    15,
+    "contract",
+    "Contract tests column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00187",
+    15,
+    "contract",
+    "Database subset column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00188",
+    15,
+    "contract",
+    "Test coverage column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00189",
+    15,
+    "contract",
+    "Execution limits column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00190",
+    15,
+    "contract",
+    "V3 portable checks column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00191",
+    15,
+    "contract",
+    "B T183 2. Structural and Catalogue Test Cas column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00192",
+    15,
+    "contract",
+    "B T184 3. Constraint and Domain Positive/Ne column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00193",
+    15,
+    "contract",
+    "B T185 4. Seeded Data-Quality Invariants (R column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00194",
+    15,
+    "contract",
+    "Cross-source comparison column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00195",
+    15,
+    "contract",
+    "Hybrid handoff column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00196",
+    15,
+    "contract",
+    "Human review prompts column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00197",
+    15,
+    "contract",
+    "Acceptance cases column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00198",
+    16,
+    "contract",
+    "Workflow coverage column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00199",
+    16,
+    "contract",
+    "Gap register column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00200",
+    16,
+    "contract",
+    "Gate assessment column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00201",
+    16,
+    "contract",
+    "Integration workflow coverage column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00202",
+    16,
+    "contract",
+    "B T028 ▶ WF-01 Candidate registration and p column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00203",
+    16,
+    "contract",
+    "B T029 ▶ WF-02 Employer registration and ve column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00204",
+    16,
+    "contract",
+    "B T030 ▶ WF-03 Job requirement posting column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00205",
+    16,
+    "contract",
+    "B T031 ▶ WF-04 Job search and application column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00206",
+    16,
+    "contract",
+    "B T032 ▶ WF-05 Application pipeline column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00207",
+    16,
+    "contract",
+    "B T033 ▶ WF-06 Candidate sourcing and profi column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00208",
+    16,
+    "contract",
+    "B T034 ▶ WF-07 Subscription, recharge and c column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00209",
+    16,
+    "contract",
+    "B T035 ▶ WF-08 Login with device limit column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00210",
+    16,
+    "contract",
+    "B T036 ▶ WF-09 Blocking column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00211",
+    16,
+    "contract",
+    "B T037 ▶ WF-10 Notifications and job alerts column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00212",
+    16,
+    "contract",
+    "B T038 ▶ WF-14 Data erasure (DPDP Act 2023) column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00213",
+    16,
+    "contract",
+    "B T039 ▶ PLATFORM Cross-cutting platform pr column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00214",
+    16,
+    "contract",
+    "B T187 1. Workflow × Table Coverage Matrix column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00215",
+    16,
+    "contract",
+    "B T188 3. Gap List Discovered During Walkth column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00216",
+    16,
+    "contract",
+    "Cross-source comparison column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00217",
+    16,
+    "contract",
+    "Hybrid handoff column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00218",
+    16,
+    "contract",
+    "Human review prompts column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00219",
+    16,
+    "contract",
+    "Acceptance cases column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00220",
+    17,
+    "contract",
+    "Change log column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00221",
+    17,
+    "contract",
+    "Design comparison column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00222",
+    17,
+    "contract",
+    "Gap closure column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00223",
+    17,
+    "contract",
+    "Refined entities column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00224",
+    17,
+    "contract",
+    "V3 refinement log column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00225",
+    17,
+    "contract",
+    "B T190 1. Refinement Change Log (V013__phas column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00226",
+    17,
+    "contract",
+    "B T191 3. Regression Verification column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00227",
+    17,
+    "contract",
+    "Hybrid decision log column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00228",
+    17,
+    "contract",
+    "Cross-source comparison column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00229",
+    17,
+    "contract",
+    "Hybrid handoff column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00230",
+    17,
+    "contract",
+    "Human review prompts column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00231",
+    17,
+    "contract",
+    "Acceptance cases column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00232",
+    18,
+    "contract",
+    "Unified rules v2 column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00233",
+    18,
+    "contract",
+    "Decision tables column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00234",
+    18,
+    "contract",
+    "Enum vocabularies column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00235",
+    18,
+    "contract",
+    "Production rules v3 column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00236",
+    18,
+    "contract",
+    "B T193 1. Unified Rules Catalogue v2 column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00237",
+    18,
+    "contract",
+    "B T194 ▶ DT-01 — Candidate Profile Visibili column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00238",
+    18,
+    "contract",
+    "B T195 ▶ DT-02 — Notification Suppression a column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00239",
+    18,
+    "contract",
+    "B T196 ▶ DT-03 — Login & Session Admission  column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00240",
+    18,
+    "contract",
+    "B T197 ▶ DT-04 — Paid Profile Download & Co column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00241",
+    18,
+    "contract",
+    "B T198 ▶ DT-05 — Payment Gateway Webhook Pr column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00242",
+    18,
+    "contract",
+    "Hybrid rule crosswalk column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00243",
+    18,
+    "contract",
+    "Cross-source comparison column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00244",
+    18,
+    "contract",
+    "Hybrid handoff column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00245",
+    18,
+    "contract",
+    "Human review prompts column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00246",
+    18,
+    "contract",
+    "Acceptance cases column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00247",
+    19,
+    "contract",
+    "Hybrid Dictionary column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00248",
+    19,
+    "contract",
+    "Drift evidence column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00249",
+    19,
+    "contract",
+    "Reference bindings column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00250",
+    19,
+    "contract",
+    "Privacy register v2 column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00251",
+    19,
+    "contract",
+    "V3 drift evidence column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00252",
+    19,
+    "contract",
+    "Cross-source comparison column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00253",
+    19,
+    "contract",
+    "Hybrid synthetic examples column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00254",
+    19,
+    "contract",
+    "Hybrid handoff column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00255",
+    19,
+    "contract",
+    "Human review prompts column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00256",
+    19,
+    "contract",
+    "Acceptance cases column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00257",
+    20,
+    "contract",
+    "Executed suite v2 column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00258",
+    20,
+    "contract",
+    "NFR suite column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00259",
+    20,
+    "contract",
+    "Rule test coverage column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00260",
+    20,
+    "contract",
+    "Pending integration column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00261",
+    20,
+    "contract",
+    "V3 portable checks column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00262",
+    20,
+    "contract",
+    "Release evidence column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00263",
+    20,
+    "contract",
+    "B T276 2. Business Rule Test Register (TC-2 column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00264",
+    20,
+    "contract",
+    "B T277 3. State Transition Test Matrix (TC- column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00265",
+    20,
+    "contract",
+    "B T278 4. Boundary Value Analysis Register column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00266",
+    20,
+    "contract",
+    "B T279 5. NFR Verification Register column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00267",
+    20,
+    "contract",
+    "Cross-source comparison column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00268",
+    20,
+    "contract",
+    "Hybrid handoff column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00269",
+    20,
+    "contract",
+    "Human review prompts column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00270",
+    20,
+    "contract",
+    "Acceptance cases column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00271",
+    21,
+    "contract",
+    "Physical columns column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00272",
+    21,
+    "contract",
+    "Foreign keys column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00273",
+    21,
+    "contract",
+    "Indexes column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00274",
+    21,
+    "contract",
+    "Baseline files column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00275",
+    21,
+    "contract",
+    "Partition strategy column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00276",
+    21,
+    "contract",
+    "Gate G3 column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00277",
+    21,
+    "contract",
+    "Extension columns column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00278",
+    21,
+    "contract",
+    "Release gates column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00279",
+    21,
+    "contract",
+    "V3 index candidates column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00280",
+    21,
+    "contract",
+    "B T281 3. Index Catalogue and Access-Patter column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00281",
+    21,
+    "contract",
+    "B T282 5. Versioned DDL Migration Inventory column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00282",
+    21,
+    "contract",
+    "B T283 6. Documented Standard Deviations column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00283",
+    21,
+    "contract",
+    "Cross-source comparison column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00284",
+    21,
+    "contract",
+    "Hybrid physical changeset column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00285",
+    21,
+    "contract",
+    "Hybrid handoff column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00286",
+    21,
+    "contract",
+    "Human review prompts column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00287",
+    21,
+    "contract",
+    "Acceptance cases column and row shape",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00299",
+    1,
+    "serialized schema",
+    "schema payload validates after disk roundtrip",
+    "PASS",
+    "82 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00300",
+    1,
+    "serialized schema",
+    "scorecard payload validates after disk roundtrip",
+    "PASS",
+    "27 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00301",
+    1,
+    "serialized schema",
+    "output payload validates after disk roundtrip",
+    "PASS",
+    "12 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00302",
+    1,
+    "preservation",
+    "All original hybrid sections and rows retained",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00303",
+    1,
+    "hierarchy",
+    "Every output field has a unique typed L2 node",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00304",
+    1,
+    "scores",
+    "All documentary scores exceed90; no full score overwritten",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00305",
+    2,
+    "serialized schema",
+    "schema payload validates after disk roundtrip",
+    "PASS",
+    "84 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00306",
+    2,
+    "serialized schema",
+    "scorecard payload validates after disk roundtrip",
+    "PASS",
+    "27 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00307",
+    2,
+    "serialized schema",
+    "output payload validates after disk roundtrip",
+    "PASS",
+    "12 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00308",
+    2,
+    "preservation",
+    "All original hybrid sections and rows retained",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00309",
+    2,
+    "hierarchy",
+    "Every output field has a unique typed L2 node",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00310",
+    2,
+    "scores",
+    "All documentary scores exceed90; no full score overwritten",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00311",
+    3,
+    "serialized schema",
+    "schema payload validates after disk roundtrip",
+    "PASS",
+    "54 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00312",
+    3,
+    "serialized schema",
+    "scorecard payload validates after disk roundtrip",
+    "PASS",
+    "27 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00313",
+    3,
+    "serialized schema",
+    "output payload validates after disk roundtrip",
+    "PASS",
+    "8 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00314",
+    3,
+    "preservation",
+    "All original hybrid sections and rows retained",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00315",
+    3,
+    "hierarchy",
+    "Every output field has a unique typed L2 node",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00316",
+    3,
+    "scores",
+    "All documentary scores exceed90; no full score overwritten",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00317",
+    4,
+    "serialized schema",
+    "schema payload validates after disk roundtrip",
+    "PASS",
+    "64 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00318",
+    4,
+    "serialized schema",
+    "scorecard payload validates after disk roundtrip",
+    "PASS",
+    "27 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00319",
+    4,
+    "serialized schema",
+    "output payload validates after disk roundtrip",
+    "PASS",
+    "9 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00320",
+    4,
+    "preservation",
+    "All original hybrid sections and rows retained",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00321",
+    4,
+    "hierarchy",
+    "Every output field has a unique typed L2 node",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00322",
+    4,
+    "scores",
+    "All documentary scores exceed90; no full score overwritten",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00323",
+    5,
+    "serialized schema",
+    "schema payload validates after disk roundtrip",
+    "PASS",
+    "83 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00324",
+    5,
+    "serialized schema",
+    "scorecard payload validates after disk roundtrip",
+    "PASS",
+    "27 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00325",
+    5,
+    "serialized schema",
+    "output payload validates after disk roundtrip",
+    "PASS",
+    "11 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00326",
+    5,
+    "preservation",
+    "All original hybrid sections and rows retained",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00327",
+    5,
+    "hierarchy",
+    "Every output field has a unique typed L2 node",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00328",
+    5,
+    "scores",
+    "All documentary scores exceed90; no full score overwritten",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00329",
+    6,
+    "serialized schema",
+    "schema payload validates after disk roundtrip",
+    "PASS",
+    "101 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00330",
+    6,
+    "serialized schema",
+    "scorecard payload validates after disk roundtrip",
+    "PASS",
+    "27 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00331",
+    6,
+    "serialized schema",
+    "output payload validates after disk roundtrip",
+    "PASS",
+    "15 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00332",
+    6,
+    "preservation",
+    "All original hybrid sections and rows retained",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00333",
+    6,
+    "hierarchy",
+    "Every output field has a unique typed L2 node",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00334",
+    6,
+    "scores",
+    "All documentary scores exceed90; no full score overwritten",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00335",
+    7,
+    "serialized schema",
+    "schema payload validates after disk roundtrip",
+    "PASS",
+    "88 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00336",
+    7,
+    "serialized schema",
+    "scorecard payload validates after disk roundtrip",
+    "PASS",
+    "27 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00337",
+    7,
+    "serialized schema",
+    "output payload validates after disk roundtrip",
+    "PASS",
+    "9 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00338",
+    7,
+    "preservation",
+    "All original hybrid sections and rows retained",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00339",
+    7,
+    "hierarchy",
+    "Every output field has a unique typed L2 node",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00340",
+    7,
+    "scores",
+    "All documentary scores exceed90; no full score overwritten",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00341",
+    8,
+    "serialized schema",
+    "schema payload validates after disk roundtrip",
+    "PASS",
+    "179 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00342",
+    8,
+    "serialized schema",
+    "scorecard payload validates after disk roundtrip",
+    "PASS",
+    "27 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00343",
+    8,
+    "serialized schema",
+    "output payload validates after disk roundtrip",
+    "PASS",
+    "30 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00344",
+    8,
+    "preservation",
+    "All original hybrid sections and rows retained",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00345",
+    8,
+    "hierarchy",
+    "Every output field has a unique typed L2 node",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00346",
+    8,
+    "scores",
+    "All documentary scores exceed90; no full score overwritten",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00347",
+    9,
+    "serialized schema",
+    "schema payload validates after disk roundtrip",
+    "PASS",
+    "89 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00348",
+    9,
+    "serialized schema",
+    "scorecard payload validates after disk roundtrip",
+    "PASS",
+    "27 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00349",
+    9,
+    "serialized schema",
+    "output payload validates after disk roundtrip",
+    "PASS",
+    "13 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00350",
+    9,
+    "preservation",
+    "All original hybrid sections and rows retained",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00351",
+    9,
+    "hierarchy",
+    "Every output field has a unique typed L2 node",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00352",
+    9,
+    "scores",
+    "All documentary scores exceed90; no full score overwritten",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00353",
+    10,
+    "serialized schema",
+    "schema payload validates after disk roundtrip",
+    "PASS",
+    "75 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00354",
+    10,
+    "serialized schema",
+    "scorecard payload validates after disk roundtrip",
+    "PASS",
+    "27 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00355",
+    10,
+    "serialized schema",
+    "output payload validates after disk roundtrip",
+    "PASS",
+    "8 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00356",
+    10,
+    "preservation",
+    "All original hybrid sections and rows retained",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00357",
+    10,
+    "hierarchy",
+    "Every output field has a unique typed L2 node",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00358",
+    10,
+    "scores",
+    "All documentary scores exceed90; no full score overwritten",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00359",
+    11,
+    "serialized schema",
+    "schema payload validates after disk roundtrip",
+    "PASS",
+    "81 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00360",
+    11,
+    "serialized schema",
+    "scorecard payload validates after disk roundtrip",
+    "PASS",
+    "27 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00361",
+    11,
+    "serialized schema",
+    "output payload validates after disk roundtrip",
+    "PASS",
+    "12 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00362",
+    11,
+    "preservation",
+    "All original hybrid sections and rows retained",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00363",
+    11,
+    "hierarchy",
+    "Every output field has a unique typed L2 node",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00364",
+    11,
+    "scores",
+    "All documentary scores exceed90; no full score overwritten",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00365",
+    12,
+    "serialized schema",
+    "schema payload validates after disk roundtrip",
+    "PASS",
+    "110 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00366",
+    12,
+    "serialized schema",
+    "scorecard payload validates after disk roundtrip",
+    "PASS",
+    "27 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00367",
+    12,
+    "serialized schema",
+    "output payload validates after disk roundtrip",
+    "PASS",
+    "15 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00368",
+    12,
+    "preservation",
+    "All original hybrid sections and rows retained",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00369",
+    12,
+    "hierarchy",
+    "Every output field has a unique typed L2 node",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00370",
+    12,
+    "scores",
+    "All documentary scores exceed90; no full score overwritten",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00371",
+    13,
+    "serialized schema",
+    "schema payload validates after disk roundtrip",
+    "PASS",
+    "108 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00372",
+    13,
+    "serialized schema",
+    "scorecard payload validates after disk roundtrip",
+    "PASS",
+    "27 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00373",
+    13,
+    "serialized schema",
+    "output payload validates after disk roundtrip",
+    "PASS",
+    "16 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00374",
+    13,
+    "preservation",
+    "All original hybrid sections and rows retained",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00375",
+    13,
+    "hierarchy",
+    "Every output field has a unique typed L2 node",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00376",
+    13,
+    "scores",
+    "All documentary scores exceed90; no full score overwritten",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00377",
+    14,
+    "serialized schema",
+    "schema payload validates after disk roundtrip",
+    "PASS",
+    "101 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00378",
+    14,
+    "serialized schema",
+    "scorecard payload validates after disk roundtrip",
+    "PASS",
+    "27 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00379",
+    14,
+    "serialized schema",
+    "output payload validates after disk roundtrip",
+    "PASS",
+    "15 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00380",
+    14,
+    "preservation",
+    "All original hybrid sections and rows retained",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00381",
+    14,
+    "hierarchy",
+    "Every output field has a unique typed L2 node",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00382",
+    14,
+    "scores",
+    "All documentary scores exceed90; no full score overwritten",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00383",
+    15,
+    "serialized schema",
+    "schema payload validates after disk roundtrip",
+    "PASS",
+    "89 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00384",
+    15,
+    "serialized schema",
+    "scorecard payload validates after disk roundtrip",
+    "PASS",
+    "27 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00385",
+    15,
+    "serialized schema",
+    "output payload validates after disk roundtrip",
+    "PASS",
+    "12 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00386",
+    15,
+    "preservation",
+    "All original hybrid sections and rows retained",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00387",
+    15,
+    "hierarchy",
+    "Every output field has a unique typed L2 node",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00388",
+    15,
+    "scores",
+    "All documentary scores exceed90; no full score overwritten",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00389",
+    16,
+    "serialized schema",
+    "schema payload validates after disk roundtrip",
+    "PASS",
+    "148 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00390",
+    16,
+    "serialized schema",
+    "scorecard payload validates after disk roundtrip",
+    "PASS",
+    "27 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00391",
+    16,
+    "serialized schema",
+    "output payload validates after disk roundtrip",
+    "PASS",
+    "22 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00392",
+    16,
+    "preservation",
+    "All original hybrid sections and rows retained",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00393",
+    16,
+    "hierarchy",
+    "Every output field has a unique typed L2 node",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00394",
+    16,
+    "scores",
+    "All documentary scores exceed90; no full score overwritten",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00395",
+    17,
+    "serialized schema",
+    "schema payload validates after disk roundtrip",
+    "PASS",
+    "84 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00396",
+    17,
+    "serialized schema",
+    "scorecard payload validates after disk roundtrip",
+    "PASS",
+    "27 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00397",
+    17,
+    "serialized schema",
+    "output payload validates after disk roundtrip",
+    "PASS",
+    "12 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00398",
+    17,
+    "preservation",
+    "All original hybrid sections and rows retained",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00399",
+    17,
+    "hierarchy",
+    "Every output field has a unique typed L2 node",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00400",
+    17,
+    "scores",
+    "All documentary scores exceed90; no full score overwritten",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00401",
+    18,
+    "serialized schema",
+    "schema payload validates after disk roundtrip",
+    "PASS",
+    "120 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00402",
+    18,
+    "serialized schema",
+    "scorecard payload validates after disk roundtrip",
+    "PASS",
+    "27 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00403",
+    18,
+    "serialized schema",
+    "output payload validates after disk roundtrip",
+    "PASS",
+    "15 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00404",
+    18,
+    "preservation",
+    "All original hybrid sections and rows retained",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00405",
+    18,
+    "hierarchy",
+    "Every output field has a unique typed L2 node",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00406",
+    18,
+    "scores",
+    "All documentary scores exceed90; no full score overwritten",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00407",
+    19,
+    "serialized schema",
+    "schema payload validates after disk roundtrip",
+    "PASS",
+    "89 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00408",
+    19,
+    "serialized schema",
+    "scorecard payload validates after disk roundtrip",
+    "PASS",
+    "27 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00409",
+    19,
+    "serialized schema",
+    "output payload validates after disk roundtrip",
+    "PASS",
+    "10 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00410",
+    19,
+    "preservation",
+    "All original hybrid sections and rows retained",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00411",
+    19,
+    "hierarchy",
+    "Every output field has a unique typed L2 node",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00412",
+    19,
+    "scores",
+    "All documentary scores exceed90; no full score overwritten",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00413",
+    20,
+    "serialized schema",
+    "schema payload validates after disk roundtrip",
+    "PASS",
+    "100 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00414",
+    20,
+    "serialized schema",
+    "scorecard payload validates after disk roundtrip",
+    "PASS",
+    "27 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00415",
+    20,
+    "serialized schema",
+    "output payload validates after disk roundtrip",
+    "PASS",
+    "14 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00416",
+    20,
+    "preservation",
+    "All original hybrid sections and rows retained",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00417",
+    20,
+    "hierarchy",
+    "Every output field has a unique typed L2 node",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00418",
+    20,
+    "scores",
+    "All documentary scores exceed90; no full score overwritten",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00419",
+    21,
+    "serialized schema",
+    "schema payload validates after disk roundtrip",
+    "PASS",
+    "111 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00420",
+    21,
+    "serialized schema",
+    "scorecard payload validates after disk roundtrip",
+    "PASS",
+    "27 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00421",
+    21,
+    "serialized schema",
+    "output payload validates after disk roundtrip",
+    "PASS",
+    "17 top-level entries",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00422",
+    21,
+    "preservation",
+    "All original hybrid sections and rows retained",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00423",
+    21,
+    "hierarchy",
+    "Every output field has a unique typed L2 node",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00424",
+    21,
+    "scores",
+    "All documentary scores exceed90; no full score overwritten",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00431",
+    0,
+    "dictionary",
+    "All1407 field keys unique",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00432",
+    0,
+    "mapping",
+    "Every B attribute resolves to canonical field",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00433",
+    0,
+    "proposals",
+    "157 proposed fields have synthetic examples",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00434",
+    0,
+    "hierarchy",
+    "All node IDs unique",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00435",
+    0,
+    "hierarchy",
+    "Every non-root parent exists at previous level",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00436",
+    0,
+    "contracts",
+    "Exactly66 artifact contracts",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00437",
+    0,
+    "human gate",
+    "Human scores remain0 without interview",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "V5-00438",
+    0,
+    "source integrity",
+    "Original hybrid master not overwritten",
+    "PASS",
+    "",
+    "Python serialized-contract/documentary layer"
+  ],
+  [
+    "MVAL-01",
+    22,
+    "generation",
+    "Saved journey count",
+    "PASS",
+    "1500000",
+    "Streaming CSV readback"
+  ],
+  [
+    "MVAL-02",
+    22,
+    "generation",
+    "Every event transition, timestamp and organisation reference",
+    "PASS",
+    "4194321 events",
+    "Streaming CSV readback"
+  ],
+  [
+    "MVAL-03",
+    22,
+    "mapping",
+    "Every new file field has owner/type/target/disposition",
+    "PASS",
+    "55",
+    "Schema/header field parity"
+  ],
+  [
+    "MVAL-04",
+    22,
+    "native references",
+    "Every declared workflow table.column exists",
+    "PASS",
+    "111",
+    "Current hybrid dictionary lookup"
+  ],
+  [
+    "MVAL-05",
+    22,
+    "negative cases",
+    "Observed portable refusal outcomes",
+    "PASS",
+    "12",
+    "Portable contract/guard model"
+  ],
+  [
+    "MVAL-06",
+    22,
+    "generation",
+    "Gig window,assignment,earnings and rating guards",
+    "PASS",
+    "50000 gig applications",
+    "Streaming CSV readback"
+  ],
+  [
+    "MVAL-07",
+    22,
+    "preservation",
+    "Prior22-step outputs retained",
+    "PASS",
+    "Retained all previous sections; changes are additive",
+    "Original v5 preserved"
+  ]
+]

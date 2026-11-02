@@ -1,0 +1,22 @@
+{
+  "version": "seed",
+  "set_id": "seed-WF-18",
+  "workflow_id": "WF-18",
+  "workflow": "Integration and retention",
+  "group": "Identity and profile",
+  "case_count": 60,
+  "accepted_examples": 10,
+  "refused_or_duplicate": 50,
+  "step_example_rows": 40,
+  "defined_steps": 4,
+  "covered_steps": 4,
+  "outcomes": {
+    "ACCEPTED_EXAMPLE": 10,
+    "CROSS_ACCOUNT": 10,
+    "MISSING_REQUIRED": 10,
+    "BLOCKED_SUBJECT": 10,
+    "DUPLICATE_NO_SECOND_EFFECT": 10,
+    "STALE_VERSION": 10
+  },
+  "scope": "Workflow envelope fixtures and examples. No endpoint, database transaction, or external provider was invoked."
+}

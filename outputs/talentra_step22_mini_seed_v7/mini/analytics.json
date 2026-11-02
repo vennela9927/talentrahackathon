@@ -1,0 +1,257 @@
+{
+  "version": "mini",
+  "selection_basis": "Coverage sample, deliberately balanced across family and current outcome. Rates are descriptive of this sample, not estimates of the seed.",
+  "stages": {
+    "searched": 120,
+    "screened": 108,
+    "applied": 96,
+    "shortlisted": 84,
+    "assessed": 72,
+    "interviewed": 60,
+    "rejected": 12,
+    "selected": 48,
+    "offered": 36,
+    "accepted": 24,
+    "onboarded": 12,
+    "offer_declined": 12
+  },
+  "families": {
+    "IT_DEV": {
+      "journeys": 20,
+      "searched": 20,
+      "screened": 18,
+      "applied": 16,
+      "shortlisted": 14,
+      "assessed": 12,
+      "interviewed": 10,
+      "rejected": 2,
+      "selected": 8,
+      "offered": 6,
+      "accepted": 4,
+      "onboarded": 2,
+      "offer_declined": 2
+    },
+    "IT_TEST": {
+      "journeys": 20,
+      "searched": 20,
+      "screened": 18,
+      "applied": 16,
+      "shortlisted": 14,
+      "assessed": 12,
+      "interviewed": 10,
+      "rejected": 2,
+      "selected": 8,
+      "offered": 6,
+      "accepted": 4,
+      "onboarded": 2,
+      "offer_declined": 2
+    },
+    "NONIT_SALES": {
+      "journeys": 20,
+      "searched": 20,
+      "screened": 18,
+      "applied": 16,
+      "shortlisted": 14,
+      "assessed": 12,
+      "interviewed": 10,
+      "rejected": 2,
+      "selected": 8,
+      "offered": 6,
+      "accepted": 4,
+      "onboarded": 2,
+      "offer_declined": 2
+    },
+    "NONIT_DELIVERY": {
+      "journeys": 20,
+      "searched": 20,
+      "screened": 18,
+      "applied": 16,
+      "shortlisted": 14,
+      "assessed": 12,
+      "interviewed": 10,
+      "selected": 8,
+      "offered": 6,
+      "accepted": 4,
+      "onboarded": 2,
+      "rejected": 2,
+      "offer_declined": 2
+    },
+    "BLUE_WAREHOUSE": {
+      "journeys": 20,
+      "searched": 20,
+      "screened": 18,
+      "applied": 16,
+      "shortlisted": 14,
+      "assessed": 12,
+      "interviewed": 10,
+      "rejected": 2,
+      "selected": 8,
+      "offered": 6,
+      "accepted": 4,
+      "onboarded": 2,
+      "offer_declined": 2
+    },
+    "BLUE_FIELD": {
+      "journeys": 20,
+      "searched": 20,
+      "screened": 18,
+      "applied": 16,
+      "shortlisted": 14,
+      "assessed": 12,
+      "interviewed": 10,
+      "rejected": 2,
+      "selected": 8,
+      "offered": 6,
+      "accepted": 4,
+      "onboarded": 2,
+      "offer_declined": 2
+    }
+  },
+  "gig": {
+    "applications": 100,
+    "accepted": 20,
+    "completed": 16,
+    "rejected": 60,
+    "pending": 20,
+    "rated": 8
+  },
+  "kpis": [
+    {
+      "metric": "screened conversion",
+      "numerator": 108,
+      "denominator": 120,
+      "value": 0.9,
+      "unit": "ratio",
+      "grain": "Journey reaching milestone in same cohort"
+    },
+    {
+      "metric": "applied conversion",
+      "numerator": 96,
+      "denominator": 108,
+      "value": 0.8888888888888888,
+      "unit": "ratio",
+      "grain": "Journey reaching milestone in same cohort"
+    },
+    {
+      "metric": "shortlisted conversion",
+      "numerator": 84,
+      "denominator": 96,
+      "value": 0.875,
+      "unit": "ratio",
+      "grain": "Journey reaching milestone in same cohort"
+    },
+    {
+      "metric": "assessed conversion",
+      "numerator": 72,
+      "denominator": 84,
+      "value": 0.8571428571428571,
+      "unit": "ratio",
+      "grain": "Journey reaching milestone in same cohort"
+    },
+    {
+      "metric": "interviewed conversion",
+      "numerator": 60,
+      "denominator": 72,
+      "value": 0.8333333333333334,
+      "unit": "ratio",
+      "grain": "Journey reaching milestone in same cohort"
+    },
+    {
+      "metric": "selected conversion",
+      "numerator": 48,
+      "denominator": 60,
+      "value": 0.8,
+      "unit": "ratio",
+      "grain": "Journey reaching milestone in same cohort"
+    },
+    {
+      "metric": "rejected conversion",
+      "numerator": 12,
+      "denominator": 60,
+      "value": 0.2,
+      "unit": "ratio",
+      "grain": "Journey reaching milestone in same cohort"
+    },
+    {
+      "metric": "offered conversion",
+      "numerator": 36,
+      "denominator": 48,
+      "value": 0.75,
+      "unit": "ratio",
+      "grain": "Journey reaching milestone in same cohort"
+    },
+    {
+      "metric": "accepted conversion",
+      "numerator": 24,
+      "denominator": 36,
+      "value": 0.6666666666666666,
+      "unit": "ratio",
+      "grain": "Journey reaching milestone in same cohort"
+    },
+    {
+      "metric": "offer_declined conversion",
+      "numerator": 12,
+      "denominator": 36,
+      "value": 0.3333333333333333,
+      "unit": "ratio",
+      "grain": "Journey reaching milestone in same cohort"
+    },
+    {
+      "metric": "onboarded conversion",
+      "numerator": 12,
+      "denominator": 24,
+      "value": 0.5,
+      "unit": "ratio",
+      "grain": "Journey reaching milestone in same cohort"
+    },
+    {
+      "metric": "time_to_offer",
+      "numerator": 806.0,
+      "denominator": 36,
+      "value": 22.38888888888889,
+      "unit": "calendar days",
+      "grain": "Journey reaching both first milestones"
+    },
+    {
+      "metric": "time_to_hire",
+      "numerator": 618.0,
+      "denominator": 24,
+      "value": 25.75,
+      "unit": "calendar days",
+      "grain": "Journey reaching both first milestones"
+    },
+    {
+      "metric": "time_to_onboard",
+      "numerator": 112.0,
+      "denominator": 12,
+      "value": 9.333333333333334,
+      "unit": "calendar days",
+      "grain": "Journey reaching both first milestones"
+    },
+    {
+      "metric": "Gig acceptance",
+      "numerator": 20,
+      "denominator": 100,
+      "value": 0.2,
+      "unit": "ratio",
+      "grain": "Gig application or assignment as named"
+    },
+    {
+      "metric": "Gig completion",
+      "numerator": 16,
+      "denominator": 20,
+      "value": 0.8,
+      "unit": "ratio",
+      "grain": "Gig application or assignment as named"
+    },
+    {
+      "metric": "Gig rating coverage",
+      "numerator": 8,
+      "denominator": 16,
+      "value": 0.5,
+      "unit": "ratio",
+      "grain": "Gig application or assignment as named"
+    }
+  ],
+  "validation": "Saved-file readback and scoped referential/business invariants passed. No database or load test."
+}

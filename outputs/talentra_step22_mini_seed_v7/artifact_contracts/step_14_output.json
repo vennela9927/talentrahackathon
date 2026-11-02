@@ -1,0 +1,803 @@
+{
+  "title": "Step14 Output Document",
+  "type": "object",
+  "properties": {
+    "Sample manifest": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Table": {
+            "type": [
+              "string"
+            ]
+          },
+          "Row count": {
+            "type": [
+              "integer"
+            ]
+          },
+          "File": {
+            "type": [
+              "string"
+            ]
+          },
+          "Seed": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Dataset hash": {
+            "type": [
+              "string"
+            ]
+          },
+          "Status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Table",
+          "Row count",
+          "File",
+          "Seed",
+          "Dataset hash",
+          "Status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Scenarios": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Scenario ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Category": {
+            "type": [
+              "string"
+            ]
+          },
+          "Situation": {
+            "type": [
+              "string"
+            ]
+          },
+          "Expected": {
+            "type": [
+              "string"
+            ]
+          },
+          "Workflow IDs": {
+            "type": [
+              "string"
+            ]
+          },
+          "Rule IDs": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Scenario ID",
+          "Category",
+          "Situation",
+          "Expected",
+          "Workflow IDs",
+          "Rule IDs",
+          "Evidence"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Invalid fixtures": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Fixture ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Rule ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Table": {
+            "type": [
+              "string"
+            ]
+          },
+          "Payload": {
+            "type": [
+              "string"
+            ]
+          },
+          "Expected": {
+            "type": [
+              "string"
+            ]
+          },
+          "Reason": {
+            "type": [
+              "string"
+            ]
+          },
+          "Isolation": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Fixture ID",
+          "Rule ID",
+          "Table",
+          "Payload",
+          "Expected",
+          "Reason",
+          "Isolation"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Golden answers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Query ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Question": {
+            "type": [
+              "string"
+            ]
+          },
+          "Expected value": {
+            "type": [
+              "boolean",
+              "integer"
+            ]
+          },
+          "Dataset scope": {
+            "type": [
+              "string"
+            ]
+          },
+          "Method": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Query ID",
+          "Question",
+          "Expected value",
+          "Dataset scope",
+          "Method"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Integration fixtures": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Fixture ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Scenario": {
+            "type": [
+              "string"
+            ]
+          },
+          "Expected": {
+            "type": [
+              "string"
+            ]
+          },
+          "Contract scope": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Fixture ID",
+          "Scenario",
+          "Expected",
+          "Contract scope"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T018 7. Data quality: rules, distribution": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Finding": {
+            "type": [
+              "string"
+            ]
+          },
+          "Dev count": {
+            "type": [
+              "integer",
+              "string"
+            ]
+          },
+          "Follow-up": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "ID",
+          "Finding",
+          "Dev count",
+          "Follow-up",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T178 2. State and Lookup Coverage Proof": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Entity / State Machine": {
+            "type": [
+              "string"
+            ]
+          },
+          "Total States": {
+            "type": [
+              "integer",
+              "string"
+            ]
+          },
+          "Discrete States in Sample": {
+            "type": [
+              "integer",
+              "string"
+            ]
+          },
+          "States Exercised": {
+            "type": [
+              "string"
+            ]
+          },
+          "Conformance": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Entity / State Machine",
+          "Total States",
+          "Discrete States in Sample",
+          "States Exercised",
+          "Conformance",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T179 3. Golden Dataset with Pre-Known Ans": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Golden Query ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Business Question": {
+            "type": [
+              "string"
+            ]
+          },
+          "Executable PostgreSQL Query": {
+            "type": [
+              "string"
+            ]
+          },
+          "Exact Expected Answer": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Golden Query ID",
+          "Business Question",
+          "Executable PostgreSQL Query",
+          "Exact Expected Answer",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T180 4. Planted Data-Quality Findings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Finding ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Name & Description": {
+            "type": [
+              "string"
+            ]
+          },
+          "Planted Target Records": {
+            "type": [
+              "string"
+            ]
+          },
+          "Detection Query (t05)": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Finding ID",
+          "Name & Description",
+          "Planted Target Records",
+          "Detection Query (t05)",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T181 5. Deliberate Invalid Rows (Negative": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Invalid Row ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Target Table": {
+            "type": [
+              "string"
+            ]
+          },
+          "Deliberate Violation Description": {
+            "type": [
+              "string"
+            ]
+          },
+          "Rejected By (PostgreSQL Mechanism)": {
+            "type": [
+              "string"
+            ]
+          },
+          "Verified Test": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Invalid Row ID",
+          "Target Table",
+          "Deliberate Violation Description",
+          "Rejected By (PostgreSQL Mechanism)",
+          "Verified Test",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Cross-source comparison": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Comparison ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Step": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Decision or field": {
+            "type": [
+              "string"
+            ]
+          },
+          "A value": {
+            "type": [
+              "string"
+            ]
+          },
+          "B value": {
+            "type": [
+              "string"
+            ]
+          },
+          "Agreement": {
+            "type": [
+              "string"
+            ]
+          },
+          "B locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Hybrid conclusion": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Comparison ID",
+          "Step",
+          "Decision or field",
+          "A value",
+          "B value",
+          "Agreement",
+          "B locator",
+          "Hybrid conclusion"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Hybrid synthetic fixtures": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Attribute ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Table": {
+            "type": [
+              "string"
+            ]
+          },
+          "Column": {
+            "type": [
+              "string"
+            ]
+          },
+          "SQL type": {
+            "type": [
+              "string"
+            ]
+          },
+          "Synthetic example": {
+            "type": [
+              "boolean",
+              "integer",
+              "string"
+            ]
+          },
+          "Nullable": {
+            "type": [
+              "boolean"
+            ]
+          },
+          "Proposed owner": {
+            "type": [
+              "string"
+            ]
+          },
+          "Validation": {
+            "type": [
+              "string"
+            ]
+          },
+          "Fixture scope": {
+            "type": [
+              "string"
+            ]
+          },
+          "Implementation status": {
+            "type": [
+              "string"
+            ]
+          },
+          "B source": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Attribute ID",
+          "Table",
+          "Column",
+          "SQL type",
+          "Synthetic example",
+          "Nullable",
+          "Proposed owner",
+          "Validation",
+          "Fixture scope",
+          "Implementation status",
+          "B source"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Hybrid handoff": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Handoff ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Concern": {
+            "type": [
+              "string"
+            ]
+          },
+          "Inputs": {
+            "type": [
+              "string"
+            ]
+          },
+          "Next use": {
+            "type": [
+              "string"
+            ]
+          },
+          "Acceptance condition": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proposed owner": {
+            "type": [
+              "string"
+            ]
+          },
+          "Status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Reason": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Handoff ID",
+          "Concern",
+          "Inputs",
+          "Next use",
+          "Acceptance condition",
+          "Proposed owner",
+          "Status",
+          "Reason"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Human review prompts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Question ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Question": {
+            "type": [
+              "string"
+            ]
+          },
+          "Expected evidence anchor": {
+            "type": [
+              "string"
+            ]
+          },
+          "Human response": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "Reviewer score 0 to 5": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "Review status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proposed reviewer role": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Question ID",
+          "Question",
+          "Expected evidence anchor",
+          "Human response",
+          "Reviewer score 0 to 5",
+          "Review status",
+          "Proposed reviewer role"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Acceptance cases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Case ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Case": {
+            "type": [
+              "string"
+            ]
+          },
+          "Expected result": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proof layer": {
+            "type": [
+              "string"
+            ]
+          },
+          "Status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Owner": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Case ID",
+          "Case",
+          "Expected result",
+          "Proof layer",
+          "Status",
+          "Owner"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "Sample manifest",
+    "Scenarios",
+    "Invalid fixtures",
+    "Golden answers",
+    "Integration fixtures",
+    "B T018 7. Data quality: rules, distribution",
+    "B T178 2. State and Lookup Coverage Proof",
+    "B T179 3. Golden Dataset with Pre-Known Ans",
+    "B T180 4. Planted Data-Quality Findings",
+    "B T181 5. Deliberate Invalid Rows (Negative",
+    "Cross-source comparison",
+    "Hybrid synthetic fixtures",
+    "Hybrid handoff",
+    "Human review prompts",
+    "Acceptance cases"
+  ],
+  "additionalProperties": false
+}

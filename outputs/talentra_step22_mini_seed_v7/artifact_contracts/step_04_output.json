@@ -1,0 +1,505 @@
+{
+  "title": "Step4 Output Document",
+  "type": "object",
+  "properties": {
+    "NFR register": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "NFR ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Category": {
+            "type": [
+              "string"
+            ]
+          },
+          "Metric": {
+            "type": [
+              "string"
+            ]
+          },
+          "Target": {
+            "type": [
+              "integer",
+              "number"
+            ]
+          },
+          "Unit": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source": {
+            "type": [
+              "string"
+            ]
+          },
+          "Test method": {
+            "type": [
+              "string"
+            ]
+          },
+          "Basis": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "NFR ID",
+          "Category",
+          "Metric",
+          "Target",
+          "Unit",
+          "Source",
+          "Test method",
+          "Basis",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Sizing assumptions": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Question ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Owner": {
+            "type": [
+              "string"
+            ]
+          },
+          "Question": {
+            "type": [
+              "string"
+            ]
+          },
+          "Priority": {
+            "type": [
+              "string"
+            ]
+          },
+          "Working treatment": {
+            "type": [
+              "string"
+            ]
+          },
+          "Status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Question ID",
+          "Owner",
+          "Question",
+          "Priority",
+          "Working treatment",
+          "Status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Capacity inputs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Driver": {
+            "type": [
+              "string"
+            ]
+          },
+          "Value": {
+            "type": [
+              "integer",
+              "number"
+            ]
+          },
+          "Unit": {
+            "type": [
+              "string"
+            ]
+          },
+          "Basis": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Driver",
+          "Value",
+          "Unit",
+          "Basis"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Scale cases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Case ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Case": {
+            "type": [
+              "string"
+            ]
+          },
+          "Candidates": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Jobs": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Applications": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Active users": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Proposed API replicas": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Source": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Case ID",
+          "Case",
+          "Candidates",
+          "Jobs",
+          "Applications",
+          "Active users",
+          "Proposed API replicas",
+          "Source"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "B T015 4. Access patterns": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Pattern": {
+            "type": [
+              "string"
+            ]
+          },
+          "Actor": {
+            "type": [
+              "string"
+            ]
+          },
+          "Peak at full scale": {
+            "type": [
+              "string"
+            ]
+          },
+          "Target p95": {
+            "type": [
+              "string"
+            ]
+          },
+          "Served by": {
+            "type": [
+              "string"
+            ]
+          },
+          "Source locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Evidence status": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "ID",
+          "Pattern",
+          "Actor",
+          "Peak at full scale",
+          "Target p95",
+          "Served by",
+          "Source locator",
+          "Evidence status"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Cross-source comparison": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Comparison ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Step": {
+            "type": [
+              "integer"
+            ]
+          },
+          "Decision or field": {
+            "type": [
+              "string"
+            ]
+          },
+          "A value": {
+            "type": [
+              "string"
+            ]
+          },
+          "B value": {
+            "type": [
+              "string"
+            ]
+          },
+          "Agreement": {
+            "type": [
+              "string"
+            ]
+          },
+          "B locator": {
+            "type": [
+              "string"
+            ]
+          },
+          "Hybrid conclusion": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Comparison ID",
+          "Step",
+          "Decision or field",
+          "A value",
+          "B value",
+          "Agreement",
+          "B locator",
+          "Hybrid conclusion"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Hybrid handoff": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Handoff ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Concern": {
+            "type": [
+              "string"
+            ]
+          },
+          "Inputs": {
+            "type": [
+              "string"
+            ]
+          },
+          "Next use": {
+            "type": [
+              "string"
+            ]
+          },
+          "Acceptance condition": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proposed owner": {
+            "type": [
+              "string"
+            ]
+          },
+          "Status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Reason": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Handoff ID",
+          "Concern",
+          "Inputs",
+          "Next use",
+          "Acceptance condition",
+          "Proposed owner",
+          "Status",
+          "Reason"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Human review prompts": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Question ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Question": {
+            "type": [
+              "string"
+            ]
+          },
+          "Expected evidence anchor": {
+            "type": [
+              "string"
+            ]
+          },
+          "Human response": {
+            "type": [
+              "null",
+              "string"
+            ]
+          },
+          "Reviewer score 0 to 5": {
+            "type": [
+              "null",
+              "integer"
+            ]
+          },
+          "Review status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proposed reviewer role": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Question ID",
+          "Question",
+          "Expected evidence anchor",
+          "Human response",
+          "Reviewer score 0 to 5",
+          "Review status",
+          "Proposed reviewer role"
+        ],
+        "additionalProperties": false
+      }
+    },
+    "Acceptance cases": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "Case ID": {
+            "type": [
+              "string"
+            ]
+          },
+          "Case": {
+            "type": [
+              "string"
+            ]
+          },
+          "Expected result": {
+            "type": [
+              "string"
+            ]
+          },
+          "Proof layer": {
+            "type": [
+              "string"
+            ]
+          },
+          "Status": {
+            "type": [
+              "string"
+            ]
+          },
+          "Owner": {
+            "type": [
+              "string"
+            ]
+          }
+        },
+        "required": [
+          "Case ID",
+          "Case",
+          "Expected result",
+          "Proof layer",
+          "Status",
+          "Owner"
+        ],
+        "additionalProperties": false
+      }
+    }
+  },
+  "required": [
+    "NFR register",
+    "Sizing assumptions",
+    "Capacity inputs",
+    "Scale cases",
+    "B T015 4. Access patterns",
+    "Cross-source comparison",
+    "Hybrid handoff",
+    "Human review prompts",
+    "Acceptance cases"
+  ],
+  "additionalProperties": false
+}

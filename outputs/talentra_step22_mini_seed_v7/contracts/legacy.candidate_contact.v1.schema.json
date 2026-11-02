@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:talentra:legacy.candidate_contact.v1",
+  "title": "legacy.candidate_contact.v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "event_id",
+    "correlation_id",
+    "schema_version",
+    "occurred_at",
+    "source_version",
+    "external_key",
+    "candidate_profile_id"
+  ],
+  "properties": {
+    "event_id": {
+      "type": "string",
+      "description": "Globally unique producer event key within contract",
+      "maxLength": 255
+    },
+    "correlation_id": {
+      "type": "string",
+      "description": "Safe trace correlation key",
+      "maxLength": 255
+    },
+    "schema_version": {
+      "type": "integer",
+      "description": "Positive exact supported contract version",
+      "minimum": 0
+    },
+    "occurred_at": {
+      "type": "string",
+      "description": "UTC ISO8601 source timestamp",
+      "maxLength": 255,
+      "format": "date-time"
+    },
+    "source_version": {
+      "type": "integer",
+      "description": "Monotonic aggregate version",
+      "minimum": 0
+    },
+    "external_key": {
+      "type": "string",
+      "description": "Stable opaque legacy entity key",
+      "maxLength": 255
+    },
+    "candidate_profile_id": {
+      "type": "integer",
+      "description": "64-bit surrogate identity; candidate profile id on candidate_contact",
+      "minimum": 0
+    },
+    "phone_number": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "International telephone number; phone number on candidate_contact",
+      "maxLength": 255
+    },
+    "country_id": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "description": "64-bit surrogate identity; country id on candidate_contact",
+      "minimum": 0
+    },
+    "contact_email": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Normalized electronic mail address; contact email on candidate_contact",
+      "maxLength": 255
+    }
+  }
+}

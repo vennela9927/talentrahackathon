@@ -1,0 +1,26 @@
+{
+  "version": "seed",
+  "family": "NONIT_DELIVERY",
+  "journeys": 225000,
+  "gig_applications": 8335,
+  "hiring_stages": {
+    "journeys": 225000,
+    "searched": 225000,
+    "screened": 135000,
+    "applied": 94500,
+    "shortlisted": 51975,
+    "assessed": 31185,
+    "interviewed": 21829,
+    "selected": 8731,
+    "offered": 8556,
+    "accepted": 7529,
+    "onboarded": 7152,
+    "rejected": 13098,
+    "offer_declined": 1027
+  },
+  "basis": "Full saved v6 synthetic population. Scenario rates remain proposed workload assumptions.",
+  "files": [
+    "seed/sets/NONIT_DELIVERY/journey.csv.gz",
+    "seed/sets/NONIT_DELIVERY/gig.csv.gz"
+  ]
+}

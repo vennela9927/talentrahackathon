@@ -1,0 +1,997 @@
+erDiagram
+  reference_domain {
+    bigint id PK
+    varchar_80_ code
+    varchar_2000_ description
+  }
+  reference_value {
+    bigint id PK
+    bigint reference_domain_id
+    varchar_80_ code
+    varchar_80_ label_key
+    boolean active
+    integer sort_order
+  }
+  ui_translation {
+    bigint id PK
+    varchar_80_ label_key
+    varchar_10_ language_code
+    varchar_2000_ translated_text
+  }
+  country {
+    bigint id PK
+    char_2_ code
+    varchar_150_ name
+  }
+  state {
+    bigint id PK
+    bigint country_id
+    varchar_80_ code
+    varchar_150_ name
+  }
+  city {
+    bigint id PK
+    bigint state_id
+    varchar_150_ name
+    numeric_9_6_ latitude
+    numeric_9_6_ longitude
+    varchar_2000_ coordinate_source
+  }
+  skill {
+    bigint id PK
+    varchar_80_ code
+    varchar_150_ name
+  }
+  qualification {
+    bigint id PK
+    varchar_80_ code
+    varchar_150_ name
+  }
+  industry {
+    bigint id PK
+    varchar_80_ code
+    varchar_150_ name
+  }
+  job_role {
+    bigint id PK
+    varchar_80_ code
+    varchar_150_ name
+  }
+  app_user {
+    bigint id PK
+    varchar_254_ email
+    varchar_150_ person_name
+    bigint status_reference_value_id
+    varchar_10_ preferred_language
+  }
+  credential {
+    bigint id PK
+    bigint app_user_id
+    varchar_255_ password_hash
+    timestamptz changed_at
+  }
+  access_role {
+    bigint id PK
+    varchar_80_ code
+    varchar_150_ name
+  }
+  permission {
+    bigint id PK
+    varchar_80_ code
+    varchar_80_ resource_name
+    varchar_80_ action_name
+  }
+  user_role {
+    bigint id PK
+    bigint app_user_id
+    bigint access_role_id
+  }
+  role_permission {
+    bigint id PK
+    bigint access_role_id
+    bigint permission_id
+  }
+  consent_record {
+    bigint id PK
+    bigint app_user_id
+    bigint purpose_reference_value_id
+    varchar_80_ policy_version
+    timestamptz granted_at
+    timestamptz revoked_at
+  }
+  blocking_entry {
+    bigint id PK
+    bigint blocker_app_user_id
+    bigint blocked_app_user_id
+    bigint blocked_organisation_id
+  }
+  audit_event {
+    bigint id PK
+    bigint actor_app_user_id
+    varchar_80_ action_code
+    varchar_255_ subject_token
+    bigint outcome_reference_value_id
+    varchar_80_ correlation_key
+    timestamptz occurred_at
+  }
+  system_error {
+    bigint id PK
+    varchar_80_ error_code
+    varchar_80_ correlation_key
+    varchar_2000_ sanitized_message
+    timestamptz occurred_at
+  }
+  integration_event {
+    bigint id PK
+    varchar_80_ provider_code
+    varchar_80_ provider_event_key
+    varchar_255_ payload_hash
+    bigint status_reference_value_id
+    timestamptz received_at
+  }
+  account {
+    bigint id PK
+    varchar_150_ name
+    bigint status_reference_value_id
+  }
+  organisation {
+    bigint id PK
+    bigint account_id
+    bigint parent_organisation_id
+    varchar_150_ name
+    bigint industry_id
+    bigint status_reference_value_id
+  }
+  organisation_location {
+    bigint id PK
+    bigint organisation_id
+    bigint city_id
+    varchar_2000_ address_text
+  }
+  organisation_identifier {
+    bigint id PK
+    bigint organisation_id
+    bigint country_id
+    bigint type_reference_value_id
+    varchar_255_ identifier_token
+    varchar_80_ masked_identifier
+  }
+  verification_record {
+    bigint id PK
+    bigint organisation_id
+    varchar_255_ provider_token
+    bigint outcome_reference_value_id
+    timestamptz verified_at
+  }
+  recruiter_membership {
+    bigint id PK
+    bigint organisation_id
+    bigint app_user_id
+    timestamptz valid_from
+    timestamptz valid_to
+  }
+  account_administrator {
+    bigint id PK
+    bigint account_id
+    bigint app_user_id
+    timestamptz valid_from
+    timestamptz valid_to
+  }
+  candidate_profile {
+    bigint id PK
+    bigint app_user_id
+    bigint city_id
+    varchar_2000_ headline
+    date birth_date
+    bigint status_reference_value_id
+    varchar_10_ content_language
+  }
+  candidate_contact {
+    bigint id PK
+    bigint candidate_profile_id
+    varchar_16_ phone_number
+    bigint country_id
+    varchar_254_ contact_email
+  }
+  candidate_education {
+    bigint id PK
+    bigint candidate_profile_id
+    bigint qualification_id
+    varchar_150_ institution_name
+    date start_date
+    date end_date
+  }
+  candidate_experience {
+    bigint id PK
+    bigint candidate_profile_id
+    varchar_150_ employer_name
+    varchar_150_ role_name
+    date start_date
+    date end_date
+  }
+  candidate_skill {
+    bigint id PK
+    bigint candidate_profile_id
+    bigint skill_id
+    bigint proficiency_reference_value_id
+  }
+  candidate_language {
+    bigint id PK
+    bigint candidate_profile_id
+    varchar_10_ language_code
+    bigint proficiency_reference_value_id
+  }
+  resume_template {
+    bigint id PK
+    varchar_80_ code
+    varchar_150_ name
+    varchar_512_ template_object_key
+  }
+  resume_version {
+    bigint id PK
+    bigint candidate_profile_id
+    bigint resume_template_id
+    integer version_number
+    varchar_512_ object_key
+    varchar_255_ content_hash
+    varchar_10_ content_language
+  }
+  candidate_project {
+    bigint id PK
+    bigint candidate_profile_id
+    varchar_150_ title
+    varchar_150_ role_name
+    date start_date
+    date end_date
+    varchar_2000_ outcome
+  }
+  assessment {
+    bigint id PK
+    varchar_80_ code
+    varchar_150_ name
+    numeric_12_4_ maximum_score
+  }
+  assessment_attempt {
+    bigint id PK
+    bigint candidate_profile_id
+    bigint assessment_id
+    numeric_12_4_ score
+    timestamptz completed_at
+  }
+  course {
+    bigint id PK
+    varchar_80_ code
+    varchar_150_ name
+    varchar_150_ provider_name
+  }
+  course_enrolment {
+    bigint id PK
+    bigint candidate_profile_id
+    bigint course_id
+    bigint status_reference_value_id
+    timestamptz enrolled_at
+  }
+  profile_completion {
+    bigint id PK
+    bigint candidate_profile_id
+    varchar_80_ rule_version
+    numeric_5_2_ completion_percentage
+    timestamptz calculated_at
+  }
+  profile_view_event {
+    bigint id PK
+    bigint actor_app_user_id
+    bigint candidate_profile_id
+    timestamptz viewed_at
+  }
+  candidate_activity {
+    bigint id PK
+    bigint candidate_profile_id
+    bigint action_reference_value_id
+    timestamptz occurred_at
+  }
+  candidate_bookmark {
+    bigint id PK
+    bigint actor_app_user_id
+    bigint candidate_profile_id
+    bigint status_reference_value_id
+  }
+  referral {
+    bigint id PK
+    bigint referrer_app_user_id
+    bigint candidate_profile_id
+    varchar_80_ referral_key
+  }
+  job_requirement {
+    bigint id PK
+    bigint organisation_id
+    bigint job_role_id
+    bigint employment_type_reference_value_id
+    bigint work_type_reference_value_id
+    bigint city_id
+    varchar_150_ title
+    text description
+    integer positions
+    bigint status_reference_value_id
+    bigint publish_state_reference_value_id
+    boolean open_to_consultant
+    numeric_18_2_ salary_min
+    numeric_18_2_ salary_max
+    char_3_ currency_code
+    bigint salary_disclosure_reference_value_id
+    varchar_80_ source_timezone
+    varchar_10_ content_language
+  }
+  job_skill {
+    bigint id PK
+    bigint job_requirement_id
+    bigint skill_id
+    boolean mandatory
+  }
+  job_question {
+    bigint id PK
+    bigint job_requirement_id
+    varchar_2000_ question_text
+    bigint answer_type_reference_value_id
+    integer sort_order
+    boolean mandatory
+  }
+  job_application {
+    bigint id PK
+    bigint job_requirement_id
+    bigint candidate_profile_id
+    bigint resume_version_id
+    bigint status_reference_value_id
+    timestamptz applied_at
+  }
+  application_answer {
+    bigint id PK
+    bigint job_application_id
+    bigint job_question_id
+    varchar_2000_ answer_text
+  }
+  application_status_event {
+    bigint id PK
+    bigint job_application_id
+    bigint from_reference_value_id
+    bigint to_reference_value_id
+    bigint actor_app_user_id
+    timestamptz occurred_at
+  }
+  candidate_shortlist {
+    bigint id PK
+    bigint job_requirement_id
+    bigint candidate_profile_id
+    bigint owner_app_user_id
+  }
+  interview {
+    bigint id PK
+    bigint job_application_id
+    timestamptz scheduled_at
+    bigint status_reference_value_id
+  }
+  job_offer {
+    bigint id PK
+    bigint job_application_id
+    numeric_18_2_ offered_amount
+    char_3_ currency_code
+    timestamptz expires_at
+    bigint status_reference_value_id
+  }
+  joining_record {
+    bigint id PK
+    bigint job_application_id
+    date joined_on
+    bigint confirmed_by_app_user_id
+  }
+  job_search_event {
+    bigint id PK
+    bigint candidate_profile_id
+    varchar_2000_ search_text
+    timestamptz searched_at
+  }
+  job_bookmark {
+    bigint id PK
+    bigint candidate_profile_id
+    bigint job_requirement_id
+  }
+  gig_worker_profile {
+    bigint id PK
+    bigint app_user_id
+    varchar_2000_ bio
+    bigint status_reference_value_id
+  }
+  gig_service {
+    bigint id PK
+    bigint gig_worker_profile_id
+    bigint skill_id
+    numeric_18_2_ charge_amount
+    char_3_ currency_code
+    bigint rate_unit_reference_value_id
+  }
+  gig_availability {
+    bigint id PK
+    bigint gig_worker_profile_id
+    timestamptz start_at
+    timestamptz end_at
+    varchar_80_ source_timezone
+  }
+  gig_request {
+    bigint id PK
+    bigint requester_organisation_id
+    varchar_150_ title
+    timestamptz start_at
+    timestamptz end_at
+    numeric_18_2_ price_amount
+    char_3_ currency_code
+    bigint pricing_type_reference_value_id
+    bigint status_reference_value_id
+    varchar_80_ source_timezone
+  }
+  gig_application {
+    bigint id PK
+    bigint gig_request_id
+    bigint gig_worker_profile_id
+    bigint status_reference_value_id
+    timestamptz applied_at
+  }
+  gig_assignment {
+    bigint id PK
+    bigint gig_application_id
+    bigint gig_worker_profile_id
+    timestamptz start_at
+    timestamptz end_at
+    varchar_255_ external_handoff_key
+    bigint status_reference_value_id
+    boolean blocks_window
+  }
+  gig_project {
+    bigint id PK
+    bigint gig_worker_profile_id
+    bigint gig_assignment_id
+    varchar_150_ title
+    varchar_150_ role_name
+    date start_date
+    date end_date
+    varchar_2000_ outcome
+  }
+  gig_worker_list_entry {
+    bigint id PK
+    bigint requester_organisation_id
+    bigint gig_worker_profile_id
+    bigint list_type_reference_value_id
+  }
+  gig_rating {
+    bigint id PK
+    bigint gig_assignment_id
+    bigint requester_app_user_id
+    smallint rating
+    varchar_2000_ comment_text
+  }
+  gig_earnings_snapshot {
+    bigint id PK
+    bigint gig_assignment_id
+    varchar_255_ provider_reference
+    numeric_18_2_ estimated_amount
+    numeric_18_2_ total_amount
+    numeric_18_2_ projected_amount
+    char_3_ currency_code
+    timestamptz reconciled_at
+  }
+  licence {
+    bigint id PK
+    bigint account_id
+    integer max_user_count
+    integer max_device_per_user
+    bigint status_reference_value_id
+  }
+  licence_seat {
+    bigint id PK
+    bigint licence_id
+    bigint app_user_id
+    timestamptz allocated_at
+    timestamptz released_at
+  }
+  registered_device {
+    bigint id PK
+    bigint app_user_id
+    varchar_255_ device_token
+    timestamptz registered_at
+    timestamptz revoked_at
+  }
+  user_session {
+    bigint id PK
+    bigint app_user_id
+    bigint registered_device_id
+    bigint licence_id
+    timestamptz started_at
+    timestamptz last_activity_at
+    timestamptz expires_at
+    timestamptz ended_at
+  }
+  login_attempt {
+    bigint id PK
+    bigint app_user_id
+    varchar_255_ device_token
+    bigint outcome_reference_value_id
+    timestamptz attempted_at
+  }
+  revocation_event {
+    bigint id PK
+    bigint app_user_id
+    bigint registered_device_id
+    bigint user_session_id
+    bigint actor_app_user_id
+    timestamptz occurred_at
+  }
+  sourcing_request {
+    bigint id PK
+    bigint job_requirement_id
+    bigint consultant_app_user_id
+    bigint status_reference_value_id
+    timestamptz requested_at
+  }
+  sourcing_decision {
+    bigint id PK
+    bigint sourcing_request_id
+    bigint employer_app_user_id
+    bigint decision_reference_value_id
+    timestamptz decided_at
+  }
+  sourcing_shortlist {
+    bigint id PK
+    bigint sourcing_request_id
+    bigint candidate_shortlist_id
+  }
+  outreach_batch {
+    bigint id PK
+    bigint job_requirement_id
+    bigint actor_app_user_id
+    varchar_80_ idempotency_key
+    bigint status_reference_value_id
+  }
+  outreach_recipient {
+    bigint id PK
+    bigint outreach_batch_id
+    bigint candidate_profile_id
+    bigint wallet_ledger_entry_id
+    bigint status_reference_value_id
+  }
+  subscription_plan {
+    bigint id PK
+    varchar_80_ code
+    varchar_150_ name
+    numeric_18_2_ price_amount
+    char_3_ currency_code
+  }
+  plan_entitlement {
+    bigint id PK
+    bigint subscription_plan_id
+    bigint entitlement_reference_value_id
+    integer quantity
+  }
+  subscription_period {
+    bigint id PK
+    bigint licence_id
+    bigint subscription_plan_id
+    timestamptz start_at
+    timestamptz end_at
+    bigint status_reference_value_id
+  }
+  payment_order {
+    bigint id PK
+    bigint account_id
+    bigint subscription_period_id
+    numeric_18_2_ amount
+    char_3_ currency_code
+    varchar_80_ idempotency_key
+    bigint status_reference_value_id
+  }
+  payment_event {
+    bigint id PK
+    bigint payment_order_id
+    varchar_80_ provider_event_key
+    varchar_255_ provider_reference
+    numeric_18_2_ amount
+    char_3_ currency_code
+    bigint status_reference_value_id
+  }
+  invoice {
+    bigint id PK
+    bigint payment_order_id
+    varchar_80_ invoice_number
+    numeric_18_2_ total_amount
+    char_3_ currency_code
+    timestamptz issued_at
+  }
+  invoice_line {
+    bigint id PK
+    bigint invoice_id
+    integer line_number
+    varchar_2000_ description
+    numeric_18_2_ line_amount
+    char_3_ currency_code
+  }
+  refund {
+    bigint id PK
+    bigint payment_order_id
+    bigint original_payment_event_id
+    numeric_18_2_ amount
+    char_3_ currency_code
+    varchar_80_ idempotency_key
+    bigint status_reference_value_id
+  }
+  wallet {
+    bigint id PK
+    bigint account_id
+    char_3_ currency_code
+  }
+  wallet_ledger_entry {
+    bigint id PK
+    bigint wallet_id
+    bigint payment_event_id
+    bigint original_wallet_ledger_entry_id
+    numeric_18_2_ signed_amount
+    char_3_ currency_code
+    bigint entry_type_reference_value_id
+    varchar_80_ idempotency_key
+    timestamptz occurred_at
+  }
+  profile_download_event {
+    bigint id PK
+    bigint actor_app_user_id
+    bigint candidate_profile_id
+    bigint wallet_ledger_entry_id
+    timestamptz downloaded_at
+    varchar_80_ idempotency_key
+  }
+  user_preference {
+    bigint id PK
+    bigint app_user_id
+    varchar_10_ language_code
+    bigint privacy_reference_value_id
+  }
+  notification_preference {
+    bigint id PK
+    bigint app_user_id
+    bigint channel_reference_value_id
+    boolean enabled
+  }
+  job_alert_preference {
+    bigint id PK
+    bigint app_user_id
+    bigint job_role_id
+    bigint city_id
+    boolean enabled
+  }
+  notification {
+    bigint id PK
+    bigint recipient_app_user_id
+    varchar_80_ template_key
+    bigint purpose_reference_value_id
+    timestamptz expires_at
+  }
+  notification_delivery {
+    bigint id PK
+    bigint notification_id
+    varchar_255_ provider_reference
+    bigint status_reference_value_id
+    timestamptz attempted_at
+  }
+  community_post {
+    bigint id PK
+    bigint author_app_user_id
+    text body_text
+    varchar_10_ content_language
+    bigint status_reference_value_id
+  }
+  post_reaction {
+    bigint id PK
+    bigint community_post_id
+    bigint app_user_id
+    bigint reaction_reference_value_id
+  }
+  support_ticket {
+    bigint id PK
+    bigint requester_app_user_id
+    bigint assigned_app_user_id
+    varchar_2000_ subject
+    bigint status_reference_value_id
+  }
+  faq {
+    bigint id PK
+    varchar_80_ label_key
+    varchar_80_ answer_key
+    bigint status_reference_value_id
+  }
+  referral_event {
+    bigint id PK
+    bigint referral_id
+    bigint event_reference_value_id
+    timestamptz occurred_at
+  }
+  social_share_event {
+    bigint id PK
+    bigint app_user_id
+    bigint job_requirement_id
+    bigint channel_reference_value_id
+    timestamptz shared_at
+  }
+  an_dim_date {
+    bigint id PK
+    date calendar_date
+    integer year_number
+    integer month_number
+  }
+  an_dim_candidate {
+    bigint id PK
+    bigint candidate_profile_id
+    varchar_255_ pseudonymous_key
+    timestamptz valid_from
+    timestamptz valid_to
+  }
+  an_dim_organisation {
+    bigint id PK
+    bigint organisation_id
+    timestamptz valid_from
+    timestamptz valid_to
+  }
+  an_fact_application {
+    bigint id PK
+    bigint job_application_id
+    bigint an_dim_date_id
+    bigint an_dim_candidate_id
+    bigint an_dim_organisation_id
+    integer event_count
+  }
+  an_fact_credit {
+    bigint id PK
+    bigint wallet_ledger_entry_id
+    bigint an_dim_date_id
+    numeric_18_2_ signed_amount
+    char_3_ currency_code
+  }
+  outbox_event {
+    bigint id PK
+    varchar_80_ aggregate_table
+    bigint aggregate_id
+    varchar_80_ event_key
+    varchar_80_ event_type
+    varchar_255_ payload_reference
+    timestamptz available_at
+    integer attempt_count
+    timestamptz delivered_at
+  }
+  reference_field_binding {
+    bigint id PK
+    varchar_80_ table_name
+    varchar_80_ column_name
+    bigint reference_domain_id
+  }
+  transition_rule {
+    bigint id PK
+    varchar_80_ entity_table
+    bigint from_reference_value_id
+    bigint to_reference_value_id
+    varchar_80_ actor_role_code
+    varchar_80_ guard_code
+  }
+  job_question_option {
+    bigint id PK
+    bigint job_question_id
+    varchar_80_ code
+    varchar_80_ label_key
+    integer sort_order
+    boolean active
+  }
+  reference_domain ||--o{ reference_value : "reference_domain_id"
+  country ||--o{ state : "country_id"
+  state ||--o{ city : "state_id"
+  reference_value ||--o{ app_user : "status_reference_value_id"
+  app_user ||--o| credential : "app_user_id"
+  app_user ||--o{ user_role : "app_user_id"
+  access_role ||--o{ user_role : "access_role_id"
+  access_role ||--o{ role_permission : "access_role_id"
+  permission ||--o{ role_permission : "permission_id"
+  app_user ||--o{ consent_record : "app_user_id"
+  reference_value ||--o{ consent_record : "purpose_reference_value_id"
+  app_user ||--o{ blocking_entry : "blocker_app_user_id"
+  app_user |o--o{ blocking_entry : "blocked_app_user_id"
+  organisation |o--o{ blocking_entry : "blocked_organisation_id"
+  app_user |o--o{ audit_event : "actor_app_user_id"
+  reference_value ||--o{ audit_event : "outcome_reference_value_id"
+  reference_value ||--o{ integration_event : "status_reference_value_id"
+  reference_value ||--o{ account : "status_reference_value_id"
+  account ||--o{ organisation : "account_id"
+  organisation |o--o{ organisation : "parent_organisation_id"
+  industry |o--o{ organisation : "industry_id"
+  reference_value ||--o{ organisation : "status_reference_value_id"
+  organisation ||--o{ organisation_location : "organisation_id"
+  city ||--o{ organisation_location : "city_id"
+  organisation ||--o{ organisation_identifier : "organisation_id"
+  country ||--o{ organisation_identifier : "country_id"
+  reference_value ||--o{ organisation_identifier : "type_reference_value_id"
+  organisation ||--o{ verification_record : "organisation_id"
+  reference_value ||--o{ verification_record : "outcome_reference_value_id"
+  organisation ||--o{ recruiter_membership : "organisation_id"
+  app_user ||--o{ recruiter_membership : "app_user_id"
+  account ||--o{ account_administrator : "account_id"
+  app_user ||--o{ account_administrator : "app_user_id"
+  app_user ||--o| candidate_profile : "app_user_id"
+  city |o--o{ candidate_profile : "city_id"
+  reference_value ||--o{ candidate_profile : "status_reference_value_id"
+  candidate_profile ||--o{ candidate_contact : "candidate_profile_id"
+  country |o--o{ candidate_contact : "country_id"
+  candidate_profile ||--o{ candidate_education : "candidate_profile_id"
+  qualification ||--o{ candidate_education : "qualification_id"
+  candidate_profile ||--o{ candidate_experience : "candidate_profile_id"
+  candidate_profile ||--o{ candidate_skill : "candidate_profile_id"
+  skill ||--o{ candidate_skill : "skill_id"
+  reference_value ||--o{ candidate_skill : "proficiency_reference_value_id"
+  candidate_profile ||--o{ candidate_language : "candidate_profile_id"
+  reference_value ||--o{ candidate_language : "proficiency_reference_value_id"
+  candidate_profile ||--o{ resume_version : "candidate_profile_id"
+  resume_template |o--o{ resume_version : "resume_template_id"
+  candidate_profile ||--o{ candidate_project : "candidate_profile_id"
+  candidate_profile ||--o{ assessment_attempt : "candidate_profile_id"
+  assessment ||--o{ assessment_attempt : "assessment_id"
+  candidate_profile ||--o{ course_enrolment : "candidate_profile_id"
+  course ||--o{ course_enrolment : "course_id"
+  reference_value ||--o{ course_enrolment : "status_reference_value_id"
+  candidate_profile ||--o| profile_completion : "candidate_profile_id"
+  app_user ||--o{ profile_view_event : "actor_app_user_id"
+  candidate_profile ||--o{ profile_view_event : "candidate_profile_id"
+  candidate_profile ||--o{ candidate_activity : "candidate_profile_id"
+  reference_value ||--o{ candidate_activity : "action_reference_value_id"
+  app_user ||--o{ candidate_bookmark : "actor_app_user_id"
+  candidate_profile ||--o{ candidate_bookmark : "candidate_profile_id"
+  reference_value ||--o{ candidate_bookmark : "status_reference_value_id"
+  app_user ||--o{ referral : "referrer_app_user_id"
+  candidate_profile ||--o{ referral : "candidate_profile_id"
+  organisation ||--o{ job_requirement : "organisation_id"
+  job_role ||--o{ job_requirement : "job_role_id"
+  reference_value ||--o{ job_requirement : "employment_type_reference_value_id"
+  reference_value ||--o{ job_requirement : "work_type_reference_value_id"
+  city |o--o{ job_requirement : "city_id"
+  reference_value ||--o{ job_requirement : "status_reference_value_id"
+  reference_value ||--o{ job_requirement : "publish_state_reference_value_id"
+  reference_value ||--o{ job_requirement : "salary_disclosure_reference_value_id"
+  job_requirement ||--o{ job_skill : "job_requirement_id"
+  skill ||--o{ job_skill : "skill_id"
+  job_requirement ||--o{ job_question : "job_requirement_id"
+  reference_value ||--o{ job_question : "answer_type_reference_value_id"
+  job_requirement ||--o{ job_application : "job_requirement_id"
+  candidate_profile ||--o{ job_application : "candidate_profile_id"
+  resume_version |o--o{ job_application : "resume_version_id"
+  reference_value ||--o{ job_application : "status_reference_value_id"
+  job_application ||--o{ application_answer : "job_application_id"
+  job_question ||--o{ application_answer : "job_question_id"
+  job_application ||--o{ application_status_event : "job_application_id"
+  reference_value |o--o{ application_status_event : "from_reference_value_id"
+  reference_value ||--o{ application_status_event : "to_reference_value_id"
+  app_user ||--o{ application_status_event : "actor_app_user_id"
+  job_requirement ||--o{ candidate_shortlist : "job_requirement_id"
+  candidate_profile ||--o{ candidate_shortlist : "candidate_profile_id"
+  app_user ||--o{ candidate_shortlist : "owner_app_user_id"
+  job_application ||--o{ interview : "job_application_id"
+  reference_value ||--o{ interview : "status_reference_value_id"
+  job_application ||--o{ job_offer : "job_application_id"
+  reference_value ||--o{ job_offer : "status_reference_value_id"
+  job_application ||--o| joining_record : "job_application_id"
+  app_user ||--o{ joining_record : "confirmed_by_app_user_id"
+  candidate_profile |o--o{ job_search_event : "candidate_profile_id"
+  candidate_profile ||--o{ job_bookmark : "candidate_profile_id"
+  job_requirement ||--o{ job_bookmark : "job_requirement_id"
+  app_user ||--o| gig_worker_profile : "app_user_id"
+  reference_value ||--o{ gig_worker_profile : "status_reference_value_id"
+  gig_worker_profile ||--o{ gig_service : "gig_worker_profile_id"
+  skill ||--o{ gig_service : "skill_id"
+  reference_value ||--o{ gig_service : "rate_unit_reference_value_id"
+  gig_worker_profile ||--o{ gig_availability : "gig_worker_profile_id"
+  organisation ||--o{ gig_request : "requester_organisation_id"
+  reference_value ||--o{ gig_request : "pricing_type_reference_value_id"
+  reference_value ||--o{ gig_request : "status_reference_value_id"
+  gig_request ||--o{ gig_application : "gig_request_id"
+  gig_worker_profile ||--o{ gig_application : "gig_worker_profile_id"
+  reference_value ||--o{ gig_application : "status_reference_value_id"
+  gig_application ||--o| gig_assignment : "gig_application_id"
+  gig_worker_profile ||--o{ gig_assignment : "gig_worker_profile_id"
+  reference_value ||--o{ gig_assignment : "status_reference_value_id"
+  gig_worker_profile ||--o{ gig_project : "gig_worker_profile_id"
+  gig_assignment |o--o{ gig_project : "gig_assignment_id"
+  organisation ||--o{ gig_worker_list_entry : "requester_organisation_id"
+  gig_worker_profile ||--o{ gig_worker_list_entry : "gig_worker_profile_id"
+  reference_value ||--o{ gig_worker_list_entry : "list_type_reference_value_id"
+  gig_assignment ||--o| gig_rating : "gig_assignment_id"
+  app_user ||--o{ gig_rating : "requester_app_user_id"
+  gig_assignment ||--o{ gig_earnings_snapshot : "gig_assignment_id"
+  account ||--o{ licence : "account_id"
+  reference_value ||--o{ licence : "status_reference_value_id"
+  licence ||--o{ licence_seat : "licence_id"
+  app_user ||--o{ licence_seat : "app_user_id"
+  app_user ||--o{ registered_device : "app_user_id"
+  app_user ||--o{ user_session : "app_user_id"
+  registered_device ||--o{ user_session : "registered_device_id"
+  licence ||--o{ user_session : "licence_id"
+  app_user |o--o{ login_attempt : "app_user_id"
+  reference_value ||--o{ login_attempt : "outcome_reference_value_id"
+  app_user ||--o{ revocation_event : "app_user_id"
+  registered_device |o--o{ revocation_event : "registered_device_id"
+  user_session |o--o{ revocation_event : "user_session_id"
+  app_user ||--o{ revocation_event : "actor_app_user_id"
+  job_requirement ||--o{ sourcing_request : "job_requirement_id"
+  app_user ||--o{ sourcing_request : "consultant_app_user_id"
+  reference_value ||--o{ sourcing_request : "status_reference_value_id"
+  sourcing_request ||--o{ sourcing_decision : "sourcing_request_id"
+  app_user ||--o{ sourcing_decision : "employer_app_user_id"
+  reference_value ||--o{ sourcing_decision : "decision_reference_value_id"
+  sourcing_request ||--o{ sourcing_shortlist : "sourcing_request_id"
+  candidate_shortlist ||--o{ sourcing_shortlist : "candidate_shortlist_id"
+  job_requirement ||--o{ outreach_batch : "job_requirement_id"
+  app_user ||--o{ outreach_batch : "actor_app_user_id"
+  reference_value ||--o{ outreach_batch : "status_reference_value_id"
+  outreach_batch ||--o{ outreach_recipient : "outreach_batch_id"
+  candidate_profile ||--o{ outreach_recipient : "candidate_profile_id"
+  wallet_ledger_entry |o--o{ outreach_recipient : "wallet_ledger_entry_id"
+  reference_value ||--o{ outreach_recipient : "status_reference_value_id"
+  subscription_plan ||--o{ plan_entitlement : "subscription_plan_id"
+  reference_value ||--o{ plan_entitlement : "entitlement_reference_value_id"
+  licence ||--o{ subscription_period : "licence_id"
+  subscription_plan ||--o{ subscription_period : "subscription_plan_id"
+  reference_value ||--o{ subscription_period : "status_reference_value_id"
+  account ||--o{ payment_order : "account_id"
+  subscription_period |o--o{ payment_order : "subscription_period_id"
+  reference_value ||--o{ payment_order : "status_reference_value_id"
+  payment_order ||--o{ payment_event : "payment_order_id"
+  reference_value ||--o{ payment_event : "status_reference_value_id"
+  payment_order ||--o{ invoice : "payment_order_id"
+  invoice ||--o{ invoice_line : "invoice_id"
+  payment_order ||--o{ refund : "payment_order_id"
+  payment_event ||--o{ refund : "original_payment_event_id"
+  reference_value ||--o{ refund : "status_reference_value_id"
+  account ||--o{ wallet : "account_id"
+  wallet ||--o{ wallet_ledger_entry : "wallet_id"
+  payment_event |o--o{ wallet_ledger_entry : "payment_event_id"
+  wallet_ledger_entry |o--o{ wallet_ledger_entry : "original_wallet_ledger_entry_id"
+  reference_value ||--o{ wallet_ledger_entry : "entry_type_reference_value_id"
+  app_user ||--o{ profile_download_event : "actor_app_user_id"
+  candidate_profile ||--o{ profile_download_event : "candidate_profile_id"
+  wallet_ledger_entry ||--o{ profile_download_event : "wallet_ledger_entry_id"
+  app_user ||--o| user_preference : "app_user_id"
+  reference_value ||--o{ user_preference : "privacy_reference_value_id"
+  app_user ||--o{ notification_preference : "app_user_id"
+  reference_value ||--o{ notification_preference : "channel_reference_value_id"
+  app_user ||--o{ job_alert_preference : "app_user_id"
+  job_role |o--o{ job_alert_preference : "job_role_id"
+  city |o--o{ job_alert_preference : "city_id"
+  app_user ||--o{ notification : "recipient_app_user_id"
+  reference_value ||--o{ notification : "purpose_reference_value_id"
+  notification ||--o{ notification_delivery : "notification_id"
+  reference_value ||--o{ notification_delivery : "status_reference_value_id"
+  app_user ||--o{ community_post : "author_app_user_id"
+  reference_value ||--o{ community_post : "status_reference_value_id"
+  community_post ||--o{ post_reaction : "community_post_id"
+  app_user ||--o{ post_reaction : "app_user_id"
+  reference_value ||--o{ post_reaction : "reaction_reference_value_id"
+  app_user ||--o{ support_ticket : "requester_app_user_id"
+  app_user |o--o{ support_ticket : "assigned_app_user_id"
+  reference_value ||--o{ support_ticket : "status_reference_value_id"
+  reference_value ||--o{ faq : "status_reference_value_id"
+  referral ||--o{ referral_event : "referral_id"
+  reference_value ||--o{ referral_event : "event_reference_value_id"
+  app_user ||--o{ social_share_event : "app_user_id"
+  job_requirement ||--o{ social_share_event : "job_requirement_id"
+  reference_value ||--o{ social_share_event : "channel_reference_value_id"
+  candidate_profile |o--o{ an_dim_candidate : "candidate_profile_id"
+  organisation ||--o{ an_dim_organisation : "organisation_id"
+  job_application ||--o| an_fact_application : "job_application_id"
+  an_dim_date ||--o{ an_fact_application : "an_dim_date_id"
+  an_dim_candidate ||--o{ an_fact_application : "an_dim_candidate_id"
+  an_dim_organisation ||--o{ an_fact_application : "an_dim_organisation_id"
+  wallet_ledger_entry ||--o| an_fact_credit : "wallet_ledger_entry_id"
+  an_dim_date ||--o{ an_fact_credit : "an_dim_date_id"
+  reference_domain ||--o{ reference_field_binding : "reference_domain_id"
+  reference_value ||--o{ transition_rule : "from_reference_value_id"
+  reference_value ||--o{ transition_rule : "to_reference_value_id"
+  job_question ||--o{ job_question_option : "job_question_id"
+  access_role ||--o{ transition_rule : "actor_role_code"

@@ -1,0 +1,66 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:talentra:gig.handoff.v1",
+  "title": "gig.handoff.v1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "event_id",
+    "correlation_id",
+    "schema_version",
+    "occurred_at",
+    "source_version",
+    "assignment_id",
+    "start_at",
+    "end_at",
+    "handoff_key"
+  ],
+  "properties": {
+    "event_id": {
+      "type": "string",
+      "description": "Globally unique producer event key within contract",
+      "maxLength": 255
+    },
+    "correlation_id": {
+      "type": "string",
+      "description": "Safe trace correlation key",
+      "maxLength": 255
+    },
+    "schema_version": {
+      "type": "integer",
+      "description": "Positive exact supported contract version",
+      "minimum": 0
+    },
+    "occurred_at": {
+      "type": "string",
+      "description": "UTC ISO8601 source timestamp",
+      "maxLength": 255,
+      "format": "date-time"
+    },
+    "source_version": {
+      "type": "integer",
+      "description": "Monotonic aggregate version",
+      "minimum": 0
+    },
+    "assignment_id": {
+      "type": "integer",
+      "description": "Accepted assignment ID",
+      "minimum": 0
+    },
+    "start_at": {
+      "type": "string",
+      "description": "UTC half-open gig window start",
+      "maxLength": 255
+    },
+    "end_at": {
+      "type": "string",
+      "description": "UTC half-open gig window end",
+      "maxLength": 255
+    },
+    "handoff_key": {
+      "type": "string",
+      "description": "Replay-safe external assignment request key",
+      "maxLength": 255
+    }
+  }
+}

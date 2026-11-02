@@ -1,0 +1,752 @@
+[
+  {
+    "version": "mini",
+    "workflow_id": "WF-01",
+    "record_grain": "One guarded workflow example case; emitted step rows refer to shared dictionary examples",
+    "case_file": "mini/workflows/WF-01/cases.json",
+    "example_file": "mini/workflows/WF-01/step_examples.json",
+    "analytics_file": "mini/workflows/WF-01/analytics.json",
+    "linked_business_datasets": [],
+    "business_selector": "See workflow action and declared data elements. Shared business files are references, not duplicated per workflow.",
+    "native_model_status": "Existing or proposed context as recorded per step",
+    "proof_layer": "Workflow envelope fixtures and examples. No endpoint, database transaction, or external provider was invoked."
+  },
+  {
+    "version": "mini",
+    "workflow_id": "WF-02",
+    "record_grain": "One guarded workflow example case; emitted step rows refer to shared dictionary examples",
+    "case_file": "mini/workflows/WF-02/cases.json",
+    "example_file": "mini/workflows/WF-02/step_examples.json",
+    "analytics_file": "mini/workflows/WF-02/analytics.json",
+    "linked_business_datasets": [],
+    "business_selector": "See workflow action and declared data elements. Shared business files are references, not duplicated per workflow.",
+    "native_model_status": "Existing or proposed context as recorded per step",
+    "proof_layer": "Workflow envelope fixtures and examples. No endpoint, database transaction, or external provider was invoked."
+  },
+  {
+    "version": "mini",
+    "workflow_id": "WF-03",
+    "record_grain": "One guarded workflow example case; emitted step rows refer to shared dictionary examples",
+    "case_file": "mini/workflows/WF-03/cases.json",
+    "example_file": "mini/workflows/WF-03/step_examples.json",
+    "analytics_file": "mini/workflows/WF-03/analytics.json",
+    "linked_business_datasets": [],
+    "business_selector": "See workflow action and declared data elements. Shared business files are references, not duplicated per workflow.",
+    "native_model_status": "Existing or proposed context as recorded per step",
+    "proof_layer": "Workflow envelope fixtures and examples. No endpoint, database transaction, or external provider was invoked."
+  },
+  {
+    "version": "mini",
+    "workflow_id": "WF-04",
+    "record_grain": "One guarded workflow example case; emitted step rows refer to shared dictionary examples",
+    "case_file": "mini/workflows/WF-04/cases.json",
+    "example_file": "mini/workflows/WF-04/step_examples.json",
+    "analytics_file": "mini/workflows/WF-04/analytics.json",
+    "linked_business_datasets": [
+      "mini/core/journey.csv.gz",
+      "mini/core/event.csv.gz",
+      "mini/core/application.csv.gz",
+      "mini/core/job.csv.gz"
+    ],
+    "business_selector": "See workflow action and declared data elements. Shared business files are references, not duplicated per workflow.",
+    "native_model_status": "Existing or proposed context as recorded per step",
+    "proof_layer": "Workflow envelope fixtures and examples. No endpoint, database transaction, or external provider was invoked."
+  },
+  {
+    "version": "mini",
+    "workflow_id": "WF-05",
+    "record_grain": "One guarded workflow example case; emitted step rows refer to shared dictionary examples",
+    "case_file": "mini/workflows/WF-05/cases.json",
+    "example_file": "mini/workflows/WF-05/step_examples.json",
+    "analytics_file": "mini/workflows/WF-05/analytics.json",
+    "linked_business_datasets": [
+      "mini/core/journey.csv.gz",
+      "mini/core/event.csv.gz",
+      "mini/core/application.csv.gz",
+      "mini/core/job.csv.gz"
+    ],
+    "business_selector": "See workflow action and declared data elements. Shared business files are references, not duplicated per workflow.",
+    "native_model_status": "Existing or proposed context as recorded per step",
+    "proof_layer": "Workflow envelope fixtures and examples. No endpoint, database transaction, or external provider was invoked."
+  },
+  {
+    "version": "mini",
+    "workflow_id": "WF-06",
+    "record_grain": "One guarded workflow example case; emitted step rows refer to shared dictionary examples",
+    "case_file": "mini/workflows/WF-06/cases.json",
+    "example_file": "mini/workflows/WF-06/step_examples.json",
+    "analytics_file": "mini/workflows/WF-06/analytics.json",
+    "linked_business_datasets": [
+      "mini/core/journey.csv.gz",
+      "mini/core/event.csv.gz",
+      "mini/core/application.csv.gz",
+      "mini/core/job.csv.gz"
+    ],
+    "business_selector": "See workflow action and declared data elements. Shared business files are references, not duplicated per workflow.",
+    "native_model_status": "Existing or proposed context as recorded per step",
+    "proof_layer": "Workflow envelope fixtures and examples. No endpoint, database transaction, or external provider was invoked."
+  },
+  {
+    "version": "mini",
+    "workflow_id": "WF-07",
+    "record_grain": "One guarded workflow example case; emitted step rows refer to shared dictionary examples",
+    "case_file": "mini/workflows/WF-07/cases.json",
+    "example_file": "mini/workflows/WF-07/step_examples.json",
+    "analytics_file": "mini/workflows/WF-07/analytics.json",
+    "linked_business_datasets": [
+      "mini/core/journey.csv.gz",
+      "mini/core/event.csv.gz",
+      "mini/core/application.csv.gz",
+      "mini/core/job.csv.gz"
+    ],
+    "business_selector": "See workflow action and declared data elements. Shared business files are references, not duplicated per workflow.",
+    "native_model_status": "Existing or proposed context as recorded per step",
+    "proof_layer": "Workflow envelope fixtures and examples. No endpoint, database transaction, or external provider was invoked."
+  },
+  {
+    "version": "mini",
+    "workflow_id": "WF-08",
+    "record_grain": "One guarded workflow example case; emitted step rows refer to shared dictionary examples",
+    "case_file": "mini/workflows/WF-08/cases.json",
+    "example_file": "mini/workflows/WF-08/step_examples.json",
+    "analytics_file": "mini/workflows/WF-08/analytics.json",
+    "linked_business_datasets": [],
+    "business_selector": "See workflow action and declared data elements. Shared business files are references, not duplicated per workflow.",
+    "native_model_status": "Existing or proposed context as recorded per step",
+    "proof_layer": "Workflow envelope fixtures and examples. No endpoint, database transaction, or external provider was invoked."
+  },
+  {
+    "version": "mini",
+    "workflow_id": "WF-09",
+    "record_grain": "One guarded workflow example case; emitted step rows refer to shared dictionary examples",
+    "case_file": "mini/workflows/WF-09/cases.json",
+    "example_file": "mini/workflows/WF-09/step_examples.json",
+    "analytics_file": "mini/workflows/WF-09/analytics.json",
+    "linked_business_datasets": [],
+    "business_selector": "See workflow action and declared data elements. Shared business files are references, not duplicated per workflow.",
+    "native_model_status": "Existing or proposed context as recorded per step",
+    "proof_layer": "Workflow envelope fixtures and examples. No endpoint, database transaction, or external provider was invoked."
+  },
+  {
+    "version": "mini",
+    "workflow_id": "WF-10",
+    "record_grain": "One guarded workflow example case; emitted step rows refer to shared dictionary examples",
+    "case_file": "mini/workflows/WF-10/cases.json",
+    "example_file": "mini/workflows/WF-10/step_examples.json",
+    "analytics_file": "mini/workflows/WF-10/analytics.json",
+    "linked_business_datasets": [
+      "mini/core/gig.csv.gz"
+    ],
+    "business_selector": "See workflow action and declared data elements. Shared business files are references, not duplicated per workflow.",
+    "native_model_status": "Existing or proposed context as recorded per step",
+    "proof_layer": "Workflow envelope fixtures and examples. No endpoint, database transaction, or external provider was invoked."
+  },
+  {
+    "version": "mini",
+    "workflow_id": "WF-11",
+    "record_grain": "One guarded workflow example case; emitted step rows refer to shared dictionary examples",
+    "case_file": "mini/workflows/WF-11/cases.json",
+    "example_file": "mini/workflows/WF-11/step_examples.json",
+    "analytics_file": "mini/workflows/WF-11/analytics.json",
+    "linked_business_datasets": [
+      "mini/core/gig.csv.gz"
+    ],
+    "business_selector": "See workflow action and declared data elements. Shared business files are references, not duplicated per workflow.",
+    "native_model_status": "Existing or proposed context as recorded per step",
+    "proof_layer": "Workflow envelope fixtures and examples. No endpoint, database transaction, or external provider was invoked."
+  },
+  {
+    "version": "mini",
+    "workflow_id": "WF-12",
+    "record_grain": "One guarded workflow example case; emitted step rows refer to shared dictionary examples",
+    "case_file": "mini/workflows/WF-12/cases.json",
+    "example_file": "mini/workflows/WF-12/step_examples.json",
+    "analytics_file": "mini/workflows/WF-12/analytics.json",
+    "linked_business_datasets": [],
+    "business_selector": "See workflow action and declared data elements. Shared business files are references, not duplicated per workflow.",
+    "native_model_status": "Existing or proposed context as recorded per step",
+    "proof_layer": "Workflow envelope fixtures and examples. No endpoint, database transaction, or external provider was invoked."
+  },
+  {
+    "version": "mini",
+    "workflow_id": "WF-13",
+    "record_grain": "One guarded workflow example case; emitted step rows refer to shared dictionary examples",
+    "case_file": "mini/workflows/WF-13/cases.json",
+    "example_file": "mini/workflows/WF-13/step_examples.json",
+    "analytics_file": "mini/workflows/WF-13/analytics.json",
+    "linked_business_datasets": [],
+    "business_selector": "See workflow action and declared data elements. Shared business files are references, not duplicated per workflow.",
+    "native_model_status": "Existing or proposed context as recorded per step",
+    "proof_layer": "Workflow envelope fixtures and examples. No endpoint, database transaction, or external provider was invoked."
+  },
+  {
+    "version": "mini",
+    "workflow_id": "WF-14",
+    "record_grain": "One guarded workflow example case; emitted step rows refer to shared dictionary examples",
+    "case_file": "mini/workflows/WF-14/cases.json",
+    "example_file": "mini/workflows/WF-14/step_examples.json",
+    "analytics_file": "mini/workflows/WF-14/analytics.json",
+    "linked_business_datasets": [],
+    "business_selector": "See workflow action and declared data elements. Shared business files are references, not duplicated per workflow.",
+    "native_model_status": "Existing or proposed context as recorded per step",
+    "proof_layer": "Workflow envelope fixtures and examples. No endpoint, database transaction, or external provider was invoked."
+  },
+  {
+    "version": "mini",
+    "workflow_id": "WF-15",
+    "record_grain": "One guarded workflow example case; emitted step rows refer to shared dictionary examples",
+    "case_file": "mini/workflows/WF-15/cases.json",
+    "example_file": "mini/workflows/WF-15/step_examples.json",
+    "analytics_file": "mini/workflows/WF-15/analytics.json",
+    "linked_business_datasets": [],
+    "business_selector": "See workflow action and declared data elements. Shared business files are references, not duplicated per workflow.",
+    "native_model_status": "Existing or proposed context as recorded per step",
+    "proof_layer": "Workflow envelope fixtures and examples. No endpoint, database transaction, or external provider was invoked."
+  },
+  {
+    "version": "mini",
+    "workflow_id": "WF-16",
+    "record_grain": "One guarded workflow example case; emitted step rows refer to shared dictionary examples",
+    "case_file": "mini/workflows/WF-16/cases.json",
+    "example_file": "mini/workflows/WF-16/step_examples.json",
+    "analytics_file": "mini/workflows/WF-16/analytics.json",
+    "linked_business_datasets": [],
+    "business_selector": "See workflow action and declared data elements. Shared business files are references, not duplicated per workflow.",
+    "native_model_status": "Existing or proposed context as recorded per step",
+    "proof_layer": "Workflow envelope fixtures and examples. No endpoint, database transaction, or external provider was invoked."
+  },
+  {
+    "version": "mini",
+    "workflow_id": "WF-17",
+    "record_grain": "One guarded workflow example case; emitted step rows refer to shared dictionary examples",
+    "case_file": "mini/workflows/WF-17/cases.json",
+    "example_file": "mini/workflows/WF-17/step_examples.json",
+    "analytics_file": "mini/workflows/WF-17/analytics.json",
+    "linked_business_datasets": [],
+    "business_selector": "See workflow action and declared data elements. Shared business files are references, not duplicated per workflow.",
+    "native_model_status": "Existing or proposed context as recorded per step",
+    "proof_layer": "Workflow envelope fixtures and examples. No endpoint, database transaction, or external provider was invoked."
+  },
+  {
+    "version": "mini",
+    "workflow_id": "WF-18",
+    "record_grain": "One guarded workflow example case; emitted step rows refer to shared dictionary examples",
+    "case_file": "mini/workflows/WF-18/cases.json",
+    "example_file": "mini/workflows/WF-18/step_examples.json",
+    "analytics_file": "mini/workflows/WF-18/analytics.json",
+    "linked_business_datasets": [],
+    "business_selector": "See workflow action and declared data elements. Shared business files are references, not duplicated per workflow.",
+    "native_model_status": "Existing or proposed context as recorded per step",
+    "proof_layer": "Workflow envelope fixtures and examples. No endpoint, database transaction, or external provider was invoked."
+  },
+  {
+    "version": "mini",
+    "workflow_id": "WF-19",
+    "record_grain": "One guarded workflow example case; emitted step rows refer to shared dictionary examples",
+    "case_file": "mini/workflows/WF-19/cases.json",
+    "example_file": "mini/workflows/WF-19/step_examples.json",
+    "analytics_file": "mini/workflows/WF-19/analytics.json",
+    "linked_business_datasets": [
+      "mini/core/journey.csv.gz",
+      "mini/core/event.csv.gz",
+      "mini/core/application.csv.gz",
+      "mini/core/job.csv.gz"
+    ],
+    "business_selector": "See workflow action and declared data elements. Shared business files are references, not duplicated per workflow.",
+    "native_model_status": "Existing or proposed context as recorded per step",
+    "proof_layer": "Workflow envelope fixtures and examples. No endpoint, database transaction, or external provider was invoked."
+  },
+  {
+    "version": "mini",
+    "workflow_id": "WF-20",
+    "record_grain": "One guarded workflow example case; emitted step rows refer to shared dictionary examples",
+    "case_file": "mini/workflows/WF-20/cases.json",
+    "example_file": "mini/workflows/WF-20/step_examples.json",
+    "analytics_file": "mini/workflows/WF-20/analytics.json",
+    "linked_business_datasets": [
+      "mini/core/journey.csv.gz",
+      "mini/core/event.csv.gz",
+      "mini/core/application.csv.gz",
+      "mini/core/job.csv.gz"
+    ],
+    "business_selector": "See workflow action and declared data elements. Shared business files are references, not duplicated per workflow.",
+    "native_model_status": "Existing or proposed context as recorded per step",
+    "proof_layer": "Workflow envelope fixtures and examples. No endpoint, database transaction, or external provider was invoked."
+  },
+  {
+    "version": "mini",
+    "workflow_id": "WF-21",
+    "record_grain": "One guarded workflow example case; emitted step rows refer to shared dictionary examples",
+    "case_file": "mini/workflows/WF-21/cases.json",
+    "example_file": "mini/workflows/WF-21/step_examples.json",
+    "analytics_file": "mini/workflows/WF-21/analytics.json",
+    "linked_business_datasets": [
+      "mini/core/journey.csv.gz",
+      "mini/core/event.csv.gz",
+      "mini/core/application.csv.gz",
+      "mini/core/job.csv.gz"
+    ],
+    "business_selector": "See workflow action and declared data elements. Shared business files are references, not duplicated per workflow.",
+    "native_model_status": "Existing or proposed context as recorded per step",
+    "proof_layer": "Workflow envelope fixtures and examples. No endpoint, database transaction, or external provider was invoked."
+  },
+  {
+    "version": "mini",
+    "workflow_id": "WF-22",
+    "record_grain": "One guarded workflow example case; emitted step rows refer to shared dictionary examples",
+    "case_file": "mini/workflows/WF-22/cases.json",
+    "example_file": "mini/workflows/WF-22/step_examples.json",
+    "analytics_file": "mini/workflows/WF-22/analytics.json",
+    "linked_business_datasets": [
+      "mini/core/journey.csv.gz",
+      "mini/core/event.csv.gz",
+      "mini/core/application.csv.gz",
+      "mini/core/job.csv.gz"
+    ],
+    "business_selector": "See workflow action and declared data elements. Shared business files are references, not duplicated per workflow.",
+    "native_model_status": "Existing or proposed context as recorded per step",
+    "proof_layer": "Workflow envelope fixtures and examples. No endpoint, database transaction, or external provider was invoked."
+  },
+  {
+    "version": "mini",
+    "workflow_id": "WF-23",
+    "record_grain": "One guarded workflow example case; emitted step rows refer to shared dictionary examples",
+    "case_file": "mini/workflows/WF-23/cases.json",
+    "example_file": "mini/workflows/WF-23/step_examples.json",
+    "analytics_file": "mini/workflows/WF-23/analytics.json",
+    "linked_business_datasets": [
+      "mini/core/journey.csv.gz",
+      "mini/core/event.csv.gz",
+      "mini/core/application.csv.gz",
+      "mini/core/job.csv.gz"
+    ],
+    "business_selector": "See workflow action and declared data elements. Shared business files are references, not duplicated per workflow.",
+    "native_model_status": "Existing or proposed context as recorded per step",
+    "proof_layer": "Workflow envelope fixtures and examples. No endpoint, database transaction, or external provider was invoked."
+  },
+  {
+    "version": "mini",
+    "workflow_id": "WF-24",
+    "record_grain": "One guarded workflow example case; emitted step rows refer to shared dictionary examples",
+    "case_file": "mini/workflows/WF-24/cases.json",
+    "example_file": "mini/workflows/WF-24/step_examples.json",
+    "analytics_file": "mini/workflows/WF-24/analytics.json",
+    "linked_business_datasets": [
+      "mini/core/gig.csv.gz"
+    ],
+    "business_selector": "See workflow action and declared data elements. Shared business files are references, not duplicated per workflow.",
+    "native_model_status": "Existing or proposed context as recorded per step",
+    "proof_layer": "Workflow envelope fixtures and examples. No endpoint, database transaction, or external provider was invoked."
+  },
+  {
+    "version": "mini",
+    "workflow_id": "WF-25",
+    "record_grain": "One guarded workflow example case; emitted step rows refer to shared dictionary examples",
+    "case_file": "mini/workflows/WF-25/cases.json",
+    "example_file": "mini/workflows/WF-25/step_examples.json",
+    "analytics_file": "mini/workflows/WF-25/analytics.json",
+    "linked_business_datasets": [],
+    "business_selector": "See workflow action and declared data elements. Shared business files are references, not duplicated per workflow.",
+    "native_model_status": "Existing or proposed context as recorded per step",
+    "proof_layer": "Workflow envelope fixtures and examples. No endpoint, database transaction, or external provider was invoked."
+  },
+  {
+    "version": "mini",
+    "workflow_id": "WF-26",
+    "record_grain": "One guarded workflow example case; emitted step rows refer to shared dictionary examples",
+    "case_file": "mini/workflows/WF-26/cases.json",
+    "example_file": "mini/workflows/WF-26/step_examples.json",
+    "analytics_file": "mini/workflows/WF-26/analytics.json",
+    "linked_business_datasets": [],
+    "business_selector": "See workflow action and declared data elements. Shared business files are references, not duplicated per workflow.",
+    "native_model_status": "Existing or proposed context as recorded per step",
+    "proof_layer": "Workflow envelope fixtures and examples. No endpoint, database transaction, or external provider was invoked."
+  },
+  {
+    "version": "mini",
+    "workflow_id": "WF-27",
+    "record_grain": "One guarded workflow example case; emitted step rows refer to shared dictionary examples",
+    "case_file": "mini/workflows/WF-27/cases.json",
+    "example_file": "mini/workflows/WF-27/step_examples.json",
+    "analytics_file": "mini/workflows/WF-27/analytics.json",
+    "linked_business_datasets": [],
+    "business_selector": "See workflow action and declared data elements. Shared business files are references, not duplicated per workflow.",
+    "native_model_status": "Existing or proposed context as recorded per step",
+    "proof_layer": "Workflow envelope fixtures and examples. No endpoint, database transaction, or external provider was invoked."
+  },
+  {
+    "version": "seed",
+    "workflow_id": "WF-01",
+    "record_grain": "One guarded workflow example case; emitted step rows refer to shared dictionary examples",
+    "case_file": "seed/workflows/WF-01/cases.json",
+    "example_file": "seed/workflows/WF-01/step_examples.json",
+    "analytics_file": "seed/workflows/WF-01/analytics.json",
+    "linked_business_datasets": [],
+    "business_selector": "See workflow action and declared data elements. Shared business files are references, not duplicated per workflow.",
+    "native_model_status": "Existing or proposed context as recorded per step",
+    "proof_layer": "Workflow envelope fixtures and examples. No endpoint, database transaction, or external provider was invoked."
+  },
+  {
+    "version": "seed",
+    "workflow_id": "WF-02",
+    "record_grain": "One guarded workflow example case; emitted step rows refer to shared dictionary examples",
+    "case_file": "seed/workflows/WF-02/cases.json",
+    "example_file": "seed/workflows/WF-02/step_examples.json",
+    "analytics_file": "seed/workflows/WF-02/analytics.json",
+    "linked_business_datasets": [],
+    "business_selector": "See workflow action and declared data elements. Shared business files are references, not duplicated per workflow.",
+    "native_model_status": "Existing or proposed context as recorded per step",
+    "proof_layer": "Workflow envelope fixtures and examples. No endpoint, database transaction, or external provider was invoked."
+  },
+  {
+    "version": "seed",
+    "workflow_id": "WF-03",
+    "record_grain": "One guarded workflow example case; emitted step rows refer to shared dictionary examples",
+    "case_file": "seed/workflows/WF-03/cases.json",
+    "example_file": "seed/workflows/WF-03/step_examples.json",
+    "analytics_file": "seed/workflows/WF-03/analytics.json",
+    "linked_business_datasets": [],
+    "business_selector": "See workflow action and declared data elements. Shared business files are references, not duplicated per workflow.",
+    "native_model_status": "Existing or proposed context as recorded per step",
+    "proof_layer": "Workflow envelope fixtures and examples. No endpoint, database transaction, or external provider was invoked."
+  },
+  {
+    "version": "seed",
+    "workflow_id": "WF-04",
+    "record_grain": "One guarded workflow example case; emitted step rows refer to shared dictionary examples",
+    "case_file": "seed/workflows/WF-04/cases.json",
+    "example_file": "seed/workflows/WF-04/step_examples.json",
+    "analytics_file": "seed/workflows/WF-04/analytics.json",
+    "linked_business_datasets": [
+      "seed/core/journey.csv.gz",
+      "seed/core/event.csv.gz",
+      "seed/core/application.csv.gz",
+      "seed/core/job.csv.gz"
+    ],
+    "business_selector": "See workflow action and declared data elements. Shared business files are references, not duplicated per workflow.",
+    "native_model_status": "Existing or proposed context as recorded per step",
+    "proof_layer": "Workflow envelope fixtures and examples. No endpoint, database transaction, or external provider was invoked."
+  },
+  {
+    "version": "seed",
+    "workflow_id": "WF-05",
+    "record_grain": "One guarded workflow example case; emitted step rows refer to shared dictionary examples",
+    "case_file": "seed/workflows/WF-05/cases.json",
+    "example_file": "seed/workflows/WF-05/step_examples.json",
+    "analytics_file": "seed/workflows/WF-05/analytics.json",
+    "linked_business_datasets": [
+      "seed/core/journey.csv.gz",
+      "seed/core/event.csv.gz",
+      "seed/core/application.csv.gz",
+      "seed/core/job.csv.gz"
+    ],
+    "business_selector": "See workflow action and declared data elements. Shared business files are references, not duplicated per workflow.",
+    "native_model_status": "Existing or proposed context as recorded per step",
+    "proof_layer": "Workflow envelope fixtures and examples. No endpoint, database transaction, or external provider was invoked."
+  },
+  {
+    "version": "seed",
+    "workflow_id": "WF-06",
+    "record_grain": "One guarded workflow example case; emitted step rows refer to shared dictionary examples",
+    "case_file": "seed/workflows/WF-06/cases.json",
+    "example_file": "seed/workflows/WF-06/step_examples.json",
+    "analytics_file": "seed/workflows/WF-06/analytics.json",
+    "linked_business_datasets": [
+      "seed/core/journey.csv.gz",
+      "seed/core/event.csv.gz",
+      "seed/core/application.csv.gz",
+      "seed/core/job.csv.gz"
+    ],
+    "business_selector": "See workflow action and declared data elements. Shared business files are references, not duplicated per workflow.",
+    "native_model_status": "Existing or proposed context as recorded per step",
+    "proof_layer": "Workflow envelope fixtures and examples. No endpoint, database transaction, or external provider was invoked."
+  },
+  {
+    "version": "seed",
+    "workflow_id": "WF-07",
+    "record_grain": "One guarded workflow example case; emitted step rows refer to shared dictionary examples",
+    "case_file": "seed/workflows/WF-07/cases.json",
+    "example_file": "seed/workflows/WF-07/step_examples.json",
+    "analytics_file": "seed/workflows/WF-07/analytics.json",
+    "linked_business_datasets": [
+      "seed/core/journey.csv.gz",
+      "seed/core/event.csv.gz",
+      "seed/core/application.csv.gz",
+      "seed/core/job.csv.gz"
+    ],
+    "business_selector": "See workflow action and declared data elements. Shared business files are references, not duplicated per workflow.",
+    "native_model_status": "Existing or proposed context as recorded per step",
+    "proof_layer": "Workflow envelope fixtures and examples. No endpoint, database transaction, or external provider was invoked."
+  },
+  {
+    "version": "seed",
+    "workflow_id": "WF-08",
+    "record_grain": "One guarded workflow example case; emitted step rows refer to shared dictionary examples",
+    "case_file": "seed/workflows/WF-08/cases.json",
+    "example_file": "seed/workflows/WF-08/step_examples.json",
+    "analytics_file": "seed/workflows/WF-08/analytics.json",
+    "linked_business_datasets": [],
+    "business_selector": "See workflow action and declared data elements. Shared business files are references, not duplicated per workflow.",
+    "native_model_status": "Existing or proposed context as recorded per step",
+    "proof_layer": "Workflow envelope fixtures and examples. No endpoint, database transaction, or external provider was invoked."
+  },
+  {
+    "version": "seed",
+    "workflow_id": "WF-09",
+    "record_grain": "One guarded workflow example case; emitted step rows refer to shared dictionary examples",
+    "case_file": "seed/workflows/WF-09/cases.json",
+    "example_file": "seed/workflows/WF-09/step_examples.json",
+    "analytics_file": "seed/workflows/WF-09/analytics.json",
+    "linked_business_datasets": [],
+    "business_selector": "See workflow action and declared data elements. Shared business files are references, not duplicated per workflow.",
+    "native_model_status": "Existing or proposed context as recorded per step",
+    "proof_layer": "Workflow envelope fixtures and examples. No endpoint, database transaction, or external provider was invoked."
+  },
+  {
+    "version": "seed",
+    "workflow_id": "WF-10",
+    "record_grain": "One guarded workflow example case; emitted step rows refer to shared dictionary examples",
+    "case_file": "seed/workflows/WF-10/cases.json",
+    "example_file": "seed/workflows/WF-10/step_examples.json",
+    "analytics_file": "seed/workflows/WF-10/analytics.json",
+    "linked_business_datasets": [
+      "seed/core/gig.csv.gz"
+    ],
+    "business_selector": "See workflow action and declared data elements. Shared business files are references, not duplicated per workflow.",
+    "native_model_status": "Existing or proposed context as recorded per step",
+    "proof_layer": "Workflow envelope fixtures and examples. No endpoint, database transaction, or external provider was invoked."
+  },
+  {
+    "version": "seed",
+    "workflow_id": "WF-11",
+    "record_grain": "One guarded workflow example case; emitted step rows refer to shared dictionary examples",
+    "case_file": "seed/workflows/WF-11/cases.json",
+    "example_file": "seed/workflows/WF-11/step_examples.json",
+    "analytics_file": "seed/workflows/WF-11/analytics.json",
+    "linked_business_datasets": [
+      "seed/core/gig.csv.gz"
+    ],
+    "business_selector": "See workflow action and declared data elements. Shared business files are references, not duplicated per workflow.",
+    "native_model_status": "Existing or proposed context as recorded per step",
+    "proof_layer": "Workflow envelope fixtures and examples. No endpoint, database transaction, or external provider was invoked."
+  },
+  {
+    "version": "seed",
+    "workflow_id": "WF-12",
+    "record_grain": "One guarded workflow example case; emitted step rows refer to shared dictionary examples",
+    "case_file": "seed/workflows/WF-12/cases.json",
+    "example_file": "seed/workflows/WF-12/step_examples.json",
+    "analytics_file": "seed/workflows/WF-12/analytics.json",
+    "linked_business_datasets": [],
+    "business_selector": "See workflow action and declared data elements. Shared business files are references, not duplicated per workflow.",
+    "native_model_status": "Existing or proposed context as recorded per step",
+    "proof_layer": "Workflow envelope fixtures and examples. No endpoint, database transaction, or external provider was invoked."
+  },
+  {
+    "version": "seed",
+    "workflow_id": "WF-13",
+    "record_grain": "One guarded workflow example case; emitted step rows refer to shared dictionary examples",
+    "case_file": "seed/workflows/WF-13/cases.json",
+    "example_file": "seed/workflows/WF-13/step_examples.json",
+    "analytics_file": "seed/workflows/WF-13/analytics.json",
+    "linked_business_datasets": [],
+    "business_selector": "See workflow action and declared data elements. Shared business files are references, not duplicated per workflow.",
+    "native_model_status": "Existing or proposed context as recorded per step",
+    "proof_layer": "Workflow envelope fixtures and examples. No endpoint, database transaction, or external provider was invoked."
+  },
+  {
+    "version": "seed",
+    "workflow_id": "WF-14",
+    "record_grain": "One guarded workflow example case; emitted step rows refer to shared dictionary examples",
+    "case_file": "seed/workflows/WF-14/cases.json",
+    "example_file": "seed/workflows/WF-14/step_examples.json",
+    "analytics_file": "seed/workflows/WF-14/analytics.json",
+    "linked_business_datasets": [],
+    "business_selector": "See workflow action and declared data elements. Shared business files are references, not duplicated per workflow.",
+    "native_model_status": "Existing or proposed context as recorded per step",
+    "proof_layer": "Workflow envelope fixtures and examples. No endpoint, database transaction, or external provider was invoked."
+  },
+  {
+    "version": "seed",
+    "workflow_id": "WF-15",
+    "record_grain": "One guarded workflow example case; emitted step rows refer to shared dictionary examples",
+    "case_file": "seed/workflows/WF-15/cases.json",
+    "example_file": "seed/workflows/WF-15/step_examples.json",
+    "analytics_file": "seed/workflows/WF-15/analytics.json",
+    "linked_business_datasets": [],
+    "business_selector": "See workflow action and declared data elements. Shared business files are references, not duplicated per workflow.",
+    "native_model_status": "Existing or proposed context as recorded per step",
+    "proof_layer": "Workflow envelope fixtures and examples. No endpoint, database transaction, or external provider was invoked."
+  },
+  {
+    "version": "seed",
+    "workflow_id": "WF-16",
+    "record_grain": "One guarded workflow example case; emitted step rows refer to shared dictionary examples",
+    "case_file": "seed/workflows/WF-16/cases.json",
+    "example_file": "seed/workflows/WF-16/step_examples.json",
+    "analytics_file": "seed/workflows/WF-16/analytics.json",
+    "linked_business_datasets": [],
+    "business_selector": "See workflow action and declared data elements. Shared business files are references, not duplicated per workflow.",
+    "native_model_status": "Existing or proposed context as recorded per step",
+    "proof_layer": "Workflow envelope fixtures and examples. No endpoint, database transaction, or external provider was invoked."
+  },
+  {
+    "version": "seed",
+    "workflow_id": "WF-17",
+    "record_grain": "One guarded workflow example case; emitted step rows refer to shared dictionary examples",
+    "case_file": "seed/workflows/WF-17/cases.json",
+    "example_file": "seed/workflows/WF-17/step_examples.json",
+    "analytics_file": "seed/workflows/WF-17/analytics.json",
+    "linked_business_datasets": [],
+    "business_selector": "See workflow action and declared data elements. Shared business files are references, not duplicated per workflow.",
+    "native_model_status": "Existing or proposed context as recorded per step",
+    "proof_layer": "Workflow envelope fixtures and examples. No endpoint, database transaction, or external provider was invoked."
+  },
+  {
+    "version": "seed",
+    "workflow_id": "WF-18",
+    "record_grain": "One guarded workflow example case; emitted step rows refer to shared dictionary examples",
+    "case_file": "seed/workflows/WF-18/cases.json",
+    "example_file": "seed/workflows/WF-18/step_examples.json",
+    "analytics_file": "seed/workflows/WF-18/analytics.json",
+    "linked_business_datasets": [],
+    "business_selector": "See workflow action and declared data elements. Shared business files are references, not duplicated per workflow.",
+    "native_model_status": "Existing or proposed context as recorded per step",
+    "proof_layer": "Workflow envelope fixtures and examples. No endpoint, database transaction, or external provider was invoked."
+  },
+  {
+    "version": "seed",
+    "workflow_id": "WF-19",
+    "record_grain": "One guarded workflow example case; emitted step rows refer to shared dictionary examples",
+    "case_file": "seed/workflows/WF-19/cases.json",
+    "example_file": "seed/workflows/WF-19/step_examples.json",
+    "analytics_file": "seed/workflows/WF-19/analytics.json",
+    "linked_business_datasets": [
+      "seed/core/journey.csv.gz",
+      "seed/core/event.csv.gz",
+      "seed/core/application.csv.gz",
+      "seed/core/job.csv.gz"
+    ],
+    "business_selector": "See workflow action and declared data elements. Shared business files are references, not duplicated per workflow.",
+    "native_model_status": "Existing or proposed context as recorded per step",
+    "proof_layer": "Workflow envelope fixtures and examples. No endpoint, database transaction, or external provider was invoked."
+  },
+  {
+    "version": "seed",
+    "workflow_id": "WF-20",
+    "record_grain": "One guarded workflow example case; emitted step rows refer to shared dictionary examples",
+    "case_file": "seed/workflows/WF-20/cases.json",
+    "example_file": "seed/workflows/WF-20/step_examples.json",
+    "analytics_file": "seed/workflows/WF-20/analytics.json",
+    "linked_business_datasets": [
+      "seed/core/journey.csv.gz",
+      "seed/core/event.csv.gz",
+      "seed/core/application.csv.gz",
+      "seed/core/job.csv.gz"
+    ],
+    "business_selector": "See workflow action and declared data elements. Shared business files are references, not duplicated per workflow.",
+    "native_model_status": "Existing or proposed context as recorded per step",
+    "proof_layer": "Workflow envelope fixtures and examples. No endpoint, database transaction, or external provider was invoked."
+  },
+  {
+    "version": "seed",
+    "workflow_id": "WF-21",
+    "record_grain": "One guarded workflow example case; emitted step rows refer to shared dictionary examples",
+    "case_file": "seed/workflows/WF-21/cases.json",
+    "example_file": "seed/workflows/WF-21/step_examples.json",
+    "analytics_file": "seed/workflows/WF-21/analytics.json",
+    "linked_business_datasets": [
+      "seed/core/journey.csv.gz",
+      "seed/core/event.csv.gz",
+      "seed/core/application.csv.gz",
+      "seed/core/job.csv.gz"
+    ],
+    "business_selector": "See workflow action and declared data elements. Shared business files are references, not duplicated per workflow.",
+    "native_model_status": "Existing or proposed context as recorded per step",
+    "proof_layer": "Workflow envelope fixtures and examples. No endpoint, database transaction, or external provider was invoked."
+  },
+  {
+    "version": "seed",
+    "workflow_id": "WF-22",
+    "record_grain": "One guarded workflow example case; emitted step rows refer to shared dictionary examples",
+    "case_file": "seed/workflows/WF-22/cases.json",
+    "example_file": "seed/workflows/WF-22/step_examples.json",
+    "analytics_file": "seed/workflows/WF-22/analytics.json",
+    "linked_business_datasets": [
+      "seed/core/journey.csv.gz",
+      "seed/core/event.csv.gz",
+      "seed/core/application.csv.gz",
+      "seed/core/job.csv.gz"
+    ],
+    "business_selector": "See workflow action and declared data elements. Shared business files are references, not duplicated per workflow.",
+    "native_model_status": "Existing or proposed context as recorded per step",
+    "proof_layer": "Workflow envelope fixtures and examples. No endpoint, database transaction, or external provider was invoked."
+  },
+  {
+    "version": "seed",
+    "workflow_id": "WF-23",
+    "record_grain": "One guarded workflow example case; emitted step rows refer to shared dictionary examples",
+    "case_file": "seed/workflows/WF-23/cases.json",
+    "example_file": "seed/workflows/WF-23/step_examples.json",
+    "analytics_file": "seed/workflows/WF-23/analytics.json",
+    "linked_business_datasets": [
+      "seed/core/journey.csv.gz",
+      "seed/core/event.csv.gz",
+      "seed/core/application.csv.gz",
+      "seed/core/job.csv.gz"
+    ],
+    "business_selector": "See workflow action and declared data elements. Shared business files are references, not duplicated per workflow.",
+    "native_model_status": "Existing or proposed context as recorded per step",
+    "proof_layer": "Workflow envelope fixtures and examples. No endpoint, database transaction, or external provider was invoked."
+  },
+  {
+    "version": "seed",
+    "workflow_id": "WF-24",
+    "record_grain": "One guarded workflow example case; emitted step rows refer to shared dictionary examples",
+    "case_file": "seed/workflows/WF-24/cases.json",
+    "example_file": "seed/workflows/WF-24/step_examples.json",
+    "analytics_file": "seed/workflows/WF-24/analytics.json",
+    "linked_business_datasets": [
+      "seed/core/gig.csv.gz"
+    ],
+    "business_selector": "See workflow action and declared data elements. Shared business files are references, not duplicated per workflow.",
+    "native_model_status": "Existing or proposed context as recorded per step",
+    "proof_layer": "Workflow envelope fixtures and examples. No endpoint, database transaction, or external provider was invoked."
+  },
+  {
+    "version": "seed",
+    "workflow_id": "WF-25",
+    "record_grain": "One guarded workflow example case; emitted step rows refer to shared dictionary examples",
+    "case_file": "seed/workflows/WF-25/cases.json",
+    "example_file": "seed/workflows/WF-25/step_examples.json",
+    "analytics_file": "seed/workflows/WF-25/analytics.json",
+    "linked_business_datasets": [],
+    "business_selector": "See workflow action and declared data elements. Shared business files are references, not duplicated per workflow.",
+    "native_model_status": "Existing or proposed context as recorded per step",
+    "proof_layer": "Workflow envelope fixtures and examples. No endpoint, database transaction, or external provider was invoked."
+  },
+  {
+    "version": "seed",
+    "workflow_id": "WF-26",
+    "record_grain": "One guarded workflow example case; emitted step rows refer to shared dictionary examples",
+    "case_file": "seed/workflows/WF-26/cases.json",
+    "example_file": "seed/workflows/WF-26/step_examples.json",
+    "analytics_file": "seed/workflows/WF-26/analytics.json",
+    "linked_business_datasets": [],
+    "business_selector": "See workflow action and declared data elements. Shared business files are references, not duplicated per workflow.",
+    "native_model_status": "Existing or proposed context as recorded per step",
+    "proof_layer": "Workflow envelope fixtures and examples. No endpoint, database transaction, or external provider was invoked."
+  },
+  {
+    "version": "seed",
+    "workflow_id": "WF-27",
+    "record_grain": "One guarded workflow example case; emitted step rows refer to shared dictionary examples",
+    "case_file": "seed/workflows/WF-27/cases.json",
+    "example_file": "seed/workflows/WF-27/step_examples.json",
+    "analytics_file": "seed/workflows/WF-27/analytics.json",
+    "linked_business_datasets": [],
+    "business_selector": "See workflow action and declared data elements. Shared business files are references, not duplicated per workflow.",
+    "native_model_status": "Existing or proposed context as recorded per step",
+    "proof_layer": "Workflow envelope fixtures and examples. No endpoint, database transaction, or external provider was invoked."
+  }
+]

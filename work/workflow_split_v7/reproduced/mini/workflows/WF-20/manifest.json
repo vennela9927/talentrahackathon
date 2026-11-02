@@ -1,0 +1,17 @@
+{
+  "version": "mini",
+  "workflow_id": "WF-20",
+  "record_grain": "One guarded workflow example case; emitted step rows refer to shared dictionary examples",
+  "case_file": "mini/workflows/WF-20/cases.json",
+  "example_file": "mini/workflows/WF-20/step_examples.json",
+  "analytics_file": "mini/workflows/WF-20/analytics.json",
+  "linked_business_datasets": [
+    "mini/core/journey.csv.gz",
+    "mini/core/event.csv.gz",
+    "mini/core/application.csv.gz",
+    "mini/core/job.csv.gz"
+  ],
+  "business_selector": "See workflow action and declared data elements. Shared business files are references, not duplicated per workflow.",
+  "native_model_status": "Existing or proposed context as recorded per step",
+  "proof_layer": "Workflow envelope fixtures and examples. No endpoint, database transaction, or external provider was invoked."
+}

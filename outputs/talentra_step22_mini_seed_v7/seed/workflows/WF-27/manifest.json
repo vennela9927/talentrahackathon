@@ -1,0 +1,12 @@
+{
+  "version": "seed",
+  "workflow_id": "WF-27",
+  "record_grain": "One guarded workflow example case; emitted step rows refer to shared dictionary examples",
+  "case_file": "seed/workflows/WF-27/cases.json",
+  "example_file": "seed/workflows/WF-27/step_examples.json",
+  "analytics_file": "seed/workflows/WF-27/analytics.json",
+  "linked_business_datasets": [],
+  "business_selector": "See workflow action and declared data elements. Shared business files are references, not duplicated per workflow.",
+  "native_model_status": "Existing or proposed context as recorded per step",
+  "proof_layer": "Workflow envelope fixtures and examples. No endpoint, database transaction, or external provider was invoked."
+}

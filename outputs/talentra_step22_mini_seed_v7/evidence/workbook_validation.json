@@ -1,0 +1,575 @@
+{
+  "workbooks": 67,
+  "formulaPropagation": "PASS",
+  "missingInputGuard": "PASS",
+  "criticalFloor": "PASS",
+  "full": 84.56935483870966,
+  "documentary": 99.232413525068,
+  "checks": [
+    {
+      "file": "steps/01_Requirement_Analysis_Docket/a_Output_Schema_Definition.xlsx",
+      "sheets": 4,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/01_Requirement_Analysis_Docket/b_Schema_Rating_Scorecard.xlsx",
+      "sheets": 6,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/01_Requirement_Analysis_Docket/c_Output_Document.xlsx",
+      "sheets": 13,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/02_Stakeholders_Personas_and_Roles/a_Output_Schema_Definition.xlsx",
+      "sheets": 4,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/02_Stakeholders_Personas_and_Roles/b_Schema_Rating_Scorecard.xlsx",
+      "sheets": 6,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/02_Stakeholders_Personas_and_Roles/c_Output_Document.xlsx",
+      "sheets": 13,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/03_Feature_Discovery/a_Output_Schema_Definition.xlsx",
+      "sheets": 4,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/03_Feature_Discovery/b_Schema_Rating_Scorecard.xlsx",
+      "sheets": 6,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/03_Feature_Discovery/c_Output_Document.xlsx",
+      "sheets": 9,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/04_NFR_Discovery/a_Output_Schema_Definition.xlsx",
+      "sheets": 4,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/04_NFR_Discovery/b_Schema_Rating_Scorecard.xlsx",
+      "sheets": 6,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/04_NFR_Discovery/c_Output_Document.xlsx",
+      "sheets": 10,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/05_Business_Workflow_Analysis/a_Output_Schema_Definition.xlsx",
+      "sheets": 4,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/05_Business_Workflow_Analysis/b_Schema_Rating_Scorecard.xlsx",
+      "sheets": 6,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/05_Business_Workflow_Analysis/c_Output_Document.xlsx",
+      "sheets": 12,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/06_Entities_Discovery/a_Output_Schema_Definition.xlsx",
+      "sheets": 4,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/06_Entities_Discovery/b_Schema_Rating_Scorecard.xlsx",
+      "sheets": 6,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/06_Entities_Discovery/c_Output_Document.xlsx",
+      "sheets": 16,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/07_Attributes_Discovery/a_Output_Schema_Definition.xlsx",
+      "sheets": 4,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/07_Attributes_Discovery/b_Schema_Rating_Scorecard.xlsx",
+      "sheets": 6,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/07_Attributes_Discovery/c_Output_Document.xlsx",
+      "sheets": 10,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/08_Entity_Lifecycle_and_State_Machines/a_Output_Schema_Definition.xlsx",
+      "sheets": 4,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/08_Entity_Lifecycle_and_State_Machines/b_Schema_Rating_Scorecard.xlsx",
+      "sheets": 6,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/08_Entity_Lifecycle_and_State_Machines/c_Output_Document.xlsx",
+      "sheets": 31,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/09_Database_Tables_and_Relationships_Discovery/a_Output_Schema_Definition.xlsx",
+      "sheets": 4,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/09_Database_Tables_and_Relationships_Discovery/b_Schema_Rating_Scorecard.xlsx",
+      "sheets": 6,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/09_Database_Tables_and_Relationships_Discovery/c_Output_Document.xlsx",
+      "sheets": 14,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/10_Data_Dictionary_v1/a_Output_Schema_Definition.xlsx",
+      "sheets": 4,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/10_Data_Dictionary_v1/b_Schema_Rating_Scorecard.xlsx",
+      "sheets": 6,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/10_Data_Dictionary_v1/c_Output_Document.xlsx",
+      "sheets": 9,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/11_Data_Rules_and_Constraints_Discovery/a_Output_Schema_Definition.xlsx",
+      "sheets": 4,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/11_Data_Rules_and_Constraints_Discovery/b_Schema_Rating_Scorecard.xlsx",
+      "sheets": 6,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/11_Data_Rules_and_Constraints_Discovery/c_Output_Document.xlsx",
+      "sheets": 13,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/12_Data_Classification_and_Privacy/a_Output_Schema_Definition.xlsx",
+      "sheets": 4,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/12_Data_Classification_and_Privacy/b_Schema_Rating_Scorecard.xlsx",
+      "sheets": 6,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/12_Data_Classification_and_Privacy/c_Output_Document.xlsx",
+      "sheets": 16,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/13_Data_Volumetrics_and_Distribution_Profile/a_Output_Schema_Definition.xlsx",
+      "sheets": 4,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/13_Data_Volumetrics_and_Distribution_Profile/b_Schema_Rating_Scorecard.xlsx",
+      "sheets": 6,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/13_Data_Volumetrics_and_Distribution_Profile/c_Output_Document.xlsx",
+      "sheets": 17,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/14_Sample_Data_Generation_Discovery/a_Output_Schema_Definition.xlsx",
+      "sheets": 4,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/14_Sample_Data_Generation_Discovery/b_Schema_Rating_Scorecard.xlsx",
+      "sheets": 6,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/14_Sample_Data_Generation_Discovery/c_Output_Document.xlsx",
+      "sheets": 16,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/15_Test_Suite_v1_Data/a_Output_Schema_Definition.xlsx",
+      "sheets": 4,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/15_Test_Suite_v1_Data/b_Schema_Rating_Scorecard.xlsx",
+      "sheets": 6,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/15_Test_Suite_v1_Data/c_Output_Document.xlsx",
+      "sheets": 13,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/16_Schema_Coverage_against_Business_Workflow/a_Output_Schema_Definition.xlsx",
+      "sheets": 4,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/16_Schema_Coverage_against_Business_Workflow/b_Schema_Rating_Scorecard.xlsx",
+      "sheets": 6,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/16_Schema_Coverage_against_Business_Workflow/c_Output_Document.xlsx",
+      "sheets": 23,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/17_Design_Based_Refinement/a_Output_Schema_Definition.xlsx",
+      "sheets": 4,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/17_Design_Based_Refinement/b_Schema_Rating_Scorecard.xlsx",
+      "sheets": 6,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/17_Design_Based_Refinement/c_Output_Document.xlsx",
+      "sheets": 13,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/18_Business_Rules_and_Data_Constraints_v2/a_Output_Schema_Definition.xlsx",
+      "sheets": 4,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/18_Business_Rules_and_Data_Constraints_v2/b_Schema_Rating_Scorecard.xlsx",
+      "sheets": 6,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/18_Business_Rules_and_Data_Constraints_v2/c_Output_Document.xlsx",
+      "sheets": 16,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/19_Data_Dictionary_v2/a_Output_Schema_Definition.xlsx",
+      "sheets": 4,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/19_Data_Dictionary_v2/b_Schema_Rating_Scorecard.xlsx",
+      "sheets": 6,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/19_Data_Dictionary_v2/c_Output_Document.xlsx",
+      "sheets": 11,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/20_Test_Suite_v2_Data_Business_and_NFR/a_Output_Schema_Definition.xlsx",
+      "sheets": 4,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/20_Test_Suite_v2_Data_Business_and_NFR/b_Schema_Rating_Scorecard.xlsx",
+      "sheets": 6,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/20_Test_Suite_v2_Data_Business_and_NFR/c_Output_Document.xlsx",
+      "sheets": 15,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/21_Baseline_ER_and_Physical_Model/a_Output_Schema_Definition.xlsx",
+      "sheets": 4,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/21_Baseline_ER_and_Physical_Model/b_Schema_Rating_Scorecard.xlsx",
+      "sheets": 6,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/21_Baseline_ER_and_Physical_Model/c_Output_Document.xlsx",
+      "sheets": 18,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/22_Integration_and_Source_Mapping/a_Output_Schema_Definition.xlsx",
+      "sheets": 4,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/22_Integration_and_Source_Mapping/b_Schema_Rating_Scorecard.xlsx",
+      "sheets": 6,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "steps/22_Integration_and_Source_Mapping/c_Output_Document.xlsx",
+      "sheets": 28,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    },
+    {
+      "file": "Talentra_Combined.xlsx",
+      "sheets": 19,
+      "formulaErrors": "{\"kind\":\"notice\",\"message\":\"Cell search matched 0 entries.\"}"
+    }
+  ],
+  "previews": [
+    {
+      "label": "S22 schema / Definition",
+      "png": "0001.png"
+    },
+    {
+      "label": "S22 schema / Hierarchy",
+      "png": "0002.png"
+    },
+    {
+      "label": "S22 schema / Artifact Contracts",
+      "png": "0003.png"
+    },
+    {
+      "label": "S22 schema / Contract semantics",
+      "png": "0004.png"
+    },
+    {
+      "label": "S22 scorecard / Summary",
+      "png": "0005.png"
+    },
+    {
+      "label": "S22 scorecard / Ratings",
+      "png": "0006.png"
+    },
+    {
+      "label": "S22 scorecard / Section Ratings",
+      "png": "0007.png"
+    },
+    {
+      "label": "S22 scorecard / 90 Plus Closure",
+      "png": "0008.png"
+    },
+    {
+      "label": "S22 scorecard / Human Review",
+      "png": "0009.png"
+    },
+    {
+      "label": "S22 scorecard / Method",
+      "png": "0010.png"
+    },
+    {
+      "label": "S22 output / Overview",
+      "png": "0011.png"
+    },
+    {
+      "label": "S22 output / Funnel Calculator",
+      "png": "0012.png"
+    },
+    {
+      "label": "S22 output / 01_Integration catalogue",
+      "png": "0013.png"
+    },
+    {
+      "label": "S22 output / 02_Source target mapping",
+      "png": "0014.png"
+    },
+    {
+      "label": "S22 output / 03_Failure policy",
+      "png": "0015.png"
+    },
+    {
+      "label": "S22 output / 04_Source ownership",
+      "png": "0016.png"
+    },
+    {
+      "label": "S22 output / 05_Compatibility and rollout",
+      "png": "0017.png"
+    },
+    {
+      "label": "S22 output / 06_Production release gates",
+      "png": "0018.png"
+    },
+    {
+      "label": "S22 output / 07_B T017 6. Integration bounda",
+      "png": "0019.png"
+    },
+    {
+      "label": "S22 output / 08_Cross-source comparison",
+      "png": "0020.png"
+    },
+    {
+      "label": "S22 output / 09_Hybrid handoff",
+      "png": "0021.png"
+    },
+    {
+      "label": "S22 output / 10_Human review prompts",
+      "png": "0022.png"
+    },
+    {
+      "label": "S22 output / 11_Acceptance cases",
+      "png": "0023.png"
+    },
+    {
+      "label": "S22 output / 12_Business definitions",
+      "png": "0024.png"
+    },
+    {
+      "label": "S22 output / 13_Job taxonomy",
+      "png": "0025.png"
+    },
+    {
+      "label": "S22 output / 14_Hiring funnel",
+      "png": "0026.png"
+    },
+    {
+      "label": "S22 output / 15_Family funnel assumptions",
+      "png": "0027.png"
+    },
+    {
+      "label": "S22 output / 16_Family funnel counts",
+      "png": "0028.png"
+    },
+    {
+      "label": "S22 output / 17_Business KPI register",
+      "png": "0029.png"
+    },
+    {
+      "label": "S22 output / 18_Actor workflows",
+      "png": "0030.png"
+    },
+    {
+      "label": "S22 output / 19_Business scenario catalogue",
+      "png": "0031.png"
+    },
+    {
+      "label": "S22 output / 20_Native schema gap register",
+      "png": "0032.png"
+    },
+    {
+      "label": "S22 output / 21_Mentor source field mapping",
+      "png": "0033.png"
+    },
+    {
+      "label": "S22 output / 22_Dataset inventory",
+      "png": "0034.png"
+    },
+    {
+      "label": "S22 output / 23_Generated journey sample",
+      "png": "0035.png"
+    },
+    {
+      "label": "S22 output / 24_Generated gig sample",
+      "png": "0036.png"
+    },
+    {
+      "label": "S22 output / 25_Source failure scenarios",
+      "png": "0037.png"
+    },
+    {
+      "label": "S22 output / 26_Mentor negative test evidenc",
+      "png": "0038.png"
+    },
+    {
+      "label": "Master / Combined Rating",
+      "png": "0039.png"
+    },
+    {
+      "label": "Master / Ratings",
+      "png": "0040.png"
+    },
+    {
+      "label": "Master / Deliverable Index",
+      "png": "0041.png"
+    },
+    {
+      "label": "Master / All Schemas",
+      "png": "0042.png"
+    },
+    {
+      "label": "Master / Hierarchy",
+      "png": "0043.png"
+    },
+    {
+      "label": "Master / Section Ratings",
+      "png": "0044.png"
+    },
+    {
+      "label": "Master / All Outputs",
+      "png": "0045.png"
+    },
+    {
+      "label": "Master / Field Mapping",
+      "png": "0046.png"
+    },
+    {
+      "label": "Master / Artifact Contracts",
+      "png": "0047.png"
+    },
+    {
+      "label": "Master / 90 Plus Closure",
+      "png": "0048.png"
+    },
+    {
+      "label": "Master / Merge Decisions",
+      "png": "0049.png"
+    },
+    {
+      "label": "Master / Source Map",
+      "png": "0050.png"
+    },
+    {
+      "label": "Master / Source B Claims",
+      "png": "0051.png"
+    },
+    {
+      "label": "Master / Source B Archive",
+      "png": "0052.png"
+    },
+    {
+      "label": "Master / Production Gates",
+      "png": "0053.png"
+    },
+    {
+      "label": "Master / Refinement Loops",
+      "png": "0054.png"
+    },
+    {
+      "label": "Master / Current Validation",
+      "png": "0055.png"
+    },
+    {
+      "label": "Master / Sources",
+      "png": "0056.png"
+    },
+    {
+      "label": "Master / Method",
+      "png": "0057.png"
+    }
+  ]
+}
